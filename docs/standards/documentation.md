@@ -17,4 +17,4 @@ notes, and warnings related to the code.
 Comments can be enchanced with the `Better Comments` VSCode extension, which adds 
 coloring for warnings, questions, TODO anchors, and parameters.
 
-![Alt text](image.png)
+![Alt text](static/image.png)
