@@ -1,4 +1,5 @@
 import csv
+from haversine import haversine, Unit
 
 RANK = 0
 NAME = 1
@@ -9,15 +10,18 @@ METRO_POPULATION = 5
 LATITUDE = 6
 LONGITUDE = 7
 
-with open('data/airports.csv') as file:
-    reader = csv.reader(file, delimiter=',',)
-    next(reader)
-    
-    airports = []
-    
-    for row in reader:
-        airports.append(row)
-    
-    for airport in airports:
-        print(airport[NAME])
-    
+with open('data/airports.csv') as infile:
+    reader = csv.reader(infile, delimiter=',',)
+    _ = next(reader)
+    airports = [row for row in reader]
+
+    with open('data/distance.csv', 'w') as outfile:
+        for source_airport in airports:
+            for destination_airport in airports:
+                distance = haversine(                                                                \
+                    (float(source_airport[LATITUDE]),float(source_airport[LONGITUDE])),              \
+                    (float(destination_airport[LATITUDE]),float(destination_airport[LONGITUDE])),    \
+                    unit=Unit.KILOMETERS                                                             \
+                )
+
+                outfile.write(f'{source_airport[NAME]},{destination_airport[NAME]},{distance}\n')
