@@ -8,7 +8,7 @@ def haversine_distance(lat1, lon1, lat2, lon2, radius):
 
 csv_file_path = 'airports.csv'
 output_csv_path = 'distance_matrix.csv'
-radius_of_earth = 3959.0  
+radius_of_earth = 6378.14  
 
 # Read latitude and longitude from CSV file
 coordinates = []
@@ -17,7 +17,7 @@ with open(csv_file_path, 'r') as file:
     csv_reader = csv.reader(file)
     header = next(csv_reader)  # Skip the header row
     for row in csv_reader:
-        latitude, longitude, airport_name = float(row[7]), float(row[8]), row[1]
+        latitude, longitude, airport_name = float(row[6]), float(row[7]), row[1]
         coordinates.append((latitude, longitude))
         airport_names.append(airport_name)
 
