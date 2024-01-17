@@ -1,5 +1,6 @@
 # Testing
-For testing, we will use the [pytest](https://docs.pytest.org/en/7.4.x/) testing framework.
+For testing, we will use the [pytest](https://docs.pytest.org/en/7.4.x/) testing framework. If you do
+not have pytest installed, you can install it by running `pip3 install -r requirements.txt`.
 To write tests with pytest, just create a new python file in the `tests` directory, import your code
 with the  *[import](https://realpython.com/python-import/#basic-python-import)* keyword, and write a 
 function to test it. The name of the test file and test method should start with `test_`.
