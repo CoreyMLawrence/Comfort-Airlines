@@ -4,6 +4,8 @@ import csv
 def haversine_distance(lat1, lon1, lat2, lon2, radius):
     phi_A, lambda_A, phi_B, lambda_B = map(math.radians, [lat1, lon1, lat2, lon2])
     distance = radius * math.acos(math.sin(phi_A) * math.sin(phi_B) + math.cos(phi_A) * math.cos(phi_B) * math.cos(lambda_A - lambda_B))
+    if distance < 242:
+        distance = -1
     return distance
 
 csv_file_path = 'airports.csv'
