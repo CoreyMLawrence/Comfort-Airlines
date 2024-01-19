@@ -8,7 +8,7 @@ def main() -> None:
         connection = mariadb.connect(
             user="root",
             password="toor",
-            host="192.0.2.1",
+            host="172.17.0.1",
             port=3306,
             database="comfort-airlines-db"
         )

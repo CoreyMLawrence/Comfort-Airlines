@@ -14,6 +14,10 @@ services:
     restart: always
     ports:
       - 8000:8000
+    depends_on:
+      - db
+ #     db:
+ #       condition: service_healthy
     links:
       - db
 
@@ -23,6 +27,12 @@ services:
     environment:
       MYSQL_DATABASE: comfort-airlines-db
       MARIADB_ROOT_PASSWORD: toor
+#    healthcheck:
+#      test: ["CMD", "root", "ping", "-h", "localhost"]
+#      timeout: 10s
+#      retries: 15
+    ports: 
+      - 3306:3306
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to
