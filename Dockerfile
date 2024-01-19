@@ -7,10 +7,6 @@
 ARG PYTHON_VERSION=3.10
 FROM python:${PYTHON_VERSION}-slim as base
 
-# C compiler and MariaDB development files required for installing `mariadb` Python package
-RUN apt-get update -y && apt-get upgrade -y
-RUN apt install gcc libmariadb-dev -y
-
 # Prevents Python from writing pyc files.
 ENV PYTHONDONTWRITEBYTECODE=1
 
@@ -31,6 +27,11 @@ RUN adduser \
     --no-create-home \
     --uid "${UID}" \
     appuser
+
+# C compiler and MariaDB development files required for installing `mariadb` Python package.
+# Do not remove the update and upgrade. Installing MariaDB developer dependencies fail without it.
+RUN apt-get update -y && apt-get upgrade -y
+RUN apt install gcc libmariadb-dev -y
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.cache/pip to speed up subsequent builds.

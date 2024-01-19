@@ -20,9 +20,7 @@ def main() -> None:
             database=DATABASE_NAME
         )
         
-        cursor = connection.cursor()
         print("Sucessfully connected to the database")
-        
     except mariadb.Error as e:
         print(f"Error connecting to MariaDB Platform: {e}")
         sys.exit(1)
