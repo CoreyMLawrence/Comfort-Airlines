@@ -12,6 +12,12 @@ services:
     build:
       context: .
     restart: always
+    environment:
+      DATABASE_USERNAME: root
+      DATABASE_PASSWORD: toor
+      DATABASE_IP: 172.17.0.1
+      DATABASE_PORT: 3306
+      DATABASE_NAME: comfort-airlines-db
     ports:
       - 8000:8000
     depends_on:
