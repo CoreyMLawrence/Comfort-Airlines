@@ -2,6 +2,7 @@ from enum import Enum
 from copy import deepcopy
 
 class AircraftType(Enum):
+    """Enumerated type. Defines the 4 types of aircraft"""
     BOEING_737_600 = 0
     BOEING_737_800 = 1
     AIRBUS_A200_100 = 2
