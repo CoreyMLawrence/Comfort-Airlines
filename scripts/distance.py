@@ -6,9 +6,10 @@ NAME = 1
 IATA = 2
 CITY = 3
 STATE = 4
-METRO_POPULATION = 5
-LATITUDE = 6
-LONGITUDE = 7
+METRO_AREA = 5
+METRO_POPULATION = 6
+LATITUDE = 7
+LONGITUDE = 8
 
 with open('data/airports.csv') as infile:
     reader = csv.reader(infile, delimiter=',',)
