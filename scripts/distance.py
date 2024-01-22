@@ -1,5 +1,5 @@
 import csv
-from haversine import haversine, Unit
+from scripts.haversine import haversine, Unit
 
 RANK = 0
 NAME = 1
