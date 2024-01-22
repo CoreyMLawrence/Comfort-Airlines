@@ -36,4 +36,4 @@ def aircraft_factory(aircraft_type: AircraftType) -> Aircraft:
         case AircraftType.AIRBUS_A220_300:
             return deepcopy(AIRBUS_A220_300_TEMPLATE)
         case _:
-            raise ValueError(f"parameter 'aircraft_type' not in range of AircraftType enum. Integral value of ")
+            raise ValueError(f"parameter 'aircraft_type' not in range of AircraftType enum.")
