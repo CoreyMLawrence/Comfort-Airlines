@@ -9,6 +9,7 @@ class AircraftType(Enum):
     AIRBUS_A220_300 = 3
 
 class Aircraft:
+    """Model class. A generic representation of an aircraft. Type is indicated by AirCraft.Type"""
     def __init__(self, name: str, type: AircraftType, passenger_capacity: int, cruise_speed: int, fuel_capacity: int, max_range: int, max_altitude: int) -> None:
         self.name = name
         self.type = type
@@ -24,6 +25,7 @@ AIRBUS_A200_100_TEMPLATE = Aircraft("Airbus A200-100", AircraftType.AIRBUS_A200_
 AIRBUS_A220_300_TEMPLATE = Aircraft("Airbus A220-300", AircraftType.AIRBUS_A220_300, 160, 910, 5790, 5920, 41000)
 
 def aircraft_factory(aircraft_type: AircraftType) -> Aircraft:
+    """Factory class to create Aircraft objects. Uses AircraftType as the API."""
     if not type(aircraft_type) is AircraftType:
         raise TypeError(f"parameter 'aircraft_type' is not of enum type 'AircraftType'. Found type: {type(aircraft_type)}")
 
