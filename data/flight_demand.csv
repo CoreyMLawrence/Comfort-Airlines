@@ -1,7 +1,7 @@
 source airport,destination airport,company flight demand
 Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,35
 Hartsfield-Jackson Atlanta International Airport,Denver International Airport,14
-Hartsfield-Jackson Atlanta International Airport,O'Hare International Airport,22
+Hartsfield-Jackson Atlanta International Airport,O'Hare International Airport,44
 Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,85
 Hartsfield-Jackson Atlanta International Airport,John F. Kennedy International Airport,31
 Hartsfield-Jackson Atlanta International Airport,Harry Reid International Airport,10
@@ -27,10 +27,9 @@ Hartsfield-Jackson Atlanta International Airport,Tampa International Airport,15
 Hartsfield-Jackson Atlanta International Airport,Austin-Bergstrom International Airport,11
 Hartsfield-Jackson Atlanta International Airport,Washington Dulles International Airport,10
 Hartsfield-Jackson Atlanta International Airport,Nashville International Airport,10
-Hartsfield-Jackson Atlanta International Airport,Midway International Airport,22
 Dallas/Fort Worth International Airport,Hartsfield-Jackson Atlanta International Airport,36
 Dallas/Fort Worth International Airport,Denver International Airport,17
-Dallas/Fort Worth International Airport,O'Hare International Airport,28
+Dallas/Fort Worth International Airport,O'Hare International Airport,56
 Dallas/Fort Worth International Airport,Los Angeles International Airport,106
 Dallas/Fort Worth International Airport,John F. Kennedy International Airport,39
 Dallas/Fort Worth International Airport,Harry Reid International Airport,13
@@ -56,10 +55,9 @@ Dallas/Fort Worth International Airport,Tampa International Airport,18
 Dallas/Fort Worth International Airport,Austin-Bergstrom International Airport,14
 Dallas/Fort Worth International Airport,Washington Dulles International Airport,12
 Dallas/Fort Worth International Airport,Nashville International Airport,12
-Dallas/Fort Worth International Airport,Midway International Airport,28
 Denver International Airport,Hartsfield-Jackson Atlanta International Airport,13
 Denver International Airport,Dallas/Fort Worth International Airport,17
-Denver International Airport,O'Hare International Airport,10
+Denver International Airport,O'Hare International Airport,21
 Denver International Airport,Los Angeles International Airport,40
 Denver International Airport,John F. Kennedy International Airport,15
 Denver International Airport,Harry Reid International Airport,5
@@ -85,39 +83,38 @@ Denver International Airport,Tampa International Airport,7
 Denver International Airport,Austin-Bergstrom International Airport,5
 Denver International Airport,Washington Dulles International Airport,5
 Denver International Airport,Nashville International Airport,4
-Denver International Airport,Midway International Airport,10
-O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,23
-O'Hare International Airport,Dallas/Fort Worth International Airport,28
-O'Hare International Airport,Denver International Airport,11
-O'Hare International Airport,Los Angeles International Airport,68
-O'Hare International Airport,John F. Kennedy International Airport,25
-O'Hare International Airport,Harry Reid International Airport,8
-O'Hare International Airport,Orlando International Airport,10
-O'Hare International Airport,Miami International Airport,11
-O'Hare International Airport,Charlotte Douglas International Airport,10
-O'Hare International Airport,Seattle-Tacoma International Airport,15
-O'Hare International Airport,Phoenix Sky Harbor International Airport,18
-O'Hare International Airport,Newark Liberty International Airport,25
-O'Hare International Airport,San Francisco International Airport,26
-O'Hare International Airport,George Bush Intercontinental Airport,26
-O'Hare International Airport,Logan International Airport,18
-O'Hare International Airport,Fort Lauderdale-Hollywood International Airport,11
-O'Hare International Airport,Minneapolis-Saint Paul International Airport,14
-O'Hare International Airport,LaGuardia Airport,25
-O'Hare International Airport,Detroit Metropolitan Airport,16
-O'Hare International Airport,Philadelphia International Airport,23
-O'Hare International Airport,Salt Lake City International Airport,5
-O'Hare International Airport,Ronald Reagan Washington National Airport,8
-O'Hare International Airport,San Diego International Airport,12
-O'Hare International Airport,Baltimore/Washington International Airport,8
-O'Hare International Airport,Tampa International Airport,12
-O'Hare International Airport,Austin-Bergstrom International Airport,9
-O'Hare International Airport,Washington Dulles International Airport,8
-O'Hare International Airport,Nashville International Airport,8
+O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,45
+O'Hare International Airport,Dallas/Fort Worth International Airport,57
+O'Hare International Airport,Denver International Airport,22
+O'Hare International Airport,Los Angeles International Airport,136
+O'Hare International Airport,John F. Kennedy International Airport,50
+O'Hare International Airport,Harry Reid International Airport,17
+O'Hare International Airport,Orlando International Airport,20
+O'Hare International Airport,Miami International Airport,23
+O'Hare International Airport,Charlotte Douglas International Airport,20
+O'Hare International Airport,Seattle-Tacoma International Airport,30
+O'Hare International Airport,Phoenix Sky Harbor International Airport,36
+O'Hare International Airport,Newark Liberty International Airport,50
+O'Hare International Airport,San Francisco International Airport,52
+O'Hare International Airport,George Bush Intercontinental Airport,53
+O'Hare International Airport,Logan International Airport,37
+O'Hare International Airport,Fort Lauderdale-Hollywood International Airport,23
+O'Hare International Airport,Minneapolis-Saint Paul International Airport,27
+O'Hare International Airport,LaGuardia Airport,50
+O'Hare International Airport,Detroit Metropolitan Airport,32
+O'Hare International Airport,Philadelphia International Airport,46
+O'Hare International Airport,Salt Lake City International Airport,9
+O'Hare International Airport,Ronald Reagan Washington National Airport,16
+O'Hare International Airport,San Diego International Airport,24
+O'Hare International Airport,Baltimore/Washington International Airport,16
+O'Hare International Airport,Tampa International Airport,24
+O'Hare International Airport,Austin-Bergstrom International Airport,18
+O'Hare International Airport,Washington Dulles International Airport,16
+O'Hare International Airport,Nashville International Airport,15
 Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,96
 Los Angeles International Airport,Dallas/Fort Worth International Airport,119
 Los Angeles International Airport,Denver International Airport,46
-Los Angeles International Airport,O'Hare International Airport,75
+Los Angeles International Airport,O'Hare International Airport,150
 Los Angeles International Airport,John F. Kennedy International Airport,105
 Los Angeles International Airport,Harry Reid International Airport,35
 Los Angeles International Airport,Orlando International Airport,42
@@ -141,11 +138,10 @@ Los Angeles International Airport,Tampa International Airport,49
 Los Angeles International Airport,Austin-Bergstrom International Airport,38
 Los Angeles International Airport,Washington Dulles International Airport,33
 Los Angeles International Airport,Nashville International Airport,32
-Los Angeles International Airport,Midway International Airport,75
 John F. Kennedy International Airport,Hartsfield-Jackson Atlanta International Airport,36
 John F. Kennedy International Airport,Dallas/Fort Worth International Airport,45
 John F. Kennedy International Airport,Denver International Airport,18
-John F. Kennedy International Airport,O'Hare International Airport,29
+John F. Kennedy International Airport,O'Hare International Airport,57
 John F. Kennedy International Airport,Los Angeles International Airport,109
 John F. Kennedy International Airport,Harry Reid International Airport,13
 John F. Kennedy International Airport,Orlando International Airport,16
@@ -167,11 +163,10 @@ John F. Kennedy International Airport,Tampa International Airport,19
 John F. Kennedy International Airport,Austin-Bergstrom International Airport,14
 John F. Kennedy International Airport,Washington Dulles International Airport,13
 John F. Kennedy International Airport,Nashville International Airport,12
-John F. Kennedy International Airport,Midway International Airport,29
 Harry Reid International Airport,Hartsfield-Jackson Atlanta International Airport,10
 Harry Reid International Airport,Dallas/Fort Worth International Airport,13
 Harry Reid International Airport,Denver International Airport,5
-Harry Reid International Airport,O'Hare International Airport,8
+Harry Reid International Airport,O'Hare International Airport,16
 Harry Reid International Airport,Los Angeles International Airport,30
 Harry Reid International Airport,John F. Kennedy International Airport,11
 Harry Reid International Airport,Orlando International Airport,4
@@ -196,11 +191,10 @@ Harry Reid International Airport,Tampa International Airport,5
 Harry Reid International Airport,Austin-Bergstrom International Airport,4
 Harry Reid International Airport,Washington Dulles International Airport,4
 Harry Reid International Airport,Nashville International Airport,3
-Harry Reid International Airport,Midway International Airport,8
 Orlando International Airport,Hartsfield-Jackson Atlanta International Airport,12
 Orlando International Airport,Dallas/Fort Worth International Airport,15
 Orlando International Airport,Denver International Airport,6
-Orlando International Airport,O'Hare International Airport,10
+Orlando International Airport,O'Hare International Airport,19
 Orlando International Airport,Los Angeles International Airport,37
 Orlando International Airport,John F. Kennedy International Airport,14
 Orlando International Airport,Harry Reid International Airport,5
@@ -224,11 +218,10 @@ Orlando International Airport,Baltimore/Washington International Airport,4
 Orlando International Airport,Austin-Bergstrom International Airport,5
 Orlando International Airport,Washington Dulles International Airport,4
 Orlando International Airport,Nashville International Airport,4
-Orlando International Airport,Midway International Airport,10
 Miami International Airport,Hartsfield-Jackson Atlanta International Airport,14
 Miami International Airport,Dallas/Fort Worth International Airport,18
 Miami International Airport,Denver International Airport,7
-Miami International Airport,O'Hare International Airport,11
+Miami International Airport,O'Hare International Airport,22
 Miami International Airport,Los Angeles International Airport,42
 Miami International Airport,John F. Kennedy International Airport,15
 Miami International Airport,Harry Reid International Airport,5
@@ -252,11 +245,10 @@ Miami International Airport,Tampa International Airport,7
 Miami International Airport,Austin-Bergstrom International Airport,6
 Miami International Airport,Washington Dulles International Airport,5
 Miami International Airport,Nashville International Airport,5
-Miami International Airport,Midway International Airport,11
 Charlotte Douglas International Airport,Hartsfield-Jackson Atlanta International Airport,12
 Charlotte Douglas International Airport,Dallas/Fort Worth International Airport,15
 Charlotte Douglas International Airport,Denver International Airport,6
-Charlotte Douglas International Airport,O'Hare International Airport,9
+Charlotte Douglas International Airport,O'Hare International Airport,19
 Charlotte Douglas International Airport,Los Angeles International Airport,36
 Charlotte Douglas International Airport,John F. Kennedy International Airport,13
 Charlotte Douglas International Airport,Harry Reid International Airport,4
@@ -281,11 +273,10 @@ Charlotte Douglas International Airport,Tampa International Airport,6
 Charlotte Douglas International Airport,Austin-Bergstrom International Airport,5
 Charlotte Douglas International Airport,Washington Dulles International Airport,4
 Charlotte Douglas International Airport,Nashville International Airport,4
-Charlotte Douglas International Airport,Midway International Airport,9
 Seattle-Tacoma International Airport,Hartsfield-Jackson Atlanta International Airport,18
 Seattle-Tacoma International Airport,Dallas/Fort Worth International Airport,23
 Seattle-Tacoma International Airport,Denver International Airport,9
-Seattle-Tacoma International Airport,O'Hare International Airport,14
+Seattle-Tacoma International Airport,O'Hare International Airport,29
 Seattle-Tacoma International Airport,Los Angeles International Airport,54
 Seattle-Tacoma International Airport,John F. Kennedy International Airport,20
 Seattle-Tacoma International Airport,Harry Reid International Airport,7
@@ -310,11 +301,10 @@ Seattle-Tacoma International Airport,Tampa International Airport,9
 Seattle-Tacoma International Airport,Austin-Bergstrom International Airport,7
 Seattle-Tacoma International Airport,Washington Dulles International Airport,6
 Seattle-Tacoma International Airport,Nashville International Airport,6
-Seattle-Tacoma International Airport,Midway International Airport,14
 Phoenix Sky Harbor International Airport,Hartsfield-Jackson Atlanta International Airport,22
 Phoenix Sky Harbor International Airport,Dallas/Fort Worth International Airport,27
 Phoenix Sky Harbor International Airport,Denver International Airport,11
-Phoenix Sky Harbor International Airport,O'Hare International Airport,17
+Phoenix Sky Harbor International Airport,O'Hare International Airport,35
 Phoenix Sky Harbor International Airport,Los Angeles International Airport,66
 Phoenix Sky Harbor International Airport,John F. Kennedy International Airport,24
 Phoenix Sky Harbor International Airport,Harry Reid International Airport,8
@@ -339,11 +329,10 @@ Phoenix Sky Harbor International Airport,Tampa International Airport,11
 Phoenix Sky Harbor International Airport,Austin-Bergstrom International Airport,9
 Phoenix Sky Harbor International Airport,Washington Dulles International Airport,8
 Phoenix Sky Harbor International Airport,Nashville International Airport,7
-Phoenix Sky Harbor International Airport,Midway International Airport,17
 Newark Liberty International Airport,Hartsfield-Jackson Atlanta International Airport,36
 Newark Liberty International Airport,Dallas/Fort Worth International Airport,45
 Newark Liberty International Airport,Denver International Airport,18
-Newark Liberty International Airport,O'Hare International Airport,29
+Newark Liberty International Airport,O'Hare International Airport,57
 Newark Liberty International Airport,Los Angeles International Airport,109
 Newark Liberty International Airport,Harry Reid International Airport,13
 Newark Liberty International Airport,Orlando International Airport,16
@@ -365,11 +354,10 @@ Newark Liberty International Airport,Tampa International Airport,19
 Newark Liberty International Airport,Austin-Bergstrom International Airport,14
 Newark Liberty International Airport,Washington Dulles International Airport,13
 Newark Liberty International Airport,Nashville International Airport,12
-Newark Liberty International Airport,Midway International Airport,29
 San Francisco International Airport,Hartsfield-Jackson Atlanta International Airport,33
 San Francisco International Airport,Dallas/Fort Worth International Airport,41
 San Francisco International Airport,Denver International Airport,16
-San Francisco International Airport,O'Hare International Airport,26
+San Francisco International Airport,O'Hare International Airport,51
 San Francisco International Airport,Los Angeles International Airport,98
 San Francisco International Airport,John F. Kennedy International Airport,36
 San Francisco International Airport,Harry Reid International Airport,12
@@ -394,11 +382,10 @@ San Francisco International Airport,Tampa International Airport,17
 San Francisco International Airport,Austin-Bergstrom International Airport,13
 San Francisco International Airport,Washington Dulles International Airport,11
 San Francisco International Airport,Nashville International Airport,11
-San Francisco International Airport,Midway International Airport,26
 George Bush Intercontinental Airport,Hartsfield-Jackson Atlanta International Airport,34
 George Bush Intercontinental Airport,Dallas/Fort Worth International Airport,42
 George Bush Intercontinental Airport,Denver International Airport,16
-George Bush Intercontinental Airport,O'Hare International Airport,26
+George Bush Intercontinental Airport,O'Hare International Airport,53
 George Bush Intercontinental Airport,Los Angeles International Airport,101
 George Bush Intercontinental Airport,John F. Kennedy International Airport,37
 George Bush Intercontinental Airport,Harry Reid International Airport,12
@@ -422,11 +409,10 @@ George Bush Intercontinental Airport,Baltimore/Washington International Airport,
 George Bush Intercontinental Airport,Tampa International Airport,17
 George Bush Intercontinental Airport,Washington Dulles International Airport,12
 George Bush Intercontinental Airport,Nashville International Airport,11
-George Bush Intercontinental Airport,Midway International Airport,26
 Logan International Airport,Hartsfield-Jackson Atlanta International Airport,23
 Logan International Airport,Dallas/Fort Worth International Airport,28
 Logan International Airport,Denver International Airport,11
-Logan International Airport,O'Hare International Airport,18
+Logan International Airport,O'Hare International Airport,35
 Logan International Airport,Los Angeles International Airport,67
 Logan International Airport,John F. Kennedy International Airport,25
 Logan International Airport,Harry Reid International Airport,8
@@ -451,11 +437,10 @@ Logan International Airport,Tampa International Airport,12
 Logan International Airport,Austin-Bergstrom International Airport,9
 Logan International Airport,Washington Dulles International Airport,8
 Logan International Airport,Nashville International Airport,8
-Logan International Airport,Midway International Airport,18
 Fort Lauderdale-Hollywood International Airport,Hartsfield-Jackson Atlanta International Airport,14
 Fort Lauderdale-Hollywood International Airport,Dallas/Fort Worth International Airport,18
 Fort Lauderdale-Hollywood International Airport,Denver International Airport,7
-Fort Lauderdale-Hollywood International Airport,O'Hare International Airport,11
+Fort Lauderdale-Hollywood International Airport,O'Hare International Airport,22
 Fort Lauderdale-Hollywood International Airport,Los Angeles International Airport,42
 Fort Lauderdale-Hollywood International Airport,John F. Kennedy International Airport,15
 Fort Lauderdale-Hollywood International Airport,Harry Reid International Airport,5
@@ -479,11 +464,10 @@ Fort Lauderdale-Hollywood International Airport,Tampa International Airport,7
 Fort Lauderdale-Hollywood International Airport,Austin-Bergstrom International Airport,6
 Fort Lauderdale-Hollywood International Airport,Washington Dulles International Airport,5
 Fort Lauderdale-Hollywood International Airport,Nashville International Airport,5
-Fort Lauderdale-Hollywood International Airport,Midway International Airport,11
 Minneapolis-Saint Paul International Airport,Hartsfield-Jackson Atlanta International Airport,17
 Minneapolis-Saint Paul International Airport,Dallas/Fort Worth International Airport,21
 Minneapolis-Saint Paul International Airport,Denver International Airport,8
-Minneapolis-Saint Paul International Airport,O'Hare International Airport,13
+Minneapolis-Saint Paul International Airport,O'Hare International Airport,26
 Minneapolis-Saint Paul International Airport,Los Angeles International Airport,50
 Minneapolis-Saint Paul International Airport,John F. Kennedy International Airport,18
 Minneapolis-Saint Paul International Airport,Harry Reid International Airport,6
@@ -508,11 +492,10 @@ Minneapolis-Saint Paul International Airport,Tampa International Airport,9
 Minneapolis-Saint Paul International Airport,Austin-Bergstrom International Airport,7
 Minneapolis-Saint Paul International Airport,Washington Dulles International Airport,6
 Minneapolis-Saint Paul International Airport,Nashville International Airport,6
-Minneapolis-Saint Paul International Airport,Midway International Airport,13
 LaGuardia Airport,Hartsfield-Jackson Atlanta International Airport,36
 LaGuardia Airport,Dallas/Fort Worth International Airport,45
 LaGuardia Airport,Denver International Airport,18
-LaGuardia Airport,O'Hare International Airport,29
+LaGuardia Airport,O'Hare International Airport,57
 LaGuardia Airport,Los Angeles International Airport,109
 LaGuardia Airport,Harry Reid International Airport,13
 LaGuardia Airport,Orlando International Airport,16
@@ -534,11 +517,10 @@ LaGuardia Airport,Tampa International Airport,19
 LaGuardia Airport,Austin-Bergstrom International Airport,14
 LaGuardia Airport,Washington Dulles International Airport,13
 LaGuardia Airport,Nashville International Airport,12
-LaGuardia Airport,Midway International Airport,29
 Detroit Metropolitan Airport,Hartsfield-Jackson Atlanta International Airport,20
 Detroit Metropolitan Airport,Dallas/Fort Worth International Airport,25
 Detroit Metropolitan Airport,Denver International Airport,10
-Detroit Metropolitan Airport,O'Hare International Airport,16
+Detroit Metropolitan Airport,O'Hare International Airport,31
 Detroit Metropolitan Airport,Los Angeles International Airport,59
 Detroit Metropolitan Airport,John F. Kennedy International Airport,22
 Detroit Metropolitan Airport,Harry Reid International Airport,7
@@ -563,11 +545,10 @@ Detroit Metropolitan Airport,Tampa International Airport,10
 Detroit Metropolitan Airport,Austin-Bergstrom International Airport,8
 Detroit Metropolitan Airport,Washington Dulles International Airport,7
 Detroit Metropolitan Airport,Nashville International Airport,7
-Detroit Metropolitan Airport,Midway International Airport,16
 Philadelphia International Airport,Hartsfield-Jackson Atlanta International Airport,36
 Philadelphia International Airport,Dallas/Fort Worth International Airport,45
 Philadelphia International Airport,Denver International Airport,17
-Philadelphia International Airport,O'Hare International Airport,28
+Philadelphia International Airport,O'Hare International Airport,56
 Philadelphia International Airport,Los Angeles International Airport,107
 Philadelphia International Airport,Harry Reid International Airport,13
 Philadelphia International Airport,Orlando International Airport,16
@@ -586,11 +567,10 @@ Philadelphia International Airport,San Diego International Airport,19
 Philadelphia International Airport,Tampa International Airport,19
 Philadelphia International Airport,Austin-Bergstrom International Airport,14
 Philadelphia International Airport,Nashville International Airport,12
-Philadelphia International Airport,Midway International Airport,28
 Salt Lake City International Airport,Hartsfield-Jackson Atlanta International Airport,6
 Salt Lake City International Airport,Dallas/Fort Worth International Airport,7
 Salt Lake City International Airport,Denver International Airport,3
-Salt Lake City International Airport,O'Hare International Airport,4
+Salt Lake City International Airport,O'Hare International Airport,9
 Salt Lake City International Airport,Los Angeles International Airport,17
 Salt Lake City International Airport,John F. Kennedy International Airport,6
 Salt Lake City International Airport,Harry Reid International Airport,2
@@ -615,11 +595,10 @@ Salt Lake City International Airport,Tampa International Airport,3
 Salt Lake City International Airport,Austin-Bergstrom International Airport,2
 Salt Lake City International Airport,Washington Dulles International Airport,2
 Salt Lake City International Airport,Nashville International Airport,2
-Salt Lake City International Airport,Midway International Airport,4
 Ronald Reagan Washington National Airport,Hartsfield-Jackson Atlanta International Airport,10
 Ronald Reagan Washington National Airport,Dallas/Fort Worth International Airport,13
 Ronald Reagan Washington National Airport,Denver International Airport,5
-Ronald Reagan Washington National Airport,O'Hare International Airport,8
+Ronald Reagan Washington National Airport,O'Hare International Airport,16
 Ronald Reagan Washington National Airport,Los Angeles International Airport,31
 Ronald Reagan Washington National Airport,John F. Kennedy International Airport,11
 Ronald Reagan Washington National Airport,Harry Reid International Airport,4
@@ -641,11 +620,10 @@ Ronald Reagan Washington National Airport,San Diego International Airport,5
 Ronald Reagan Washington National Airport,Tampa International Airport,5
 Ronald Reagan Washington National Airport,Austin-Bergstrom International Airport,4
 Ronald Reagan Washington National Airport,Nashville International Airport,3
-Ronald Reagan Washington National Airport,Midway International Airport,8
 San Diego International Airport,Hartsfield-Jackson Atlanta International Airport,17
 San Diego International Airport,Dallas/Fort Worth International Airport,21
 San Diego International Airport,Denver International Airport,8
-San Diego International Airport,O'Hare International Airport,13
+San Diego International Airport,O'Hare International Airport,27
 San Diego International Airport,John F. Kennedy International Airport,19
 San Diego International Airport,Harry Reid International Airport,6
 San Diego International Airport,Orlando International Airport,7
@@ -669,11 +647,10 @@ San Diego International Airport,Tampa International Airport,9
 San Diego International Airport,Austin-Bergstrom International Airport,7
 San Diego International Airport,Washington Dulles International Airport,6
 San Diego International Airport,Nashville International Airport,6
-San Diego International Airport,Midway International Airport,13
 Baltimore/Washington International Airport,Hartsfield-Jackson Atlanta International Airport,10
 Baltimore/Washington International Airport,Dallas/Fort Worth International Airport,13
 Baltimore/Washington International Airport,Denver International Airport,5
-Baltimore/Washington International Airport,O'Hare International Airport,8
+Baltimore/Washington International Airport,O'Hare International Airport,16
 Baltimore/Washington International Airport,Los Angeles International Airport,31
 Baltimore/Washington International Airport,John F. Kennedy International Airport,11
 Baltimore/Washington International Airport,Harry Reid International Airport,4
@@ -695,11 +672,10 @@ Baltimore/Washington International Airport,San Diego International Airport,5
 Baltimore/Washington International Airport,Tampa International Airport,5
 Baltimore/Washington International Airport,Austin-Bergstrom International Airport,4
 Baltimore/Washington International Airport,Nashville International Airport,3
-Baltimore/Washington International Airport,Midway International Airport,8
 Tampa International Airport,Hartsfield-Jackson Atlanta International Airport,15
 Tampa International Airport,Dallas/Fort Worth International Airport,18
 Tampa International Airport,Denver International Airport,7
-Tampa International Airport,O'Hare International Airport,11
+Tampa International Airport,O'Hare International Airport,23
 Tampa International Airport,Los Angeles International Airport,44
 Tampa International Airport,John F. Kennedy International Airport,16
 Tampa International Airport,Harry Reid International Airport,5
@@ -723,11 +699,10 @@ Tampa International Airport,Baltimore/Washington International Airport,5
 Tampa International Airport,Austin-Bergstrom International Airport,6
 Tampa International Airport,Washington Dulles International Airport,5
 Tampa International Airport,Nashville International Airport,5
-Tampa International Airport,Midway International Airport,11
 Austin-Bergstrom International Airport,Hartsfield-Jackson Atlanta International Airport,11
 Austin-Bergstrom International Airport,Dallas/Fort Worth International Airport,14
 Austin-Bergstrom International Airport,Denver International Airport,6
-Austin-Bergstrom International Airport,O'Hare International Airport,9
+Austin-Bergstrom International Airport,O'Hare International Airport,18
 Austin-Bergstrom International Airport,Los Angeles International Airport,34
 Austin-Bergstrom International Airport,John F. Kennedy International Airport,13
 Austin-Bergstrom International Airport,Harry Reid International Airport,4
@@ -751,11 +726,10 @@ Austin-Bergstrom International Airport,Baltimore/Washington International Airpor
 Austin-Bergstrom International Airport,Tampa International Airport,6
 Austin-Bergstrom International Airport,Washington Dulles International Airport,4
 Austin-Bergstrom International Airport,Nashville International Airport,4
-Austin-Bergstrom International Airport,Midway International Airport,9
 Washington Dulles International Airport,Hartsfield-Jackson Atlanta International Airport,10
 Washington Dulles International Airport,Dallas/Fort Worth International Airport,13
 Washington Dulles International Airport,Denver International Airport,5
-Washington Dulles International Airport,O'Hare International Airport,8
+Washington Dulles International Airport,O'Hare International Airport,16
 Washington Dulles International Airport,Los Angeles International Airport,31
 Washington Dulles International Airport,John F. Kennedy International Airport,11
 Washington Dulles International Airport,Harry Reid International Airport,4
@@ -777,11 +751,10 @@ Washington Dulles International Airport,San Diego International Airport,5
 Washington Dulles International Airport,Tampa International Airport,5
 Washington Dulles International Airport,Austin-Bergstrom International Airport,4
 Washington Dulles International Airport,Nashville International Airport,3
-Washington Dulles International Airport,Midway International Airport,8
 Nashville International Airport,Hartsfield-Jackson Atlanta International Airport,9
 Nashville International Airport,Dallas/Fort Worth International Airport,12
 Nashville International Airport,Denver International Airport,4
-Nashville International Airport,O'Hare International Airport,7
+Nashville International Airport,O'Hare International Airport,15
 Nashville International Airport,Los Angeles International Airport,28
 Nashville International Airport,John F. Kennedy International Airport,10
 Nashville International Airport,Harry Reid International Airport,3
@@ -806,32 +779,3 @@ Nashville International Airport,Baltimore/Washington International Airport,3
 Nashville International Airport,Tampa International Airport,5
 Nashville International Airport,Austin-Bergstrom International Airport,4
 Nashville International Airport,Washington Dulles International Airport,3
-Nashville International Airport,Midway International Airport,7
-Midway International Airport,Hartsfield-Jackson Atlanta International Airport,23
-Midway International Airport,Dallas/Fort Worth International Airport,28
-Midway International Airport,Denver International Airport,11
-Midway International Airport,Los Angeles International Airport,68
-Midway International Airport,John F. Kennedy International Airport,25
-Midway International Airport,Harry Reid International Airport,8
-Midway International Airport,Orlando International Airport,10
-Midway International Airport,Miami International Airport,11
-Midway International Airport,Charlotte Douglas International Airport,10
-Midway International Airport,Seattle-Tacoma International Airport,15
-Midway International Airport,Phoenix Sky Harbor International Airport,18
-Midway International Airport,Newark Liberty International Airport,25
-Midway International Airport,San Francisco International Airport,26
-Midway International Airport,George Bush Intercontinental Airport,26
-Midway International Airport,Logan International Airport,18
-Midway International Airport,Fort Lauderdale-Hollywood International Airport,11
-Midway International Airport,Minneapolis-Saint Paul International Airport,14
-Midway International Airport,LaGuardia Airport,25
-Midway International Airport,Detroit Metropolitan Airport,16
-Midway International Airport,Philadelphia International Airport,23
-Midway International Airport,Salt Lake City International Airport,5
-Midway International Airport,Ronald Reagan Washington National Airport,8
-Midway International Airport,San Diego International Airport,12
-Midway International Airport,Baltimore/Washington International Airport,8
-Midway International Airport,Tampa International Airport,12
-Midway International Airport,Austin-Bergstrom International Airport,9
-Midway International Airport,Washington Dulles International Airport,8
-Midway International Airport,Nashville International Airport,8
