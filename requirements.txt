@@ -1,5 +1,5 @@
 haversine == 2.8.0
 mariadb == 1.1.9
 pytest == 7.4.4
-#SQLAlchemy == 2.0.25
+SQLAlchemy == 2.0.25
 #testcontainers == 3.7.1
