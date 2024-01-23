@@ -16,7 +16,7 @@ with open('data/airports.csv', 'r') as infile:
     _ = next(reader)
     airports = [airport for airport in reader]
 
-    with open('data/flights.csv', 'w') as outfile:
+    with open('data/flight_distance.csv', 'w') as outfile:
         outfile.write("source airport, destination airport, distance (km)\n")
         
         for source_airport in airports:

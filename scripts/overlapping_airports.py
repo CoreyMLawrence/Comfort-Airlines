@@ -1,6 +1,7 @@
 import csv
 from pprint import pprint
 
+# CSV data indices
 RANK = 0
 NAME = 1
 IATA = 2
@@ -10,6 +11,10 @@ METRO_AREA = 5
 METRO_POPULATION = 6
 LATITUDE = 7
 LONGITUDE = 8
+
+# Dictionary constants
+KEY = 0
+VALUE = 1
 
 with open("data/airports.csv", "r") as infile:
     reader = csv.reader(infile, delimiter=',')
@@ -23,4 +28,4 @@ with open("data/airports.csv", "r") as infile:
         else:
             metro_areas[airport[METRO_AREA]] = [airport[NAME]]
 
-    pprint(dict(filter(lambda entry: len(entry[1]) > 1, metro_areas.items())))
+    pprint(dict(filter(lambda entry: len(entry[VALUE]) > 1, metro_areas.items())))
