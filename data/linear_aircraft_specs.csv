@@ -1,5 +1,5 @@
-aircraft,passenger_capacity,cruise_speed (km/h),max_fuel_capacity (gallons),max_range (km),max_altitude (feet)
-Boeing 737-600,119,969,6875,5648,41000
-Boeing 767-800,189,969,6875,5665,41000
-Airbus A200-100,135,910,5790,5460,41000
-Airbus A220-300,160,910,5790,5920,41000
+aircraft,passenger_capacity,cruise_speed (km/h),max_fuel_capacity (gallons),max_range (km),mpg (mpg)
+Boeing 737-600,119,969,6875,5648,0.55
+Boeing 767-800,189,969,6875,5665,0.44
+Airbus A200-100,135,910,5790,5460,0.57
+Airbus A220-300,160,910,5790,5920,0.66
