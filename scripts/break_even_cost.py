@@ -4,9 +4,9 @@ from pprint import pprint
 # Indices of values in flight_demand.csv
 SOURCE_AIRPORT = 0
 DESTINATION_AIRPORT = 1
-DISTANCE_KM = 2
+DEMAND = 2
+DISTANCE_KM = 3
 
-#distance matrix
 
 # Formula constants
 takeoff_fee = 2000
