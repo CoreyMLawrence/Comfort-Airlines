@@ -56,4 +56,9 @@ with open ("data/airports.csv", "r") as airport_data, open("data/flight_distance
             percent_flight_demand = metro_population[flight[DESTINATION_AIRPORT]] / sum([metro_population[destination_airport] for destination_airport in flights[flight[SOURCE_AIRPORT]]])
             num_passengers = round(metro_population[flight[SOURCE_AIRPORT]] * DAILY_DEMAND * MARKET_SHARE * percent_flight_demand)
             
+            #print(f"\n\n{flight[SOURCE_AIRPORT]} => {flight[DESTINATION_AIRPORT]}")
+            #pprint(f"Airports: {', '.join(map(lambda tuple: f"({tuple[0]},{tuple[1]})", [(destination_airport,metro_population[destination_airport]) for destination_airport in flights[flight[SOURCE_AIRPORT]]]))}")
+            #print(f"Percent Flight Demand: {metro_population[flight[DESTINATION_AIRPORT]]} / {sum([metro_population[destination_airport] for destination_airport in flights[flight[SOURCE_AIRPORT]]])} = {percent_flight_demand}")
+            #print(f"Number of Passengers: round({metro_population[flight[SOURCE_AIRPORT]]} * {DAILY_DEMAND} * {MARKET_SHARE} * {percent_flight_demand}) = {num_passengers}")
+            
             outfile.write(f"{flight[SOURCE_AIRPORT]},{flight[DESTINATION_AIRPORT]},{num_passengers}\n")
