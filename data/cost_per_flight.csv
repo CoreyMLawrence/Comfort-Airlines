@@ -111,10 +111,6 @@ Hartsfield-Jackson Atlanta International Airport,Nashville International Airport
 Hartsfield-Jackson Atlanta International Airport,Nashville International Airport,Boeing 767-800,7010.638705578533,111.39137082445194
 Hartsfield-Jackson Atlanta International Airport,Nashville International Airport,Airbus A200-100,6324.001807815008,140.6740475545547
 Hartsfield-Jackson Atlanta International Airport,Nashville International Airport,Airbus A220-300,6007.092470385688,112.74572954928092
-Hartsfield-Jackson Atlanta International Airport,Midway International Airport,Boeing 737-600,10657.982485499128,268.9575916798932
-Hartsfield-Jackson Atlanta International Airport,Midway International Airport,Boeing 767-800,12322.47810687391,195.7906812665667
-Hartsfield-Jackson Atlanta International Airport,Midway International Airport,Airbus A200-100,10424.3690649553,231.88453041831383
-Hartsfield-Jackson Atlanta International Airport,Midway International Airport,Airbus A220-300,9548.318737915939,179.2101865224463
 Dallas/Fort Worth International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,12217.385153520885,308.30961600729006
 Dallas/Fort Worth International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,14271.731441901109,226.76218189461062
 Dallas/Fort Worth International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,11929.055849888577,265.3554854830069
@@ -227,10 +223,6 @@ Dallas/Fort Worth International Airport,Nashville International Airport,Boeing 7
 Dallas/Fort Worth International Airport,Nashville International Airport,Boeing 767-800,12871.296495427941,204.51080438260388
 Dallas/Fort Worth International Airport,Nashville International Airport,Airbus A200-100,10848.018347347886,241.30838276827683
 Dallas/Fort Worth International Airport,Nashville International Airport,Airbus A220-300,9914.197663618628,186.0772834763256
-Dallas/Fort Worth International Airport,Midway International Airport,Boeing 737-600,12978.774245424895,327.52351289335286
-Dallas/Fort Worth International Airport,Midway International Airport,Boeing 767-800,15223.467806781118,241.88423036975257
-Dallas/Fort Worth International Airport,Midway International Airport,Airbus A200-100,12663.72953505911,281.69790980000244
-Dallas/Fort Worth International Airport,Midway International Airport,Airbus A220-300,11482.311871187412,215.50885644120518
 Denver International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,17473.65233920796,440.95319704262147
 Denver International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,20842.065424009957,331.15759289463995
 Denver International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,17000.892608007685,378.17578930058244
@@ -343,10 +335,6 @@ Denver International Airport,Nashville International Airport,Boeing 737-600,1538
 Denver International Airport,Nashville International Airport,Boeing 767-800,18229.383620192915,289.6449404991168
 Denver International Airport,Nashville International Airport,Airbus A200-100,14984.085601552428,333.31299302752586
 Denver International Airport,Nashville International Airport,Airbus A220-300,13486.255746795277,253.12041566807952
-Denver International Airport,Midway International Airport,Boeing 737-600,14054.950846320435,354.6811730971417
-Denver International Airport,Midway International Airport,Boeing 767-800,16568.688557900547,263.25831478940125
-Denver International Airport,Midway International Airport,Airbus A200-100,13702.145553467088,304.7969203307104
-Denver International Airport,Midway International Airport,Airbus A220-300,12379.12570526703,232.3409479216785
 O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10829.861675517415,273.29501793013384
 O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,12537.327094396771,199.20439637092284
 O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,10590.217406201016,235.57373832056535
@@ -567,10 +555,6 @@ Los Angeles International Airport,Nashville International Airport,Boeing 737-600
 Los Angeles International Airport,Nashville International Airport,Boeing 767-800,29231.593703233422,464.45800885382874
 Los Angeles International Airport,Nashville International Airport,Airbus A200-100,23477.019700741588,522.2337826880566
 Los Angeles International Airport,Nashville International Airport,Airbus A220-300,20821.062468822278,390.7857069974151
-Los Angeles International Airport,Midway International Airport,Boeing 737-600,23662.176833967314,597.1225889915288
-Los Angeles International Airport,Midway International Airport,Boeing 767-800,28577.721042459143,454.0686884099836
-Los Angeles International Airport,Midway International Airport,Airbus A200-100,22972.275892424605,511.00602585751534
-Los Angeles International Airport,Midway International Airport,Airbus A220-300,20385.14736163943,382.60411714788717
 John F. Kennedy International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,12549.118686118676,316.681017642483
 John F. Kennedy International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,14686.398357648348,233.35078503341987
 John F. Kennedy International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,12249.14960941276,272.4758004540709
@@ -671,10 +655,6 @@ John F. Kennedy International Airport,Nashville International Airport,Boeing 737
 John F. Kennedy International Airport,Nashville International Airport,Boeing 767-800,14751.04304086637,234.3779182494617
 John F. Kennedy International Airport,Nashville International Airport,Airbus A200-100,12299.050768388077,273.5858251226354
 John F. Kennedy International Airport,Nashville International Airport,Airbus A220-300,11167.362027244248,209.5976356464761
-John F. Kennedy International Airport,Midway International Airport,Boeing 737-600,12212.088250518513,308.17594696844355
-John F. Kennedy International Airport,Midway International Airport,Boeing 767-800,14265.11031314814,226.65697941033318
-John F. Kennedy International Airport,Midway International Airport,Airbus A200-100,11923.9448031319,265.24179297368255
-John F. Kennedy International Airport,Midway International Airport,Airbus A220-300,10843.406875432094,203.51739631066243
 Harry Reid International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,23611.652545480174,595.8475924364744
 Harry Reid International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,28514.56568185022,453.0652188990613
 Harry Reid International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,22923.524385989647,509.9215745965887
@@ -787,10 +767,6 @@ Harry Reid International Airport,Nashville International Airport,Boeing 737-600,
 Harry Reid International Airport,Nashville International Airport,Boeing 767-800,26277.72566491755,417.52428086685967
 Harry Reid International Airport,Nashville International Airport,Airbus A200-100,21196.84086414688,471.5124205126655
 Harry Reid International Airport,Nashville International Airport,Airbus A220-300,18851.817109945034,353.82539620767704
-Harry Reid International Airport,Midway International Airport,Boeing 737-600,21073.809754109752,531.8043191286181
-Harry Reid International Airport,Midway International Airport,Boeing 767-800,25342.262192637194,402.6607908326929
-Harry Reid International Airport,Midway International Airport,Airbus A200-100,20474.728710105905,455.44942075644315
-Harry Reid International Airport,Midway International Airport,Airbus A220-300,18228.174795091465,342.1203978057707
 Orlando International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,8553.630309586366,215.85359248962487
 Orlando International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,9692.037886982956,153.99586708904073
 Orlando International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,8393.853807495616,186.7168014124261
@@ -899,10 +875,6 @@ Orlando International Airport,Nashville International Airport,Boeing 737-600,109
 Orlando International Airport,Nashville International Airport,Boeing 767-800,12683.706714245876,201.5302082121149
 Orlando International Airport,Nashville International Airport,Airbus A200-100,10703.212200470502,238.08724725771327
 Orlando International Airport,Nashville International Airport,Airbus A220-300,9789.13780949725,183.73006399206548
-Orlando International Airport,Midway International Airport,Boeing 737-600,15160.726489615205,382.5857745884171
-Orlando International Airport,Midway International Airport,Boeing 767-800,17950.90811201901,285.2202696667939
-Orlando International Airport,Midway International Airport,Airbus A200-100,14769.122051383096,328.5312434964541
-Orlando International Airport,Midway International Airport,Airbus A220-300,13300.605408012672,249.63598738762522
 Miami International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10708.732219319952,270.2382774199397
 Miami International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,12385.915274149942,196.79862837678854
 Miami International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,10473.33810636136,232.97382062865884
@@ -1011,10 +983,6 @@ Miami International Airport,Nashville International Airport,Boeing 737-600,13089
 Miami International Airport,Nashville International Airport,Boeing 767-800,15361.586757581923,244.07878922703532
 Miami International Airport,Nashville International Airport,Airbus A200-100,12770.34767251938,284.0695734071711
 Miami International Airport,Nashville International Airport,Airbus A220-300,11574.391171721283,217.23707154131537
-Miami International Airport,Midway International Airport,Boeing 737-600,17326.40940062239,437.2374744649453
-Miami International Airport,Midway International Airport,Boeing 767-800,20658.01175077799,328.2331816066541
-Miami International Airport,Midway International Airport,Airbus A200-100,16858.81608831985,375.01537289110996
-Miami International Airport,Midway International Airport,Airbus A220-300,15105.341167185326,283.5086555402651
 Charlotte Douglas International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,6547.373208601026,165.22505384210325
 Charlotte Douglas International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,7184.216510751283,114.1493320423802
 Charlotte Douglas International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,6457.991692509762,143.65458108129823
@@ -1127,10 +1095,6 @@ Charlotte Douglas International Airport,Nashville International Airport,Boeing 7
 Charlotte Douglas International Airport,Nashville International Airport,Boeing 767-800,8609.138272172653,136.78977822541037
 Charlotte Douglas International Airport,Nashville International Airport,Airbus A200-100,7557.931297817488,168.12215099137998
 Charlotte Douglas International Airport,Nashville International Airport,Airbus A220-300,7072.758848115102,132.7469753775357
-Charlotte Douglas International Airport,Midway International Airport,Boeing 737-600,10572.616534751514,266.8033546509076
-Charlotte Douglas International Airport,Midway International Airport,Boeing 767-800,12215.770668439394,194.0952169381984
-Charlotte Douglas International Airport,Midway International Airport,Airbus A200-100,10341.998410725148,230.0522391441474
-Charlotte Douglas International Airport,Midway International Airport,Airbus A220-300,9477.180445626262,177.87500836385627
 Seattle-Tacoma International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,28510.499820578854,719.4715678849989
 Seattle-Tacoma International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,34638.12477572357,550.3618662428073
 Seattle-Tacoma International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,27650.482283014688,615.0702320768476
@@ -1243,10 +1207,6 @@ Seattle-Tacoma International Airport,Nashville International Airport,Boeing 737-
 Seattle-Tacoma International Airport,Nashville International Airport,Boeing 767-800,31766.035412719702,504.72751184072484
 Seattle-Tacoma International Airport,Nashville International Airport,Airbus A200-100,25433.430844906437,565.7531052142461
 Seattle-Tacoma International Airport,Nashville International Airport,Airbus A220-300,22510.69027514647,422.4979405995959
-Seattle-Tacoma International Airport,Midway International Airport,Boeing 737-600,23456.09568114259,591.9220652873694
-Seattle-Tacoma International Airport,Midway International Airport,Boeing 767-800,28320.11960142824,449.9756836428212
-Seattle-Tacoma International Airport,Midway International Airport,Airbus A200-100,22773.425657242853,506.5827084249327
-Seattle-Tacoma International Airport,Midway International Airport,Airbus A220-300,20213.413067618825,379.3808758937467
 Phoenix Sky Harbor International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,21824.295374999405,550.7430634415778
 Phoenix Sky Harbor International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,26280.36921874926,417.5662840419667
 Phoenix Sky Harbor International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,21198.881502192413,471.55781341769347
@@ -1359,10 +1319,6 @@ Phoenix Sky Harbor International Airport,Nashville International Airport,Boeing 
 Phoenix Sky Harbor International Airport,Nashville International Airport,Boeing 767-800,24334.106408827112,386.64229958255254
 Phoenix Sky Harbor International Airport,Nashville International Airport,Airbus A200-100,19696.503192778826,438.13820915980034
 Phoenix Sky Harbor International Airport,Nashville International Airport,Airbus A220-300,17556.070939218076,329.50583594628523
-Phoenix Sky Harbor International Airport,Midway International Airport,Boeing 737-600,20220.775331019882,510.2777230428718
-Phoenix Sky Harbor International Airport,Midway International Airport,Boeing 767-800,24275.969163774855,385.718562431874
-Phoenix Sky Harbor International Airport,Midway International Airport,Airbus A200-100,19651.62531940515,437.1399248004704
-Phoenix Sky Harbor International Airport,Midway International Airport,Airbus A220-300,17517.312775849903,328.7783929401258
 Newark Liberty International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,12387.130048845387,312.5931826493398
 Newark Liberty International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,14483.912561056735,230.13350749252004
 Newark Liberty International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,12092.844783973622,268.99888297127393
@@ -1463,10 +1419,6 @@ Newark Liberty International Airport,Nashville International Airport,Boeing 737-
 Newark Liberty International Airport,Nashville International Airport,Boeing 767-800,14495.43360392286,230.31656424556078
 Newark Liberty International Airport,Nashville International Airport,Airbus A200-100,12101.738220572033,269.19671272543724
 Newark Liberty International Airport,Nashville International Airport,Airbus A220-300,10996.955735948573,206.39931936840415
-Newark Liberty International Airport,Midway International Airport,Boeing 737-600,11974.573041905129,302.18217482789834
-Newark Liberty International Airport,Midway International Airport,Boeing 767-800,13968.21630238141,221.93965874416335
-Newark Liberty International Airport,Midway International Airport,Airbus A200-100,11694.763461487404,260.1437762537516
-Newark Liberty International Airport,Midway International Airport,Airbus A220-300,10645.47753492094,199.80250628605367
 San Francisco International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,28022.204442728205,707.1492780863604
 San Francisco International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,34027.75555341026,540.6637677901751
 San Francisco International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,27179.320076316693,604.5894800648803
@@ -1579,10 +1531,6 @@ San Francisco International Airport,Nashville International Airport,Boeing 737-6
 San Francisco International Airport,Nashville International Airport,Boeing 767-800,31632.049725981542,502.5986260225549
 San Francisco International Airport,Nashville International Airport,Airbus A200-100,25330.003297248913,563.4524145756626
 San Francisco International Airport,Nashville International Airport,Airbus A220-300,22421.366483987695,420.82144301778703
-San Francisco International Airport,Midway International Airport,Boeing 737-600,24824.916050665688,626.4646844491303
-San Francisco International Airport,Midway International Airport,Boeing 767-800,30031.14506333211,477.16200427939225
-San Francisco International Airport,Midway International Airport,Airbus A200-100,24094.217241870407,535.9630128321745
-San Francisco International Airport,Midway International Airport,Airbus A220-300,21354.096708888075,400.79010339504646
 George Bush Intercontinental Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,11741.917189833903,296.3110301015445
 George Bush Intercontinental Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,13677.39648729238,217.3188503947182
 George Bush Intercontinental Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,11470.270972646751,255.15006056382492
@@ -1691,10 +1639,6 @@ George Bush Intercontinental Airport,Nashville International Airport,Boeing 737-
 George Bush Intercontinental Airport,Nashville International Airport,Boeing 767-800,13230.172192898868,210.21294616678372
 George Bush Intercontinental Airport,Nashville International Airport,Airbus A200-100,11125.04520153597,247.4706973981975
 George Bush Intercontinental Airport,Nashville International Airport,Airbus A220-300,10153.448128599244,190.5677201313672
-George Bush Intercontinental Airport,Midway International Airport,Boeing 737-600,14331.853018675778,361.6688878460589
-George Bush Intercontinental Airport,Midway International Airport,Boeing 767-800,16914.816273344724,268.75790510104906
-George Bush Intercontinental Airport,Midway International Airport,Airbus A200-100,13969.331860125752,310.74033722891227
-George Bush Intercontinental Airport,Midway International Airport,Airbus A220-300,12609.877515563148,236.67187529210113
 Logan International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,14639.937296002545,369.44349297202774
 Logan International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,17299.92162000318,274.87680728352444
 Logan International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,14266.606162809474,317.3530455524296
@@ -1807,10 +1751,6 @@ Logan International Airport,Nashville International Airport,Boeing 737-600,14587
 Logan International Airport,Nashville International Airport,Boeing 767-800,17234.719011736295,273.84080924950814
 Logan International Airport,Nashville International Airport,Airbus A200-100,14216.274324849071,316.23344065952773
 Logan International Airport,Nashville International Airport,Airbus A220-300,12823.146007824196,240.6746623090127
-Logan International Airport,Midway International Airport,Boeing 737-600,13658.377035496049,344.6735063339654
-Logan International Airport,Midway International Airport,Boeing 767-800,16072.971294370062,255.38191039245692
-Logan International Airport,Midway International Airport,Airbus A200-100,13319.486613197943,296.2848762806794
-Logan International Airport,Midway International Airport,Airbus A220-300,12048.647529580041,226.13827945908486
 Fort Lauderdale-Hollywood International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10548.293844185471,266.1895637869501
 Fort Lauderdale-Hollywood International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,12185.367305231839,193.61214079526889
 Fort Lauderdale-Hollywood International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,10318.529147898262,229.53017790898144
@@ -1919,10 +1859,6 @@ Fort Lauderdale-Hollywood International Airport,Nashville International Airport,
 Fort Lauderdale-Hollywood International Airport,Nashville International Airport,Boeing 767-800,15170.69412232922,241.04571432272303
 Fort Lauderdale-Hollywood International Airport,Nashville International Airport,Airbus A200-100,12622.991954078696,280.79172403689677
 Fort Lauderdale-Hollywood International Airport,Nashville International Airport,Airbus A220-300,11447.129414886147,214.84852505416941
-Fort Lauderdale-Hollywood International Airport,Midway International Airport,Boeing 737-600,17151.964838773085,432.83531023728983
-Fort Lauderdale-Hollywood International Airport,Midway International Airport,Boeing 767-800,20439.956048466356,324.76851531636964
-Fort Lauderdale-Hollywood International Airport,Midway International Airport,Airbus A200-100,16690.492388289822,371.27110195283774
-Fort Lauderdale-Hollywood International Airport,Midway International Airport,Airbus A220-300,14959.97069897757,280.7802308366661
 Minneapolis-Saint Paul International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,14207.360011160594,358.527267044202
 Minneapolis-Saint Paul International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,16759.200013950744,266.2853331736616
 Minneapolis-Saint Paul International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,13849.207028312854,308.0682244091392
@@ -2035,10 +1971,6 @@ Minneapolis-Saint Paul International Airport,Nashville International Airport,Boe
 Minneapolis-Saint Paul International Airport,Nashville International Airport,Boeing 767-800,13781.745884816808,218.97684803560398
 Minneapolis-Saint Paul International Airport,Nashville International Airport,Airbus A200-100,11550.82138477087,256.94186152309794
 Minneapolis-Saint Paul International Airport,Nashville International Airport,Airbus A220-300,10521.163923211205,197.46929285306314
-Minneapolis-Saint Paul International Airport,Midway International Airport,Boeing 737-600,7915.621196821034,199.75322877888897
-Minneapolis-Saint Paul International Airport,Midway International Airport,Boeing 767-800,8894.526496026292,141.3242845389245
-Minneapolis-Saint Paul International Airport,Midway International Airport,Airbus A200-100,7778.230979388717,173.02259991966892
-Minneapolis-Saint Paul International Airport,Midway International Airport,Airbus A220-300,7263.017664017528,136.31789909942808
 LaGuardia Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,12565.914776814245,317.1048723550671
 LaGuardia Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,14707.393471017807,233.6843743905462
 LaGuardia Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,12265.356363592693,272.83631105756183
@@ -2139,10 +2071,6 @@ LaGuardia Airport,Nashville International Airport,Boeing 737-600,12584.591809120
 LaGuardia Airport,Nashville International Airport,Boeing 767-800,14730.739761400997,234.05532137535943
 LaGuardia Airport,Nashville International Airport,Airbus A200-100,12283.37806143235,273.2371941148337
 LaGuardia Airport,Nashville International Airport,Airbus A220-300,11153.826507600665,209.34359060812056
-LaGuardia Airport,Midway International Airport,Boeing 737-600,12138.799004793276,306.3264694474292
-LaGuardia Airport,Midway International Airport,Boeing 767-800,14173.498755991597,225.20137210212746
-LaGuardia Airport,Midway International Airport,Airbus A200-100,11853.227109888252,263.6687156020076
-LaGuardia Airport,Midway International Airport,Airbus A220-300,10782.332503994397,202.3711055554504
 Detroit Metropolitan Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10702.094345419131,270.0707685522278
 Detroit Metropolitan Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,12377.617931773913,196.66679269386708
 Detroit Metropolitan Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,10466.933140316705,232.83134557483493
@@ -2255,10 +2183,6 @@ Detroit Metropolitan Airport,Nashville International Airport,Boeing 737-600,9140
 Detroit Metropolitan Airport,Nashville International Airport,Boeing 767-800,10425.702784470956,165.6529987840373
 Detroit Metropolitan Airport,Nashville International Airport,Airbus A200-100,8960.191623100387,199.31468408631713
 Detroit Metropolitan Airport,Nashville International Airport,Airbus A220-300,8283.80185631397,155.4767615674544
-Detroit Metropolitan Airport,Midway International Airport,Boeing 737-600,6563.72904169508,165.63779851351552
-Detroit Metropolitan Airport,Midway International Airport,Boeing 767-800,7204.66130211885,114.47417738562132
-Detroit Metropolitan Airport,Midway International Airport,Airbus A200-100,6473.773636723323,144.005642013643
-Detroit Metropolitan Airport,Midway International Airport,Airbus A220-300,6136.440868079233,115.17343971620181
 Philadelphia International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,11494.155828111183,290.05869301514576
 Philadelphia International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,13367.694785138981,212.39802953968223
 Philadelphia International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,11231.20299203711,249.8321208327685
@@ -2347,10 +2271,6 @@ Philadelphia International Airport,Nashville International Airport,Boeing 737-60
 Philadelphia International Airport,Nashville International Airport,Boeing 767-800,13477.015827860885,214.13502117769966
 Philadelphia International Airport,Nashville International Airport,Airbus A200-100,11315.591165366299,251.70929074332773
 Philadelphia International Airport,Nashville International Airport,Airbus A220-300,10318.010551907257,193.65635420246352
-Philadelphia International Airport,Midway International Airport,Boeing 737-600,11501.53288208641,290.24485532809473
-Philadelphia International Airport,Midway International Airport,Boeing 767-800,13376.916102608015,212.5445461748735
-Philadelphia International Airport,Midway International Airport,Airbus A200-100,11238.321202013205,249.99046161746645
-Philadelphia International Airport,Midway International Airport,Airbus A220-300,10251.277401738676,192.4038551377379
 Salt Lake City International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,21861.594173428126,551.6843105314085
 Salt Lake City International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,26326.992716785164,418.3070803626668
 Salt Lake City International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,21234.871570851705,472.35839330111673
@@ -2463,10 +2383,6 @@ Salt Lake City International Airport,Nashville International Airport,Boeing 737-
 Salt Lake City International Airport,Nashville International Airport,Boeing 767-800,23714.610823630053,376.7991932190929
 Salt Lake City International Airport,Nashville International Airport,Airbus A200-100,19218.296074381098,427.5007468442019
 Salt Lake City International Airport,Nashville International Airport,Airbus A220-300,17143.073882420034,321.7543896850607
-Salt Lake City International Airport,Midway International Airport,Boeing 737-600,18134.084803293743,457.61942118489264
-Salt Lake City International Airport,Midway International Airport,Boeing 767-800,21667.60600411718,344.2745285621682
-Salt Lake City International Airport,Midway International Airport,Airbus A200-100,17638.152003178177,392.3512846886481
-Salt Lake City International Airport,Midway International Airport,Airbus A220-300,15778.404002744786,296.1412162677325
 Ronald Reagan Washington National Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10153.987926195008,256.23912802369614
 Ronald Reagan Washington National Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,11692.484907743761,185.7807793149302
 Ronald Reagan Washington National Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,9938.058525275886,221.06681181794875
@@ -2567,10 +2483,6 @@ Ronald Reagan Washington National Airport,Nashville International Airport,Boeing
 Ronald Reagan Washington National Airport,Nashville International Airport,Boeing 767-800,11887.004491835654,188.8714824639823
 Ronald Reagan Washington National Airport,Nashville International Airport,Airbus A200-100,10088.2139936977,224.40694013341562
 Ronald Reagan Washington National Airport,Nashville International Airport,Airbus A220-300,9258.002994557104,173.7613174654111
-Ronald Reagan Washington National Airport,Midway International Airport,Boeing 737-600,10743.109620072493,271.10580210645503
-Ronald Reagan Washington National Airport,Midway International Airport,Boeing 767-800,12428.887025090617,197.48140243562
-Ronald Reagan Washington National Airport,Midway International Airport,Airbus A200-100,10506.50928252609,233.71169575188722
-Ronald Reagan Washington National Airport,Midway International Airport,Airbus A220-300,9619.258016727079,180.5416294430758
 San Diego International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,25248.843658824302,637.1626330235522
 San Diego International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,30561.054573530382,485.5816860277798
 San Diego International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,24503.27019711117,545.0621776690283
@@ -2679,10 +2591,6 @@ San Diego International Airport,Nashville International Airport,Boeing 737-600,2
 San Diego International Airport,Nashville International Airport,Boeing 767-800,28589.89447885694,454.2621109817268
 San Diego International Airport,Nashville International Airport,Airbus A200-100,22981.672931047466,511.215057970136
 San Diego International Airport,Nashville International Airport,Airbus A220-300,20393.262985904625,382.75643742313486
-San Diego International Airport,Midway International Airport,Boeing 737-600,23419.596666715857,591.0010010022423
-San Diego International Airport,Midway International Airport,Boeing 767-800,28274.495833394827,449.25077193693414
-San Diego International Airport,Midway International Airport,Airbus A200-100,22738.207309988993,505.79929507260573
-San Diego International Airport,Midway International Airport,Airbus A220-300,20182.997222263213,378.8100079253606
 Baltimore/Washington International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10488.371414376312,264.6774021343102
 Baltimore/Washington International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,12110.46426797039,192.4220135686542
 Baltimore/Washington International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,10260.709259485917,228.24400532723647
@@ -2783,10 +2691,6 @@ Baltimore/Washington International Airport,Nashville International Airport,Boein
 Baltimore/Washington International Airport,Nashville International Airport,Boeing 767-800,12249.497983928424,194.63110704241421
 Baltimore/Washington International Airport,Nashville International Airport,Airbus A200-100,10368.03353145352,230.63137651993148
 Baltimore/Washington International Airport,Nashville International Airport,Airbus A220-300,9499.665322618948,178.2970218209262
-Baltimore/Washington International Airport,Midway International Airport,Boeing 737-600,10856.577248174443,273.96919393783134
-Baltimore/Washington International Airport,Midway International Airport,Boeing 767-800,12570.721560218053,199.73499785846246
-Baltimore/Washington International Airport,Midway International Airport,Airbus A200-100,10615.99559034376,236.14716027902924
-Baltimore/Washington International Airport,Midway International Airport,Airbus A220-300,9713.8143734787,182.3163358385642
 Tampa International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,8579.55034996764,216.5076929862881
 Tampa International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,9724.43793745955,154.51066840585904
 Tampa International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,8418.864372775794,187.27314809867184
@@ -2895,10 +2799,6 @@ Tampa International Airport,Nashville International Airport,Boeing 737-600,10898
 Tampa International Airport,Nashville International Airport,Boeing 767-800,12622.809200380896,200.56261341310986
 Tampa International Airport,Nashville International Airport,Airbus A200-100,10656.203593276481,237.04156586089377
 Tampa International Airport,Nashville International Airport,Airbus A220-300,9748.539466920596,182.968083087849
-Tampa International Airport,Midway International Airport,Boeing 737-600,15237.495180211361,384.5230570119202
-Tampa International Airport,Midway International Airport,Boeing 767-800,18046.868975264202,286.74498268529163
-Tampa International Airport,Midway International Airport,Airbus A200-100,14843.197103712719,330.17900353047975
-Tampa International Airport,Midway International Airport,Airbus A220-300,13364.5793168428,250.8366988896922
 Austin-Bergstrom International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,13129.995765351863,331.3396362417509
 Austin-Bergstrom International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,15412.494706689831,244.88766078284362
 Austin-Bergstrom International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,12809.645036743028,284.94372231660606
@@ -3007,10 +2907,6 @@ Austin-Bergstrom International Airport,Nashville International Airport,Boeing 73
 Austin-Bergstrom International Airport,Nashville International Airport,Boeing 767-800,14626.929099568015,232.40588365457543
 Austin-Bergstrom International Airport,Nashville International Airport,Airbus A200-100,12203.243515456012,271.454643876232
 Austin-Bergstrom International Airport,Nashville International Airport,Airbus A220-300,11084.61939971201,208.04465840300318
-Austin-Bergstrom International Airport,Midway International Airport,Boeing 737-600,14944.464259424733,377.1283281455758
-Austin-Bergstrom International Airport,Midway International Airport,Boeing 767-800,17680.580324280912,280.9250571886317
-Austin-Bergstrom International Airport,Midway International Airport,Airbus A200-100,14560.447969620356,323.88939983584373
-Austin-Bergstrom International Airport,Midway International Airport,Airbus A220-300,13120.386882853943,246.2535075610725
 Washington Dulles International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10011.038326032836,252.6317492122249
 Washington Dulles International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,11513.797907541048,182.94163858367966
 Washington Dulles International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,9800.124700558,217.9985474487376
@@ -3111,10 +3007,6 @@ Washington Dulles International Airport,Nashville International Airport,Boeing 7
 Washington Dulles International Airport,Nashville International Airport,Boeing 767-800,11614.584385396913,184.5430253332207
 Washington Dulles International Airport,Nashville International Airport,Airbus A200-100,9877.924788727443,219.72916891841712
 Washington Dulles International Airport,Nashville International Airport,Airbus A220-300,9076.389590264607,170.3526574749363
-Washington Dulles International Airport,Midway International Airport,Boeing 737-600,10479.416078060152,264.4514113624587
-Washington Dulles International Airport,Midway International Airport,Boeing 767-800,12099.27009757519,192.24415046117846
-Washington Dulles International Airport,Midway International Airport,Airbus A200-100,10252.06814549664,228.05178835494692
-Washington Dulles International Airport,Midway International Airport,Airbus A220-300,9399.51339838346,176.41729351320308
 Nashville International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,6408.5109644628255,161.72082076520618
 Nashville International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,7010.638705578533,111.39137082445194
 Nashville International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,6324.001807815008,140.6740475545547
@@ -3227,119 +3119,3 @@ Nashville International Airport,Washington Dulles International Airport,Boeing 7
 Nashville International Airport,Washington Dulles International Airport,Boeing 767-800,11614.584385396913,184.5430253332207
 Nashville International Airport,Washington Dulles International Airport,Airbus A200-100,9877.924788727443,219.72916891841712
 Nashville International Airport,Washington Dulles International Airport,Airbus A220-300,9076.389590264607,170.3526574749363
-Nashville International Airport,Midway International Airport,Boeing 737-600,8450.614687679012,213.25396037244835
-Nashville International Airport,Midway International Airport,Boeing 767-800,9563.268359598766,151.9498603301518
-Nashville International Airport,Midway International Airport,Airbus A200-100,8294.452768813082,184.50567831860928
-Nashville International Airport,Midway International Airport,Airbus A220-300,7708.8455730658425,144.68554003501956
-Midway International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10657.982485499128,268.9575916798932
-Midway International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,12322.47810687391,195.7906812665667
-Midway International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,10424.3690649553,231.88453041831383
-Midway International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A220-300,9548.318737915939,179.2101865224463
-Midway International Airport,Dallas/Fort Worth International Airport,Boeing 737-600,12978.774245424895,327.52351289335286
-Midway International Airport,Dallas/Fort Worth International Airport,Boeing 767-800,15223.467806781118,241.88423036975257
-Midway International Airport,Dallas/Fort Worth International Airport,Airbus A200-100,12663.72953505911,281.69790980000244
-Midway International Airport,Dallas/Fort Worth International Airport,Airbus A220-300,11482.311871187412,215.50885644120518
-Midway International Airport,Denver International Airport,Boeing 737-600,14054.950846320435,354.6811730971417
-Midway International Airport,Denver International Airport,Boeing 767-800,16568.688557900547,263.25831478940125
-Midway International Airport,Denver International Airport,Airbus A200-100,13702.145553467088,304.7969203307104
-Midway International Airport,Denver International Airport,Airbus A220-300,12379.12570526703,232.3409479216785
-Midway International Airport,Los Angeles International Airport,Boeing 737-600,23662.176833967314,597.1225889915288
-Midway International Airport,Los Angeles International Airport,Boeing 767-800,28577.721042459143,454.0686884099836
-Midway International Airport,Los Angeles International Airport,Airbus A200-100,22972.275892424605,511.00602585751534
-Midway International Airport,Los Angeles International Airport,Airbus A220-300,20385.14736163943,382.60411714788717
-Midway International Airport,John F. Kennedy International Airport,Boeing 737-600,12212.088250518513,308.17594696844355
-Midway International Airport,John F. Kennedy International Airport,Boeing 767-800,14265.11031314814,226.65697941033318
-Midway International Airport,John F. Kennedy International Airport,Airbus A200-100,11923.9448031319,265.24179297368255
-Midway International Airport,John F. Kennedy International Airport,Airbus A220-300,10843.406875432094,203.51739631066243
-Midway International Airport,Harry Reid International Airport,Boeing 737-600,21073.809754109752,531.8043191286181
-Midway International Airport,Harry Reid International Airport,Boeing 767-800,25342.262192637194,402.6607908326929
-Midway International Airport,Harry Reid International Airport,Airbus A200-100,20474.728710105905,455.44942075644315
-Midway International Airport,Harry Reid International Airport,Airbus A220-300,18228.174795091465,342.1203978057707
-Midway International Airport,Orlando International Airport,Boeing 737-600,15160.726489615205,382.5857745884171
-Midway International Airport,Orlando International Airport,Boeing 767-800,17950.90811201901,285.2202696667939
-Midway International Airport,Orlando International Airport,Airbus A200-100,14769.122051383096,328.5312434964541
-Midway International Airport,Orlando International Airport,Airbus A220-300,13300.605408012672,249.63598738762522
-Midway International Airport,Miami International Airport,Boeing 737-600,17326.40940062239,437.2374744649453
-Midway International Airport,Miami International Airport,Boeing 767-800,20658.01175077799,328.2331816066541
-Midway International Airport,Miami International Airport,Airbus A200-100,16858.81608831985,375.01537289110996
-Midway International Airport,Miami International Airport,Airbus A220-300,15105.341167185326,283.5086555402651
-Midway International Airport,Charlotte Douglas International Airport,Boeing 737-600,10572.616534751514,266.8033546509076
-Midway International Airport,Charlotte Douglas International Airport,Boeing 767-800,12215.770668439394,194.0952169381984
-Midway International Airport,Charlotte Douglas International Airport,Airbus A200-100,10341.998410725148,230.0522391441474
-Midway International Airport,Charlotte Douglas International Airport,Airbus A220-300,9477.180445626262,177.87500836385627
-Midway International Airport,Seattle-Tacoma International Airport,Boeing 737-600,23456.09568114259,591.9220652873694
-Midway International Airport,Seattle-Tacoma International Airport,Boeing 767-800,28320.11960142824,449.9756836428212
-Midway International Airport,Seattle-Tacoma International Airport,Airbus A200-100,22773.425657242853,506.5827084249327
-Midway International Airport,Seattle-Tacoma International Airport,Airbus A220-300,20213.413067618825,379.3808758937467
-Midway International Airport,Phoenix Sky Harbor International Airport,Boeing 737-600,20220.775331019882,510.2777230428718
-Midway International Airport,Phoenix Sky Harbor International Airport,Boeing 767-800,24275.969163774855,385.718562431874
-Midway International Airport,Phoenix Sky Harbor International Airport,Airbus A200-100,19651.62531940515,437.1399248004704
-Midway International Airport,Phoenix Sky Harbor International Airport,Airbus A220-300,17517.312775849903,328.7783929401258
-Midway International Airport,Newark Liberty International Airport,Boeing 737-600,11974.573041905129,302.18217482789834
-Midway International Airport,Newark Liberty International Airport,Boeing 767-800,13968.21630238141,221.93965874416335
-Midway International Airport,Newark Liberty International Airport,Airbus A200-100,11694.763461487404,260.1437762537516
-Midway International Airport,Newark Liberty International Airport,Airbus A220-300,10645.47753492094,199.80250628605367
-Midway International Airport,San Francisco International Airport,Boeing 737-600,24824.916050665688,626.4646844491303
-Midway International Airport,San Francisco International Airport,Boeing 767-800,30031.14506333211,477.16200427939225
-Midway International Airport,San Francisco International Airport,Airbus A200-100,24094.217241870407,535.9630128321745
-Midway International Airport,San Francisco International Airport,Airbus A220-300,21354.096708888075,400.79010339504646
-Midway International Airport,George Bush Intercontinental Airport,Boeing 737-600,14331.853018675778,361.6688878460589
-Midway International Airport,George Bush Intercontinental Airport,Boeing 767-800,16914.816273344724,268.75790510104906
-Midway International Airport,George Bush Intercontinental Airport,Airbus A200-100,13969.331860125752,310.74033722891227
-Midway International Airport,George Bush Intercontinental Airport,Airbus A220-300,12609.877515563148,236.67187529210113
-Midway International Airport,Logan International Airport,Boeing 737-600,13658.377035496049,344.6735063339654
-Midway International Airport,Logan International Airport,Boeing 767-800,16072.971294370062,255.38191039245692
-Midway International Airport,Logan International Airport,Airbus A200-100,13319.486613197943,296.2848762806794
-Midway International Airport,Logan International Airport,Airbus A220-300,12048.647529580041,226.13827945908486
-Midway International Airport,Fort Lauderdale-Hollywood International Airport,Boeing 737-600,17151.964838773085,432.83531023728983
-Midway International Airport,Fort Lauderdale-Hollywood International Airport,Boeing 767-800,20439.956048466356,324.76851531636964
-Midway International Airport,Fort Lauderdale-Hollywood International Airport,Airbus A200-100,16690.492388289822,371.27110195283774
-Midway International Airport,Fort Lauderdale-Hollywood International Airport,Airbus A220-300,14959.97069897757,280.7802308366661
-Midway International Airport,Minneapolis-Saint Paul International Airport,Boeing 737-600,7915.621196821034,199.75322877888897
-Midway International Airport,Minneapolis-Saint Paul International Airport,Boeing 767-800,8894.526496026292,141.3242845389245
-Midway International Airport,Minneapolis-Saint Paul International Airport,Airbus A200-100,7778.230979388717,173.02259991966892
-Midway International Airport,Minneapolis-Saint Paul International Airport,Airbus A220-300,7263.017664017528,136.31789909942808
-Midway International Airport,LaGuardia Airport,Boeing 737-600,12138.799004793276,306.3264694474292
-Midway International Airport,LaGuardia Airport,Boeing 767-800,14173.498755991597,225.20137210212746
-Midway International Airport,LaGuardia Airport,Airbus A200-100,11853.227109888252,263.6687156020076
-Midway International Airport,LaGuardia Airport,Airbus A220-300,10782.332503994397,202.3711055554504
-Midway International Airport,Detroit Metropolitan Airport,Boeing 737-600,6563.72904169508,165.63779851351552
-Midway International Airport,Detroit Metropolitan Airport,Boeing 767-800,7204.66130211885,114.47417738562132
-Midway International Airport,Detroit Metropolitan Airport,Airbus A200-100,6473.773636723323,144.005642013643
-Midway International Airport,Detroit Metropolitan Airport,Airbus A220-300,6136.440868079233,115.17343971620181
-Midway International Airport,Philadelphia International Airport,Boeing 737-600,11501.53288208641,290.24485532809473
-Midway International Airport,Philadelphia International Airport,Boeing 767-800,13376.916102608015,212.5445461748735
-Midway International Airport,Philadelphia International Airport,Airbus A200-100,11238.321202013205,249.99046161746645
-Midway International Airport,Philadelphia International Airport,Airbus A220-300,10251.277401738676,192.4038551377379
-Midway International Airport,Salt Lake City International Airport,Boeing 737-600,18134.084803293743,457.61942118489264
-Midway International Airport,Salt Lake City International Airport,Boeing 767-800,21667.60600411718,344.2745285621682
-Midway International Airport,Salt Lake City International Airport,Airbus A200-100,17638.152003178177,392.3512846886481
-Midway International Airport,Salt Lake City International Airport,Airbus A220-300,15778.404002744786,296.1412162677325
-Midway International Airport,Ronald Reagan Washington National Airport,Boeing 737-600,10743.109620072493,271.10580210645503
-Midway International Airport,Ronald Reagan Washington National Airport,Boeing 767-800,12428.887025090617,197.48140243562
-Midway International Airport,Ronald Reagan Washington National Airport,Airbus A200-100,10506.50928252609,233.71169575188722
-Midway International Airport,Ronald Reagan Washington National Airport,Airbus A220-300,9619.258016727079,180.5416294430758
-Midway International Airport,San Diego International Airport,Boeing 737-600,23419.596666715857,591.0010010022423
-Midway International Airport,San Diego International Airport,Boeing 767-800,28274.495833394827,449.25077193693414
-Midway International Airport,San Diego International Airport,Airbus A200-100,22738.207309988993,505.79929507260573
-Midway International Airport,San Diego International Airport,Airbus A220-300,20182.997222263213,378.8100079253606
-Midway International Airport,Baltimore/Washington International Airport,Boeing 737-600,10856.577248174443,273.96919393783134
-Midway International Airport,Baltimore/Washington International Airport,Boeing 767-800,12570.721560218053,199.73499785846246
-Midway International Airport,Baltimore/Washington International Airport,Airbus A200-100,10615.99559034376,236.14716027902924
-Midway International Airport,Baltimore/Washington International Airport,Airbus A220-300,9713.8143734787,182.3163358385642
-Midway International Airport,Tampa International Airport,Boeing 737-600,15237.495180211361,384.5230570119202
-Midway International Airport,Tampa International Airport,Boeing 767-800,18046.868975264202,286.74498268529163
-Midway International Airport,Tampa International Airport,Airbus A200-100,14843.197103712719,330.17900353047975
-Midway International Airport,Tampa International Airport,Airbus A220-300,13364.5793168428,250.8366988896922
-Midway International Airport,Austin-Bergstrom International Airport,Boeing 737-600,14944.464259424733,377.1283281455758
-Midway International Airport,Austin-Bergstrom International Airport,Boeing 767-800,17680.580324280912,280.9250571886317
-Midway International Airport,Austin-Bergstrom International Airport,Airbus A200-100,14560.447969620356,323.88939983584373
-Midway International Airport,Austin-Bergstrom International Airport,Airbus A220-300,13120.386882853943,246.2535075610725
-Midway International Airport,Washington Dulles International Airport,Boeing 737-600,10479.416078060152,264.4514113624587
-Midway International Airport,Washington Dulles International Airport,Boeing 767-800,12099.27009757519,192.24415046117846
-Midway International Airport,Washington Dulles International Airport,Airbus A200-100,10252.06814549664,228.05178835494692
-Midway International Airport,Washington Dulles International Airport,Airbus A220-300,9399.51339838346,176.41729351320308
-Midway International Airport,Nashville International Airport,Boeing 737-600,8450.614687679012,213.25396037244835
-Midway International Airport,Nashville International Airport,Boeing 767-800,9563.268359598766,151.9498603301518
-Midway International Airport,Nashville International Airport,Airbus A200-100,8294.452768813082,184.50567831860928
-Midway International Airport,Nashville International Airport,Airbus A220-300,7708.8455730658425,144.68554003501956

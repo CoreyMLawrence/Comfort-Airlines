@@ -2,7 +2,7 @@ rank,airport,iata code,city,state,metro area,metro population,latitude,longitude
 1,Hartsfield-Jackson Atlanta International Airport,ATL,Atlanta,Georgia,Atlanta,6144050,33.63616168219499,-84.42939280483145
 2,Dallas/Fort Worth International Airport,DFW,Dallas;Fort Worth,Texas,Dallas-Fort Worth,7637387,32.89347973839914,-97.04431284659218
 3,Denver International Airport,DEN,Denver,Colorado,Denver,2963821,39.85592359989282,-104.67647895891056
-4,O'Hare International Airport,ORD,Chicago,Illinois,Chicago,4809251,41.98022640096476,-87.90899915295887
+4,O'Hare International Airport,ORD,Chicago,Illinois,Chicago,9618502,41.98022640096476,-87.90899915295887
 5,Los Angeles International Airport,LAX,Los Angeles,California,Greater Los Angeles,18372485,33.943751258500676,-118.40910694786375
 6,John F. Kennedy International Airport,JFK,New York City,New York,New York Metro,6713490,40.64457562744806,-73.77971423106759
 7,Harry Reid International Airport,LAS,Las Vegas,Nevada,Las Vegas,2265461,36.08309915330465,-115.14820230234423
@@ -28,4 +28,3 @@ rank,airport,iata code,city,state,metro area,metro population,latitude,longitude
 27,Austin-Bergstrom International Airport,AUS,Austin,Texas,Austin,2421115,30.195330120660334,-97.66672027863989
 28,Washington Dulles International Airport,IAD,Washington D.C.;Arlington,Virginia,Washington Metro,2128387,38.95232368474393,-77.4586344022753
 29,Nashville International Airport,BNA,Nashville,Tennessee,Nashville,2072283,36.12446163854284,-86.67813998884999
-30,Midway International Airport,MDW,Chicago,Illinois,Chicago,4809251,41.78675987177323,-87.75218840220174

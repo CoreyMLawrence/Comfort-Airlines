@@ -27,7 +27,6 @@ Hartsfield-Jackson Atlanta International Airport,Tampa International Airport,654
 Hartsfield-Jackson Atlanta International Airport,Austin-Bergstrom International Airport,1305.5443696144239
 Hartsfield-Jackson Atlanta International Airport,Washington Dulles International Airport,859.5488370181339
 Hartsfield-Jackson Atlanta International Airport,Nashville International Airport,344.40519027862484
-Hartsfield-Jackson Atlanta International Airport,Midway International Airport,952.058661398496
 Dallas/Fort Worth International Airport,Hartsfield-Jackson Atlanta International Airport,1175.045552687493
 Dallas/Fort Worth International Airport,Denver International Airport,1031.754813616813
 Dallas/Fort Worth International Airport,O'Hare International Airport,1291.1973367281234
@@ -56,7 +55,6 @@ Dallas/Fort Worth International Airport,Tampa International Airport,1493.3448554
 Dallas/Fort Worth International Airport,Austin-Bergstrom International Airport,305.7614733970642
 Dallas/Fort Worth International Airport,Washington Dulles International Airport,1883.1597776727394
 Dallas/Fort Worth International Airport,Nashville International Airport,1014.8413198384227
-Dallas/Fort Worth International Airport,Midway International Airport,1283.9204380180458
 Denver International Airport,Hartsfield-Jackson Atlanta International Airport,1926.6658388112894
 Denver International Airport,Dallas/Fort Worth International Airport,1031.754813616813
 Denver International Airport,O'Hare International Airport,1426.1428765503847
@@ -85,7 +83,6 @@ Denver International Airport,Tampa International Airport,2422.6319599230014
 Denver International Airport,Austin-Bergstrom International Airport,1248.5115656885978
 Denver International Airport,Washington Dulles International Airport,2331.6541745426243
 Denver International Airport,Nashville International Airport,1627.7853480656565
-Denver International Airport,Midway International Airport,1437.808384750934
 O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,976.6365379440517
 O'Hare International Airport,Dallas/Fort Worth International Airport,1291.1973367281234
 O'Hare International Airport,Denver International Airport,1426.1428765503847
@@ -141,7 +138,6 @@ Los Angeles International Airport,Tampa International Airport,3466.75971769794
 Los Angeles International Airport,Austin-Bergstrom International Airport,1994.7313523451164
 Los Angeles International Airport,Washington Dulles International Airport,3673.773005006692
 Los Angeles International Airport,Nashville International Airport,2886.394775398726
-Los Angeles International Airport,Midway International Airport,2811.594322679282
 John F. Kennedy International Airport,Hartsfield-Jackson Atlanta International Airport,1222.4818118957312
 John F. Kennedy International Airport,Dallas/Fort Worth International Airport,2235.667085916398
 John F. Kennedy International Airport,Denver International Airport,2610.0654448346777
@@ -167,7 +163,6 @@ John F. Kennedy International Airport,Tampa International Airport,1619.658756677
 John F. Kennedy International Airport,Austin-Bergstrom International Airport,2445.2877974146572
 John F. Kennedy International Airport,Washington Dulles International Airport,366.26927952525097
 John F. Kennedy International Airport,Nashville International Airport,1229.8769086182144
-John F. Kennedy International Airport,Midway International Airport,1174.2881216799797
 Harry Reid International Airport,Hartsfield-Jackson Atlanta International Airport,2804.369598587571
 Harry Reid International Airport,Dallas/Fort Worth International Airport,1694.048284012084
 Harry Reid International Airport,Denver International Airport,1008.3986779407683
@@ -196,7 +191,6 @@ Harry Reid International Airport,Tampa International Airport,3187.359622372556
 Harry Reid International Airport,Austin-Bergstrom International Airport,1751.128989088507
 Harry Reid International Airport,Washington Dulles International Airport,3315.686837321254
 Harry Reid International Airport,Nashville International Airport,2548.483925482036
-Harry Reid International Airport,Midway International Airport,2441.4705948647015
 Orlando International Airport,Hartsfield-Jackson Atlanta International Airport,651.1466779149102
 Orlando International Airport,Dallas/Fort Worth International Airport,1582.9514352032738
 Orlando International Airport,Denver International Airport,2486.556244956038
@@ -224,7 +218,6 @@ Orlando International Airport,Baltimore/Washington International Airport,1269.77
 Orlando International Airport,Austin-Bergstrom International Airport,1596.6563057137473
 Orlando International Airport,Washington Dulles International Airport,1223.3326837184193
 Orlando International Airport,Nashville International Airport,993.3817889546197
-Orlando International Airport,Midway International Airport,1595.928848578402
 Miami International Airport,Hartsfield-Jackson Atlanta International Airport,959.3156230611345
 Miami International Airport,Dallas/Fort Worth International Airport,1803.4311212973964
 Miami International Airport,Denver International Airport,2749.363014744613
@@ -252,7 +245,6 @@ Miami International Airport,Tampa International Airport,329.6495039436801
 Miami International Airport,Austin-Bergstrom International Airport,1773.7193915444832
 Miami International Airport,Washington Dulles International Airport,1486.5875150208747
 Miami International Airport,Nashville International Airport,1299.7207010796656
-Miami International Airport,Midway International Airport,1905.6108247262453
 Charlotte Douglas International Airport,Hartsfield-Jackson Atlanta International Airport,364.2618063873251
 Charlotte Douglas International Airport,Dallas/Fort Worth International Airport,1503.3569396504422
 Charlotte Douglas International Airport,Denver International Airport,2147.9264605436465
@@ -281,7 +273,6 @@ Charlotte Douglas International Airport,Tampa International Airport,818.54895978
 Charlotte Douglas International Airport,Austin-Bergstrom International Airport,1658.2263756368745
 Charlotte Douglas International Airport,Washington Dulles International Airport,518.1757804551193
 Charlotte Douglas International Airport,Nashville International Airport,527.2672342605367
-Charlotte Douglas International Airport,Midway International Airport,939.8517514261745
 Seattle-Tacoma International Airport,Hartsfield-Jackson Atlanta International Airport,3504.8806001235675
 Seattle-Tacoma International Airport,Dallas/Fort Worth International Airport,2667.939556512479
 Seattle-Tacoma International Airport,Denver International Airport,1645.1574404849116
@@ -310,7 +301,6 @@ Seattle-Tacoma International Airport,Tampa International Airport,4051.0297908488
 Seattle-Tacoma International Airport,Austin-Bergstrom International Airport,2847.442845901251
 Seattle-Tacoma International Airport,Washington Dulles International Airport,3700.9641887597613
 Seattle-Tacoma International Airport,Nashville International Airport,3176.3249080275004
-Seattle-Tacoma International Airport,Midway International Airport,2782.1257341203473
 Phoenix Sky Harbor International Airport,Hartsfield-Jackson Atlanta International Airport,2548.7863376109754
 Phoenix Sky Harbor International Airport,Dallas/Fort Worth International Airport,1393.1474170401932
 Phoenix Sky Harbor International Airport,Denver International Airport,967.6808778098492
@@ -339,7 +329,6 @@ Phoenix Sky Harbor International Airport,Tampa International Airport,2872.812086
 Phoenix Sky Harbor International Airport,Austin-Bergstrom International Airport,1401.0173253621444
 Phoenix Sky Harbor International Airport,Washington Dulles International Airport,3141.13866916948
 Phoenix Sky Harbor International Airport,Nashville International Airport,2326.1415505957098
-Phoenix Sky Harbor International Airport,Midway International Airport,2319.490879126098
 Newark Liberty International Airport,Hartsfield-Jackson Atlanta International Airport,1199.3182356171715
 Newark Liberty International Airport,Dallas/Fort Worth International Airport,2205.045327191234
 Newark Liberty International Airport,Denver International Airport,2576.1201247455865
@@ -365,7 +354,6 @@ Newark Liberty International Airport,Tampa International Airport,1607.1912092603
 Newark Liberty International Airport,Austin-Bergstrom International Airport,2416.2451420963644
 Newark Liberty International Airport,Washington Dulles International Airport,340.9207140369291
 Newark Liberty International Airport,Nashville International Airport,1200.6361974679785
-Newark Liberty International Airport,Midway International Airport,1140.324618161197
 San Francisco International Airport,Hartsfield-Jackson Atlanta International Airport,3435.0567691333135
 San Francisco International Airport,Dallas/Fort Worth International Airport,2351.964124178613
 San Francisco International Airport,Denver International Airport,1552.835282733403
@@ -394,7 +382,6 @@ San Francisco International Airport,Tampa International Airport,3844.47213585673
 San Francisco International Airport,Austin-Bergstrom International Airport,2416.701850999382
 San Francisco International Airport,Washington Dulles International Airport,3883.3703327594317
 San Francisco International Airport,Nashville International Airport,3160.997474068001
-San Francisco International Airport,Midway International Airport,2977.860296586001
 George Bush Intercontinental Airport,Hartsfield-Jackson Atlanta International Airport,1107.0559786638896
 George Bush Intercontinental Airport,Dallas/Fort Worth International Airport,360.68851530130496
 George Bush Intercontinental Airport,Denver International Airport,1386.405988947072
@@ -422,7 +409,6 @@ George Bush Intercontinental Airport,Baltimore/Washington International Airport,
 George Bush Intercontinental Airport,Tampa International Airport,1265.4163109710385
 George Bush Intercontinental Airport,Washington Dulles International Airport,1912.9914162037408
 George Bush Intercontinental Airport,Nashville International Airport,1055.8952837846205
-George Bush Intercontinental Airport,Midway International Airport,1477.4040298468972
 Logan International Airport,Hartsfield-Jackson Atlanta International Airport,1521.4585621783465
 Logan International Airport,Dallas/Fort Worth International Airport,2509.6470587072395
 Logan International Airport,Denver International Airport,2815.817802832754
@@ -451,7 +437,6 @@ Logan International Airport,Tampa International Airport,1908.0600774426357
 Logan International Airport,Austin-Bergstrom International Airport,2729.103750947406
 Logan International Airport,Washington Dulles International Airport,662.9835348936555
 Logan International Airport,Nashville International Airport,1513.999641031412
-Logan International Airport,Midway International Airport,1381.1002855179481
 Fort Lauderdale-Hollywood International Airport,Hartsfield-Jackson Atlanta International Airport,936.3737266232628
 Fort Lauderdale-Hollywood International Airport,Dallas/Fort Worth International Airport,1799.4465649540653
 Fort Lauderdale-Hollywood International Airport,Denver International Airport,2739.0620225921966
@@ -479,7 +464,6 @@ Fort Lauderdale-Hollywood International Airport,Tampa International Airport,316.
 Fort Lauderdale-Hollywood International Airport,Austin-Bergstrom International Airport,1775.5331774788374
 Fort Lauderdale-Hollywood International Airport,Washington Dulles International Airport,1453.85724324273
 Fort Lauderdale-Hollywood International Airport,Nashville International Airport,1277.8833367206757
-Fort Lauderdale-Hollywood International Airport,Midway International Airport,1880.6661126600573
 Minneapolis-Saint Paul International Airport,Hartsfield-Jackson Atlanta International Airport,1459.6021437129937
 Minneapolis-Saint Paul International Airport,Dallas/Fort Worth International Airport,1373.56227559074
 Minneapolis-Saint Paul International Airport,Denver International Airport,1093.7184179826888
@@ -508,7 +492,6 @@ Minneapolis-Saint Paul International Airport,Tampa International Airport,2104.67
 Minneapolis-Saint Paul International Airport,Austin-Bergstrom International Airport,1679.2378624510277
 Minneapolis-Saint Paul International Airport,Washington Dulles International Airport,1457.5168771534588
 Minneapolis-Saint Paul International Airport,Nashville International Airport,1118.9931380590933
-Minneapolis-Saint Paul International Airport,Midway International Airport,559.9145211493511
 LaGuardia Airport,Hartsfield-Jackson Atlanta International Airport,1224.8835700348038
 LaGuardia Airport,Dallas/Fort Worth International Airport,2231.9362636078445
 LaGuardia Airport,Denver International Airport,2600.130064591423
@@ -534,7 +517,6 @@ LaGuardia Airport,Tampa International Airport,1627.9229332970617
 LaGuardia Airport,Austin-Bergstrom International Airport,2443.1552837761647
 LaGuardia Airport,Washington Dulles International Airport,367.05296980159653
 LaGuardia Airport,Nashville International Airport,1227.5542935483306
-LaGuardia Airport,Midway International Airport,1163.8081209692475
 Detroit Metropolitan Airport,Hartsfield-Jackson Atlanta International Airport,958.3664398281788
 Detroit Metropolitan Airport,Dallas/Fort Worth International Airport,1587.2122495191372
 Detroit Metropolitan Airport,Denver International Airport,1802.8309292536467
@@ -563,7 +545,6 @@ Detroit Metropolitan Airport,Tampa International Airport,1584.7451340878215
 Detroit Metropolitan Airport,Austin-Bergstrom International Airport,1848.376177128361
 Detroit Metropolitan Airport,Washington Dulles International Airport,615.5519833432285
 Detroit Metropolitan Airport,Nashville International Airport,735.0750477162767
-Detroit Metropolitan Airport,Midway International Airport,366.60060986052395
 Philadelphia International Airport,Hartsfield-Jackson Atlanta International Airport,1071.6273257796643
 Philadelphia International Airport,Dallas/Fort Worth International Airport,2093.39395814103
 Philadelphia International Airport,Denver International Airport,2500.5553731403934
@@ -586,7 +567,6 @@ Philadelphia International Airport,San Diego International Airport,3806.61794186
 Philadelphia International Airport,Tampa International Airport,1482.4744790536975
 Philadelphia International Airport,Austin-Bergstrom International Airport,2298.636723661949
 Philadelphia International Airport,Nashville International Airport,1084.1332217712127
-Philadelphia International Airport,Midway International Airport,1072.6822081179726
 Salt Lake City International Airport,Hartsfield-Jackson Atlanta International Airport,2554.1198818462094
 Salt Lake City International Airport,Dallas/Fort Worth International Airport,1589.7163911076616
 Salt Lake City International Airport,Denver International Airport,628.0318971139235
@@ -615,7 +595,6 @@ Salt Lake City International Airport,Tampa International Airport,3034.7692664242
 Salt Lake City International Airport,Austin-Bergstrom International Airport,1747.1717067077163
 Salt Lake City International Airport,Washington Dulles International Airport,2934.6228599813367
 Salt Lake City International Airport,Nashville International Airport,2255.273699697087
-Salt Lake City International Airport,Midway International Airport,2021.1044242342848
 Ronald Reagan Washington National Airport,Hartsfield-Jackson Atlanta International Airport,879.989924881351
 Ronald Reagan Washington National Airport,Dallas/Fort Worth International Airport,1915.3977154891295
 Ronald Reagan Washington National Airport,Denver International Airport,2369.361260619305
@@ -641,7 +620,6 @@ Ronald Reagan Washington National Airport,San Diego International Airport,3655.4
 Ronald Reagan Washington National Airport,Tampa International Airport,1311.436664501928
 Ronald Reagan Washington National Airport,Austin-Bergstrom International Airport,2113.8211363311484
 Ronald Reagan Washington National Airport,Nashville International Airport,902.2421978784238
-Ronald Reagan Washington National Airport,Midway International Airport,964.231421835629
 San Diego International Airport,Hartsfield-Jackson Atlanta International Airport,3038.4798539417607
 San Diego International Airport,Dallas/Fort Worth International Airport,1880.775421703364
 San Diego International Airport,Denver International Airport,1371.5555169020706
@@ -669,7 +647,6 @@ San Diego International Airport,Tampa International Airport,3353.2636147069898
 San Diego International Airport,Austin-Bergstrom International Airport,1871.1943609689295
 San Diego International Airport,Washington Dulles International Airport,3618.960914570404
 San Diego International Airport,Nashville International Airport,2812.9869157762746
-San Diego International Airport,Midway International Airport,2776.9065550532414
 Baltimore/Washington International Airport,Hartsfield-Jackson Atlanta International Airport,927.805114669701
 Baltimore/Washington International Airport,Dallas/Fort Worth International Airport,1955.516384508483
 Baltimore/Washington International Airport,Denver International Airport,2393.8727731318263
@@ -695,7 +672,6 @@ Baltimore/Washington International Airport,San Diego International Airport,3686.
 Baltimore/Washington International Airport,Tampa International Airport,1357.8591926674108
 Baltimore/Washington International Airport,Austin-Bergstrom International Airport,2156.813695571736
 Baltimore/Washington International Airport,Nashville International Airport,943.7100232563556
-Baltimore/Washington International Airport,Midway International Airport,980.4567330854085
 Tampa International Airport,Hartsfield-Jackson Atlanta International Airport,654.8531158640244
 Tampa International Airport,Dallas/Fort Worth International Airport,1493.344855494235
 Tampa International Airport,Denver International Airport,2422.6319599230014
@@ -723,7 +699,6 @@ Tampa International Airport,Baltimore/Washington International Airport,1357.8591
 Tampa International Airport,Austin-Bergstrom International Airport,1490.2151577303498
 Tampa International Airport,Washington Dulles International Airport,1307.3262189686013
 Tampa International Airport,Nashville International Airport,986.4153536227079
-Tampa International Airport,Midway International Airport,1606.9063927466955
 Austin-Bergstrom International Airport,Hartsfield-Jackson Atlanta International Airport,1305.5443696144239
 Austin-Bergstrom International Airport,Dallas/Fort Worth International Airport,305.7614733970642
 Austin-Bergstrom International Airport,Denver International Airport,1248.5115656885978
@@ -751,7 +726,6 @@ Austin-Bergstrom International Airport,Baltimore/Washington International Airpor
 Austin-Bergstrom International Airport,Tampa International Airport,1490.2151577303498
 Austin-Bergstrom International Airport,Washington Dulles International Airport,2084.1542016500057
 Austin-Bergstrom International Airport,Nashville International Airport,1215.6787633907963
-Austin-Bergstrom International Airport,Midway International Airport,1565.0044161644346
 Washington Dulles International Airport,Hartsfield-Jackson Atlanta International Airport,859.5488370181339
 Washington Dulles International Airport,Dallas/Fort Worth International Airport,1883.1597776727394
 Washington Dulles International Airport,Denver International Airport,2331.6541745426243
@@ -777,7 +751,6 @@ Washington Dulles International Airport,San Diego International Airport,3618.960
 Washington Dulles International Airport,Tampa International Airport,1307.3262189686013
 Washington Dulles International Airport,Austin-Bergstrom International Airport,2084.1542016500057
 Washington Dulles International Airport,Nashville International Airport,871.078412459765
-Washington Dulles International Airport,Midway International Airport,926.5245457399831
 Nashville International Airport,Hartsfield-Jackson Atlanta International Airport,344.40519027862484
 Nashville International Airport,Dallas/Fort Worth International Airport,1014.8413198384227
 Nashville International Airport,Denver International Airport,1627.7853480656565
@@ -806,32 +779,3 @@ Nashville International Airport,Baltimore/Washington International Airport,943.7
 Nashville International Airport,Tampa International Airport,986.4153536227079
 Nashville International Airport,Austin-Bergstrom International Airport,1215.6787633907963
 Nashville International Airport,Washington Dulles International Airport,871.078412459765
-Nashville International Airport,Midway International Airport,636.4159520065954
-Midway International Airport,Hartsfield-Jackson Atlanta International Airport,952.058661398496
-Midway International Airport,Dallas/Fort Worth International Airport,1283.9204380180458
-Midway International Airport,Denver International Airport,1437.808384750934
-Midway International Airport,Los Angeles International Airport,2811.594322679282
-Midway International Airport,John F. Kennedy International Airport,1174.2881216799797
-Midway International Airport,Harry Reid International Airport,2441.4705948647015
-Midway International Airport,Orlando International Airport,1595.928848578402
-Midway International Airport,Miami International Airport,1905.6108247262453
-Midway International Airport,Charlotte Douglas International Airport,939.8517514261745
-Midway International Airport,Seattle-Tacoma International Airport,2782.1257341203473
-Midway International Airport,Phoenix Sky Harbor International Airport,2319.490879126098
-Midway International Airport,Newark Liberty International Airport,1140.324618161197
-Midway International Airport,San Francisco International Airport,2977.860296586001
-Midway International Airport,George Bush Intercontinental Airport,1477.4040298468972
-Midway International Airport,Logan International Airport,1381.1002855179481
-Midway International Airport,Fort Lauderdale-Hollywood International Airport,1880.6661126600573
-Midway International Airport,Minneapolis-Saint Paul International Airport,559.9145211493511
-Midway International Airport,LaGuardia Airport,1163.8081209692475
-Midway International Airport,Detroit Metropolitan Airport,366.60060986052395
-Midway International Airport,Philadelphia International Airport,1072.6822081179726
-Midway International Airport,Salt Lake City International Airport,2021.1044242342848
-Midway International Airport,Ronald Reagan Washington National Airport,964.231421835629
-Midway International Airport,San Diego International Airport,2776.9065550532414
-Midway International Airport,Baltimore/Washington International Airport,980.4567330854085
-Midway International Airport,Tampa International Airport,1606.9063927466955
-Midway International Airport,Austin-Bergstrom International Airport,1565.0044161644346
-Midway International Airport,Washington Dulles International Airport,926.5245457399831
-Midway International Airport,Nashville International Airport,636.4159520065954

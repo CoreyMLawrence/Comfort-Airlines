@@ -5,7 +5,7 @@
 # Text Standards
 - Use ASCII encoding. If Unicode is needed, use [UTF-8](https://developer.mozilla.org/en-US/docs/Glossary/UTF-8).
 
-# Phyicsal Measurements
+# Physical Measurements
 - Use the metric system for all measurements (e.g. kilometers for distance)
 
 # Temporal Measurements

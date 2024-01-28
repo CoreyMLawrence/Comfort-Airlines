@@ -11,7 +11,7 @@ DISTANCE_KM = 2
 # DESTINATION_AIRPORT = 1
 NUM_PASSENGERS = 2
 
-with open("data/flights.csv", "r") as flight_data, open("data/flight_demand.csv") as flight_demand_data:
+with open("data/flight_distance.csv", "r") as flight_data, open("data/flight_demand.csv") as flight_demand_data:
     # 1. Import flight data
     reader = csv.reader(flight_data, delimiter=',')
     _ = next(reader)
