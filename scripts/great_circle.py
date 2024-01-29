@@ -19,7 +19,7 @@ with open(csv_file_path, 'r') as file:
     csv_reader = csv.reader(file)
     header = next(csv_reader)  # Skip the header row
     for row in csv_reader:
-        latitude, longitude, airport_name = float(row[6]), float(row[7]), row[1]
+        latitude, longitude, airport_name = float(row[7]), float(row[8]), row[1]
         coordinates.append((latitude, longitude))
         airport_names.append(airport_name)
 
@@ -33,6 +33,8 @@ for i in range(num_points):
             lat1, lon1 = coordinates[i]
             lat2, lon2 = coordinates[j]
             distance_matrix[i][j] = haversine_distance(lat1, lon1, lat2, lon2, radius_of_earth)
+        else:
+            distance_matrix[i][j] = -1
 
 # Write the distance matrix to a CSV file
 with open(output_csv_path, 'w', newline='') as output_file:
