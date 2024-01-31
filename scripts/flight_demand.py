@@ -1,3 +1,14 @@
+# Team: Foobar
+# Authors: Anthony Cox
+# Date: 1/31/2024
+# Script: flight_demand.py
+# Depends on: "data/airports.csv", "flight_distance.csv"
+# Input: 
+#   A list of the airport, their details, and the distances between them
+# Output: 
+#   A list of the flights between each airport (including source and destination airports)
+#   and the number of passengers that want to take that flight each day. The number of passengers
+#   accounts for the 2% market share and 0.5% of the population that wants to fly each day
 import csv
 from pprint import pprint
 
@@ -12,7 +23,7 @@ METRO_POPULATION = 6
 LATITUDE = 7
 LONGITUDE = 8
 
-# Indices of values in flights.csv
+# Indices of values in flight_distance.csv
 SOURCE_AIRPORT = 0
 DESTINATION_AIRPORT = 1
 DISTANCE_KM = 2

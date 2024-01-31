@@ -1,3 +1,15 @@
+# Team: Foobar
+# Authors: Anthony Cox
+# Date: 1/31/2024
+# Script: overlapping_airports.py
+# Depends on: "data/airports.csv"
+# Input: 
+#   A list of the airport names and their metro areas
+# Output: 
+#   A filtered mapping of metro areas to airports where the airports 
+#   share the same metro area
+
+
 import csv
 from pprint import pprint
 

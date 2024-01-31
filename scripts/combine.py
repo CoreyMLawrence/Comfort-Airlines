@@ -1,3 +1,12 @@
+# Team: Foobar
+# Authors: Anthony Cox
+# Date: 1/31/2024
+# Script: flight_demand.py
+# Depends on: "data/airports.csv", "flight_distance.csv"
+# Input: 
+#   Lists of the source and destination airports and the distancce between them and the flight demand for them
+# Output: 
+#   An aggregated list of the lists provided
 import csv
 from pprint import pprint
 
