@@ -39,6 +39,7 @@ with open ("data/flights.csv", "r") as flight_data, open ("data/linear_aircraft_
     #skip header row
     _ = next(flight_reader)
     _ = next(aircraft_spec_reader)
+    running_total = 0
     
     for row_flight in flight_reader:  # Iterate over the reader object, not the file object
         source_airport = row_flight[SOURCE_AIRPORT]
@@ -59,6 +60,7 @@ with open ("data/flights.csv", "r") as flight_data, open ("data/linear_aircraft_
             
             #calculate profit/loss per flight
             profit_loss = break_even_cost_per_ticket * demand - total_cost
+            running_total +=profit_loss
 
             #4. Write body
             if profit_loss > 0:
@@ -76,5 +78,6 @@ with open ("data/flights.csv", "r") as flight_data, open ("data/linear_aircraft_
         
         aircraft_spec_data.seek(FILE_START)
         _ = next(aircraft_spec_reader)
-
+        
+print(running_total)
 # NOTE: does not account for (max) fuel capacity, purely monetary calc
