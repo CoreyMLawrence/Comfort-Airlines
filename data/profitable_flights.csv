@@ -1,0 +1,179 @@
+source airport,destination airport,airplane type,total Cost,break even cost per ticket, profit per flight
+Hartsfield-Jackson Atlanta International Airport,O'Hare International Airport,Boeing 737-600,10829.861675517415,273.29501793013384,1195.119113408473
+Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,Boeing 737-600,25859.16694483733,652.5643360546427,29608.801619807302
+Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,Boeing 767-800,31323.95868104666,497.70339674669367,10980.830042422302
+Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,Airbus A200-100,25092.178630983388,558.1621317091177,22351.602564291617
+Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,Airbus A220-300,22215.972454031107,416.9664499630463,13226.175792827824
+Dallas/Fort Worth International Airport,O'Hare International Airport,Boeing 737-600,13029.663403966113,328.80771706074427,5383.568751435565
+Dallas/Fort Worth International Airport,O'Hare International Airport,Airbus A200-100,12712.83310909011,282.79019261684147,3123.4176774530115
+Dallas/Fort Worth International Airport,O'Hare International Airport,Airbus A220-300,11524.719503305096,216.304795482453,588.3490437122709
+Dallas/Fort Worth International Airport,Los Angeles International Airport,Boeing 737-600,17865.86988263528,450.8509320068458,29924.328910090375
+Dallas/Fort Worth International Airport,Los Angeles International Airport,Boeing 767-800,21332.337353294104,338.94747689426094,14596.095197497554
+Dallas/Fort Worth International Airport,Los Angeles International Airport,Airbus A200-100,17379.348132367377,386.59433060543597,23599.650911808836
+Dallas/Fort Worth International Airport,Los Angeles International Airport,Airbus A220-300,15554.891568862735,291.94616307925554,15391.401717538352
+Dallas/Fort Worth International Airport,San Francisco International Airport,Boeing 737-600,20447.868792350695,516.0084990625254,708.4796692128475
+Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,Boeing 737-600,6522.384297275577,164.5944506845226,225.98818078984914
+Denver International Airport,Los Angeles International Airport,Boeing 737-600,13682.992946955346,345.2946967208051,128.794921876859
+O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,10829.861675517415,273.29501793013384,1468.414131338608
+O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,10590.217406201016,235.57373832056535,10.600818224424074
+O'Hare International Airport,Dallas/Fort Worth International Airport,Boeing 737-600,13029.663403966113,328.80771706074427,5712.376468496312
+O'Hare International Airport,Dallas/Fort Worth International Airport,Airbus A200-100,12712.83310909011,282.79019261684147,3406.207870069853
+O'Hare International Airport,Dallas/Fort Worth International Airport,Airbus A220-300,11524.719503305096,216.304795482453,804.6538391947252
+O'Hare International Airport,Los Angeles International Airport,Boeing 737-600,23593.890334276835,595.3993573643434,57380.42226727387
+O'Hare International Airport,Los Angeles International Airport,Boeing 767-800,28492.362917846047,452.7124412959951,33076.529098409286
+O'Hare International Airport,Los Angeles International Airport,Airbus A200-100,22906.385410267125,509.540327222047,46391.09909193127
+O'Hare International Airport,Los Angeles International Airport,Airbus A220-300,20328.241945230697,381.53607254562115,31560.66392097378
+O'Hare International Airport,John F. Kennedy International Airport,Boeing 737-600,12308.089284925816,310.598563729927,3221.8389015705325
+O'Hare International Airport,John F. Kennedy International Airport,Airbus A200-100,12016.577380191578,267.3023552483946,1348.5403822281496
+O'Hare International Airport,Newark Liberty International Airport,Boeing 737-600,12070.657611800809,304.6068996341083,3159.6873699046064
+O'Hare International Airport,Newark Liberty International Airport,Airbus A200-100,11787.476642965694,262.2061315307684,1322.829933572726
+O'Hare International Airport,San Francisco International Airport,Boeing 737-600,24727.883364954894,624.0160336375424,7720.950384197309
+O'Hare International Airport,San Francisco International Airport,Airbus A200-100,24000.589211798586,533.8803072360935,3761.186764478276
+O'Hare International Airport,George Bush Intercontinental Airport,Boeing 737-600,14418.403913652006,363.8530273210691,4865.806534364654
+O'Hare International Airport,George Bush Intercontinental Airport,Airbus A200-100,14052.845881594043,312.59806209752065,2514.8514095745522
+O'Hare International Airport,LaGuardia Airport,Boeing 737-600,12233.16618783033,308.70785544780904,3202.2265845601232
+O'Hare International Airport,LaGuardia Airport,Airbus A200-100,11944.283163695933,265.69420895775625,1340.4272841918792
+O'Hare International Airport,Philadelphia International Airport,Boeing 737-600,11611.775204690059,293.02685554521054,1867.4601503896265
+O'Hare International Airport,Philadelphia International Airport,Airbus A200-100,11344.69537294655,252.35669831935377,263.7127497437232
+Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 737-600,25859.16694483733,652.5643360546427,36787.00931640837
+Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,Boeing 767-800,31323.95868104666,497.70339674669367,16455.56740663593
+Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A200-100,25092.178630983388,558.1621317091177,28491.386013091917
+Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,Airbus A220-300,22215.972454031107,416.9664499630463,17812.806742421337
+Los Angeles International Airport,Dallas/Fort Worth International Airport,Boeing 737-600,17865.86988263528,450.8509320068458,35785.39102617938
+Los Angeles International Airport,Dallas/Fort Worth International Airport,Boeing 767-800,21332.337353294104,338.94747689426094,19002.41239712295
+Los Angeles International Airport,Dallas/Fort Worth International Airport,Airbus A200-100,17379.348132367377,386.59433060543597,28625.3772096795
+Los Angeles International Airport,Dallas/Fort Worth International Airport,Airbus A220-300,15554.891568862735,291.94616307925554,19186.70183756867
+Los Angeles International Airport,Denver International Airport,Boeing 737-600,13682.992946955346,345.2946967208051,2200.5631022016896
+Los Angeles International Airport,Denver International Airport,Airbus A200-100,13343.238808465685,296.8132311971012,310.1698266009698
+Los Angeles International Airport,O'Hare International Airport,Boeing 737-600,23593.890334276835,595.3993573643434,65716.01327037468
+Los Angeles International Airport,O'Hare International Airport,Boeing 767-800,28492.362917846047,452.7124412959951,39414.503276553216
+Los Angeles International Airport,O'Hare International Airport,Airbus A200-100,22906.385410267125,509.540327222047,53524.663673039926
+Los Angeles International Airport,O'Hare International Airport,Airbus A220-300,20328.241945230697,381.53607254562115,36902.16893661248
+Los Angeles International Airport,John F. Kennedy International Airport,Boeing 737-600,31792.110085200224,802.2840509046918,52447.7152597924
+Los Angeles International Airport,John F. Kennedy International Airport,Boeing 767-800,38740.137606500284,615.5383575083064,25891.389931871883
+Los Angeles International Airport,John F. Kennedy International Airport,Airbus A200-100,30816.948327824783,685.506580532194,41161.242628055596
+Los Angeles International Airport,John F. Kennedy International Airport,Airbus A220-300,27160.091737666855,509.76148156281636,26364.863826428864
+Los Angeles International Airport,Orlando International Airport,Boeing 737-600,28913.069904457523,729.6305525136277,1731.413301114837
+Los Angeles International Airport,Miami International Airport,Boeing 737-600,30320.28828723008,765.142157802258,6406.5352872783005
+Los Angeles International Airport,Miami International Airport,Airbus A200-100,29396.769399958856,653.9154576789869,1991.1725686325117
+Los Angeles International Airport,Charlotte Douglas International Airport,Boeing 737-600,27861.557950970724,703.0953125639267,965.3498641502702
+Los Angeles International Airport,Seattle-Tacoma International Airport,Boeing 737-600,14746.375963959075,372.12950674941516,8697.78296125408
+Los Angeles International Airport,Seattle-Tacoma International Airport,Boeing 767-800,17432.969954948843,276.9907996083201,17.45042037532403
+Los Angeles International Airport,Seattle-Tacoma International Airport,Airbus A200-100,14369.310140662268,319.63764076659476,5767.8612276332005
+Los Angeles International Airport,Seattle-Tacoma International Airport,Airbus A220-300,12955.31330329923,243.15527971657713,2363.4693188451292
+Los Angeles International Airport,Phoenix Sky Harbor International Airport,Boeing 737-600,8158.410590803822,205.88009667155782,7488.476756234573
+Los Angeles International Airport,Phoenix Sky Harbor International Airport,Boeing 767-800,9198.013238504778,146.14635649148795,1909.109854848306
+Los Angeles International Airport,Phoenix Sky Harbor International Airport,Airbus A200-100,8012.501447266846,178.23382153857958,5533.268989665201
+Los Angeles International Airport,Phoenix Sky Harbor International Airport,Airbus A220-300,7465.342159003185,140.1152807620718,3183.4191789142715
+Los Angeles International Airport,Newark Liberty International Airport,Boeing 737-600,31556.058858838962,796.327222823806,52058.299537660656
+Los Angeles International Airport,Newark Liberty International Airport,Boeing 767-800,38445.0735735487,610.8501131853869,25694.18831091692
+Los Angeles International Airport,Newark Liberty International Airport,Airbus A200-100,30589.179600634085,680.4399866674248,40857.018999445514
+Los Angeles International Airport,Newark Liberty International Airport,Airbus A220-300,26963.382382365802,506.0694891585173,26173.913979278514
+Los Angeles International Airport,San Francisco International Airport,Boeing 737-600,7800.1095336148155,196.83825506888775,13852.098523962837
+Los Angeles International Airport,San Francisco International Airport,Boeing 767-800,8750.13691701852,139.03009226716432,6543.173232369554
+Los Angeles International Airport,San Francisco International Airport,Airbus A200-100,7666.772356996753,170.54326230667894,11092.986496737929
+Los Angeles International Airport,San Francisco International Airport,Airbus A220-300,7166.757944679013,134.51122268541693,7629.476550716849
+Los Angeles International Airport,George Bush Intercontinental Airport,Boeing 737-600,19489.230935460684,491.81696660006264,35102.45235714627
+Los Angeles International Airport,George Bush Intercontinental Airport,Boeing 767-800,23361.53866932586,371.1892633796631,17840.469565816744
+Los Angeles International Airport,George Bush Intercontinental Airport,Airbus A200-100,18945.74914825154,421.4380858247478,27833.87837829547
+Los Angeles International Airport,George Bush Intercontinental Airport,Airbus A220-300,16907.69244621724,317.33656993650976,18316.666816735342
+Los Angeles International Airport,Logan International Airport,Boeing 737-600,33320.45403108693,840.8522984603155,31425.172950357366
+Los Angeles International Airport,Logan International Airport,Boeing 767-800,40650.56753885866,645.8929967881954,9083.19321383239
+Los Angeles International Airport,Logan International Airport,Airbus A200-100,32291.66617034704,718.3108924557232,23018.272548743644
+Los Angeles International Airport,Logan International Airport,Airbus A220-300,28433.71169257244,533.665759995729,12658.551827098694
+Los Angeles International Airport,Fort Lauderdale-Hollywood International Airport,Boeing 737-600,30318.827696323384,765.1052993242835,6406.226671242224
+Los Angeles International Airport,Fort Lauderdale-Hollywood International Airport,Airbus A200-100,29395.3600578559,653.8841076155244,1991.077107689267
+Los Angeles International Airport,Minneapolis-Saint Paul International Airport,Boeing 737-600,21259.6813370216,536.49484788204,9857.019840136716
+Los Angeles International Airport,Minneapolis-Saint Paul International Airport,Airbus A200-100,20654.078483091023,459.4389608072744,5993.381243730892
+Los Angeles International Airport,Minneapolis-Saint Paul International Airport,Airbus A220-300,18383.067780851336,345.0275484394019,1628.530028633977
+Los Angeles International Airport,LaGuardia Airport,Boeing 737-600,31729.98810785791,800.7163829676207,52345.232103742266
+Los Angeles International Airport,LaGuardia Airport,Boeing 767-800,38662.48513482239,614.3045447800561,25839.492067083498
+Los Angeles International Airport,LaGuardia Airport,Airbus A200-100,30757.00606898571,684.1731969521901,41081.17961099425
+Los Angeles International Airport,LaGuardia Airport,Airbus A220-300,27108.32342321493,508.78985403931927,26314.611250913596
+Los Angeles International Airport,Detroit Metropolitan Airport,Boeing 737-600,26225.602452091312,661.8114531024632,18777.57635887619
+Los Angeles International Airport,Detroit Metropolitan Airport,Boeing 767-800,31782.003065114146,504.9812203491451,2556.7199186277176
+Los Angeles International Airport,Detroit Metropolitan Airport,Airbus A200-100,25445.756752017936,566.0272884443984,13044.098862201157
+Los Angeles International Airport,Detroit Metropolitan Airport,Airbus A220-300,22521.335376742758,422.6977360499767,6222.110674655658
+Los Angeles International Airport,Philadelphia International Airport,Boeing 737-600,30966.889391601893,781.4593431650615,44834.666895409064
+Los Angeles International Airport,Philadelphia International Airport,Boeing 767-800,37708.61173950237,599.1485412317455,20408.796759976947
+Los Angeles International Airport,Philadelphia International Airport,Airbus A200-100,30020.68274628253,667.7940773280509,34755.342754538404
+Los Angeles International Airport,Philadelphia International Airport,Airbus A220-300,26472.40782633491,496.8545012450246,21722.478794432474
+Los Angeles International Airport,Tampa International Airport,Boeing 737-600,28243.911029559637,712.7441146077077,6680.55058621804
+Los Angeles International Airport,Tampa International Airport,Airbus A200-100,27393.247484662814,609.3481811736806,2464.8133928475363
+John F. Kennedy International Airport,Dallas/Fort Worth International Airport,Boeing 737-600,19634.57474308711,495.4847640014916,2662.2396369800153
+John F. Kennedy International Airport,Dallas/Fort Worth International Airport,Airbus A200-100,19085.99317315423,424.5577393650145,19.10509827142232
+John F. Kennedy International Airport,O'Hare International Airport,Boeing 737-600,12308.089284925816,310.598563729927,5396.028847680023
+John F. Kennedy International Airport,O'Hare International Airport,Airbus A200-100,12016.577380191578,267.3023552483946,3219.656868966913
+John F. Kennedy International Airport,O'Hare International Airport,Airbus A220-300,10923.40773743818,205.01891399095683,762.6703600463607
+John F. Kennedy International Airport,Los Angeles International Airport,Boeing 737-600,31792.110085200224,802.2840509046918,55656.85146341118
+John F. Kennedy International Airport,Los Angeles International Airport,Boeing 767-800,38740.137606500284,615.5383575083064,28353.543361905104
+John F. Kennedy International Airport,Los Angeles International Airport,Airbus A200-100,30816.948327824783,685.506580532194,43903.26895018437
+John F. Kennedy International Airport,Los Angeles International Airport,Airbus A220-300,27160.091737666855,509.76148156281636,28403.90975268013
+John F. Kennedy International Airport,San Francisco International Airport,Boeing 737-600,33035.8955312438,833.6713738421731,1978.3021701274774
+John F. Kennedy International Airport,George Bush Intercontinental Airport,Boeing 737-600,19927.077770634387,502.8661713133567,1193.301424526595
+Miami International Airport,Los Angeles International Airport,Boeing 737-600,30320.28828723008,765.142157802258,1815.6823404647548
+Seattle-Tacoma International Airport,Los Angeles International Airport,Boeing 737-600,14746.375963959075,372.12950674941516,5348.617400509342
+Seattle-Tacoma International Airport,Los Angeles International Airport,Airbus A200-100,14369.310140662268,319.63764076659476,2891.12246073385
+Seattle-Tacoma International Airport,Los Angeles International Airport,Airbus A220-300,12955.31330329923,243.15527971657713,175.07180139593402
+Phoenix Sky Harbor International Airport,Los Angeles International Airport,Boeing 737-600,8158.410590803822,205.88009667155782,5429.675789518995
+Phoenix Sky Harbor International Airport,Los Angeles International Airport,Boeing 767-800,9198.013238504778,146.14635649148795,447.6462899334274
+Phoenix Sky Harbor International Airport,Los Angeles International Airport,Airbus A200-100,8012.501447266846,178.23382153857958,3750.9307742794063
+Phoenix Sky Harbor International Airport,Los Angeles International Airport,Airbus A220-300,7465.342159003185,140.1152807620718,1782.2663712935537
+Newark Liberty International Airport,Dallas/Fort Worth International Airport,Boeing 737-600,19420.42918511504,490.0807324580473,2633.203775497088
+Newark Liberty International Airport,Dallas/Fort Worth International Airport,Airbus A200-100,18879.36149440925,419.9613278702981,18.8982597541617
+Newark Liberty International Airport,O'Hare International Airport,Boeing 737-600,12070.657611800809,304.6068996341083,5291.935667343365
+Newark Liberty International Airport,O'Hare International Airport,Airbus A200-100,11787.476642965694,262.2061315307684,3158.272854288105
+Newark Liberty International Airport,O'Hare International Airport,Airbus A220-300,10725.548009834009,201.30533051490255,748.8558295154362
+Newark Liberty International Airport,Los Angeles International Airport,Boeing 737-600,31556.058858838962,796.327222823806,55243.60842895589
+Newark Liberty International Airport,Los Angeles International Airport,Boeing 767-800,38445.0735735487,610.8501131853869,28137.588763658474
+Newark Liberty International Airport,Los Angeles International Airport,Airbus A200-100,30589.179600634085,680.4399866674248,43578.77894611521
+Newark Liberty International Airport,Los Angeles International Airport,Airbus A220-300,26963.382382365802,506.0694891585173,28198.191935912582
+Newark Liberty International Airport,San Francisco International Airport,Boeing 737-600,32798.43853548036,827.6790707214868,1964.082434822085
+Newark Liberty International Airport,George Bush Intercontinental Airport,Boeing 737-600,19732.479837865423,497.9554303345048,1181.648236183777
+San Francisco International Airport,Dallas/Fort Worth International Airport,Boeing 737-600,20447.868792350695,516.0084990625254,708.4796692128475
+San Francisco International Airport,O'Hare International Airport,Boeing 737-600,24727.883364954894,624.0160336375424,7096.934350559768
+San Francisco International Airport,O'Hare International Airport,Airbus A200-100,24000.589211798586,533.8803072360935,3227.3064572421827
+San Francisco International Airport,Los Angeles International Airport,Boeing 737-600,7800.1095336148155,196.83825506888775,11490.039463136183
+San Francisco International Airport,Los Angeles International Airport,Boeing 767-800,8750.13691701852,139.03009226716432,4874.812125163582
+San Francisco International Airport,Los Angeles International Airport,Airbus A200-100,7666.772356996753,170.54326230667894,9046.467349057784
+San Francisco International Airport,Los Angeles International Airport,Airbus A220-300,7166.757944679013,134.51122268541693,6015.341878491845
+George Bush Intercontinental Airport,Dallas/Fort Worth International Airport,Boeing 737-600,6522.384297275577,164.5944506845226,390.58263147437174
+George Bush Intercontinental Airport,O'Hare International Airport,Boeing 737-600,14418.403913652006,363.8530273210691,4865.806534364654
+George Bush Intercontinental Airport,O'Hare International Airport,Airbus A200-100,14052.845881594043,312.59806209752065,2514.8514095745522
+George Bush Intercontinental Airport,Los Angeles International Airport,Boeing 737-600,19489.230935460684,491.81696660006264,30184.282691145643
+George Bush Intercontinental Airport,Los Angeles International Airport,Boeing 767-800,23361.53866932586,371.1892633796631,14128.57693202011
+George Bush Intercontinental Airport,Los Angeles International Airport,Airbus A200-100,18945.74914825154,421.4380858247478,23619.49752004799
+George Bush Intercontinental Airport,Los Angeles International Airport,Airbus A220-300,16907.69244621724,317.33656993650976,15143.301117370247
+Logan International Airport,Los Angeles International Airport,Boeing 737-600,33320.45403108693,840.8522984603155,23016.649965754215
+Logan International Airport,Los Angeles International Airport,Boeing 767-800,40650.56753885866,645.8929967881954,2624.263245950431
+Logan International Airport,Los Angeles International Airport,Airbus A200-100,32291.66617034704,718.3108924557232,15835.163624186414
+Logan International Airport,Los Angeles International Airport,Airbus A220-300,28433.71169257244,533.665759995729,7321.894227141405
+Fort Lauderdale-Hollywood International Airport,Los Angeles International Airport,Boeing 737-600,30318.827696323384,765.1052993242835,1815.5948752965232
+Minneapolis-Saint Paul International Airport,Los Angeles International Airport,Boeing 737-600,21259.6813370216,536.49484788204,5565.061057080398
+Minneapolis-Saint Paul International Airport,Los Angeles International Airport,Airbus A200-100,20654.078483091023,459.4389608072744,2317.8695572726974
+LaGuardia Airport,Dallas/Fort Worth International Airport,Boeing 737-600,19608.484176828963,494.82636022986753,2658.7020335150773
+LaGuardia Airport,Dallas/Fort Worth International Airport,Airbus A200-100,19060.818065361284,423.9977325183246,19.079897963321855
+LaGuardia Airport,O'Hare International Airport,Boeing 737-600,12233.16618783033,308.70785544780904,5363.181572694784
+LaGuardia Airport,O'Hare International Airport,Airbus A200-100,11944.283163695933,265.69420895775625,3200.286746896174
+LaGuardia Airport,O'Hare International Airport,Airbus A220-300,10860.97182319194,203.84706875360246,758.3110957633999
+LaGuardia Airport,Los Angeles International Airport,Boeing 737-600,31729.98810785791,800.7163829676207,55548.09763561275
+LaGuardia Airport,Los Angeles International Airport,Boeing 767-800,38662.48513482239,614.3045447800561,28296.710246203715
+LaGuardia Airport,Los Angeles International Airport,Airbus A200-100,30757.00606898571,684.1731969521901,43817.87239880301
+LaGuardia Airport,Los Angeles International Airport,Airbus A220-300,27108.32342321493,508.78985403931927,28349.77066707087
+LaGuardia Airport,San Francisco International Airport,Boeing 737-600,32960.94418749939,831.7799527468492,1973.8138278682745
+LaGuardia Airport,George Bush Intercontinental Airport,Boeing 737-600,19919.748768258334,502.6812215978583,1192.862538851714
+Detroit Metropolitan Airport,Los Angeles International Airport,Boeing 737-600,26225.602452091312,661.8114531024632,12821.273280954018
+Detroit Metropolitan Airport,Los Angeles International Airport,Airbus A200-100,25445.756752017936,566.0272884443984,7949.853266201571
+Detroit Metropolitan Airport,Los Angeles International Airport,Airbus A220-300,22521.335376742758,422.6977360499767,2417.8310502058666
+Philadelphia International Airport,Dallas/Fort Worth International Airport,Boeing 737-600,18639.623453537217,470.3768504690543,2527.3348175702267
+Philadelphia International Airport,Dallas/Fort Worth International Airport,Airbus A200-100,18125.95245516749,403.2021455937602,18.144096551717666
+Philadelphia International Airport,O'Hare International Airport,Boeing 737-600,11611.775204690059,293.02685554521054,4797.728705841733
+Philadelphia International Airport,O'Hare International Airport,Airbus A200-100,11344.69537294655,252.35669831935377,2787.2797329372625
+Philadelphia International Airport,O'Hare International Airport,Airbus A220-300,10343.146003908383,194.12811568897115,528.0284746740017
+Philadelphia International Airport,Los Angeles International Airport,Boeing 737-600,30966.889391601893,781.4593431650615,52649.26032705968
+Philadelphia International Airport,Los Angeles International Airport,Boeing 767-800,37708.61173950237,599.1485412317455,26400.282172294406
+Philadelphia International Airport,Los Angeles International Airport,Airbus A200-100,30020.68274628253,667.7940773280509,41433.283527818916
+Philadelphia International Airport,Los Angeles International Airport,Airbus A220-300,26472.40782633491,496.8545012450246,26691.02380688272
+Philadelphia International Airport,San Francisco International Airport,Boeing 737-600,32307.905016147113,815.3003007077779,1119.4073128717828
+Philadelphia International Airport,George Bush Intercontinental Airport,Boeing 737-600,18887.142470168445,476.62307189967555,1131.0265496179272
+Tampa International Airport,Los Angeles International Airport,Boeing 737-600,28243.911029559637,712.7441146077077,3116.830013179504
