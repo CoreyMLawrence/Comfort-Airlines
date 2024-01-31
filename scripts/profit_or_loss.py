@@ -1,5 +1,11 @@
+#Parker Blue
+#script that runs all possibe flight combinations  (4 plane types, 800+routes)
+# and creates csvs of profitable and loss flights separately
+# NOTE: does not account for (max) fuel capacity, refuel, etc, purely monetary calc
+#only accounts for generic takeoff/landing fee (4k total) and gas @ 6.19 a gallon
+
 import csv
-# NOTE: does not account for (max) fuel capacity, purely monetary calc
+
 
 # Indices of values in flight_demand.csv
 SOURCE_AIRPORT = 0
@@ -39,7 +45,9 @@ with open ("data/flights.csv", "r") as flight_data, open ("data/linear_aircraft_
     #skip header row
     _ = next(flight_reader)
     _ = next(aircraft_spec_reader)
-    running_total = 0
+    
+    #uncomment all of the lines with running_total to get a total profit/loss for all possible flights
+    #running_total = 0
     
     for row_flight in flight_reader:  # Iterate over the reader object, not the file object
         source_airport = row_flight[SOURCE_AIRPORT]
@@ -60,7 +68,7 @@ with open ("data/flights.csv", "r") as flight_data, open ("data/linear_aircraft_
             
             #calculate profit/loss per flight
             profit_loss = break_even_cost_per_ticket * demand - total_cost
-            running_total +=profit_loss
+            #running_total +=profit_loss
 
             #4. Write body
             if profit_loss > 0:
@@ -79,5 +87,4 @@ with open ("data/flights.csv", "r") as flight_data, open ("data/linear_aircraft_
         aircraft_spec_data.seek(FILE_START)
         _ = next(aircraft_spec_reader)
         
-print(running_total)
-# NOTE: does not account for (max) fuel capacity, purely monetary calc
+#print(running_total)
