@@ -6,7 +6,7 @@
 # Input: 
 #   Lists of the source and destination airports and the distancce between them and the flight demand for them
 # Output: 
-#   An aggregated list of the lists provided
+#   An aggregated list of the lists
 import csv
 from pprint import pprint
 
