@@ -8,7 +8,8 @@
 # Output: 
 #   A filtered mapping of metro areas to airports where the airports 
 #   share the same metro area
-
+#
+# Note: one-time script. do not run again.
 
 import csv
 from pprint import pprint

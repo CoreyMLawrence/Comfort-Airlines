@@ -1,8 +1,0 @@
-AircraftType,Boeing 737-600,Boeing 767-800,Airbus A200-100,Airbus A220-300,
-passenger_capacity,119,189,135,160,passengers
-cruise_speed,969,969,910,910,km/h
-max_fuel_capacity,6875,6875,5790,5790,gallons
-max_range,5648,5665,5460,5920,kilometers
-max_altitude,41000,41000,41000,41000,feet
-mpg_per_seat,66,85,77,105,mpg/seat
-mpg_calc,.55,.44,.57,.66,mpg
