@@ -34,7 +34,7 @@ percent_full = 0.3
 FILE_START = 0
 
 
-with open ("data/flights.csv", "r") as flight_data, open ("data/linear_aircraft_specs.csv", "r") as aircraft_spec_data, open("data/profitable_flights.csv", "w") as outfile1, open("data/loss_flights.csv", "w") as outfile2:
+with open ("data/flights.csv", "r") as flight_data, open ("data/linear_aircraft_specs.csv", "r") as aircraft_spec_data, open("data/profit_or_loss_profit.csv", "w") as outfile1, open("data/profit_or_loss_loss.csv", "w") as outfile2:
     #Generate break even costs
     flight_reader = csv.reader(flight_data, delimiter=',')
     aircraft_spec_reader = csv.reader(aircraft_spec_data, delimiter=',')
