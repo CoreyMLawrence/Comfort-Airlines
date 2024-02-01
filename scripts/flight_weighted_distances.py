@@ -16,7 +16,7 @@ Functions:
 Input:
     - 'airports.csv': CSV file containing airport data including latitude and longitude.
 Output:
-    - 'weighted_distances.csv': CSV file containing the weighted distances between pairs of airports.
+    - 'flight_weighted_distances.csv': CSV file containing the weighted distances between pairs of airports.
 """
 
 import math
@@ -83,8 +83,8 @@ def wdistance(lat1, lon1, lat2, lon2):
     return weightedDistance
 
 # Input and output file paths
-csv_file_path = 'airports.csv'
-output_csv_path = 'weighted_distances.csv'
+csv_file_path = 'data/airports.csv'
+output_csv_path = 'data/flight_weighted_distances.csv'
 
 # Read latitude, longitude, and airport names from CSV file
 coordinates = []
