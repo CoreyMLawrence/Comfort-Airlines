@@ -1,22 +1,48 @@
+"""
+AUTHOR: Corey Lawrence
+
+Script to calculate weighted distances between pairs of airports considering the direction of travel.
+
+This script reads airport data from a CSV file containing latitude and longitude information.
+It then calculates the distances between all pairs of airports using the Haversine formula
+and adjusts these distances based on the direction of travel. The resulting weighted distances
+are stored in a CSV file with columns for the origin airport, destination airport, and the
+calculated weighted distance.
+
+Functions:
+    - haversine_distance(lat1, lon1, lat2, lon2): Calculates the Haversine distance between two points.
+    - wdistance(lat1, lon1, lat2, lon2): Calculates the weighted distance between two points.
+
+Input:
+    - 'airports.csv': CSV file containing airport data including latitude and longitude.
+Output:
+    - 'weighted_distances.csv': CSV file containing the weighted distances between pairs of airports.
+"""
+
 import math
 import csv
 
+# Radius of the Earth in kilometers
 radius_of_earth = 6378.14  
 
-
+# Function to calculate the Haversine distance between two points given their latitudes and longitudes
 def haversine_distance(lat1, lon1, lat2, lon2):
+    # Convert degrees to radians
     phi_A, lambda_A, phi_B, lambda_B = map(math.radians, [lat1, lon1, lat2, lon2])
+    # Calculate the distance using Haversine formula
     distance = radius_of_earth * math.acos(math.sin(phi_A) * math.sin(phi_B) + math.cos(phi_A) * math.cos(phi_B) * math.cos(lambda_A - lambda_B))
+    # If the distance is less than 242 km, set it to -1
     if distance < 242:
         distance = -1
     return distance
 
-
+# Function to calculate the weighted distance between two points considering the direction of travel
 def wdistance(lat1, lon1, lat2, lon2):
     distance = haversine_distance(lat1, lon1, lat2, lon2)
     if distance < 0:
         return distance
     
+    # Calculate the difference in latitudes and longitudes
     deltaLat = lat2 - lat1
     deltaLon = lon2 - lon1
 
@@ -40,22 +66,13 @@ def wdistance(lat1, lon1, lat2, lon2):
     # Calculate the angle between the two vectors
     angle = math.degrees(math.acos(dot_product))
 
+    # Calculate the percentage of angle
     if angle <= 90:
         percentage = angle / 90
     else:
         percentage = (angle - 90) / 90
 
-    print("\nlat1 = ", lat1,
-          "\nlat2 = ", lat2,
-          "\ndeltaLat: ", deltaLat,
-          "\nlon1 = ", lon1,
-          "\nlon2 = ", lon2,
-          "\ndeltaLon: ", deltaLon,
-          "\nDistance: ", distance,
-          "\nAngle: ", angle,
-          "\nPercentage: ", percentage)
-
-    # Adjust weighted distance based on direction
+    # Adjust weighted distance based on direction of travel
     if deltaLon > 0:  # Going West - flight time increases
         weightedDistance = distance + (distance * 0.045 * percentage)
     elif deltaLon < 0:  # Going East - flight time decreases
@@ -63,16 +80,13 @@ def wdistance(lat1, lon1, lat2, lon2):
     else:  # Going exactly north or south
         weightedDistance = distance
 
-    print("\nDistance: ", distance,
-          "\nWeighted Distance: ", weightedDistance,
-          "\n")
-
     return weightedDistance
 
+# Input and output file paths
 csv_file_path = 'airports.csv'
 output_csv_path = 'weighted_distances.csv'
 
-# Read latitude and longitude from CSV file
+# Read latitude, longitude, and airport names from CSV file
 coordinates = []
 airport_names = []
 with open(csv_file_path, 'r') as file:
@@ -92,18 +106,24 @@ for i in range(num_points):
         if i != j:
             lat1, lon1 = coordinates[i]
             lat2, lon2 = coordinates[j]
+            # Calculate weighted distance between each pair of airports
             distance_matrix[i][j] = wdistance(lat1, lon1, lat2, lon2)
         else:
-            distance_matrix[i][j] = -1
+            distance_matrix[i][j] = -1  # Set diagonal elements to -1
 
 # Write the distance matrix to a CSV file
 with open(output_csv_path, 'w', newline='') as output_file:
     csv_writer = csv.writer(output_file)
     
     # Write the header row
-    csv_writer.writerow([''] + airport_names)
+    csv_writer.writerow(['Origin Airport', 'Destination Airport', 'Weighted Distance'])
     
-    # Write each row with airport name and corresponding distances
+    # Write each row with origin airport, destination airport, and corresponding weighted distances
     for i in range(num_points):
-        row_data = [airport_names[i]] + distance_matrix[i]
-        csv_writer.writerow(row_data)
+        for j in range(num_points):
+            if i != j:
+                origin = airport_names[i]
+                destination = airport_names[j]
+                weighted_distance = distance_matrix[i][j]
+                # Write the data to the CSV file
+                csv_writer.writerow([origin, destination, weighted_distance])
