@@ -1,15 +1,15 @@
-$root_directory = "scripts";
+$ROOT_DIRECTORY = "scripts";
 
 $scripts = @(
-    # airports.csv - manually created
+    # starting point: airports.csv - manually created
     "flight_weighted_distances.py",
-    "flight_demand.py",             # update to use weighted distance
-    "flight_fuel_capacity.py",      # update to use weighted distance
-    "flight_combine.py",            # update to use weighted distance
-    "flight_profit_or_loss.py"      # update to use weighted distance
+    "flight_demand.py",
+    "flight_fuel_capacity.py",
+    "flight_combine.py",
+    "flight_profit_or_loss.py"
 );
 
 foreach ($script in $scripts) {
-    $script_path = Join-Path -Path $root_directory -ChildPath $script;
+    $script_path = Join-Path -Path $ROOT_DIRECTORY -ChildPath $script;
     python3 $script_path;
 }
