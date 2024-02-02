@@ -35,7 +35,7 @@ MARKET_SHARE = 0.02
 # File-reading constants
 FILE_START = 0
 
-with open ("data/airports.csv", "r") as airport_data, open("data/flight_distance.csv", "r") as flight_data:
+with open ("data/airports.csv", "r") as airport_data, open("data/flight_weighted_distances.csv", "r") as flight_data:
     # 1. Generete a mapping of airports to their metro populations
     reader = csv.reader(airport_data, delimiter=',')
     header = next(reader)
