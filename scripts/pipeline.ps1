@@ -2,7 +2,7 @@ $root_directory = "scripts";
 
 $scripts = @(
     # airports.csv - manually created
-    "flight_weighted_distance.py",
+    "flight_weighted_distances.py",
     "flight_demand.py",             # update to use weighted distance
     "flight_fuel_capacity.py",      # update to use weighted distance
     "flight_combine.py",            # update to use weighted distance
