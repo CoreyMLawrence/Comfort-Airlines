@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="aNz_gXVlY4kM5i3yTjZw" name="Page-1">
-        <mxGraphModel dx="2927" dy="907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
+        <mxGraphModel dx="1468" dy="453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -10,11 +10,8 @@
                 <mxCell id="17" value="&lt;h1&gt;Genetic Timetable Generation Algorithm&lt;/h1&gt;&lt;p&gt;This model is a rule-based, mutation-based (crossoverless) genetic algorithm to automatically generate timetables. The goal of the model is to metahueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too.&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://towardsdatascience.com/genetic-algorithm-a-simple-and-intuitive-guide-51c04cc1f9ed&quot;&gt;Note difference in opinions on selection algorithms&lt;/a&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="180" y="22" width="490" height="138" as="geometry"/>
                 </mxCell>
-                <mxCell id="20" value="&lt;h1&gt;Hard Constraints&lt;/h1&gt;&lt;p&gt;This model is a rule-based genetic algorithm to automatically generate timetables. The goal of the model is to hueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="-560" y="90" width="490" height="100" as="geometry"/>
-                </mxCell>
-                <mxCell id="21" value="&lt;h1&gt;Soft Constraints&lt;/h1&gt;&lt;p&gt;This model is a rule-based genetic algorithm to automatically generate timetables. The goal of the model is to hueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="-570" y="330" width="490" height="100" as="geometry"/>
+                <mxCell id="20" value="&lt;h1&gt;Requirements Summary&lt;/h1&gt;&lt;p&gt;We need a timetable to schedule flights between airports. Finding the perfect timetable (minimizing undesierable attributes while maximizing desierable attributes) with a backtracking approach is not feasable because the problem space is too large. Consider that even without repeating flights (which is a requirement), the possible orderings of the flights is the factorial of the number of flights. With a few hundred flights, it quickly reaches incomputability.&amp;nbsp;&lt;/p&gt;&lt;p&gt;So, a hueristic approach must be taken. Genetic algorithms have been long established as an effective means of developing timetables such as university exam schedules (since it's really just an optimization problem); however, u&lt;span style=&quot;background-color: initial;&quot;&gt;nlike exam timetables, which are finite, a airport timetable must be cyclic so it can span an indefinite time period.&lt;/span&gt;&lt;/p&gt;&lt;p&gt;The core idea behind the genetic algorithm is that a brute-force search takes too long so instead of a brute-force search we will generate random time tables, select the best one, spawn a new set of timetables based on the best timetable but with minor, random changes, select the best child, spawn a new set of grandchild timetables based on the child timetable, and repeat this process of gradual, iterative improvements until a good timetable is found. &quot;Good&quot; is defined as a timetable that is above the fitness threshold and does not break any hard constraints. &quot;Fitness&quot; refers to a quantitative evaluation of the quality of the timetable. The higher the fitness score, the better the timetable.&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="-570" y="120" width="490" height="350" as="geometry"/>
                 </mxCell>
                 <mxCell id="22" value="&lt;h1&gt;Genetic Algorithm Hyperparameters&lt;/h1&gt;&lt;p&gt;- Population size (N):&amp;nbsp; 32?&lt;/p&gt;&lt;p&gt;- Mutation rate (R): 5 / N&lt;/p&gt;&lt;p&gt;- Number of parents (P&lt;sub&gt;n&lt;/sub&gt;): 2?&lt;/p&gt;&lt;p&gt;- Fitness threshold (T): ?&lt;/p&gt;&lt;p&gt;-&amp;nbsp;Candidate timetable outfile (de)serialization format: csv&amp;nbsp;&lt;/p&gt;&lt;p&gt;- Candidate timetable outfile name: candidate.csv&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="910" y="60" width="490" height="200" as="geometry"/>
@@ -74,25 +71,25 @@
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
                 <mxCell id="45" value="&lt;h1&gt;Flowchart Shape Legend&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
-                    <mxGeometry x="-558" y="680" width="300" height="40" as="geometry"/>
+                    <mxGeometry x="-558" y="830" width="300" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="46" value="Start / Stop" style="ellipse;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-558" y="740" width="126" height="50" as="geometry"/>
+                    <mxGeometry x="-558" y="890" width="126" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="47" value="Process Step" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-358" y="745" width="180" height="40" as="geometry"/>
+                    <mxGeometry x="-358" y="895" width="180" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="48" value="Decision" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="-570" y="820" width="150" height="80" as="geometry"/>
+                    <mxGeometry x="-570" y="970" width="150" height="80" as="geometry"/>
                 </mxCell>
                 <mxCell id="49" value="Input / Output" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
-                    <mxGeometry x="-373" y="825" width="210" height="70" as="geometry"/>
+                    <mxGeometry x="-373" y="975" width="210" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="50" value="Select timetable with highest fitness" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="193" y="580" width="210" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="51" value="Is the fitness of the &lt;br&gt;timetable above the fitness&lt;br&gt;threshold?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="188" y="670" width="220" height="110" as="geometry"/>
+                <mxCell id="51" value="Is there any &lt;br&gt;timetable with a fitness level&lt;br&gt;above the threshold that &lt;br&gt;does not violate the &lt;br&gt;hard requirements?" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                    <mxGeometry x="155" y="670" width="288" height="110" as="geometry"/>
                 </mxCell>
                 <mxCell id="52" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" parent="1" source="50" target="51" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
@@ -101,14 +98,14 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="53" value="Generate new generation of mutated children from most fit parent&amp;nbsp;" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
-                    <mxGeometry x="473" y="705" width="207" height="40" as="geometry"/>
+                    <mxGeometry x="510" y="705" width="207" height="40" as="geometry"/>
                 </mxCell>
                 <mxCell id="54" value="" style="endArrow=classic;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="53" target="26" edge="1">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="548" y="565" as="sourcePoint"/>
                         <mxPoint x="568" y="510" as="targetPoint"/>
                         <Array as="points">
-                            <mxPoint x="577" y="510"/>
+                            <mxPoint x="614" y="510"/>
                         </Array>
                     </mxGeometry>
                 </mxCell>
@@ -126,6 +123,12 @@
                 </mxCell>
                 <mxCell id="58" value="&lt;h1&gt;Fitness Function&lt;/h1&gt;&lt;div&gt;Define the fitness function here&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="910" y="420" width="490" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="59" value="&lt;h1&gt;Soft Constraints&lt;/h1&gt;&lt;p&gt;This model is a rule-based genetic algorithm to automatically generate timetables. The goal of the model is to hueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-580" y="690" width="490" height="100" as="geometry"/>
+                </mxCell>
+                <mxCell id="60" value="&lt;h1&gt;Hard Constraints&lt;/h1&gt;&lt;p&gt;This model is a rule-based genetic algorithm to automatically generate timetables. The goal of the model is to hueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-580" y="520" width="490" height="100" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
