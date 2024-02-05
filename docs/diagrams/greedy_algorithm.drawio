@@ -1,0 +1,61 @@
+<mxfile host="65bd71144e">
+    <diagram id="NIB5Si_BT8D2J3pTm94L" name="Page-1">
+        <mxGraphModel dx="2395" dy="509" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="3" value="&lt;h1&gt;Flowchart Shape Legend&lt;/h1&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-1598" y="790" width="300" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="Start / Stop" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1598" y="850" width="126" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="5" value="Process Step" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1398" y="855" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="6" value="Decision" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1610" y="930" width="150" height="80" as="geometry"/>
+                </mxCell>
+                <mxCell id="7" value="Input / Output" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-1413" y="935" width="210" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="10" value="&lt;h1&gt;Greedy Timetable Generation Algorithm&lt;/h1&gt;&lt;p&gt;A&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-670" y="50" width="490" height="138" as="geometry"/>
+                </mxCell>
+                <mxCell id="11" value="Start / Stop" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-488" y="290" width="126" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="13" value="Import flight, aircraft, and airport information from CSV into classes" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-540" y="390" width="230" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="14" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="11" target="13">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-480" y="520" as="sourcePoint"/>
+                        <mxPoint x="-430" y="470" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="15" value="Sort flights by profit per hour" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-515" y="510" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="18" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="13" target="15">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-415" y="350" as="sourcePoint"/>
+                        <mxPoint x="-415" y="400" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="21" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="15" target="23">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-560" y="560" as="sourcePoint"/>
+                        <mxPoint x="-424.9999999999998" y="610" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="23" value="Sort flights by profit per hour" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-515" y="600" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="24" value="&lt;h1&gt;Greedy Flight Selection Algorithm&lt;/h1&gt;&lt;p&gt;Given the list of flights ordered by flight profit per hour and the list of aircraft, design an algorithm that iteratively returns the most profitable available flight. The algorithm requires that:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. There be an aircraft of the required type at the source airport&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Flights take off within the operating hours of the source airport and land within the operating hours of the destination airport&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Consider implementing the algorithm as &lt;a href=&quot;https://wiki.python.org/moin/Iterator&quot;&gt;an iterator&lt;/a&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="130" y="50" width="490" height="250" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
