@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="NIB5Si_BT8D2J3pTm94L" name="Page-1">
-        <mxGraphModel dx="2395" dy="509" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="2627" dy="679" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -19,10 +19,10 @@
                 <mxCell id="7" value="Input / Output" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
                     <mxGeometry x="-1413" y="935" width="210" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="&lt;h1&gt;Greedy Timetable Generation Algorithm&lt;/h1&gt;&lt;p&gt;A&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
-                    <mxGeometry x="-670" y="50" width="490" height="138" as="geometry"/>
+                <mxCell id="10" value="&lt;h1&gt;Greedy Timetable Generation Algorithm&lt;/h1&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="-670" y="50" width="490" height="40" as="geometry"/>
                 </mxCell>
-                <mxCell id="11" value="Start / Stop" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                <mxCell id="11" value="Start" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
                     <mxGeometry x="-488" y="290" width="126" height="50" as="geometry"/>
                 </mxCell>
                 <mxCell id="13" value="Import flight, aircraft, and airport information from CSV into classes" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
@@ -43,17 +43,71 @@
                         <mxPoint x="-415" y="400" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="21" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="15" target="23">
+                <mxCell id="21" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="15" target="25">
                     <mxGeometry width="50" height="50" relative="1" as="geometry">
                         <mxPoint x="-560" y="560" as="sourcePoint"/>
-                        <mxPoint x="-424.9999999999998" y="610" as="targetPoint"/>
+                        <mxPoint x="-425" y="600" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="23" value="Sort flights by profit per hour" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-                    <mxGeometry x="-515" y="600" width="180" height="40" as="geometry"/>
-                </mxCell>
-                <mxCell id="24" value="&lt;h1&gt;Greedy Flight Selection Algorithm&lt;/h1&gt;&lt;p&gt;Given the list of flights ordered by flight profit per hour and the list of aircraft, design an algorithm that iteratively returns the most profitable available flight. The algorithm requires that:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. There be an aircraft of the required type at the source airport&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Flights take off within the operating hours of the source airport and land within the operating hours of the destination airport&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3.&amp;nbsp;&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;Consider implementing the algorithm as &lt;a href=&quot;https://wiki.python.org/moin/Iterator&quot;&gt;an iterator&lt;/a&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                <mxCell id="24" value="&lt;h1&gt;Greedy Flight Selection Algorithm&lt;/h1&gt;&lt;p&gt;Given the list of flights ordered by flight profit per hour and the list of aircraft, design an algorithm that iteratively returns the most profitable available flight. The algorithm requires:&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;1. There be an aircraft of the required type with sufficient fuel at the source airport&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;2. Flights take off within the operating hours of the source airport and land within the operating hours of the destination airport&lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;background-color: initial;&quot;&gt;3. Aircraft return to their home airport by the end of the operating hours of their home airport&lt;/span&gt;&lt;/p&gt;&lt;p&gt;4. Leave `N`&amp;nbsp;buffer times between flights&lt;/p&gt;&lt;p&gt;Consider implementing the algorithm as &lt;a href=&quot;https://wiki.python.org/moin/Iterator&quot;&gt;an iterator&lt;/a&gt;&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
                     <mxGeometry x="130" y="50" width="490" height="250" as="geometry"/>
+                </mxCell>
+                <mxCell id="25" value="Are there any aircraft&lt;br&gt;left that can make a flight&lt;br&gt;within the remaining time?" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-557.5" y="590" width="265" height="110" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="Serialize timetable as CSV file" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" vertex="1" parent="1">
+                    <mxGeometry x="-680" y="770" width="210" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="28" value="Stop" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-641" y="895" width="126" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="30" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="27" target="28">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-415" y="710" as="sourcePoint"/>
+                        <mxPoint x="-415" y="760" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="31" value="" style="endArrow=classic;html=1;exitX=0;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="25" target="27">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-410" y="720" as="sourcePoint"/>
+                        <mxPoint x="-310" y="720" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="32" value="no" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="31">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="33" value="" style="endArrow=classic;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;entryX=0.535;entryY=0.057;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="25" target="35">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="-320" y="740" as="sourcePoint"/>
+                        <mxPoint x="-260" y="760" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="34" value="yes" style="edgeLabel;resizable=0;html=1;align=center;verticalAlign=middle;" connectable="0" vertex="1" parent="33">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="2" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="35" value="Determine next most &lt;br&gt;profitable, available flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-335" y="770" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="36" value="Schedule next available flight" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+                    <mxGeometry x="-335" y="860" width="180" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="37" value="" style="endArrow=classic;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0.5;exitY=1;exitDx=0;exitDy=0;" edge="1" parent="1" source="35" target="36">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-415" y="560.0000000000002" as="sourcePoint"/>
+                        <mxPoint x="-415" y="600.0000000000002" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="36" target="25">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="-140" y="700" as="sourcePoint"/>
+                        <mxPoint x="-90" y="650" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="-20" y="880"/>
+                            <mxPoint x="-20" y="645"/>
+                        </Array>
+                    </mxGeometry>
                 </mxCell>
             </root>
         </mxGraphModel>

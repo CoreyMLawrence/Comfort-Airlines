@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="aNz_gXVlY4kM5i3yTjZw" name="Page-1">
-        <mxGraphModel dx="1468" dy="453" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
+        <mxGraphModel dx="2240" dy="1018" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -109,7 +109,7 @@
                         </Array>
                     </mxGeometry>
                 </mxCell>
-                <mxCell id="55" value="&lt;h1&gt;Genetic Algorithm Component Mappings&lt;/h1&gt;&lt;div&gt;- Population: List of timetables&lt;br&gt;&amp;nbsp;- Chromosomes: Flights in each timetable&lt;br&gt;&amp;nbsp;- Genes: mutable flight attributes (departure time, aircraft)&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
+                <mxCell id="55" value="&lt;h1&gt;Genetic Algorithm Component Mappings&lt;/h1&gt;&lt;div&gt;&amp;nbsp;- Population: List of timetables&lt;br&gt;&amp;nbsp;- Chromosomes: Flights in each timetable&lt;br&gt;&amp;nbsp;- Genes: mutable flight attributes (departure time, aircraft)&lt;br&gt;&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="910" y="290" width="490" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="56" value="Read flight data from CSV" style="shape=parallelogram;perimeter=parallelogramPerimeter;whiteSpace=wrap;html=1;fixedSize=1;" parent="1" vertex="1">
