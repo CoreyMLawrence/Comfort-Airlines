@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="aNz_gXVlY4kM5i3yTjZw" name="Page-1">
-        <mxGraphModel dx="2240" dy="1018" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
+        <mxGraphModel dx="2927" dy="907" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="1" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -124,10 +124,10 @@
                 <mxCell id="58" value="&lt;h1&gt;Fitness Function&lt;/h1&gt;&lt;div&gt;Define the fitness function here&lt;/div&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="910" y="420" width="490" height="160" as="geometry"/>
                 </mxCell>
-                <mxCell id="59" value="&lt;h1&gt;Soft Constraints&lt;/h1&gt;&lt;p&gt;This model is a rule-based genetic algorithm to automatically generate timetables. The goal of the model is to hueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                <mxCell id="59" value="&lt;h1&gt;Soft Constraints&lt;/h1&gt;&lt;p&gt;This model is a rule-based genetic algorithm to automatically generate timetables. The goal of the model is to hueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="-580" y="690" width="490" height="100" as="geometry"/>
                 </mxCell>
-                <mxCell id="60" value="&lt;h1&gt;Hard Constraints&lt;/h1&gt;&lt;p&gt;This model is a rule-based genetic algorithm to automatically generate timetables. The goal of the model is to hueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" vertex="1" parent="1">
+                <mxCell id="60" value="&lt;h1&gt;Hard Constraints&lt;/h1&gt;&lt;p&gt;This model is a rule-based genetic algorithm to automatically generate timetables. The goal of the model is to hueristically determine an optimal ordering of flights that satisfies the hard constraints of the problem. Ideally, it will also satisfy the soft constraints too&lt;/p&gt;" style="text;html=1;strokeColor=none;fillColor=none;spacing=5;spacingTop=-20;whiteSpace=wrap;overflow=hidden;rounded=0;" parent="1" vertex="1">
                     <mxGeometry x="-580" y="520" width="490" height="100" as="geometry"/>
                 </mxCell>
             </root>
