@@ -1,4 +1,4 @@
-source airport,destination airport,distance (weighted, km),number of passengers for 2% market share (flight demand)
+source airport,destination airport,distance (weighted in km),number of passengers for 2% market share (flight demand)
 Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,1170.1452541878828,32
 Hartsfield-Jackson Atlanta International Airport,Denver International Airport,1912.1121443233453,12
 Hartsfield-Jackson Atlanta International Airport,O'Hare International Airport,973.4359626827253,40

@@ -32,7 +32,7 @@ with open("data/flight_weighted_distances.csv", "r") as flight_data, open("data/
     flight_demand = [row for row in reader]
     
     with open("data/flights.csv", "w") as outfile:
-        outfile.write("source airport,destination airport,distance (weighted, km),number of passengers for 2% market share (flight demand)\n")
+        outfile.write("source airport,destination airport,distance (weighted in km),number of passengers for 2% market share (flight demand)\n")
         
         for row_flight, row_flight_demand in zip(flights, flight_demand):
             assert row_flight[SOURCE_AIRPORT] == row_flight_demand[SOURCE_AIRPORT]
