@@ -34,10 +34,6 @@
                 - Reset flight hours to 0
             - If waiting to depart: FOO
 
-        - For each airport:
-            - Assign as many aircraft as possible from the queue to a gate
-            - Wait 15 minutes to deboard plane
-            - Mark the aircraft as available
     - Increment the timer by 1 minute
 - Serialize scheduler records as `simulation/timetable.csv`
 - Serialize passengers as `simulation/passenger.csv`
@@ -59,10 +55,16 @@
     - Refuel the aircraft with the required fuel for the trip + 33% (or just the whole tank? to be discussed.)
     - `[Subroutine::Ledger::Append]` Add fuel costs to ledger
     - Wait 10 minutes to departure wait time
+- Depart from airport (begin flight timer)
+- Assign newly available gate to first aircraft in tarmac
+- Aircraft assigned to gate must wait 15 minutes
 
 ## ROUTINE: Flight::Arrive(aircraft, flight, ledger)
 - `[Subroutine::Ledger::Append]` Add landing fee to ledger
-- Append the aircraft to the tarmac queue
+- If there is any available gate, assign the gate to the aircraft
+    - Wait 15 minutes
+- Else
+    - Append the aircraft to the tarmac queue
 
 ## ROUTINE: Ledger::Append(description: enum LedgerEntryType, cost: decimal)
 - Append the transaction to the ledger (type: `LedgerEntry`), including its description, the net cost, the current date, time,
