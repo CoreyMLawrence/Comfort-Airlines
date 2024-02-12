@@ -2,7 +2,7 @@
 # Authors: Dylan Hudson
 # Date: 2/1/2024
 # Script: flight_fuel_capacity.py
-# Depends on: "data/linear_aircraft_specs.csv", "data/weighted_distances.csv"
+# Depends on: "data/aircraft.csv", "data/weighted_distances.csv"
 # Input: 
 #   A list of the airport, their details, and the weighted distances between them
 # Output: 
@@ -14,7 +14,7 @@
 import csv
 from pprint import pprint
 
-# Indices of values in linear_aircraft_specs.csv
+# Indices of values in aircraft.csv
 AIRCRAFT = 0
 PASSENGER_CAPACITY = 1
 CRUISE_SPEED = 2
@@ -35,7 +35,7 @@ DESIRED_FUEL_MULTIPLIER = 1.3    # Amount of fuel we want for flights (130% of f
 FILE_START = 0
 
 # Open CSVs
-with open ("data/aircraft_specs.csv", "r") as aircraft_data, open("data/flight_weighted_distances.csv", "r") as flight_data:
+with open ("data/aircraft.csv", "r") as aircraft_data, open("data/flight_weighted_distances.csv", "r") as flight_data:
     # 1. Import aircraft data
     reader = csv.reader(aircraft_data, delimiter=',')
     _ = next(reader)

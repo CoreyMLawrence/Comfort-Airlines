@@ -18,7 +18,7 @@ DESTINATION_AIRPORT = 1
 DISTANCE_KM = 2
 DEMAND = 3
 
-# aircraft_specs.csv
+# aircraft.csv
 # aircraft,passenger_capacity,cruise_speed (km/h),max_fuel_capacity (gallons),max_range (km),mpg (mpg)
 AIRCRAFT = 0
 CAPACITY = 1
@@ -38,7 +38,7 @@ ASCENT_ANGLE = 6
 # File-reading constants
 FILE_START = 0
 
-with open ("data/airports.csv", "r") as airport_data,open ("data/aircraft_specs.csv", "r") as aircraft_spec_data, open("data/flights.csv", "r") as flight_data, open("data/flight_time.csv", "w") as outfile:
+with open ("data/airports.csv", "r") as airport_data,open ("data/aircraft.csv", "r") as aircraft_spec_data, open("data/flights.csv", "r") as flight_data, open("data/flight_time.csv", "w") as outfile:
     #make readers for files
     airport_reader = csv.reader(airport_data, delimiter=',')
     _ = next(airport_reader)

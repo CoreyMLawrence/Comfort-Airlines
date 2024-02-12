@@ -13,7 +13,7 @@ DESTINATION_AIRPORT = 1
 DISTANCE_KM = 2
 DEMAND = 3
 
-# linear_aircraft_specs.csv
+# aircraft.csv
 # aircraft,passenger_capacity,cruise_speed (km/h),max_fuel_capacity (gallons),max_range (km),mpg (mpg)
 AIRCRAFT = 0
 CAPACITY = 1
@@ -34,7 +34,7 @@ break_even_percentage = 0.3
 FILE_START = 0
 
 
-with open ("data/flights.csv", "r") as flight_data, open ("data/aircraft_specs.csv", "r") as aircraft_spec_data, open("data/flight_profit_or_loss_profit.csv", "w") as outfile1, open("data/flight_profit_or_loss_loss.csv", "w") as outfile2:
+with open ("data/flights.csv", "r") as flight_data, open ("data/aircraft.csv", "r") as aircraft_spec_data, open("data/flight_profit_or_loss_profit.csv", "w") as outfile1, open("data/flight_profit_or_loss_loss.csv", "w") as outfile2:
     #Generate break even costs
     flight_reader = csv.reader(flight_data, delimiter=',')
     aircraft_spec_reader = csv.reader(aircraft_spec_data, delimiter=',')
