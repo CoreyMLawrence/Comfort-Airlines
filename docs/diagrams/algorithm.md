@@ -17,6 +17,21 @@
 - `simulation/aircraft.csv`
 - `simulation/ledger.csv`
 
+# Aircraft Status
+- Available
+- In Maintenance
+- Waiting at tarmac
+- Boarding without refueling
+- Boarding with refueling
+- Deboarding
+- In flight
+
+# Ledger Entries
+- Fuel (expense)
+- Landing and takeoff fees (expense)
+- Aircraft rentals (expense)
+- Ticket sales (profit)
+
 # Algorithm
 
 ## ROUTINE: Main()
@@ -40,22 +55,23 @@
             - Else
                 - `[Subroutine::Schedule]` Schedule the aircraft for the most profitable, available flight that can be made within operating hours (if any)
         - Else
-            - If aircraft is in the air and remaining flight wait time has elapsed:
+            - If aircraft is in the air and flight wait time has elapsed:
                 - `[Subroutine::Flight::Arrive]` Land the aircraft
             - If aircraft is in maintenance and has maintenance wait time (36h or 2160m) has elapsed:
-                - Mark the aircraft as available again
-                - Reset flight hours to 0
+                - Set aircraft status to available
+                - Reset flight hours to 0m
                 - If there is an available gate
                     - Assign the aircraft to the gate
                 - Else
-                    - Add the aircraft to the tarmac queue
+                    - Set the aircraft status to waiting at tarmac
+                    - Append the aircraft to the tarmac queue
             - If waiting to depart and departure wait time (25m default, 35m if refueling) has elapsed
                 - Set flight status to in flight
             - If waiting to deboard and deboarding time (15m) has elapsed:
                 - If aircraft needs maintenance and aircraft is at hub airport:
-                    - Set aircraft status to in maintenance
+                    - Set aircraft status to in maintenance (unavailable)
                     - Start timer for maintenance wait time (36h or 2160m)
-                    - Deassign aircraft from current gate
+                    - Deassign the aircraft from current gate
                     - If there are any aircraft waiting on the tarmac:
                         - Assign newly available gate to first aircraft in tarmac
                         - Set first aircraft in tarmac's status to deboarding
@@ -64,7 +80,7 @@
                     - Else
                         - Mark gate as available 
                 - Else
-                    - Mark aircraft as available
+                    - Set aircraft status to available
 
     - Increment the timer by 1 minute
 
@@ -75,13 +91,15 @@
 - Serialize ledger as `simulation/ledger.csv`
 
 ## SUBROUTINE: Schedule(aircraft, flight)
-- Mark the aircraft as unavailable
+- Set aircraft status to scheduled (unavailable)
 - Decrease the demand for the flight by the minimum of the passenger capacity of the aircraft and the remaining demand
-- Append entry to scheduler including all flight information and expected departure and arrival
+- Append entry to scheduler including flight number, data of flight, departure airport, destination airport, number of
+passengers, scheduled, departure time, scheduled arrival time, aircraft tail number
 - `[Subroutine::Flight::Depart]` Begin preparations for departure and depart
 
 ## SUBROUTINE: Flight::Depart(aircraft, flight, ledger)
 - `[Subroutine::Ledger::Append]` Add takeoff fee to ledger
+- Record actual flight departure time in scheduler flight entry
 - Increase aircraft flight hours by flight duration
 - If the aircraft needs to refuel:
     - Refuel the aircraft with the required fuel for the trip + 33% (or just the whole tank? to be discussed.)
@@ -98,10 +116,12 @@
 
 ## SUBROUTINE: Flight::Arrive(aircraft, flight, ledger)
 - `[Subroutine::Ledger::Append]` Add landing fee to ledger
+- Record actual flight arrival time in scheduler flight entry
 - If there is any available gate, assign the gate to the aircraft
     - Set aircraft status to deboarding
     - Start timer for deboarding wait time (15m)
 - Else
+    - Set aircraft status to waiting at tarmac (unavailable)
     - Append the aircraft to the tarmac queue
 
 ## SUBROUTINE: Ledger::Append(description: enum LedgerEntryType, cost: decimal)
