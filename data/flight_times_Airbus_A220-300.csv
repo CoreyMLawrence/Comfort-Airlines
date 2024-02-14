@@ -1,0 +1,871 @@
+Origin Airport,Destination Airport,Flight Time (Minutes)
+Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,161.63740288624038
+Hartsfield-Jackson Atlanta International Airport,Denver International Airport,222.78852020509717
+Hartsfield-Jackson Atlanta International Airport,O'Hare International Airport,145.73434964130985
+Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,323.73003440199994
+Hartsfield-Jackson Atlanta International Airport,John F. Kennedy International Airport,164.61809750045177
+Hartsfield-Jackson Atlanta International Airport,Harry Reid International Airport,297.91983184868934
+Hartsfield-Jackson Atlanta International Airport,Orlando International Airport,117.08017122783579
+Hartsfield-Jackson Atlanta International Airport,Miami International Airport,142.6912718584121
+Hartsfield-Jackson Atlanta International Airport,Charlotte Douglas International Airport,87.04853376974647
+Hartsfield-Jackson Atlanta International Airport,Seattle-Tacoma International Airport,354.07910850989
+Hartsfield-Jackson Atlanta International Airport,Phoenix Sky Harbor International Airport,277.33931173566856
+Hartsfield-Jackson Atlanta International Airport,Newark Liberty International Airport,162.68606168164644
+Hartsfield-Jackson Atlanta International Airport,San Francisco International Airport,348.4977395676154
+Hartsfield-Jackson Atlanta International Airport,George Bush Intercontinental Airport,154.085160579559
+Hartsfield-Jackson Atlanta International Airport,Logan International Airport,189.59098983689148
+Hartsfield-Jackson Atlanta International Airport,Fort Lauderdale-Hollywood International Airport,140.78220411566355
+Hartsfield-Jackson Atlanta International Airport,Minneapolis-Saint Paul International Airport,182.83796853041122
+Hartsfield-Jackson Atlanta International Airport,LaGuardia Airport,164.81844697075786
+Hartsfield-Jackson Atlanta International Airport,Detroit Metropolitan Airport,142.6122796546151
+Hartsfield-Jackson Atlanta International Airport,Philadelphia International Airport,152.04271962539835
+Hartsfield-Jackson Atlanta International Airport,Salt Lake City International Airport,277.7692838943246
+Hartsfield-Jackson Atlanta International Airport,Ronald Reagan Washington National Airport,136.0919892378208
+Hartsfield-Jackson Atlanta International Airport,San Diego International Airport,316.7287310543866
+Hartsfield-Jackson Atlanta International Airport,Baltimore/Washington International Airport,140.06928308151254
+Hartsfield-Jackson Atlanta International Airport,Tampa International Airport,117.38778468778676
+Hartsfield-Jackson Atlanta International Airport,Austin-Bergstrom International Airport,170.2847362009889
+Hartsfield-Jackson Atlanta International Airport,Washington Dulles International Airport,134.3922058982505
+Hartsfield-Jackson Atlanta International Airport,Nashville International Airport,85.31693135748904
+Hartsfield-Jackson Atlanta International Airport,Paris Charles de Gaulle Airport,670.0555204773755
+Dallas/Fort Worth International Airport,Hartsfield-Jackson Atlanta International Airport,162.66194437094998
+Dallas/Fort Worth International Airport,Denver International Airport,149.93182768941327
+Dallas/Fort Worth International Airport,O'Hare International Airport,172.661139832087
+Dallas/Fort Worth International Airport,Los Angeles International Airport,225.33474932194426
+Dallas/Fort Worth International Airport,John F. Kennedy International Airport,249.515784584969
+Dallas/Fort Worth International Airport,Harry Reid International Airport,201.90776732429552
+Dallas/Fort Worth International Airport,Orlando International Airport,194.73558281927814
+Dallas/Fort Worth International Airport,Miami International Airport,213.20433466392382
+Dallas/Fort Worth International Airport,Charlotte Douglas International Airport,188.07711349052153
+Dallas/Fort Worth International Airport,Seattle-Tacoma International Airport,286.9400057680431
+Dallas/Fort Worth International Airport,Phoenix Sky Harbor International Airport,177.42513597641062
+Dallas/Fort Worth International Airport,Newark Liberty International Airport,246.93873698979442
+Dallas/Fort Worth International Airport,San Francisco International Airport,255.20467940234516
+Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,86.75274100546866
+Dallas/Fort Worth International Airport,Logan International Airport,278.8569256083116
+Dallas/Fort Worth International Airport,Fort Lauderdale-Hollywood International Airport,212.87024337806983
+Dallas/Fort Worth International Airport,Minneapolis-Saint Paul International Airport,177.22923742492856
+Dallas/Fort Worth International Airport,LaGuardia Airport,249.20177105385181
+Dallas/Fort Worth International Airport,Detroit Metropolitan Airport,195.09215335226492
+Dallas/Fort Worth International Airport,Philadelphia International Airport,237.5483416239446
+Dallas/Fort Worth International Airport,Salt Lake City International Airport,193.42646977886884
+Dallas/Fort Worth International Airport,Ronald Reagan Washington National Airport,222.59716426485085
+Dallas/Fort Worth International Airport,San Diego International Airport,217.066934551536
+Dallas/Fort Worth International Airport,Baltimore/Washington International Airport,225.964965943416
+Dallas/Fort Worth International Airport,Tampa International Airport,187.23988644715524
+Dallas/Fort Worth International Airport,Austin-Bergstrom International Airport,75.88503034172696
+Dallas/Fort Worth International Airport,Washington Dulles International Airport,219.89178386991847
+Dallas/Fort Worth International Airport,Nashville International Airport,147.31335717030848
+Dallas/Fort Worth International Airport,Paris Charles de Gaulle Airport,748.3215773667655
+Denver International Airport,Hartsfield-Jackson Atlanta International Airport,225.5429577995042
+Denver International Airport,Dallas/Fort Worth International Airport,150.72172957507388
+Denver International Airport,O'Hare International Airport,183.93152239485585
+Denver International Airport,Los Angeles International Airport,176.73034778134755
+Denver International Airport,John F. Kennedy International Airport,287.3331734019865
+Denver International Airport,Harry Reid International Airport,146.02239521884638
+Denver International Airport,Orlando International Airport,276.90890410913994
+Denver International Airport,Miami International Airport,299.10357512060995
+Denver International Airport,Charlotte Douglas International Airport,242.13362137846264
+Denver International Airport,Seattle-Tacoma International Airport,197.93436204665423
+Denver International Airport,Phoenix Sky Harbor International Airport,142.69262848120832
+Denver International Airport,Newark Liberty International Airport,284.46703491587857
+Denver International Airport,San Francisco International Airport,190.42641672325195
+Denver International Airport,George Bush Intercontinental Airport,178.30212199622673
+Denver International Airport,Logan International Airport,304.72396186318156
+Denver International Airport,Fort Lauderdale-Hollywood International Airport,298.2326662572094
+Denver International Airport,Minneapolis-Saint Paul International Airport,153.88319963429063
+Denver International Airport,LaGuardia Airport,286.49420119355796
+Denver International Airport,Detroit Metropolitan Airport,213.15401016253554
+Denver International Airport,Philadelphia International Airport,278.08987231609836
+Denver International Airport,Salt Lake City International Airport,114.86933021465063
+Denver International Airport,Ronald Reagan Washington National Airport,260.77528944299274
+Denver International Airport,San Diego International Airport,175.665739697841
+Denver International Airport,Baltimore/Washington International Airport,269.0937836533026
+Denver International Airport,Tampa International Airport,271.51809171039724
+Denver International Airport,Austin-Bergstrom International Airport,166.78967169125343
+Denver International Airport,Washington Dulles International Airport,257.5983175484963
+Denver International Airport,Nashville International Airport,198.48822918902
+Denver International Airport,Paris Charles de Gaulle Airport,738.4733103366855
+O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,146.44210974463766
+O'Hare International Airport,Dallas/Fort Worth International Airport,171.4240381865135
+O'Hare International Airport,Denver International Airport,182.42232440681494
+O'Hare International Airport,Los Angeles International Airport,298.0247980367727
+O'Hare International Airport,John F. Kennedy International Airport,162.05273931161778
+O'Hare International Airport,Harry Reid International Airport,261.88884931664427
+O'Hare International Airport,Orlando International Airport,198.21581938180088
+O'Hare International Airport,Miami International Airport,224.17542284773916
+O'Hare International Airport,Charlotte Douglas International Airport,143.44000131886696
+O'Hare International Airport,Seattle-Tacoma International Airport,294.7672895823629
+O'Hare International Airport,Phoenix Sky Harbor International Airport,252.36187625998443
+O'Hare International Airport,Newark Liberty International Airport,159.22189987891323
+O'Hare International Airport,San Francisco International Airport,311.0573322778118
+O'Hare International Airport,George Bush Intercontinental Airport,185.604197921542
+O'Hare International Airport,Logan International Airport,178.9966182487525
+O'Hare International Airport,Fort Lauderdale-Hollywood International Airport,222.084933251488
+O'Hare International Airport,Minneapolis-Saint Paul International Airport,101.39180170879762
+O'Hare International Airport,LaGuardia Airport,161.15935728223573
+O'Hare International Airport,Detroit Metropolitan Airport,88.3953455305164
+O'Hare International Airport,Philadelphia International Airport,153.7531818227207
+O'Hare International Airport,Salt Lake City International Airport,227.56241519679028
+O'Hare International Airport,Ronald Reagan Washington National Airport,144.95870327062238
+O'Hare International Airport,San Diego International Airport,295.35462493609384
+O'Hare International Airport,Baltimore/Washington International Airport,146.24184218042615
+O'Hare International Airport,Tampa International Airport,199.10571646971482
+O'Hare International Airport,Austin-Bergstrom International Airport,192.47908160280633
+O'Hare International Airport,Washington Dulles International Airport,141.82679969409548
+O'Hare International Airport,Nashville International Airport,118.101599270095
+O'Hare International Airport,Paris Charles de Gaulle Airport,636.0433639297509
+Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,330.9798919655646
+Los Angeles International Airport,Dallas/Fort Worth International Airport,228.25188413556506
+Los Angeles International Airport,Denver International Airport,178.15294346951225
+Los Angeles International Airport,O'Hare International Airport,303.84990099978086
+Los Angeles International Airport,John F. Kennedy International Airport,401.2144881117225
+Los Angeles International Airport,Harry Reid International Airport,86.38943370991701
+Los Angeles International Airport,Orlando International Airport,366.0949806539654
+Los Angeles International Airport,Miami International Airport,383.24499452870447
+Los Angeles International Airport,Charlotte Douglas International Airport,353.29963620014985
+Los Angeles International Airport,Seattle-Tacoma International Airport,187.11186475254107
+Los Angeles International Airport,Phoenix Sky Harbor International Airport,110.39105053589353
+Los Angeles International Airport,Newark Liberty International Airport,398.3303223355295
+Los Angeles International Airport,San Francisco International Airport,99.67016130580036
+Los Angeles International Airport,George Bush Intercontinental Airport,245.76662735311945
+Los Angeles International Airport,Logan International Airport,419.90884689077535
+Los Angeles International Airport,Fort Lauderdale-Hollywood International Airport,383.22717850848284
+Los Angeles International Airport,Minneapolis-Saint Paul International Airport,273.3478798367616
+Los Angeles International Airport,LaGuardia Airport,400.45537563659786
+Los Angeles International Airport,Detroit Metropolitan Airport,333.42583249260866
+Los Angeles International Airport,Philadelphia International Airport,391.13530882781924
+Los Angeles International Airport,Salt Lake City International Airport,139.8152175696385
+Los Angeles International Airport,Ronald Reagan Washington National Airport,378.73065284074806
+Los Angeles International Airport,San Diego International Airport,48.608970414611946
+Los Angeles International Airport,Baltimore/Washington International Airport,381.2206329646185
+Los Angeles International Airport,Tampa International Airport,357.95036633143036
+Los Angeles International Airport,Austin-Bergstrom International Airport,227.25805934749872
+Los Angeles International Airport,Washington Dulles International Airport,375.57942555813474
+Los Angeles International Airport,Nashville International Airport,308.69656812703704
+Los Angeles International Airport,Paris Charles de Gaulle Airport,849.1271665084489
+John F. Kennedy International Airport,Hartsfield-Jackson Atlanta International Airport,163.5091654027051
+John F. Kennedy International Airport,Dallas/Fort Worth International Airport,245.8069761022313
+John F. Kennedy International Airport,Denver International Airport,282.27815272388966
+John F. Kennedy International Airport,O'Hare International Airport,161.0054550634169
+John F. Kennedy International Airport,Los Angeles International Airport,389.49509011851814
+John F. Kennedy International Airport,Harry Reid International Airport,360.373638293484
+John F. Kennedy International Airport,Orlando International Airport,185.9476913489642
+John F. Kennedy International Airport,Miami International Airport,205.02534016635622
+John F. Kennedy International Airport,Charlotte Douglas International Airport,132.7945660209636
+John F. Kennedy International Airport,Seattle-Tacoma International Airport,382.50527269542584
+John F. Kennedy International Airport,Phoenix Sky Harbor International Airport,348.321089903034
+John F. Kennedy International Airport,Newark Liberty International Airport,48.608970414611946
+John F. Kennedy International Airport,San Francisco International Airport,403.63367603989076
+John F. Kennedy International Airport,George Bush Intercontinental Airport,247.18803671584092
+John F. Kennedy International Airport,Logan International Airport,73.45130962958174
+John F. Kennedy International Airport,Fort Lauderdale-Hollywood International Airport,202.30262267230904
+John F. Kennedy International Airport,Minneapolis-Saint Paul International Airport,196.35948143636352
+John F. Kennedy International Airport,LaGuardia Airport,48.608970414611946
+John F. Kennedy International Airport,Detroit Metropolitan Airport,128.3153046003127
+John F. Kennedy International Airport,Philadelphia International Airport,48.608970414611946
+John F. Kennedy International Airport,Salt Lake City International Airport,327.2049217700677
+John F. Kennedy International Airport,Ronald Reagan Washington National Airport,83.17649547775821
+John F. Kennedy International Airport,San Diego International Airport,385.8912196306189
+John F. Kennedy International Airport,Baltimore/Washington International Airport,73.0373753641958
+John F. Kennedy International Airport,Tampa International Airport,193.86135661239248
+John F. Kennedy International Airport,Austin-Bergstrom International Airport,266.9914340914826
+John F. Kennedy International Airport,Washington Dulles International Airport,85.11516880137732
+John F. Kennedy International Airport,Nashville International Airport,162.1126051201413
+John F. Kennedy International Airport,Paris Charles de Gaulle Airport,561.3446194682735
+Harry Reid International Airport,Hartsfield-Jackson Atlanta International Airport,303.7555007351199
+Harry Reid International Airport,Dallas/Fort Worth International Airport,204.03723822604334
+Harry Reid International Airport,Denver International Airport,146.77693939907365
+Harry Reid International Airport,O'Hare International Airport,272.52652078051364
+Harry Reid International Airport,Los Angeles International Airport,86.2820259203998
+Harry Reid International Airport,John F. Kennedy International Airport,370.0370164090526
+Harry Reid International Airport,Orlando International Airport,341.72137645557245
+Harry Reid International Airport,Miami International Airport,360.3322484187816
+Harry Reid International Airport,Charlotte Douglas International Airport,324.7337004788663
+Harry Reid International Airport,Seattle-Tacoma International Airport,175.5646018795901
+Harry Reid International Airport,Phoenix Sky Harbor International Airport,88.90883699889565
+Harry Reid International Airport,Newark Liberty International Airport,367.15369123484123
+Harry Reid International Airport,San Francisco International Airport,115.94885911324648
+Harry Reid International Airport,George Bush Intercontinental Airport,224.51899870900272
+Harry Reid International Airport,Logan International Airport,388.2084579407088
+Harry Reid International Airport,Fort Lauderdale-Hollywood International Airport,360.0915823082768
+Harry Reid International Airport,Minneapolis-Saint Paul International Airport,235.0992407165499
+Harry Reid International Airport,LaGuardia Airport,369.24501521588564
+Harry Reid International Airport,Detroit Metropolitan Airport,302.03348123158094
+Harry Reid International Airport,Philadelphia International Airport,360.2474020298997
+Harry Reid International Airport,Salt Lake City International Airport,110.09744928650065
+Harry Reid International Airport,Ronald Reagan Washington National Airport,348.2719096829579
+Harry Reid International Airport,San Diego International Airport,89.32275841751827
+Harry Reid International Airport,Baltimore/Washington International Airport,350.62787801233253
+Harry Reid International Airport,Tampa International Airport,334.20733643778806
+Harry Reid International Airport,Austin-Bergstrom International Airport,206.81991879563145
+Harry Reid International Airport,Washington Dulles International Airport,345.10521138809946
+Harry Reid International Airport,Nashville International Airport,280.13423167823106
+Harry Reid International Airport,Paris Charles de Gaulle Airport,816.5062314742872
+Orlando International Airport,Hartsfield-Jackson Atlanta International Airport,116.76555740521604
+Orlando International Airport,Dallas/Fort Worth International Airport,192.87625775645864
+Orlando International Airport,Denver International Airport,272.320974807022
+Orlando International Airport,O'Hare International Airport,196.26642836005567
+Orlando International Airport,Los Angeles International Airport,356.67788994866237
+Orlando International Airport,John F. Kennedy International Airport,187.66742814552396
+Orlando International Airport,Harry Reid International Airport,333.75850369743694
+Orlando International Airport,Miami International Airport,74.27897645025052
+Orlando International Airport,Charlotte Douglas International Airport,123.76682817106682
+Orlando International Airport,Seattle-Tacoma International Airport,399.89140642061994
+Orlando International Airport,Phoenix Sky Harbor International Airport,309.19415117963797
+Orlando International Airport,Newark Liberty International Airport,186.77368912198753
+Orlando International Airport,San Francisco International Airport,385.95771732294867
+Orlando International Airport,George Bush Intercontinental Airport,173.70414823460374
+Orlando International Airport,Logan International Airport,211.4556721209812
+Orlando International Airport,Fort Lauderdale-Hollywood International Airport,72.27001819698705
+Orlando International Airport,Minneapolis-Saint Paul International Airport,233.70011604789127
+Orlando International Airport,LaGuardia Airport,188.42456617141664
+Orlando International Airport,Detroit Metropolitan Airport,187.72716174603562
+Orlando International Airport,Philadelphia International Airport,176.53013470965016
+Orlando International Airport,Salt Lake City International Airport,319.98688508292855
+Orlando International Airport,Ronald Reagan Washington National Airport,162.78804707399172
+Orlando International Airport,San Diego International Airport,347.8886801467627
+Orlando International Airport,Baltimore/Washington International Airport,166.56414584060158
+Orlando International Airport,Tampa International Airport,48.608970414611946
+Orlando International Airport,Austin-Bergstrom International Airport,191.99087698043024
+Orlando International Airport,Washington Dulles International Airport,162.68907489865614
+Orlando International Airport,Nashville International Airport,142.79450737516603
+Orlando International Airport,Paris Charles de Gaulle Airport,684.1588600347486
+Miami International Airport,Hartsfield-Jackson Atlanta International Airport,142.0083937736277
+Miami International Airport,Dallas/Fort Worth International Airport,210.79099049659763
+Miami International Airport,Denver International Airport,293.49458965758663
+Miami International Airport,O'Hare International Airport,221.40996461147336
+Miami International Airport,Los Angeles International Airport,372.73400644032455
+Miami International Airport,John F. Kennedy International Airport,207.31614587382637
+Miami International Airport,Harry Reid International Airport,351.26965069829697
+Miami International Airport,Orlando International Airport,74.20781271504613
+Miami International Airport,Charlotte Douglas International Airport,147.36910722632348
+Miami International Airport,Seattle-Tacoma International Airport,421.729507633027
+Miami International Airport,Phoenix Sky Harbor International Airport,325.20060859336104
+Miami International Airport,Newark Liberty International Airport,206.76115092365444
+Miami International Airport,San Francisco International Airport,403.8740707872887
+Miami International Airport,George Bush Intercontinental Airport,188.245213906856
+Miami International Airport,Logan International Airport,230.02144174193066
+Miami International Airport,Fort Lauderdale-Hollywood International Airport,48.608970414611946
+Miami International Airport,Minneapolis-Saint Paul International Airport,258.5576699856538
+Miami International Airport,LaGuardia Airport,208.21480582393286
+Miami International Airport,Detroit Metropolitan Airport,212.33558928016672
+Miami International Airport,Philadelphia International Airport,196.99251237709413
+Miami International Airport,Salt Lake City International Airport,340.3933590945242
+Miami International Airport,Ronald Reagan Washington National Airport,184.37911851688466
+Miami International Airport,San Diego International Airport,363.2187910328591
+Miami International Airport,Baltimore/Washington International Airport,187.94986988399504
+Miami International Airport,Tampa International Airport,82.10313222289672
+Miami International Airport,Austin-Bergstrom International Airport,206.3789131702037
+Miami International Airport,Washington Dulles International Airport,184.67486845886918
+Miami International Airport,Nashville International Airport,167.80985533005787
+Miami International Airport,Paris Charles de Gaulle Airport,695.7318406768497
+Charlotte Douglas International Airport,Hartsfield-Jackson Atlanta International Airport,86.95007658470718
+Charlotte Douglas International Airport,Dallas/Fort Worth International Airport,186.40006988496123
+Charlotte Douglas International Airport,Denver International Airport,238.71021102888562
+Charlotte Douglas International Airport,O'Hare International Airport,142.7495845375797
+Charlotte Douglas International Airport,Los Angeles International Airport,344.66070824495796
+Charlotte Douglas International Airport,John F. Kennedy International Airport,133.35770566277722
+Charlotte Douglas International Airport,Harry Reid International Airport,317.71423195211696
+Charlotte Douglas International Airport,Orlando International Airport,123.34299612004406
+Charlotte Douglas International Airport,Miami International Airport,148.18616290456768
+Charlotte Douglas International Airport,Seattle-Tacoma International Airport,364.4592543385003
+Charlotte Douglas International Airport,Phoenix Sky Harbor International Airport,299.4018054534331
+Charlotte Douglas International Airport,Newark Liberty International Airport,131.64550268050868
+Charlotte Douglas International Airport,San Francisco International Airport,366.6102110767374
+Charlotte Douglas International Airport,George Bush Intercontinental Airport,181.35924188806334
+Charlotte Douglas International Airport,Logan International Airport,158.30855618109752
+Charlotte Douglas International Airport,Fort Lauderdale-Hollywood International Airport,145.67642220627147
+Charlotte Douglas International Airport,Minneapolis-Saint Paul International Airport,183.7531512131201
+Charlotte Douglas International Airport,LaGuardia Airport,133.68875594051477
+Charlotte Douglas International Airport,Detroit Metropolitan Airport,127.42520667216128
+Charlotte Douglas International Airport,Philadelphia International Airport,120.93947533116015
+Charlotte Douglas International Airport,Salt Lake City International Airport,293.45366064582566
+Charlotte Douglas International Airport,Ronald Reagan Washington National Airport,99.00350993967609
+Charlotte Douglas International Airport,San Diego International Airport,338.5543785784531
+Charlotte Douglas International Airport,Baltimore/Washington International Airport,109.27498969854338
+Charlotte Douglas International Airport,Tampa International Airport,128.48661115520903
+Charlotte Douglas International Airport,Austin-Bergstrom International Airport,196.9966608427135
+Charlotte Douglas International Airport,Washington Dulles International Airport,97.79834114954154
+Charlotte Douglas International Airport,Nashville International Airport,98.34571021284427
+Charlotte Douglas International Airport,Paris Charles de Gaulle Airport,637.006747581428
+Seattle-Tacoma International Airport,Hartsfield-Jackson Atlanta International Airport,363.19431677730057
+Seattle-Tacoma International Airport,Dallas/Fort Worth International Airport,292.22168610630786
+Seattle-Tacoma International Airport,Denver International Airport,199.9426920235216
+Seattle-Tacoma International Airport,O'Hare International Airport,300.42523567533203
+Seattle-Tacoma International Airport,Los Angeles International Airport,188.86407542935248
+Seattle-Tacoma International Airport,John F. Kennedy International Airport,393.71245153518413
+Seattle-Tacoma International Airport,Harry Reid International Airport,177.00831486558604
+Seattle-Tacoma International Airport,Orlando International Airport,412.3946372062382
+Seattle-Tacoma International Airport,Miami International Airport,435.9652350426895
+Seattle-Tacoma International Airport,Charlotte Douglas International Airport,374.39872677905186
+Seattle-Tacoma International Airport,Phoenix Sky Harbor International Airport,209.38503651457557
+Seattle-Tacoma International Airport,Newark Liberty International Airport,390.94920350740716
+Seattle-Tacoma International Airport,San Francisco International Airport,150.92687238163344
+Seattle-Tacoma International Airport,George Bush Intercontinental Airport,319.38809582290037
+Seattle-Tacoma International Airport,Logan International Airport,403.86133558420653
+Seattle-Tacoma International Airport,Fort Lauderdale-Hollywood International Airport,434.8963123125601
+Seattle-Tacoma International Airport,Minneapolis-Saint Paul International Airport,248.32995354984695
+Seattle-Tacoma International Airport,LaGuardia Airport,392.5275811649544
+Seattle-Tacoma International Airport,Detroit Metropolitan Airport,326.2034654218237
+Seattle-Tacoma International Airport,Philadelphia International Airport,387.827671935127
+Seattle-Tacoma International Airport,Salt Lake City International Airport,152.93105198928296
+Seattle-Tacoma International Airport,Ronald Reagan Washington National Airport,381.0535481412002
+Seattle-Tacoma International Airport,San Diego International Airport,201.8803861911813
+Seattle-Tacoma International Airport,Baltimore/Washington International Airport,381.90768503283937
+Seattle-Tacoma International Airport,Tampa International Airport,407.7880418402655
+Seattle-Tacoma International Airport,Austin-Bergstrom International Airport,305.39978736688795
+Seattle-Tacoma International Airport,Washington Dulles International Airport,377.89736440169474
+Seattle-Tacoma International Airport,Nashville International Airport,333.2708106798982
+Seattle-Tacoma International Airport,Paris Charles de Gaulle Airport,755.4988422587312
+Phoenix Sky Harbor International Airport,Hartsfield-Jackson Atlanta International Airport,282.159755282237
+Phoenix Sky Harbor International Airport,Dallas/Fort Worth International Airport,178.8653077234092
+Phoenix Sky Harbor International Airport,Denver International Airport,143.3874679100957
+Phoenix Sky Harbor International Airport,O'Hare International Airport,256.33150758044206
+Phoenix Sky Harbor International Airport,Los Angeles International Airport,110.12867883108242
+Phoenix Sky Harbor International Airport,John F. Kennedy International Airport,357.193375358804
+Phoenix Sky Harbor International Airport,Harry Reid International Airport,88.78356289667433
+Phoenix Sky Harbor International Airport,Orlando International Airport,315.7374743954864
+Phoenix Sky Harbor International Airport,Miami International Airport,332.6526597515185
+Phoenix Sky Harbor International Airport,Charlotte Douglas International Airport,305.41907834663016
+Phoenix Sky Harbor International Airport,Seattle-Tacoma International Airport,207.0294197095343
+Phoenix Sky Harbor International Airport,Newark Liberty International Airport,354.35965880018006
+Phoenix Sky Harbor International Airport,San Francisco International Airport,147.14424500022747
+Phoenix Sky Harbor International Airport,George Bush Intercontinental Airport,195.87811030588608
+Phoenix Sky Harbor International Airport,Logan International Airport,377.23606809847433
+Phoenix Sky Harbor International Airport,Fort Lauderdale-Hollywood International Airport,332.63880052561876
+Phoenix Sky Harbor International Airport,Minneapolis-Saint Paul International Airport,232.09142004356107
+Phoenix Sky Harbor International Airport,LaGuardia Airport,356.542289861317
+Phoenix Sky Harbor International Airport,Detroit Metropolitan Airport,291.56779734924436
+Phoenix Sky Harbor International Airport,Philadelphia International Airport,346.5261794933265
+Phoenix Sky Harbor International Airport,Salt Lake City International Airport,128.89882005770303
+Phoenix Sky Harbor International Airport,Ronald Reagan Washington National Airport,333.35370189053833
+Phoenix Sky Harbor International Airport,San Diego International Airport,95.26071455046473
+Phoenix Sky Harbor International Airport,Baltimore/Washington International Airport,336.08959672625167
+Phoenix Sky Harbor International Airport,Tampa International Airport,307.5468399840362
+Phoenix Sky Harbor International Airport,Austin-Bergstrom International Airport,177.52281111674336
+Phoenix Sky Harbor International Airport,Washington Dulles International Airport,330.285127987186
+Phoenix Sky Harbor International Airport,Nashville International Airport,255.13394479126075
+Phoenix Sky Harbor International Airport,Paris Charles de Gaulle Airport,822.1675344348164
+Newark Liberty International Airport,Hartsfield-Jackson Atlanta International Airport,161.61875552254685
+Newark Liberty International Airport,Dallas/Fort Worth International Airport,243.3308312378146
+Newark Liberty International Airport,Denver International Airport,279.5426457936188
+Newark Liberty International Airport,O'Hare International Airport,158.23361964811122
+Newark Liberty International Airport,Los Angeles International Airport,386.8091554360637
+Newark Liberty International Airport,John F. Kennedy International Airport,48.608970414611946
+Newark Liberty International Airport,Harry Reid International Airport,357.6707577738262
+Newark Liberty International Airport,Orlando International Airport,185.07801058122297
+Newark Liberty International Airport,Miami International Airport,204.48757985688462
+Newark Liberty International Airport,Charlotte Douglas International Airport,131.1086708625599
+Newark Liberty International Airport,Seattle-Tacoma International Airport,379.92790430369087
+Newark Liberty International Airport,Phoenix Sky Harbor International Airport,345.6575010044002
+Newark Liberty International Airport,San Francisco International Airport,400.93622431277515
+Newark Liberty International Airport,George Bush Intercontinental Airport,244.93881168237183
+Newark Liberty International Airport,Logan International Airport,81.56928320191729
+Newark Liberty International Airport,Fort Lauderdale-Hollywood International Airport,201.76909421297177
+Newark Liberty International Airport,Minneapolis-Saint Paul International Airport,193.66849107119003
+Newark Liberty International Airport,LaGuardia Airport,48.608970414611946
+Newark Liberty International Airport,Detroit Metropolitan Airport,125.54522129195664
+Newark Liberty International Airport,Philadelphia International Airport,48.608970414611946
+Newark Liberty International Airport,Salt Lake City International Airport,324.48579257596964
+Newark Liberty International Airport,Ronald Reagan Washington National Airport,75.01252690824973
+Newark Liberty International Airport,San Diego International Airport,383.2208219472677
+Newark Liberty International Airport,Baltimore/Washington International Airport,71.06656061044495
+Newark Liberty International Airport,Tampa International Airport,192.8475875379407
+Newark Liberty International Airport,Austin-Bergstrom International Airport,258.39477756230224
+Newark Liberty International Airport,Washington Dulles International Airport,83.03031374867045
+Newark Liberty International Airport,Nashville International Airport,159.72632682300087
+Newark Liberty International Airport,Paris Charles de Gaulle Airport,563.3692529345908
+San Francisco International Airport,Hartsfield-Jackson Atlanta International Airport,357.2533812460452
+San Francisco International Airport,Dallas/Fort Worth International Airport,259.3093804134529
+San Francisco International Airport,Denver International Airport,192.21566629483112
+San Francisco International Airport,O'Hare International Airport,317.576200094018
+San Francisco International Airport,Los Angeles International Airport,99.88926742122806
+San Francisco International Airport,John F. Kennedy International Airport,416.4255070218431
+San Francisco International Airport,Harry Reid International Airport,116.27756849757701
+San Francisco International Airport,Orlando International Airport,397.41641108474136
+San Francisco International Airport,Miami International Airport,416.6845577040872
+San Francisco International Airport,Charlotte Douglas International Airport,376.696655257907
+San Francisco International Airport,Seattle-Tacoma International Airport,151.8131364503269
+San Francisco International Airport,Phoenix Sky Harbor International Airport,147.9570219037416
+San Francisco International Airport,Newark Liberty International Airport,413.51968636242447
+San Francisco International Airport,George Bush Intercontinental Airport,286.7803889386208
+San Francisco International Airport,Logan International Airport,432.6342212436321
+San Francisco International Airport,Fort Lauderdale-Hollywood International Airport,416.37305276358603
+San Francisco International Airport,Minneapolis-Saint Paul International Airport,280.4689064268126
+San Francisco International Airport,LaGuardia Airport,415.50821627167704
+San Francisco International Airport,Detroit Metropolitan Airport,346.98300726487344
+San Francisco International Airport,Philadelphia International Airport,407.5196140509384
+San Francisco International Airport,Salt Lake City International Airport,140.88478385520128
+San Francisco International Airport,Ronald Reagan Washington National Airport,396.687333336177
+San Francisco International Airport,San Diego International Airport,120.70262497621917
+San Francisco International Airport,Baltimore/Washington International Airport,398.69805606988325
+San Francisco International Airport,Tampa International Airport,390.13992674060734
+San Francisco International Airport,Austin-Bergstrom International Airport,269.0181521667963
+San Francisco International Airport,Washington Dulles International Airport,393.4609369833721
+San Francisco International Airport,Nashville International Airport,331.9701087456217
+San Francisco International Airport,Paris Charles de Gaulle Airport,836.6177659375921
+George Bush Intercontinental Airport,Hartsfield-Jackson Atlanta International Airport,154.99456969938421
+George Bush Intercontinental Airport,Dallas/Fort Worth International Airport,86.65620601259926
+George Bush Intercontinental Airport,Denver International Airport,176.87585447087272
+George Bush Intercontinental Airport,O'Hare International Airport,187.25108811172154
+George Bush Intercontinental Airport,Los Angeles International Airport,242.12645481263414
+George Bush Intercontinental Airport,John F. Kennedy International Airport,251.03691753089373
+George Bush Intercontinental Airport,Harry Reid International Airport,221.66226992922827
+George Bush Intercontinental Airport,Orlando International Airport,175.10098401097076
+George Bush Intercontinental Airport,Miami International Airport,190.02933455240924
+George Bush Intercontinental Airport,Charlotte Douglas International Airport,182.95398412445655
+George Bush Intercontinental Airport,Seattle-Tacoma International Airport,312.65351809238234
+George Bush Intercontinental Airport,Phoenix Sky Harbor International Airport,193.9295369195059
+George Bush Intercontinental Airport,Newark Liberty International Airport,248.69421537668651
+George Bush Intercontinental Airport,San Francisco International Airport,281.65877299462244
+George Bush Intercontinental Airport,Logan International Airport,281.6783613093086
+George Bush Intercontinental Airport,Fort Lauderdale-Hollywood International Airport,190.13770277919622
+George Bush Intercontinental Airport,Minneapolis-Saint Paul International Airport,199.71889607251285
+George Bush Intercontinental Airport,LaGuardia Airport,250.94867560186552
+George Bush Intercontinental Airport,Detroit Metropolitan Airport,205.06748127952756
+George Bush Intercontinental Airport,Philadelphia International Airport,238.524138844536
+George Bush Intercontinental Airport,Salt Lake City International Airport,218.42125551505194
+George Bush Intercontinental Airport,Ronald Reagan Washington National Airport,222.73395432814021
+George Bush Intercontinental Airport,San Diego International Airport,232.32695194212835
+George Bush Intercontinental Airport,Baltimore/Washington International Airport,226.46938436387325
+George Bush Intercontinental Airport,Tampa International Airport,166.20024639535433
+George Bush Intercontinental Airport,Austin-Bergstrom International Airport,48.608970414611946
+George Bush Intercontinental Airport,Washington Dulles International Airport,220.39520301280743
+George Bush Intercontinental Airport,Nashville International Airport,148.73225352196533
+George Bush Intercontinental Airport,Paris Charles de Gaulle Airport,757.4692563032556
+Logan International Airport,Hartsfield-Jackson Atlanta International Airport,187.87331719484712
+Logan International Airport,Dallas/Fort Worth International Airport,274.1833912479535
+Logan International Airport,Denver International Airport,298.8405501169625
+Logan International Airport,O'Hare International Airport,177.56084678692724
+Logan International Airport,Los Angeles International Airport,406.86506155654916
+Logan International Airport,John F. Kennedy International Airport,73.38466923334666
+Logan International Airport,Harry Reid International Airport,377.3700402270394
+Logan International Airport,Orlando International Airport,209.03429881307216
+Logan International Airport,Miami International Airport,226.97076171356323
+Logan International Airport,Charlotte Douglas International Airport,157.2913922116643
+Logan International Airport,Seattle-Tacoma International Airport,391.95858142832583
+Logan International Airport,Phoenix Sky Harbor International Airport,367.1149726621074
+Logan International Airport,Newark Liberty International Airport,81.49223978382632
+Logan International Airport,San Francisco International Airport,418.6498934194062
+Logan International Airport,George Bush Intercontinental Airport,276.7896247446271
+Logan International Airport,Fort Lauderdale-Hollywood International Airport,224.24747995335628
+Logan International Airport,Minneapolis-Saint Paul International Airport,208.76881557507886
+Logan International Airport,LaGuardia Airport,73.12972924827432
+Logan International Airport,Detroit Metropolitan Airport,144.5235896083533
+Logan International Airport,Philadelphia International Airport,91.99946087088335
+Logan International Airport,Salt Lake City International Airport,342.07730807923514
+Logan International Airport,Ronald Reagan Washington National Airport,113.97280133922781
+Logan International Airport,San Diego International Airport,403.9837770975135
+Logan International Airport,Baltimore/Washington International Airport,110.0508793063905
+Logan International Airport,Tampa International Airport,217.27983268156223
+Logan International Airport,Austin-Bergstrom International Airport,289.8641796876942
+Logan International Airport,Washington Dulles International Airport,115.73644336802047
+Logan International Airport,Nashville International Airport,185.26628307596417
+Logan International Airport,Paris Charles de Gaulle Airport,535.4218322315025
+Fort Lauderdale-Hollywood International Airport,Hartsfield-Jackson Atlanta International Airport,140.13159734347497
+Fort Lauderdale-Hollywood International Airport,Dallas/Fort Worth International Airport,210.46755166312784
+Fort Lauderdale-Hollywood International Airport,Denver International Airport,292.6656322395613
+Fort Lauderdale-Hollywood International Airport,O'Hare International Airport,219.39037200719284
+Fort Lauderdale-Hollywood International Airport,Los Angeles International Airport,372.71735695758855
+Fort Lauderdale-Hollywood International Airport,John F. Kennedy International Airport,204.5068481094034
+Fort Lauderdale-Hollywood International Airport,Harry Reid International Airport,351.04364566573236
+Fort Lauderdale-Hollywood International Airport,Orlando International Airport,72.20957716384974
+Fort Lauderdale-Hollywood International Airport,Miami International Airport,48.608970414611946
+Fort Lauderdale-Hollywood International Airport,Charlotte Douglas International Airport,144.90562448468205
+Fort Lauderdale-Hollywood International Airport,Seattle-Tacoma International Airport,420.7414938728111
+Fort Lauderdale-Hollywood International Airport,Phoenix Sky Harbor International Airport,325.18751742920676
+Fort Lauderdale-Hollywood International Airport,Newark Liberty International Airport,203.95655235770784
+Fort Lauderdale-Hollywood International Airport,San Francisco International Airport,403.58499776058255
+Fort Lauderdale-Hollywood International Airport,George Bush Intercontinental Airport,188.35060009735324
+Fort Lauderdale-Hollywood International Airport,Logan International Airport,227.19785188321268
+Fort Lauderdale-Hollywood International Airport,Minneapolis-Saint Paul International Airport,256.7480225240709
+Fort Lauderdale-Hollywood International Airport,LaGuardia Airport,205.40685309887505
+Fort Lauderdale-Hollywood International Airport,Detroit Metropolitan Airport,209.99232196331394
+Fort Lauderdale-Hollywood International Airport,Philadelphia International Airport,194.20101301234513
+Fort Lauderdale-Hollywood International Airport,Salt Lake City International Airport,339.70032529149387
+Fort Lauderdale-Hollywood International Airport,Ronald Reagan Washington National Airport,181.62725833426168
+Fort Lauderdale-Hollywood International Airport,San Diego International Airport,363.3012209774685
+Fort Lauderdale-Hollywood International Airport,Baltimore/Washington International Airport,185.18841797711934
+Fort Lauderdale-Hollywood International Airport,Tampa International Airport,74.78666747161081
+Fort Lauderdale-Hollywood International Airport,Austin-Bergstrom International Airport,206.5261799465291
+Fort Lauderdale-Hollywood International Airport,Washington Dulles International Airport,181.938592163118
+Fort Lauderdale-Hollywood International Airport,Nashville International Airport,166.02894166363689
+Fort Lauderdale-Hollywood International Airport,Paris Charles de Gaulle Airport,693.0051625287037
+Minneapolis-Saint Paul International Airport,Hartsfield-Jackson Atlanta International Airport,184.41881293640034
+Minneapolis-Saint Paul International Airport,Dallas/Fort Worth International Airport,175.82927348098383
+Minneapolis-Saint Paul International Airport,Denver International Airport,152.9955712224883
+Minneapolis-Saint Paul International Airport,O'Hare International Airport,101.60517464557407
+Minneapolis-Saint Paul International Airport,Los Angeles International Airport,268.8279904519328
+Minneapolis-Saint Paul International Airport,John F. Kennedy International Airport,198.38060040811325
+Minneapolis-Saint Paul International Airport,Harry Reid International Airport,231.8640304154133
+Minneapolis-Saint Paul International Airport,Orlando International Airport,237.0059920835427
+Minneapolis-Saint Paul International Airport,Miami International Airport,269.14978200728206
+Minneapolis-Saint Paul International Airport,Charlotte Douglas International Airport,185.4125099148662
+Minneapolis-Saint Paul International Airport,Seattle-Tacoma International Airport,244.58898323074078
+Minneapolis-Saint Paul International Airport,Phoenix Sky Harbor International Airport,228.9661580843248
+Minneapolis-Saint Paul International Airport,Newark Liberty International Airport,195.60935101090286
+Minneapolis-Saint Paul International Airport,San Francisco International Airport,275.6345981555264
+Minneapolis-Saint Paul International Airport,George Bush Intercontinental Airport,197.6584446752503
+Minneapolis-Saint Paul International Airport,Logan International Airport,211.1814286470236
+Minneapolis-Saint Paul International Airport,Fort Lauderdale-Hollywood International Airport,267.260053677663
+Minneapolis-Saint Paul International Airport,LaGuardia Airport,197.28957604778634
+Minneapolis-Saint Paul International Airport,Detroit Metropolitan Airport,131.40868904839704
+Minneapolis-Saint Paul International Airport,Philadelphia International Airport,191.95217634045827
+Minneapolis-Saint Paul International Airport,Salt Lake City International Airport,191.6835935895111
+Minneapolis-Saint Paul International Airport,Ronald Reagan Washington National Airport,185.31053812880498
+Minneapolis-Saint Paul International Airport,San Diego International Airport,268.5305811751007
+Minneapolis-Saint Paul International Airport,Baltimore/Washington International Airport,186.0442235534386
+Minneapolis-Saint Paul International Airport,Tampa International Airport,236.49693596121304
+Minneapolis-Saint Paul International Airport,Austin-Bergstrom International Airport,198.70429775202624
+Minneapolis-Saint Paul International Airport,Washington Dulles International Airport,182.24450106159878
+Minneapolis-Saint Paul International Airport,Nashville International Airport,153.98936153528257
+Minneapolis-Saint Paul International Airport,Paris Charles de Gaulle Airport,643.3155767171361
+LaGuardia Airport,Hartsfield-Jackson Atlanta International Airport,163.7051532491579
+LaGuardia Airport,Dallas/Fort Worth International Airport,245.50533056663707
+LaGuardia Airport,Denver International Airport,281.47759178437013
+LaGuardia Airport,O'Hare International Airport,160.13087686985438
+LaGuardia Airport,Los Angeles International Airport,388.78831037460077
+LaGuardia Airport,John F. Kennedy International Airport,48.608970414611946
+LaGuardia Airport,Harry Reid International Airport,359.6313663278214
+LaGuardia Airport,Orlando International Airport,186.684317440644
+LaGuardia Airport,Miami International Airport,205.89595757109015
+LaGuardia Airport,Charlotte Douglas International Airport,133.1204577136607
+LaGuardia Airport,Seattle-Tacoma International Airport,381.40029076738443
+LaGuardia Airport,Phoenix Sky Harbor International Airport,347.7092349299096
+LaGuardia Airport,Newark Liberty International Airport,48.608970414611946
+LaGuardia Airport,San Francisco International Airport,402.782340029817
+LaGuardia Airport,George Bush Intercontinental Airport,247.10333617321808
+LaGuardia Airport,Logan International Airport,73.19499890047572
+LaGuardia Airport,Fort Lauderdale-Hollywood International Airport,203.17506901943526
+LaGuardia Airport,Minneapolis-Saint Paul International Airport,195.3002458243671
+LaGuardia Airport,Detroit Metropolitan Airport,127.3745525650075
+LaGuardia Airport,Philadelphia International Airport,48.608970414611946
+LaGuardia Airport,Salt Lake City International Airport,326.3215596991962
+LaGuardia Airport,Ronald Reagan Washington National Airport,83.35767118936151
+LaGuardia Airport,San Diego International Airport,385.2365697284126
+LaGuardia Airport,Baltimore/Washington International Airport,73.17749447896672
+LaGuardia Airport,Tampa International Airport,194.53327495451754
+LaGuardia Airport,Austin-Bergstrom International Airport,266.81934843811894
+LaGuardia Airport,Washington Dulles International Airport,85.17961773105482
+LaGuardia Airport,Nashville International Airport,161.92308415498172
+LaGuardia Airport,Paris Charles de Gaulle Airport,561.1391183855587
+Detroit Metropolitan Airport,Hartsfield-Jackson Atlanta International Airport,141.930752230874
+Detroit Metropolitan Airport,Dallas/Fort Worth International Airport,193.2228053657851
+Detroit Metropolitan Airport,Denver International Airport,210.7422720678871
+Detroit Metropolitan Airport,O'Hare International Airport,88.28999651284201
+Detroit Metropolitan Airport,Los Angeles International Airport,325.930872066604
+Detroit Metropolitan Airport,John F. Kennedy International Airport,128.80994226814016
+Detroit Metropolitan Airport,Harry Reid International Airport,296.18412797118515
+Detroit Metropolitan Airport,Orlando International Airport,189.49666016256856
+Detroit Metropolitan Airport,Miami International Airport,214.8672448506416
+Detroit Metropolitan Airport,Charlotte Douglas International Airport,127.90676472167638
+Detroit Metropolitan Airport,Seattle-Tacoma International Airport,319.10466025219193
+Detroit Metropolitan Airport,Phoenix Sky Harbor International Airport,286.2228512724329
+Detroit Metropolitan Airport,Newark Liberty International Airport,125.99973381152128
+Detroit Metropolitan Airport,San Francisco International Airport,338.71622222767246
+Detroit Metropolitan Airport,George Bush Intercontinental Airport,202.84610874940165
+Detroit Metropolitan Airport,Logan International Airport,145.28733551866216
+Detroit Metropolitan Airport,Fort Lauderdale-Hollywood International Airport,212.44544167364393
+Detroit Metropolitan Airport,Minneapolis-Saint Paul International Airport,130.87544668521204
+Detroit Metropolitan Airport,LaGuardia Airport,127.85537158251242
+Detroit Metropolitan Airport,Philadelphia International Airport,121.44047520124917
+Detroit Metropolitan Airport,Salt Lake City International Airport,255.35460093146472
+Detroit Metropolitan Airport,Ronald Reagan Washington National Airport,115.07785898818567
+Detroit Metropolitan Airport,San Diego International Airport,323.1243353885494
+Detroit Metropolitan Airport,Baltimore/Washington International Airport,115.53107578898492
+Detroit Metropolitan Airport,Tampa International Airport,192.8856886275922
+Detroit Metropolitan Airport,Austin-Bergstrom International Airport,212.43850485860582
+Detroit Metropolitan Airport,Washington Dulles International Airport,112.12653076050569
+Detroit Metropolitan Airport,Nashville International Airport,121.64730829668343
+Detroit Metropolitan Airport,Paris Charles de Gaulle Airport,607.066547997534
+Philadelphia International Airport,Hartsfield-Jackson Atlanta International Airport,151.19058600618786
+Philadelphia International Airport,Dallas/Fort Worth International Airport,234.29655474514456
+Philadelphia International Airport,Denver International Airport,273.4501381856452
+Philadelphia International Airport,O'Hare International Airport,152.87409014321761
+Philadelphia International Airport,Los Angeles International Airport,380.10153777532406
+Philadelphia International Airport,John F. Kennedy International Airport,48.608970414611946
+Philadelphia International Airport,Harry Reid International Airport,351.1899743584193
+Philadelphia International Airport,Orlando International Airport,175.09824591324437
+Philadelphia International Airport,Miami International Airport,195.01179456879734
+Philadelphia International Airport,Charlotte Douglas International Airport,120.55296340270675
+Philadelphia International Airport,Seattle-Tacoma International Airport,377.01454585863377
+Philadelphia International Airport,Phoenix Sky Harbor International Airport,338.2859999278245
+Philadelphia International Airport,Newark Liberty International Airport,48.608970414611946
+Philadelphia International Airport,San Francisco International Airport,395.3611778110756
+Philadelphia International Airport,George Bush Intercontinental Airport,235.16146341414537
+Philadelphia International Airport,Logan International Airport,92.14972995531748
+Philadelphia International Airport,Fort Lauderdale-Hollywood International Airport,192.30032610642013
+Philadelphia International Airport,Minneapolis-Saint Paul International Airport,190.11477892889064
+Philadelphia International Airport,LaGuardia Airport,48.608970414611946
+Philadelphia International Airport,Detroit Metropolitan Airport,121.04747478831815
+Philadelphia International Airport,Salt Lake City International Airport,319.11939473079605
+Philadelphia International Airport,Ronald Reagan Washington National Airport,48.608970414611946
+Philadelphia International Airport,San Diego International Airport,376.1568936119757
+Philadelphia International Airport,Baltimore/Washington International Airport,48.608970414611946
+Philadelphia International Airport,Tampa International Airport,182.70019470109554
+Philadelphia International Airport,Austin-Bergstrom International Airport,248.89665730073258
+Philadelphia International Airport,Washington Dulles International Airport,48.608970414611946
+Philadelphia International Airport,Nashville International Airport,150.2124430094185
+Philadelphia International Airport,Paris Charles de Gaulle Airport,574.4515257310435
+Salt Lake City International Airport,Hartsfield-Jackson Atlanta International Airport,282.6099228969701
+Salt Lake City International Airport,Dallas/Fort Worth International Airport,195.30172094282503
+Salt Lake City International Airport,Denver International Airport,115.16200380471395
+Salt Lake City International Airport,O'Hare International Airport,230.5496311724904
+Salt Lake City International Airport,Los Angeles International Airport,139.14724466204473
+Salt Lake City International Airport,John F. Kennedy International Airport,334.7750472349978
+Salt Lake City International Airport,Harry Reid International Airport,109.83819178439829
+Salt Lake City International Airport,Orlando International Airport,327.13626706375294
+Salt Lake City International Airport,Miami International Airport,348.76428249022797
+Salt Lake City International Airport,Charlotte Douglas International Airport,299.16243160082024
+Salt Lake City International Airport,Seattle-Tacoma International Airport,152.02289473685772
+Salt Lake City International Airport,Phoenix Sky Harbor International Airport,128.40288587878112
+Salt Lake City International Airport,Newark Liberty International Airport,331.8959649284319
+Salt Lake City International Airport,San Francisco International Airport,140.19859137272368
+Salt Lake City International Airport,George Bush Intercontinental Airport,221.16275707636387
+Salt Lake City International Airport,Logan International Airport,350.55346917944763
+Salt Lake City International Airport,Fort Lauderdale-Hollywood International Airport,348.028134701977
+Salt Lake City International Airport,Minneapolis-Saint Paul International Airport,193.56631092617727
+Salt Lake City International Airport,LaGuardia Airport,333.83952845829356
+Salt Lake City International Airport,Detroit Metropolitan Airport,259.55275349018905
+Salt Lake City International Airport,Philadelphia International Airport,326.2190430926946
+Salt Lake City International Airport,Ronald Reagan Washington National Airport,315.98904181492526
+Salt Lake City International Airport,San Diego International Airport,144.03272027120997
+Salt Lake City International Airport,Baltimore/Washington International Airport,317.8145544073782
+Salt Lake City International Airport,Tampa International Airport,321.2648769598614
+Salt Lake City International Airport,Austin-Bergstrom International Airport,206.48826765061185
+Salt Lake City International Airport,Washington Dulles International Airport,312.78001661717286
+Salt Lake City International Airport,Nashville International Airport,249.166191245927
+Salt Lake City International Airport,Paris Charles de Gaulle Airport,764.7697897137027
+Ronald Reagan Washington National Airport,Hartsfield-Jackson Atlanta International Airport,135.51737611347156
+Ronald Reagan Washington National Airport,Dallas/Fort Worth International Airport,219.8748511733878
+Ronald Reagan Washington National Airport,Denver International Airport,256.6096400963447
+Ronald Reagan Washington National Airport,O'Hare International Airport,144.24191926722767
+Ronald Reagan Washington National Airport,Los Angeles International Airport,368.51324663706873
+Ronald Reagan Washington National Airport,John F. Kennedy International Airport,83.26364057137111
+Ronald Reagan Washington National Airport,Harry Reid International Airport,339.9298350640076
+Ronald Reagan Washington National Airport,Orlando International Airport,161.6754157054812
+Ronald Reagan Washington National Airport,Miami International Airport,182.7470743057182
+Ronald Reagan Washington National Airport,Charlotte Douglas International Airport,98.792934622332
+Ronald Reagan Washington National Airport,Seattle-Tacoma International Airport,370.68557918103596
+Ronald Reagan Washington National Airport,Phoenix Sky Harbor International Airport,325.8627496083914
+Ronald Reagan Washington National Airport,Newark Liberty International Airport,75.08825668892428
+Ronald Reagan Washington National Airport,San Francisco International Airport,385.2783602238294
+Ronald Reagan Washington National Airport,George Bush Intercontinental Airport,219.93880030494626
+Ronald Reagan Washington National Airport,Logan International Airport,114.27814559104112
+Ronald Reagan Washington National Airport,Fort Lauderdale-Hollywood International Airport,180.0668596893716
+Ronald Reagan Washington National Airport,Minneapolis-Saint Paul International Airport,183.65388468112337
+Ronald Reagan Washington National Airport,LaGuardia Airport,83.44594009605993
+Ronald Reagan Washington National Airport,Detroit Metropolitan Airport,114.76327208779989
+Ronald Reagan Washington National Airport,Philadelphia International Airport,48.608970414611946
+Ronald Reagan Washington National Airport,Salt Lake City International Airport,309.4326251693857
+Ronald Reagan Washington National Airport,San Diego International Airport,364.1048585135101
+Ronald Reagan Washington National Airport,Baltimore/Washington International Airport,48.608970414611946
+Ronald Reagan Washington National Airport,Tampa International Airport,168.76518738096672
+Ronald Reagan Washington National Airport,Austin-Bergstrom International Airport,233.9501123130699
+Ronald Reagan Washington National Airport,Washington Dulles International Airport,48.608970414611946
+Ronald Reagan Washington National Airport,Nashville International Airport,135.3386935374
+Ronald Reagan Washington National Airport,Paris Charles de Gaulle Airport,591.1298070721939
+San Diego International Airport,Hartsfield-Jackson Atlanta International Airport,323.5793981499297
+San Diego International Airport,Dallas/Fort Worth International Airport,219.6917212857523
+San Diego International Airport,Denver International Airport,177.06161596020854
+San Diego International Airport,O'Hare International Airport,301.04252533839383
+San Diego International Airport,Los Angeles International Airport,48.608970414611946
+San Diego International Airport,John F. Kennedy International Airport,397.3450416249621
+San Diego International Airport,Harry Reid International Airport,89.45206418688275
+San Diego International Airport,Orlando International Airport,356.73323133438134
+San Diego International Airport,Miami International Airport,373.07401144329725
+San Diego International Airport,Charlotte Douglas International Airport,346.81114981983785
+San Diego International Airport,Seattle-Tacoma International Airport,199.75562026455026
+San Diego International Airport,Phoenix Sky Harbor International Airport,95.43866171136003
+San Diego International Airport,Newark Liberty International Airport,394.47989183503586
+San Diego International Airport,San Francisco International Airport,120.31916183193397
+San Diego International Airport,George Bush Intercontinental Airport,235.5799054229658
+San Diego International Airport,Logan International Airport,416.8027825113062
+San Diego International Airport,Fort Lauderdale-Hollywood International Airport,373.1620285139335
+San Diego International Airport,Minneapolis-Saint Paul International Airport,273.0369787878735
+San Diego International Airport,LaGuardia Airport,396.64248794508285
+San Diego International Airport,Detroit Metropolitan Airport,330.45508019231
+San Diego International Airport,Philadelphia International Airport,386.90912797066153
+San Diego International Airport,Salt Lake City International Airport,144.78745344754594
+San Diego International Airport,Ronald Reagan Washington National Airport,374.02022262295446
+San Diego International Airport,Baltimore/Washington International Airport,376.6635787378479
+San Diego International Airport,Tampa International Airport,348.29864022128436
+San Diego International Airport,Austin-Bergstrom International Airport,216.88785242562165
+San Diego International Airport,Washington Dulles International Airport,370.9085840159162
+San Diego International Airport,Nashville International Airport,302.48447357476016
+San Diego International Airport,Paris Charles de Gaulle Airport,853.2722450733916
+Baltimore/Washington International Airport,Hartsfield-Jackson Atlanta International Airport,139.43052903254005
+Baltimore/Washington International Airport,Dallas/Fort Worth International Airport,223.1274189697573
+Baltimore/Washington International Airport,Denver International Airport,258.58876356574274
+Baltimore/Washington International Airport,O'Hare International Airport,145.50239907047418
+Baltimore/Washington International Airport,Los Angeles International Airport,370.84179301926133
+Baltimore/Washington International Airport,John F. Kennedy International Airport,73.10215197839433
+Baltimore/Washington International Airport,Harry Reid International Airport,342.14732646026425
+Baltimore/Washington International Airport,Orlando International Airport,165.3677496032182
+Baltimore/Washington International Airport,Miami International Airport,186.2224953711938
+Baltimore/Washington International Airport,Charlotte Douglas International Airport,109.02435747763423
+Baltimore/Washington International Airport,Seattle-Tacoma International Airport,371.4840857270672
+Baltimore/Washington International Airport,Phoenix Sky Harbor International Airport,328.44588685222595
+Baltimore/Washington International Airport,Newark Liberty International Airport,71.12126253417142
+Baltimore/Washington International Airport,San Francisco International Airport,387.1517053540518
+Baltimore/Washington International Airport,George Bush Intercontinental Airport,223.5446239313374
+Baltimore/Washington International Airport,Logan International Airport,110.31241511894851
+Baltimore/Washington International Airport,Fort Lauderdale-Hollywood International Airport,183.53500144258692
+Baltimore/Washington International Airport,Minneapolis-Saint Paul International Airport,184.36805731467862
+Baltimore/Washington International Airport,LaGuardia Airport,73.2430198647179
+Baltimore/Washington International Airport,Detroit Metropolitan Airport,115.21119003691595
+Baltimore/Washington International Airport,Philadelphia International Airport,48.608970414611946
+Baltimore/Washington International Airport,Salt Lake City International Airport,311.16274280851974
+Baltimore/Washington International Airport,Ronald Reagan Washington National Airport,48.608970414611946
+Baltimore/Washington International Airport,San Diego International Airport,366.57925748252563
+Baltimore/Washington International Airport,Tampa International Airport,172.54952811768504
+Baltimore/Washington International Airport,Austin-Bergstrom International Airport,237.42930105893902
+Baltimore/Washington International Airport,Washington Dulles International Airport,48.608970414611946
+Baltimore/Washington International Airport,Nashville International Airport,138.7317967110395
+Baltimore/Washington International Airport,Paris Charles de Gaulle Airport,586.9748941977232
+Tampa International Airport,Hartsfield-Jackson Atlanta International Airport,117.06957900096583
+Tampa International Airport,Dallas/Fort Worth International Airport,185.58510607166392
+Tampa International Airport,Denver International Airport,260.91028686309653
+Tampa International Airport,O'Hare International Airport,197.13067233152316
+Tampa International Airport,Los Angeles International Airport,349.0323631401974
+Tampa International Airport,John F. Kennedy International Airport,195.80791389262794
+Tampa International Airport,Harry Reid International Airport,326.6688826894002
+Tampa International Airport,Orlando International Airport,48.608970414611946
+Tampa International Airport,Miami International Airport,82.18376748357417
+Tampa International Airport,Charlotte Douglas International Airport,128.98378636110948
+Tampa International Airport,Seattle-Tacoma International Airport,395.6107415800796
+Tampa International Airport,Phoenix Sky Harbor International Airport,301.42284849268094
+Tampa International Airport,Newark Liberty International Airport,194.76429236983373
+Tampa International Airport,San Francisco International Airport,379.172781948563
+Tampa International Airport,George Bush Intercontinental Airport,165.01205337220264
+Tampa International Airport,Logan International Airport,219.98132807241748
+Tampa International Airport,Fort Lauderdale-Hollywood International Airport,74.86110132661523
+Tampa International Airport,Minneapolis-Saint Paul International Airport,233.20999926935153
+Tampa International Airport,LaGuardia Airport,196.4997472117227
+Tampa International Airport,Detroit Metropolitan Airport,191.02214744337243
+Tampa International Airport,Philadelphia International Airport,184.33097175618389
+Tampa International Airport,Salt Lake City International Airport,314.43093171525527
+Tampa International Airport,Ronald Reagan Washington National Airport,170.04137575480763
+Tampa International Airport,San Diego International Airport,339.9550006654975
+Tampa International Airport,Baltimore/Washington International Airport,173.9176652017003
+Tampa International Airport,Austin-Bergstrom International Airport,183.3303396114944
+Tampa International Airport,Washington Dulles International Airport,169.69822981274484
+Tampa International Airport,Nashville International Airport,142.22482496956331
+Tampa International Airport,Paris Charles de Gaulle Airport,694.7401937784564
+Austin-Bergstrom International Airport,Hartsfield-Jackson Atlanta International Airport,171.54948249050196
+Austin-Bergstrom International Airport,Dallas/Fort Worth International Airport,75.95440257357879
+Austin-Bergstrom International Airport,Denver International Airport,165.6330128487407
+Austin-Bergstrom International Airport,O'Hare International Airport,194.31805986569026
+Austin-Bergstrom International Airport,Los Angeles International Airport,224.30556573345044
+Austin-Bergstrom International Airport,John F. Kennedy International Airport,271.4283388126677
+Austin-Bergstrom International Airport,Harry Reid International Airport,204.5445258024784
+Austin-Bergstrom International Airport,Orlando International Airport,193.88253672667625
+Austin-Bergstrom International Airport,Miami International Airport,208.71339215811417
+Austin-Bergstrom International Airport,Charlotte Douglas International Airport,199.03702543800554
+Austin-Bergstrom International Airport,Seattle-Tacoma International Airport,299.3834778355083
+Austin-Bergstrom International Airport,Phoenix Sky Harbor International Airport,176.0663223122184
+Austin-Bergstrom International Airport,Newark Liberty International Airport,268.9796500130236
+Austin-Bergstrom International Airport,San Francisco International Airport,258.4316418644451
+Austin-Bergstrom International Airport,George Bush Intercontinental Airport,48.608970414611946
+Austin-Bergstrom International Airport,Logan International Airport,295.39080770204936
+Austin-Bergstrom International Airport,Fort Lauderdale-Hollywood International Airport,208.86543580170073
+Austin-Bergstrom International Airport,Minneapolis-Saint Paul International Airport,200.7966971062222
+Austin-Bergstrom International Airport,LaGuardia Airport,271.24851776363204
+Austin-Bergstrom International Airport,Detroit Metropolitan Airport,214.97363854638965
+Austin-Bergstrom International Airport,Philadelphia International Airport,252.81733211752965
+Austin-Bergstrom International Airport,Salt Lake City International Airport,204.22314712046426
+Austin-Bergstrom International Airport,Ronald Reagan Washington National Airport,237.26567019238297
+Austin-Bergstrom International Airport,San Diego International Airport,214.2897399928121
+Austin-Bergstrom International Airport,Baltimore/Washington International Airport,240.88109932850705
+Austin-Bergstrom International Airport,Tampa International Airport,184.97819119795372
+Austin-Bergstrom International Airport,Washington Dulles International Airport,234.7716498601884
+Austin-Bergstrom International Airport,Nashville International Airport,162.05062512307077
+Austin-Bergstrom International Airport,Paris Charles de Gaulle Airport,769.3994329666025
+Washington Dulles International Airport,Hartsfield-Jackson Atlanta International Airport,133.84397784482908
+Washington Dulles International Airport,Dallas/Fort Worth International Airport,217.26033775948957
+Washington Dulles International Airport,Denver International Airport,253.5642012204793
+Washington Dulles International Airport,O'Hare International Airport,141.16385420092902
+Washington Dulles International Airport,Los Angeles International Airport,365.56456797774723
+Washington Dulles International Airport,John F. Kennedy International Airport,85.21471418634445
+Washington Dulles International Airport,Harry Reid International Airport,336.94752224986627
+Washington Dulles International Airport,Orlando International Airport,161.57859858584845
+Washington Dulles International Airport,Miami International Airport,183.03502986533272
+Washington Dulles International Airport,Charlotte Douglas International Airport,97.59910214576104
+Washington Dulles International Airport,Seattle-Tacoma International Airport,367.7337095945472
+Washington Dulles International Airport,Phoenix Sky Harbor International Airport,322.963724212752
+Washington Dulles International Airport,Newark Liberty International Airport,83.11655735741772
+Washington Dulles International Airport,San Francisco International Airport,382.270739290745
+Washington Dulles International Airport,George Bush Intercontinental Airport,217.6797256672527
+Washington Dulles International Airport,Logan International Airport,116.06259955980346
+Washington Dulles International Airport,Fort Lauderdale-Hollywood International Airport,180.37016747520045
+Washington Dulles International Airport,Minneapolis-Saint Paul International Airport,180.66817038891543
+Washington Dulles International Airport,LaGuardia Airport,85.27958955749335
+Washington Dulles International Airport,Detroit Metropolitan Airport,111.84537329993742
+Washington Dulles International Airport,Philadelphia International Airport,48.608970414611946
+Washington Dulles International Airport,Salt Lake City International Airport,306.38966532683634
+Washington Dulles International Airport,Ronald Reagan Washington National Airport,48.608970414611946
+Washington Dulles International Airport,San Diego International Airport,361.1903371571931
+Washington Dulles International Airport,Baltimore/Washington International Airport,48.608970414611946
+Washington Dulles International Airport,Tampa International Airport,168.4300288364078
+Washington Dulles International Airport,Austin-Bergstrom International Airport,231.54850490276843
+Washington Dulles International Airport,Nashville International Airport,132.78787824648455
+Washington Dulles International Airport,Paris Charles de Gaulle Airport,592.9845518870193
+Nashville International Airport,Hartsfield-Jackson Atlanta International Airport,85.40494693005118
+Nashville International Airport,Dallas/Fort Worth International Airport,146.5491406453248
+Nashville International Airport,Denver International Airport,196.52208930503429
+Nashville International Airport,O'Hare International Airport,117.77863882083427
+Nashville International Airport,Los Angeles International Airport,302.51453113436617
+Nashville International Airport,John F. Kennedy International Airport,163.2349942101992
+Nashville International Airport,Harry Reid International Airport,275.31493193734184
+Nashville International Airport,Orlando International Airport,143.52674582495922
+Nashville International Airport,Miami International Airport,169.0633434251095
+Nashville International Airport,Charlotte Douglas International Airport,98.55200189172656
+Nashville International Airport,Seattle-Tacoma International Airport,325.7844631986234
+Nashville International Airport,Phoenix Sky Harbor International Airport,251.11888129665942
+Nashville International Airport,Newark Liberty International Airport,160.79598005221834
+Nashville International Airport,San Francisco International Airport,324.5558380203099
+Nashville International Airport,George Bush Intercontinental Airport,147.9049557751531
+Nashville International Airport,Logan International Airport,186.96715528768308
+Nashville International Airport,Fort Lauderdale-Hollywood International Airport,167.24066244264617
+Nashville International Airport,Minneapolis-Saint Paul International Airport,153.06023473353008
+Nashville International Airport,LaGuardia Airport,163.04123799788138
+Nashville International Airport,Detroit Metropolitan Airport,122.04825209740045
+Nashville International Airport,Philadelphia International Airport,151.0845814872141
+Nashville International Airport,Salt Lake City International Airport,245.39204564573046
+Nashville International Airport,Ronald Reagan Washington National Airport,135.94273452903818
+Nashville International Airport,San Diego International Airport,296.61288569422265
+Nashville International Airport,Baltimore/Washington International Airport,139.3926381636031
+Nashville International Airport,Tampa International Airport,142.94682927626127
+Nashville International Airport,Austin-Bergstrom International Airport,160.95400098343015
+Nashville International Airport,Washington Dulles International Airport,133.3509122748104
+Nashville International Airport,Paris Charles de Gaulle Airport,664.7590384211076
+Paris Charles de Gaulle Airport,Hartsfield-Jackson Atlanta International Airport,633.1186696719265
+Paris Charles de Gaulle Airport,Dallas/Fort Worth International Airport,701.4943003031742
+Paris Charles de Gaulle Airport,Denver International Airport,692.9507639467829
+Paris Charles de Gaulle Airport,O'Hare International Airport,603.0949529258568
+Paris Charles de Gaulle Airport,Los Angeles International Airport,787.6625368330403
+Paris Charles de Gaulle Airport,John F. Kennedy International Airport,536.0987647760941
+Paris Charles de Gaulle Airport,Harry Reid International Airport,759.8857363521922
+Paris Charles de Gaulle Airport,Orlando International Airport,645.2769444439671
+Paris Charles de Gaulle Airport,Miami International Airport,655.423160570087
+Paris Charles de Gaulle Airport,Charlotte Douglas International Airport,603.6872956402108
+Paris Charles de Gaulle Airport,Seattle-Tacoma International Airport,707.4402578568638
+Paris Charles de Gaulle Airport,Phoenix Sky Harbor International Airport,764.7195602720415
+Paris Charles de Gaulle Airport,Newark Liberty International Airport,537.921191604254
+Paris Charles de Gaulle Airport,San Francisco International Airport,777.0325017272796
+Paris Charles de Gaulle Airport,George Bush Intercontinental Airport,709.1443600932623
+Paris Charles de Gaulle Airport,Logan International Airport,512.6970736262836
+Paris Charles de Gaulle Airport,Fort Lauderdale-Hollywood International Airport,653.0348100996241
+Paris Charles de Gaulle Airport,Minneapolis-Saint Paul International Airport,609.2753236167591
+Paris Charles de Gaulle Airport,LaGuardia Airport,535.9137449042373
+Paris Charles de Gaulle Airport,Detroit Metropolitan Airport,577.0683710445094
+Paris Charles de Gaulle Airport,Philadelphia International Airport,547.8830816616696
+Paris Charles de Gaulle Airport,Salt Lake City International Airport,715.4522124221239
+Paris Charles de Gaulle Airport,Ronald Reagan Washington National Airport,562.8321432091111
+Paris Charles de Gaulle Airport,San Diego International Airport,791.1789271552404
+Paris Charles de Gaulle Airport,Baltimore/Washington International Airport,559.1128479291538
+Paris Charles de Gaulle Airport,Tampa International Airport,654.5547124900022
+Paris Charles de Gaulle Airport,Austin-Bergstrom International Airport,719.447475609209
+Paris Charles de Gaulle Airport,Washington Dulles International Airport,564.4913959133769
+Paris Charles de Gaulle Airport,Nashville International Airport,628.214569336877
