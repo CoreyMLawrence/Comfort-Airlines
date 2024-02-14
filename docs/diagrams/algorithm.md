@@ -51,6 +51,7 @@
     - For each aircraft:
         - If the aircraft is available:
             - If the aircraft needs maintenance:
+                - Reserve maintenance spot for aircraft at airport performing maintenance
                 - `[Subroutine::Schedule]` Schedule the aircraft for the flight to the hub with the shortest wait time (if equal wait times, maximize profit) that can be made during operating hours (if any)
             - Else
                 - `[Subroutine::Schedule]` Schedule the aircraft for the most profitable, available flight that can be made within operating hours (if any)
@@ -107,6 +108,7 @@ passengers, scheduled, departure time, scheduled arrival time, aircraft tail num
     - Start timer for boarding wait time with extra refuel time (35m)
 - Else
     - Start timer for boarding wait time without refueling (25m)
+- Set plane location to null
 - Start timer for flight time (flight-dependent)
 - If there are any aircraft waiting on the tarmac:
     - Assign newly available gate to first aircraft in tarmac
@@ -117,6 +119,7 @@ passengers, scheduled, departure time, scheduled arrival time, aircraft tail num
 ## SUBROUTINE: Flight::Arrive(aircraft, flight, ledger)
 - `[Subroutine::Ledger::Append]` Add landing fee to ledger
 - Record actual flight arrival time in scheduler flight entry
+- Set plane location to destination airport
 - If there is any available gate, assign the gate to the aircraft
     - Set aircraft status to deboarding
     - Start timer for deboarding wait time (15m)
