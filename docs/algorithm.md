@@ -1,8 +1,9 @@
 # Working Definitions
 - "aircraft needs maintenance": an aircraft with 200+ flight hours since last maintenance
 - "available aircraft": an aircraft that is not in flight or undergoing maintenance (implies deboarded and waiting at a gate)
-- "available flight": a flight with remaining demand that can be flown by the given aircraft type, leaving within the operating hours of the source airport and arriving within the operating hours of the destination airport
+- "available flight": a flight with remaining demand that can be flown by the given aircraft type with sufficient maximum fuel, leaving within the operating hours of the source airport and arriving within the operating hours of the destination airport
 - "available gate": a gate that is not currently being used by an aircraft nor scheduled to be used by an aircraft
+- "hub": "airport destignated as central location with 11 gates; one of {"O'Hare", "Denver Intl.", "Dallas Fort Worth", "Hartsfield-Jackson Atlandta Intl."}
 - "in flight": in the air, waiting on the tarmac, or at a gate preparing to arrive or leave
 - "operating hours": 5 AM to 1 AM (exclusive)
 
@@ -18,13 +19,13 @@
 - `simulation/ledger.csv`
 
 # Aircraft Status
-- Available
-- In Maintenance
-- Waiting at tarmac
-- Boarding without refueling
-- Boarding with refueling
-- Deboarding
-- In flight
+- Available (no time)
+- In Maintenance (2160m)
+- Waiting at tarmac (null time)
+- Boarding without refueling (25m)
+- Boarding with refueling (35m)
+- Deboarding (15m)
+- In flight (variable)
 
 # Ledger Entries
 - Fuel (expense)
@@ -103,7 +104,7 @@ passengers, scheduled, departure time, scheduled arrival time, aircraft tail num
 - Record actual flight departure time in scheduler flight entry
 - Increase aircraft flight hours by flight duration
 - If the aircraft needs to refuel:
-    - Refuel the aircraft with the required fuel for the trip + 33% (or just the whole tank? to be discussed.)
+    - Refuel the aircraft with the required fuel for the trip
     - `[Subroutine::Ledger::Append]` Add fuel costs to ledger
     - Start timer for boarding wait time with extra refuel time (35m)
 - Else
@@ -120,6 +121,7 @@ passengers, scheduled, departure time, scheduled arrival time, aircraft tail num
 - `[Subroutine::Ledger::Append]` Add landing fee to ledger
 - Record actual flight arrival time in scheduler flight entry
 - Set plane location to destination airport
+- Decrease the aircraft fuel amount by fuel used
 - If there is any available gate, assign the gate to the aircraft
     - Set aircraft status to deboarding
     - Start timer for deboarding wait time (15m)

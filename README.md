@@ -1,5 +1,6 @@
 # Comfort Airlines
-Summary of the contents of this project. All content and code is copyrighted by Comfort Airlines, 2024.
+Summary of the contents of this project. All content and code is copyrighted by Comfort Airlines, 2024. Note that `archive` files are for internal development purposes only and should not be 
+considered a part of the project.
 
 | File / Folder    | Description |
 | ---------------- | ----------- |
