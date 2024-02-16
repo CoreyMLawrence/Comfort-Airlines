@@ -54,8 +54,40 @@ and project management is assumed.
 
 # 2. Functional Requirements
 
-## 2.1 Functional Requirements
-
+## 2.1 Requirements Overview
+- Review project requirements
+- Pre-research Research and Data Collection
+    - Research shortest path algorithms (assigned to: Zach, due: 2024-01-18)
+    - Research ideal hub attributes (assigned to: Dylan and Will, due: 2024-01-18)
+    - Aggregate airport attributes from Wikipedia into CSV file (assigned to: Anthony, due: 2024-01-18)
+    - Aggregate aircraft attributes from flight manuals into CSV file (assigned to: Corey, due: 2024-01-18)
+    - Determine ideal hubs (assigned to: Dylan, due: 2024-02-01)
+    - Calculate the cartesian product of airports and aircraft to derive all possible flights (assigned to: Corey, due: 2024-01-18)
+    - Filter out flights between airports 150 mi or closer (assigned to: Corey, due: 2024-01-18)
+    - Determine which airports share a metro population (assigned to: Anthony, due: 2024-01-18)
+    - Calculate the demand for each flight based on metro populations (assigned to: Corey, due: 2024-02-01)
+    - Calculate fuel capacity for each plane (assigned to: Dylan, due: 2024-02-01)
+    - Calculate flight time for each flight (assigned to: Corey, due: 2024-02-09)
+    - Calculate net profit for each flight (assigned to: Parker, due: 2024-02-09)
+    - Calculate net profit per hour for each flight (assigned to: Corey, due: 2024-02-23)
+    - Review project requirements and project status with client (assigned to: Everyone, due: 2024-02-23)
+- Timetable Development
+    - Containerize application into bridge-connected containers with Docker (assigned to: Anthony, due: 2024-01-18)
+    - Map the database to a local volume to ensure persistence (assigned to: Anthony, due: 2024-01-25)
+    - Model the MariaDB database using ERD (assigned to: Parker and Zach, due: 2024-01-25)
+    - Implement the database model with SQLAlchemy (assigned to: Dylan and Will, due: 2024-01-25)
+    - Develop greedy algorithm to generate timetable (assigned to: Anthony and Corey, due: 2024-02-16)
+    - Unify greedy algorithm models (assigned to: Everyone, due: 2024-02-25)
+    - Diagram classes used by algorithm as UML diagrams (assigned to: Everyone, due: 2024-02-16)
+    - Standardize logging structure (assigned to: Anthony, due: 2024-02-25)
+    - Implement diagrammed classes (assigned to: Everyone, due: 2024-02-25)
+- Simulation Development
+    - Outlining and planning (assigned to: Everyone, due: 2024-02-29)
+    - Development the simulation (assigned to: Everyone, due: 2024-02-29)
+    - Assure the simulation meets client requirements (assigned to: Everyone, due: 2024-04-04)
+    - Review project requirements and project status with client (assigned to: Everyone, due: 2024-04-11)
+    - Implement feedback (assigned to: Everyone, due: 2024-04-18)
+- Turn in complete project to client
 
 ## 2.2 External Interface Requirements
 There are no external interface requirements because there are no external systems.
@@ -85,8 +117,7 @@ the app and the database -- will be self-contained and connected to an internal 
 - The docker containers be isolated over the network, using an internal bridge network and not exposing any ports
 
 ## 3.3 Scalability Requirements
-- The simulation should be scalable such that it can simulate profits for any percent market share or change in airports,
-aircraft, or other simulation components; at a minimum, the simulation must be scalable from a 2% to 5% market share.
+- The simulation should be scalable such that it can simulate profits for any percent market share or change in airports, aircraft, or other simulation components; at a minimum, the simulation must be scalable from a 2% to 5% market share.
 
 ## 3.4 Maintainability Requirements
 - All Python code must comply with Pep 8, the official Python style guide
