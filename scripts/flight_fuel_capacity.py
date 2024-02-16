@@ -29,7 +29,7 @@ DISTANCE = 2
 
 # Formula constants
 MPG_2_KPG = 1.609   # (MPG*1.609 = KPG)
-DESIRED_FUEL_MULTIPLIER = 1.3    # Amount of fuel we want for flights (130% of fuel required to complete a flight).
+DESIRED_FUEL_MULTIPLIER = 1.0    # Amount of fuel we want for flights (130% of fuel required to complete a flight).
 
 # File-reading constants
 FILE_START = 0
@@ -56,11 +56,18 @@ with open ("data/aircraft.csv", "r") as aircraft_data, open("data/flight_weighte
         
         # 4B. Calculate KPG and write body
         for flight in flights:
-            flight_distance = float(flight[DISTANCE])
             kpg_output = ""
-            for aircraft in aircrafts:
-                flight_kpg = (float(aircraft[MPG]) * MPG_2_KPG)
-                flight_fuel = (flight_distance / flight_kpg) * DESIRED_FUEL_MULTIPLIER
-                kpg_output += ("," + str(flight_fuel))
+            flight_distance = float(flight[DISTANCE])
+            # Check for flights with -1 distance (illegal flight)
+            if (flight_distance < 0):
+                kpg_output += (",-1,-1,-1,-1")
+            else:
+                for aircraft in aircrafts:
+                    flight_kpg = (float(aircraft[MPG]) * MPG_2_KPG)
+                    flight_fuel = (flight_distance / flight_kpg) * DESIRED_FUEL_MULTIPLIER
+                    # Set kpg to -1 if flight_fuel is greater than the max fuel capacity of aircraft.
+                    if (flight_fuel > float(aircraft[MAX_FUEL_CAPACITY])):
+                        flight_fuel = -1
+                    kpg_output += ("," + str(flight_fuel))
             
             outfile.write(flight[SOURCE_AIRPORT] + "," + flight[DESTINATION_AIRPORT] + kpg_output + "\n")
