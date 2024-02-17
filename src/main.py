@@ -9,6 +9,7 @@ def main() -> None:
             logger.processor_code_location,
             logger.ProcessorID(0),
             structlog.contextvars.merge_contextvars,
+            structlog.processors.add_log_level,
             structlog.processors.TimeStamper(fmt="%H:%M:%S", utc=True, key="real_time"),
             structlog.processors.JSONRenderer()
         ]
