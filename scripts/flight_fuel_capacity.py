@@ -8,7 +8,7 @@
 # Output: 
 #   A list of the flights between each airport (including source and destination airports)
 #   and the amount of fuel desired for that flight. The amount of fuel that we want for our 
-#   flights will be 130% of fuel required to complete the flight's distance.
+#   flights will be 100% of fuel required to complete the flight's distance.
 
 
 import csv
@@ -29,7 +29,7 @@ DISTANCE = 2
 
 # Formula constants
 MPG_2_KPG = 1.609   # (MPG*1.609 = KPG)
-DESIRED_FUEL_MULTIPLIER = 1.0    # Amount of fuel we want for flights (130% of fuel required to complete a flight).
+DESIRED_FUEL_MULTIPLIER = 1.0    # Amount of fuel we want for flights (100% of fuel required to complete a flight).
 
 # File-reading constants
 FILE_START = 0
@@ -46,7 +46,7 @@ with open ("data/aircraft.csv", "r") as aircraft_data, open("data/flight_weighte
     _ = next(reader)
     flights = [row for row in reader]
     
-    # 4. Calculate the KPG and output the amount of fuel needed for the next flight in gallons (The amount of fuel is 130% of the fuel needed to make the trip).
+    # 4. Calculate the KPG and output the amount of fuel needed for the next flight in gallons (The amount of fuel is 100% of the fuel needed to make the trip).
     with open("data/flight_fuel_capacity.csv", "w") as outfile:
         # 4A. Write Headers (prints out each airplane's name)
         header_output = ""
