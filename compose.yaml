@@ -8,7 +8,7 @@
 # database or a cache. For examples, see the Awesome Compose repository:
 # https://github.com/docker/awesome-compose
 services:
-  server:
+  app:
     build:
       context: .
     restart: always
@@ -19,30 +19,32 @@ services:
       DATABASE_PORT: 3306
       DATABASE_NAME: comfort-airlines-db
     ports:
-      - 8000:8000
-    depends_on:
-      db:
-        condition: service_healthy
-    links:
-      - db
+      - 51251:51251
+#    depends_on:
+#      db:
+#        condition: service_healthy
+#    links:
+#      - db
 
-  db:
-    image: mariadb
-    restart: always
-    environment:
-      MYSQL_DATABASE: comfort-airlines-db
-      MARIADB_ROOT_PASSWORD: toor
-    volumes:
-      - ./db:/var/lib/mysql
-    healthcheck:
-      test: [ "CMD", "healthcheck.sh", "--su-mysql", "--connect", "--innodb_initialized" ]
-      start_period: 30s
-      start_interval: 10s
-      interval: 1m
-      timeout: 10s
-      retries: 3
-    ports: 
-      - 3306:3306
+#  db:
+#    image: mariadb
+#    restart: always
+#    environment:
+#      MARIADB_DATABASE: comfort-airlines-db
+#      MARIADB_ROOT_PASSWORD: toor
+#      MARIADB_MYSQL_LOCALHOST_USER: 1
+#
+#      MARIADB_USER: healthcheck
+#      MARIADB_PASSWORD: kcehchtlaeh
+#    volumes:
+#      - ./db:/var/lib/mysql
+#    healthcheck:
+#      test: [ "CMD", "healthcheck.sh", "--su=mysql", "--connect", "--innodb_initialized" ]
+#      interval: 10s
+#      timeout: 5s
+#      retries: 3
+#    ports: 
+#      - 3306:3306
 
 # The commented out section below is an example of how to define a PostgreSQL
 # database that your application can use. `depends_on` tells Docker Compose to

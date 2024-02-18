@@ -31,7 +31,10 @@ RUN adduser \
 # C compiler and MariaDB development files required for installing `mariadb` Python package.
 # Do not remove the update and upgrade. Installing MariaDB developer dependencies fail without it.
 RUN apt-get update -y && apt-get upgrade -y
-RUN apt install gcc libmariadb-dev -y
+RUN apt install -y gcc libmariadb-dev
+
+# Install a basic editor
+RUN apt install -y vim nano
 
 # Download dependencies as a separate step to take advantage of Docker's caching.
 # Leverage a cache mount to /root/.cache/pip to speed up subsequent builds.

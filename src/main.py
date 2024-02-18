@@ -1,5 +1,5 @@
 import structlog
-import logger
+import processors
 import time
 
 from reference_wrapper import ReferenceWrapper
@@ -10,9 +10,9 @@ def main() -> None:
     
     structlog.configure(
         processors=[
-            logger.processor_code_location,
-            logger.ProcessorID(0),
-            logger.ProcessorSimulationTime(simulation_time),
+            processors.processor_code_location,
+            processors.ProcessorID(0),
+            processors.ProcessorSimulationTime(simulation_time),
             structlog.contextvars.merge_contextvars,
             structlog.processors.add_log_level,
             structlog.processors.TimeStamper(fmt="%H:%M:%S", utc=True, key="real_time"),
