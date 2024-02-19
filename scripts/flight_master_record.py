@@ -57,7 +57,7 @@ SOURCE_AIRPORT = 0
 DESTINATION_AIRPORT = 1
 TYPE = 2
 TIME = 3
-
+#all of this should be fine, just rips all relevant data from each file and makes a dict of each of them
 with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_loss.csv") as flight_profit_data, open("data/flight_times.csv") as flight_time_data:
     reader = csv.reader(flight_data, delimiter=',')
     _ = next(reader)
@@ -70,10 +70,11 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
     reader = csv.reader(flight_time_data, delimiter=',')
     _ = next(reader)
     times = [row for row in reader] 
-    
+    #start editing here i think unless i fucked something, format/edit as necessary
     with open("data/flight_master_record.csv", "w") as outfile:
         outfile.write("source airport,destination airport,distance (weighted km), expected time ,number of passengers,Cost Per Ticket, Profit/Loss\n")
         for row_flights, row_profits, row_times in zip(flights, profits, times):
+            #may need more asserts to match each entry
             assert row_flights[SOURCE_AIRPORT] == row_profits[SOURCE_AIRPORT]
             assert row_flights[DESTINATION_AIRPORT] == row_profits[DESTINATION_AIRPORT]
             assert row_flights[DESTINATION_AIRPORT] == row_times[DESTINATION_AIRPORT]
