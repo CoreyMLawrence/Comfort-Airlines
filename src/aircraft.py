@@ -95,3 +95,10 @@ class AircraftFactory:
             
             case _:
                 raise ValueError(f"parameter 'aircraft_type' not in range of AircraftType enum.")
+
+WAIT_TIMER: dict[AircraftStatus,int] = {
+    AircraftStatus.IN_MAINTENANCE : 2160,
+    AircraftStatus.BOARDING_WITHOUT_REFUELING : 25,
+    AircraftStatus.BOARDING_WITH_REFUELING : 35,
+    AircraftStatus.DEBOARDING : 15
+}
