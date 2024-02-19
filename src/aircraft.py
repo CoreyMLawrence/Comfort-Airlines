@@ -1,6 +1,6 @@
 # Team: Foobar
 # Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
-# Authors: Anthony Cox
+# Authors: Anthony Cox, Will Wadsworth
 # Date: 2/18/2024
 #
 # Description:

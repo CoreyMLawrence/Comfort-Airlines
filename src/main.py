@@ -1,3 +1,11 @@
+# Team: Foobar
+# Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
+# Authors: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
+# Date: 2/19/2024
+#
+# Description:
+#   This module is the entry point to the program. All pre-programm initialization is performed
+#   here before the simulation is started.
 import structlog
 import processors
 import time
@@ -20,6 +28,8 @@ def main() -> None:
         ]
     )
     
+
+    # EXAMPLE - FEEL FREE TO CHANGE
     log = structlog.get_logger()
 
     while True:
