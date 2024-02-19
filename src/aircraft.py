@@ -49,11 +49,11 @@ class Aircraft:
 
 class AircraftFactory:
     def __init__(self):
-        self.uuid = 0
+        AircraftFactory.uuid = 0
         
     def __next_tail_number(self) -> str:
-        tail_number = f"CA{str(uuid).zfill(4)}"
-        uuid += 1        
+        tail_number = f"CA{str(AircraftFactory.uuid).zfill(4)}"
+        AircraftFactory.uuid += 1        
         return tail_number
     
     def __call__(
