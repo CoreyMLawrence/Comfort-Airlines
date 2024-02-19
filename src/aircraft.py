@@ -57,7 +57,7 @@ class AircraftFactory:
         return tail_number
     
     def __call__(
-            self, aircraft_type: AircraftType, status: AircraftStatus, wait_timer: int,
+            self, aircraft_type: AircraftType, status: AircraftStatus,
             location: Union[Aircraft | None], fuel_level: int
         ) -> Aircraft:
         """Factory class to create Aircraft objects. Uses AircraftType as the API."""
@@ -69,34 +69,34 @@ class AircraftFactory:
                 return Aircraft(
                     "Boeing 737-600", AircraftType.BOEING_737_600, status, location,
                     self.__next_tail_number(), 119, 1101, fuel_level, 6875, 
-                    0.55, wait_timer, 5648
+                    0.55, WAIT_TIMERS.get(status,0), 5648
                 )
     
             case AircraftType.BOEING_737_800:
                 return Aircraft(
                     "Boeing 767-800", AircraftType.BOEING_737_800, status, location,
                     self.__next_tail_number(), 189, 1101, fuel_level, 6875, 
-                    0.44, wait_timer, 5665
+                    0.44, WAIT_TIMERS.get(status,0), 5665
                 )
                 
             case AircraftType.AIRBUS_A200_100:
                 return Aircraft(
                     "Airbus A200-100", AircraftType.AIRBUS_A200_100, status, location,
                     self.__next_tail_number(), 135, 1012, fuel_level, 5790, 
-                    0.57, wait_timer, 5460
+                    0.57, WAIT_TIMERS.get(status,0), 5460
                 )
             
             case AircraftType.AIRBUS_A220_300:
                 return Aircraft(
                     "Airbus A220-300", AircraftType.AIRBUS_A220_300, status, location,
                     self.__next_tail_number(), 160, 1012, fuel_level, 5790, 
-                    0.66, wait_timer, 5920
+                    0.66, WAIT_TIMERS.get(status,0), 5920
                 )
             
             case _:
                 raise ValueError(f"parameter 'aircraft_type' not in range of AircraftType enum.")
 
-WAIT_TIMER: dict[AircraftStatus,int] = {
+WAIT_TIMERS: dict[AircraftStatus,int] = {
     AircraftStatus.IN_MAINTENANCE : 2160,
     AircraftStatus.BOARDING_WITHOUT_REFUELING : 25,
     AircraftStatus.BOARDING_WITH_REFUELING : 35,
