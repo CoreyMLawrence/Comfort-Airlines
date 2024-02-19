@@ -34,14 +34,14 @@ break_even_percentage = 0.3
 FILE_START = 0
 
 
-with open ("data/flights.csv", "r") as flight_data, open ("data/aircraft.csv", "r") as aircraft_spec_data, open("data/flight_profit_or_loss_profit.csv", "w") as outfile1, open("data/flight_profit_or_loss_loss.csv", "w") as outfile2:
+with open ("data/flights.csv", "r") as flight_data, open ("data/aircraft.csv", "r") as aircraft_spec_data, open("data/flight_profit_or_loss.csv", "w") as outfile1:# open("data/flight_profit_or_loss_loss.csv", "w") as outfile2:
     #Generate break even costs
     flight_reader = csv.reader(flight_data, delimiter=',')
     aircraft_spec_reader = csv.reader(aircraft_spec_data, delimiter=',')
     
     #write header of outfile outside loop
-    outfile1.write("source airport,destination airport,airplane type,total Cost,break even cost per ticket, profit per flight, percent full\n")
-    outfile2.write("source airport,destination airport,airplane type,total Cost,break even cost per ticket, loss per flight, percent full\n")
+    outfile1.write("source airport,destination airport,airplane type,total Cost,break even cost per ticket, profit/loss per flight, percent full\n")
+    #outfile2.write("source airport,destination airport,airplane type,total Cost,break even cost per ticket, loss per flight, percent full\n")
     #skip header row
     _ = next(flight_reader)
     _ = next(aircraft_spec_reader)
@@ -75,10 +75,10 @@ with open ("data/flights.csv", "r") as flight_data, open ("data/aircraft.csv", "
             percent_full = demand/capacity
 
             #4. Write body
-            if profit_loss > 0:
-                outfile1.write(f"{source_airport},{destination_airport},{aircraft_name},{total_cost},{break_even_cost_per_ticket},{profit_loss},{percent_full}\n")
-            else:
-                outfile2.write(f"{source_airport},{destination_airport},{aircraft_name},{total_cost},{break_even_cost_per_ticket},{profit_loss},{percent_full}\n")
+            #if profit_loss > 0:
+            outfile1.write(f"{source_airport},{destination_airport},{aircraft_name},{total_cost},{break_even_cost_per_ticket},{profit_loss},{percent_full}\n")
+           # else:
+               # outfile2.write(f"{source_airport},{destination_airport},{aircraft_name},{total_cost},{break_even_cost_per_ticket},{profit_loss},{percent_full}\n")
             
             # Print information
             #print(f"Source: {source_airport}, Destination: {destination_airport}")
