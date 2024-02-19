@@ -19,7 +19,7 @@ def main() -> None:
     structlog.configure(
         processors=[
             processors.processor_code_location,
-            processors.ProcessorID(0),
+            processors.ProcessorID(),
             processors.ProcessorSimulationTime(simulation_time),
             structlog.contextvars.merge_contextvars,
             structlog.processors.add_log_level,

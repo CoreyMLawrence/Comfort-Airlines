@@ -32,7 +32,7 @@ class Aircraft:
     def __init__(
             self, name: str, type: AircraftType, status: AircraftStatus, location: Union[Airport | None], 
             tail_number: str, passenger_capacity: int, cruise_speed: int, fuel_level: int, fuel_capacity: int, 
-            fuel_efficiency: float, wait_timer: int, max_range: int
+            fuel_efficiency: float, max_range: int
         ):
         self.name = name
         self.type = type
@@ -44,7 +44,7 @@ class Aircraft:
         self.fuel_level = fuel_level
         self.fuel_capacity = fuel_capacity              # gallons
         self.fuel_efficiency = fuel_efficiency
-        self.wait_timer = wait_timer
+        self.wait_timer = WAIT_TIMERS.get(status,0)
         self.max_range = max_range                      # km
 
 class AircraftFactory:
@@ -69,28 +69,28 @@ class AircraftFactory:
                 return Aircraft(
                     "Boeing 737-600", AircraftType.BOEING_737_600, status, location,
                     self.__next_tail_number(), 119, 1101, fuel_level, 6875, 
-                    0.55, WAIT_TIMERS.get(status,0), 5648
+                    0.55, 5648
                 )
     
             case AircraftType.BOEING_737_800:
                 return Aircraft(
                     "Boeing 767-800", AircraftType.BOEING_737_800, status, location,
                     self.__next_tail_number(), 189, 1101, fuel_level, 6875, 
-                    0.44, WAIT_TIMERS.get(status,0), 5665
+                    0.44, 5665
                 )
                 
             case AircraftType.AIRBUS_A200_100:
                 return Aircraft(
                     "Airbus A200-100", AircraftType.AIRBUS_A200_100, status, location,
                     self.__next_tail_number(), 135, 1012, fuel_level, 5790, 
-                    0.57, WAIT_TIMERS.get(status,0), 5460
+                    0.57, 5460
                 )
             
             case AircraftType.AIRBUS_A220_300:
                 return Aircraft(
                     "Airbus A220-300", AircraftType.AIRBUS_A220_300, status, location,
                     self.__next_tail_number(), 160, 1012, fuel_level, 5790, 
-                    0.66, WAIT_TIMERS.get(status,0), 5920
+                    0.66, 5920
                 )
             
             case _:

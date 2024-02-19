@@ -19,7 +19,7 @@ services:
       DATABASE_PORT: 3306
       DATABASE_NAME: comfort-airlines-db
     ports:
-      - 51251:51251
+      - 32000:32000
 #    depends_on:
 #      db:
 #        condition: service_healthy
