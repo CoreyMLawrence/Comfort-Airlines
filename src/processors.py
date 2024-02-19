@@ -1,3 +1,13 @@
+# Team: Foobar
+# Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
+# Authors: Anthony Cox, Will Wadsworth
+# Date: 2/19/2024
+#
+# Description:
+#   This module defines several "processors" for logging with the structlog library.
+#   A processor is a function in a function pipeline that transforms a log event.
+#   For example, the `processor_code_location` function adds information about the source
+#   code to all log events.
 import inspect
 from reference_wrapper import ReferenceWrapper
 
@@ -12,8 +22,8 @@ def processor_code_location(logger, log_method, event_dict):
     return event_dict
 
 class ProcessorID:
-    def __init__(self, id_seed: int = 0):
-        self.id = id_seed
+    def __init__(self):
+        self.id = 0
 
     def __call__(self, _, __, event_dict):
         event_dict["id"] = self.id
