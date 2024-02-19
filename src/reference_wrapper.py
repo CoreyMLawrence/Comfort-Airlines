@@ -10,7 +10,8 @@
 #   by reference. This implementation is based on the C++ standard library class 
 #   std::reference_wrapper<T>, which is a copy-assignable reference to an object.
 from dataclasses import dataclass
+from typing import Any
 
 @dataclass
 class ReferenceWrapper:
-    value: any
+    value: Any
