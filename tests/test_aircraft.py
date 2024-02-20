@@ -1,5 +1,5 @@
 import pytest
-from src.aircraft import Aircraft, AircraftType, AircraftStatus, AircraftFactory
+from src.aircraft import Airport, Aircraft, AircraftType, AircraftStatus, AircraftFactory
 
 @pytest.mark.parametrize("name, type, status, location, tail_number, passenger_capacity, cruise_speed, fuel_level, fuel_capacity, fuel_efficiency, wait_timer, max_range", 
     [
@@ -9,7 +9,8 @@ from src.aircraft import Aircraft, AircraftType, AircraftStatus, AircraftFactory
         ("Airbus A220-300", AircraftType.AIRBUS_A220_300, AircraftStatus.AVAILABLE, None, "CA0003", 160, 1012, 0, 5790, 0.66, 0, 5920),
     ]
 )
-def test_aircraft_init(name, type, status, location, tail_number, passenger_capacity, cruise_speed, fuel_level, fuel_capacity, fuel_efficiency, wait_timer, max_range) -> None:
+def test_aircraft_factory_create_aircraft(name, type, status, location, tail_number, passenger_capacity, cruise_speed, fuel_level, fuel_capacity, fuel_efficiency, wait_timer, max_range) -> None:
+    """AircraftFactory.createAircraft() method test. Asserts that passing in the aircraft type correctly yields an aircraft with the correct information"""
     aircraft: Aircraft = AircraftFactory.create_aircraft(type, status, location, fuel_level)
 
     assert aircraft.name == name
@@ -26,6 +27,7 @@ def test_aircraft_init(name, type, status, location, tail_number, passenger_capa
     assert aircraft.max_range == max_range
         
 def test_aircraft_negative_fuel_level() -> None:
+    """Aircraft.__init__() method test. Tests that the aircraft class constructor protects against negative fuel levels"""
     _: Aircraft = AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, 0)
     
     with pytest.raises(ValueError):
@@ -40,15 +42,21 @@ def test_aircraft_negative_fuel_level() -> None:
     ]
 )
 def test_aircraft_overfull_fuel_level(type, status, location,  fuel_capacity) -> None:
+    """Aircraft.__init__() method test. Tests that the aircraft class constructor protects against fuel levels greater than the capacity of the aircraft"""
     _: Aircraft = AircraftFactory.create_aircraft(type, status, location, fuel_capacity)
     
     with pytest.raises(ValueError):
         _: Aircraft = AircraftFactory.create_aircraft(type, status, location, fuel_capacity + 1)
 
-def test_aircraft_type_error() -> None:
+def test_aircraft_factory_create_aircraft_type_error() -> None:
+    """AircraftFactory.createAircraft() method test. Asserts that the status and location"""
+    _: Aircraft = AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, Airport(), 0)
+    _: Aircraft = AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, 0)
+    
     with pytest.raises(TypeError):
-        _: Aircraft = AircraftFactory.create_aircraft("not an AircraftType error")
+        _: Aircraft = AircraftFactory.create_aircraft("not an AircraftType error", AircraftStatus.AVAILABLE, None, 0)
 
-def test_aircraft_range_error() -> None:
+def test_aircraft_factory_create_aircraft_range_error() -> None:
+    """AircraftFactory.createAircraft() method test. Asserts that an enumerated type passed is checked if in the range of the enum"""
     with pytest.raises(ValueError):
         _ = AircraftFactory.create_aircraft(AircraftType(100))

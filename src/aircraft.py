@@ -53,6 +53,7 @@ class AircraftFactory:
         
     @staticmethod
     def __next_tail_number() -> str:
+        """Internal AircraftFactory static method. Generates a next unique aircraft tail number"""
         tail_number = f"CA{str(AircraftFactory.uuid).zfill(4)}"
         AircraftFactory.uuid += 1        
         return tail_number
@@ -60,11 +61,14 @@ class AircraftFactory:
     @staticmethod
     def create_aircraft(
             aircraft_type: AircraftType, status: AircraftStatus,
-            location: Union[Aircraft | None], fuel_level: int
+            location: Union[Airport | None], fuel_level: int
         ) -> Aircraft:
         """Factory class to create Aircraft objects. Uses AircraftType as the API."""
         if not type(aircraft_type) is AircraftType:
-            raise TypeError(f"parameter 'aircraft_type' is not of enum type 'AircraftType'. Got type: {type(aircraft_type)}")
+            raise TypeError(f"parameter 'aircraft_type' is not of enum type 'AircraftType'. Got type: {type(aircraft_type).__name__}")
+        
+        if not type(location) is Airport and not location is None:
+            raise TypeError(f"parameter 'location' must be an airport or None")
 
         if fuel_level < 0:
             raise ValueError("fuel_level cannot be negative")
