@@ -11,15 +11,18 @@
 import inspect
 from reference_wrapper import ReferenceWrapper
 
-def processor_code_location(logger, log_method, event_dict):
+class CodeLocation:
     STRUCTLOG_STACK_FRAME_OFFSET = 4
 
-    frame_info = inspect.getouterframes(inspect.currentframe())[4]
-    event_dict["source_file"] = frame_info.filename
-    event_dict["source_function"] = frame_info.function
-    event_dict["source_line"] = frame_info.lineno
-    
-    return event_dict
+    @staticmethod
+    def __call__(logger, log_method, event_dict):
+        frame_info = inspect.getouterframes(inspect.currentframe())[CodeLocation.STRUCTLOG_STACK_FRAME_OFFSET]
+        
+        event_dict["source_file"] = frame_info.filename
+        event_dict["source_function"] = frame_info.function
+        event_dict["source_line"] = frame_info.lineno
+        
+        return event_dict
 
 class ProcessorID:
     def __init__(self):
