@@ -62,10 +62,16 @@ class AircraftFactory:
         ) -> Aircraft:
         """Factory class to create Aircraft objects. Uses AircraftType as the API."""
         if not type(aircraft_type) is AircraftType:
-            raise TypeError(f"parameter 'aircraft_type' is not of enum type 'AircraftType'. Found type: {type(aircraft_type)}")
+            raise TypeError(f"parameter 'aircraft_type' is not of enum type 'AircraftType'. Got type: {type(aircraft_type)}")
+
+        if fuel_level < 0:
+            raise ValueError("fuel_level cannot be negative")
 
         match aircraft_type:
             case AircraftType.BOEING_737_600:
+                if fuel_level > 6875:
+                    raise ValueError(f"Fuel level is greater than Boeing 737-600 fuel capacity: {6875}")
+                
                 return Aircraft(
                     "Boeing 737-600", AircraftType.BOEING_737_600, status, location,
                     self.__next_tail_number(), 119, 1101, fuel_level, 6875, 
@@ -73,6 +79,9 @@ class AircraftFactory:
                 )
     
             case AircraftType.BOEING_737_800:
+                if fuel_level > 6875:
+                    raise ValueError(f"Fuel level is greater than Boeing 767-800 fuel capacity: {6875}")
+                
                 return Aircraft(
                     "Boeing 767-800", AircraftType.BOEING_737_800, status, location,
                     self.__next_tail_number(), 189, 1101, fuel_level, 6875, 
@@ -80,6 +89,9 @@ class AircraftFactory:
                 )
                 
             case AircraftType.AIRBUS_A200_100:
+                if fuel_level > 5790:
+                    raise ValueError(f"Fuel level is greater than Boeing 767-800 fuel capacity: {5790}")
+                
                 return Aircraft(
                     "Airbus A200-100", AircraftType.AIRBUS_A200_100, status, location,
                     self.__next_tail_number(), 135, 1012, fuel_level, 5790, 
@@ -87,6 +99,9 @@ class AircraftFactory:
                 )
             
             case AircraftType.AIRBUS_A220_300:
+                if fuel_level > 5790:
+                    raise ValueError(f"Fuel level is greater than Boeing 767-800 fuel capacity: {5790}")
+                
                 return Aircraft(
                     "Airbus A220-300", AircraftType.AIRBUS_A220_300, status, location,
                     self.__next_tail_number(), 160, 1012, fuel_level, 5790, 
