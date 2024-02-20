@@ -4,7 +4,7 @@
 # Date: 2/18/2024
 #
 # Description:
-#   This module defines and implements the model class `Aircraft` as well as 
+#   This module defines and implements the model class `Aircraft` as well as the factories and enumerated types for constructing them.
 
 from enum import Enum
 from typing import Union
@@ -44,20 +44,22 @@ class Aircraft:
         self.fuel_level = fuel_level
         self.fuel_capacity = fuel_capacity              # gallons
         self.fuel_efficiency = fuel_efficiency
-        self.wait_timer = WAIT_TIMERS.get(status,0)
+        self.wait_timer = WAIT_TIMERS.get(status, 0)
         self.max_range = max_range                      # km
 
 class AircraftFactory:
-    def __init__(self):
-        AircraftFactory.uuid = 0
+    # Static class variables
+    uuid = 0
         
-    def __next_tail_number(self) -> str:
+    @staticmethod
+    def __next_tail_number() -> str:
         tail_number = f"CA{str(AircraftFactory.uuid).zfill(4)}"
         AircraftFactory.uuid += 1        
         return tail_number
     
-    def __call__(
-            self, aircraft_type: AircraftType, status: AircraftStatus,
+    @staticmethod
+    def create_aircraft(
+            aircraft_type: AircraftType, status: AircraftStatus,
             location: Union[Aircraft | None], fuel_level: int
         ) -> Aircraft:
         """Factory class to create Aircraft objects. Uses AircraftType as the API."""
@@ -74,7 +76,7 @@ class AircraftFactory:
                 
                 return Aircraft(
                     "Boeing 737-600", AircraftType.BOEING_737_600, status, location,
-                    self.__next_tail_number(), 119, 1101, fuel_level, 6875, 
+                    AircraftFactory.__next_tail_number(), 119, 1101, fuel_level, 6875, 
                     0.55, 5648
                 )
     
@@ -84,7 +86,7 @@ class AircraftFactory:
                 
                 return Aircraft(
                     "Boeing 767-800", AircraftType.BOEING_737_800, status, location,
-                    self.__next_tail_number(), 189, 1101, fuel_level, 6875, 
+                    AircraftFactory.__next_tail_number(), 189, 1101, fuel_level, 6875, 
                     0.44, 5665
                 )
                 
@@ -94,7 +96,7 @@ class AircraftFactory:
                 
                 return Aircraft(
                     "Airbus A200-100", AircraftType.AIRBUS_A200_100, status, location,
-                    self.__next_tail_number(), 135, 1012, fuel_level, 5790, 
+                    AircraftFactory.__next_tail_number(), 135, 1012, fuel_level, 5790, 
                     0.57, 5460
                 )
             
@@ -104,7 +106,7 @@ class AircraftFactory:
                 
                 return Aircraft(
                     "Airbus A220-300", AircraftType.AIRBUS_A220_300, status, location,
-                    self.__next_tail_number(), 160, 1012, fuel_level, 5790, 
+                    AircraftFactory.__next_tail_number(), 160, 1012, fuel_level, 5790, 
                     0.66, 5920
                 )
             
