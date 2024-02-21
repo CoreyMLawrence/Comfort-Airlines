@@ -3,10 +3,10 @@ from src.aircraft import Airport, Aircraft, AircraftType, AircraftStatus, Aircra
 
 @pytest.mark.parametrize("name, type, status, location, tail_number, passenger_capacity, cruise_speed, fuel_level, fuel_capacity, fuel_efficiency, wait_timer, max_range", 
     [
-        ("Boeing 737-600", AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, "CA0000", 119, 1101, 6300, 6875, 0.55, 0, 5648),
-        ("Boeing 767-800", AircraftType.BOEING_737_800, AircraftStatus.AVAILABLE, None, "CA0001", 189, 1101, 500, 6875, 0.44, 0, 5665),
-        ("Airbus A200-100", AircraftType.AIRBUS_A200_100, AircraftStatus.AVAILABLE, None, "CA0002", 135, 1012, 5020, 5790, 0.57, 0, 5460),
-        ("Airbus A220-300", AircraftType.AIRBUS_A220_300, AircraftStatus.AVAILABLE, None, "CA0003", 160, 1012, 0, 5790, 0.66, 0, 5920),
+        ("Boeing 737-600", AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, "N00000", 119, 1101, 6300, 6875, 0.55, 0, 5648),
+        ("Boeing 767-800", AircraftType.BOEING_737_800, AircraftStatus.AVAILABLE, None, "N00001", 189, 1101, 500, 6875, 0.44, 0, 5665),
+        ("Airbus A200-100", AircraftType.AIRBUS_A200_100, AircraftStatus.AVAILABLE, None, "N00002", 135, 1012, 5020, 5790, 0.57, 0, 5460),
+        ("Airbus A220-300", AircraftType.AIRBUS_A220_300, AircraftStatus.AVAILABLE, None, "N00003", 160, 1012, 0, 5790, 0.66, 0, 5920),
     ]
 )
 def test_aircraft_factory_create_aircraft(name, type, status, location, tail_number, passenger_capacity, cruise_speed, fuel_level, fuel_capacity, fuel_efficiency, wait_timer, max_range) -> None:

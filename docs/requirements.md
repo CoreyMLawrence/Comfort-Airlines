@@ -42,6 +42,7 @@ and project management is assumed.
 
 ## 1.5 External References
 - [Databases: 3.5 Normal Form](https://www.relationaldbdesign.com/database-analysis/module4/four-important-rules.php)
+- [FAA: Aircraft Registration Guidelines](https://www.faa.gov/licenses_certificates/aircraft_certification/aircraft_registry/forming_nnumber)
 - [IATA  Standard Schedules Information Manual (SSIM)](https://www.iata.org/en/publications/store/standard-schedules-information/)
 - [IEEE: Markdown Standard - RFC 7763](https://datatracker.ietf.org/doc/html/rfc7763)
 - [ISO 8601: Date and Time Standardization](https://www.iso.org/iso-8601-date-and-time-format.html)
@@ -61,7 +62,8 @@ and project management is assumed.
 - Pre-research Research and Data Collection
     - Functional Specification:
         Prior to the simulation, static data about the aircraft, airports, and simulation must be collected.
-        - Collect all the information needed to model an aircraft, including the name, passenger capacity, cruise speed, fuel capacity, fuel efficiency, and maximum range.
+        - Collect all the information needed to model an aircraft, including the name, passenger capacity, cruise speed, fuel capacity, fuel efficiency, and maximum range
+        - Aircraft tail numbers will comply with FAA aircraft registration guidelines (format: `N00000`)
         - Collect all the information needed to model an airport, including the name, IATA code, city, state, metro population, the number of available gates, the coordinates (latitude and longitude), gas price, and takeoff/landing fees
         - Calculate the cartesian product of the airports and the aircraft to derive all possible flights
         - Calculate all attributes of each flight for each aircraft, including the fuel required, flight duration, and net profit
@@ -181,7 +183,7 @@ break previous code.
 | Client | Comfort Airlines, the contracting company |
 | Company confidential | Proprietary; owned by Comfort Airlines |
 | Timetable | A standard schedule as defined by the IATA |
-
+`
 ## 5.2 Revision History
 | Date | Added | Updated | Removed |
 | ---- | ----- | ------- | ------- |

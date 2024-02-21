@@ -54,7 +54,7 @@ class AircraftFactory:
     @staticmethod
     def __next_tail_number() -> str:
         """Internal AircraftFactory static method. Generates a next unique aircraft tail number"""
-        tail_number = f"CA{str(AircraftFactory.uuid).zfill(4)}"
+        tail_number = f"N{str(AircraftFactory.uuid).zfill(5)}"
         AircraftFactory.uuid += 1        
         return tail_number
     
