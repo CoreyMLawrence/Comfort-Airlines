@@ -52,8 +52,13 @@
     - For each aircraft:
         - If the aircraft is available:
             - If the aircraft needs maintenance:
-                - Reserve maintenance spot for aircraft at airport performing maintenance
-                - `[Subroutine::Schedule]` Schedule the aircraft for the flight to the hub with the shortest wait time (if equal wait times, maximize profit) that can be made during operating hours (if any)
+                - If at a hub airport with open spots for maintenance:
+                    - Reserve maintenance spot for aircraft at airport performing maintenance
+                    - Set aircraft status to in maintenance
+                    - Start aircraft timer for maintenance
+                - Else
+                    - `[Subroutine::Schedule]` Schedule the aircraft for the flight to the hub with the shortest wait time (if equal wait times, maximize profit) that can be made during operating hours (if any)
+                    - Reserve maintenance spot for aircraft at airport performing maintenance
             - Else
                 - `[Subroutine::Schedule]` Schedule the aircraft for the most profitable, available flight that can be made within operating hours (if any)
         - Else

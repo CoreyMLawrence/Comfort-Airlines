@@ -46,6 +46,8 @@ and project management is assumed.
 - [IEEE: Markdown Standard - RFC 7763](https://datatracker.ietf.org/doc/html/rfc7763)
 - [ISO 8601: Date and Time Standardization](https://www.iso.org/iso-8601-date-and-time-format.html)
 - [MariaDB: Overview](https://mariadb.org/about/)
+- [DockerHub: Official MariaDB Image](https://hub.docker.com/_/mariadb)
+- [DockerHub: Official Python 3 Image](https://hub.docker.com/_/python)
 - [Pep 8: Official Python Style Guide](https://pep8.org/)
 - [PyTest: Overview](https://docs.pytest.org/en/8.0.x/)
 - [Wikipedia: Charles de Gaulle Airport](https://en.wikipedia.org/wiki/Charles_de_Gaulle_Airport)
@@ -57,29 +59,51 @@ and project management is assumed.
 ## 2.1 Requirements Overview
 - Review project requirements
 - Pre-research Research and Data Collection
-    - Research shortest path algorithms (assigned to: Zach, due: 2024-01-18)
-    - Research ideal hub attributes (assigned to: Dylan and Will, due: 2024-01-18)
-    - Aggregate airport attributes from Wikipedia into CSV file (assigned to: Anthony, due: 2024-01-18)
-    - Aggregate aircraft attributes from flight manuals into CSV file (assigned to: Corey, due: 2024-01-18)
-    - Determine ideal hubs (assigned to: Dylan, due: 2024-02-01)
-    - Calculate the cartesian product of airports and aircraft to derive all possible flights (assigned to: Corey, due: 2024-01-18)
-    - Filter out flights between airports 150 mi or closer (assigned to: Corey, due: 2024-01-18)
-    - Determine which airports share a metro population (assigned to: Anthony, due: 2024-01-18)
-    - Calculate the demand for each flight based on metro populations (assigned to: Corey, due: 2024-02-01)
-    - Calculate fuel capacity for each plane (assigned to: Dylan, due: 2024-02-01)
-    - Calculate flight time for each flight (assigned to: Corey, due: 2024-02-09)
-    - Calculate net profit for each flight (assigned to: Parker, due: 2024-02-09)
-    - Calculate net profit per hour for each flight (assigned to: Corey, due: 2024-02-23)
-    - Review project requirements and project status with client (assigned to: Everyone, due: 2024-02-23)
+    - Functional Specification:
+        Prior to the simulation, static data about the aircraft, airports, and simulation must be collected.
+        - Collect all the information needed to model an aircraft, including the name, passenger capacity, cruise speed, fuel capacity, fuel efficiency, and maximum range.
+        - Collect all the information needed to model an airport, including the name, IATA code, city, state, metro population, the number of available gates, the coordinates (latitude and longitude), gas price, and takeoff/landing fees
+        - Calculate the cartesian product of the airports and the aircraft to derive all possible flights
+        - Calculate all attributes of each flight for each aircraft, including the fuel required, flight duration, and net profit
+        - Sort the flights by profitability
+    - Tasks
+        - Research shortest path algorithms (assigned to: Zach, due: 2024-01-18)
+        - Research ideal hub attributes (assigned to: Dylan and Will, due: 2024-01-18)
+        - Aggregate airport attributes from Wikipedia into CSV file (assigned to: Anthony, due: 2024-01-18)
+        - Aggregate aircraft attributes from flight manuals into CSV file (assigned to: Corey, due: 2024-01-18)
+        - Determine ideal hubs (assigned to: Dylan, due: 2024-02-01)
+        - Calculate the cartesian product of airports and aircraft to derive all possible flights (assigned to: Corey, due: 2024-01-18)
+        - Filter out flights between airports 150 mi or closer (assigned to: Corey, due: 2024-01-18)
+        - Determine which airports share a metro population (assigned to: Anthony, due: 2024-01-18)
+        - Calculate the demand for each flight based on metro populations (assigned to: Corey, due: 2024-02-01)
+        - Calculate fuel capacity for each plane (assigned to: Dylan, due: 2024-02-01)
+        - Calculate flight time for each flight (assigned to: Corey, due: 2024-02-09)
+        - Calculate net profit for each flight (assigned to: Parker, due: 2024-02-09)
+        - Calculate net profit per hour for each flight (assigned to: Corey, due: 2024-02-23)
+        - Review project requirements and project status with client (assigned to: Everyone, due: 2024-02-23)
 - Timetable Development
-    - Containerize application into bridge-connected containers with Docker (assigned to: Anthony, due: 2024-01-18)
-    - Map the database to a local volume to ensure persistence (assigned to: Anthony, due: 2024-01-25)
-    - Model the MariaDB database using ERD (assigned to: Parker and Zach, due: 2024-01-25)
-    - Implement the database model with SQLAlchemy (assigned to: Dylan and Will, due: 2024-01-25)
-    - Develop greedy algorithm to generate timetable (assigned to: Anthony and Corey, due: 2024-02-16)
-    - Unify greedy algorithm models (assigned to: Everyone, due: 2024-02-25)
-    - Diagram classes used by algorithm as UML diagrams (assigned to: Everyone, due: 2024-02-16)
-    - Standardize logging structure (assigned to: Anthony, due: 2024-02-25)
+    - Functional Specification
+        - The application should be containerized and deployed in official Python docker container, version 3.10
+        - The timetable will consist of a list of flights, sorted by date and time in ascending order
+        - Each flight in the timetable will consist of the light number, data of flight, departure airport, destination airport, number of passengers, scheduled, departure time, actual departure time, scheduled arrival time, actual arrival time, aircraft tail number
+        - The timetable will prioritize profit, always flying the most profitable flights first, unless maintenance is required
+        - If maintentance is required, a flight will be scheduled from the source airport to the nearest hub with available spots. When the flight is scheduled, a maintenance spot is reserved at the destination airport for the aircraft
+        - Flights will only be scheduled between airports if there is remaining demand, the aircraft is available, has sufficient fuel capacity, can leave within the operating hours of the source airport, and can land within the operating hours of the destination airport
+        - Flight numbers will be universally unique and generated by an autoincrementing counter
+        - All profit and expeneses will be recorded in a ledger that includes the description, date, time, and amount
+        - The ledger will be queriable to support monthly expense report generation for Paris
+        - If a database is used, the database must use the official MaraiDB docker container (version 11) and be persistant (mapped to a local volume)
+        - The software will run on at least a Macbook Pro with 32 GB of RAM. The OS used is MacOS Sonoma 14.3. The machine utilizes the M1 processor and has a 16 inch (3456 x 2234) monitor. 120Gb of disk space is available. 
+        - The build system will such that the entire system can be started up and shut down with `docker compose up --build` and shutdown with `docker compose down`
+    - Tasks
+        - Containerize application into bridge-connected containers with Docker (assigned to: Anthony, due: 2024-01-18)
+        - Map the database to a local volume to ensure persistence (assigned to: Anthony, due: 2024-01-25)
+        - Model the MariaDB database using ERD (assigned to: Parker and Zach, due: 2024-01-25)
+        - Implement the database model with SQLAlchemy (assigned to: Dylan and Will, due: 2024-01-25)
+        - Develop greedy algorithm to generate timetable (assigned to: Anthony and Corey, due: 2024-02-16)
+        - Unify greedy algorithm models (assigned to: Everyone, due: 2024-02-25)
+        - Diagram classes used by algorithm as UML diagrams (assigned to: Everyone, due: 2024-02-16)
+        - Standardize logging structure (assigned to: Anthony, due: 2024-02-25)
     - Implement diagrammed classes (assigned to: Everyone, due: 2024-02-25)
 - Simulation Development
     - Outlining and planning (assigned to: Everyone, due: 2024-02-29)
@@ -162,3 +186,4 @@ break previous code.
 | Date | Added | Updated | Removed |
 | ---- | ----- | ------- | ------- |
 | 2024-02-15 | SRS 5 major sections and major section content | nil | nil |
+| 2024-02-21 | Added more description functional requirements | nil | nil |
