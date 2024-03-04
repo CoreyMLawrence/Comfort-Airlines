@@ -7,10 +7,6 @@ if TYPE_CHECKING:
     from models.passenger import Passenger
     from models.route import Route
 
-DEFAULT_TAKEOFF_FEE = Decimal("2000")
-DEFAULT_LANDING_FEE = Decimal("2000")
-DEFAULT_GAS_PRICE = Decimal("6.19")
-
 class Airport:
     def __init__(self, name: str, iata_code: str, city: str, state: str, latitude: float, longitude: float, routes: list[Route], passengers: list[Passenger], regional_airport: Union[Airport, None], metro_area: str, metro_population: int, gas_price: Decimal, takeoff_fee: Decimal, landing_fee: Decimal):
         self.name = name
@@ -33,6 +29,3 @@ class Airport:
     @property
     def is_hub(self) -> bool:
         return self.regional_airport is None
-    
-    def __repr__(self) -> str:
-        return self.name

@@ -2,5 +2,10 @@
     "cSpell.words": [
         "postcondition",
         "structlog"
+    ],
+    "cSpell.ignoreWords": [
+        "Hartsfield",
+        "aircrafts",
+        "respawn"
     ]
 }

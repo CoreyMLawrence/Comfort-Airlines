@@ -49,6 +49,8 @@
 
 #### 3. Simulation
 - Until 2 weeks time in minutes has passed:
+    - If a day has passed:
+        - Spawn new passengers for each route
     - For each aircraft:
         - If the aircraft is available:
             - If the aircraft needs maintenance:

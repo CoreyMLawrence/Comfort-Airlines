@@ -6,17 +6,18 @@
 # Description:
 #   This module is the entry point to the program. All pre-program initialization is performed
 #   here before the simulation is started.
-from typing import TYPE_CHECKING
 import itertools
 import csv
 from pprint import pprint
 
 import structlog
+from haversine import haversine
 
 import log.processors
 from simulation import Simulation
+from constants import HUBS, HUB_NAMES, SIMULATION_DURATION, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
 from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
-from models.airport import Airport, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
+from models.airport import Airport
 from models.route import Route
 
 def import_airports(filepath: str) -> list[Airport]:
@@ -37,17 +38,20 @@ def import_airports(filepath: str) -> list[Airport]:
         rows = csv.reader(file, delimiter=DELIMITER)
         _ = next(rows)
         
-        for airport in rows:
-            airports.append(
-                Airport(
-                    airport[NAME], airport[IATA_CODE], airport[CITY], airport[STATE], airport[LATITUDE], airport[LONGITUDE], [], [], None,
-                    airport[METRO_AREA], int(airport[METRO_POPULATION]), DEFAULT_GAS_PRICE, DEFAULT_TAKEOFF_FEE, DEFAULT_LANDING_FEE
+        for row in rows:
+            if row[NAME] not in HUB_NAMES:
+                closest_hub = min(HUBS, key=lambda hub: haversine((airport.latitude,airport.longitude), (hub.latitude,hub.longitude)))
+                airport = Airport(
+                    row[NAME], row[IATA_CODE], row[CITY], row[STATE], float(row[LATITUDE]), float(row[LONGITUDE]), [], [], closest_hub,
+                    row[METRO_AREA], int(row[METRO_POPULATION]), DEFAULT_GAS_PRICE, DEFAULT_TAKEOFF_FEE, DEFAULT_LANDING_FEE
                 )
-            )
+        
+                airports.append(airport)
+                
             
     return airports
 
-def import_routes(filepath: str) -> list[Route]:
+def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
     DELIMITER=","
     FUEL_OFFSET = 4
     
@@ -71,8 +75,12 @@ def import_routes(filepath: str) -> list[Route]:
                 if float(route[int(aircraft_type) + FUEL_OFFSET]) != -1:
                     routes.append(
                         Route(
-                            aircraft_type, route[SOURCE_AIRPORT], route[DESTINATION_AIRPORT], 
-                            route[DISTANCE], route[int(aircraft_type) + FUEL_OFFSET]
+                            aircraft_type,
+                            list(filter(lambda airport: airport.name == route[SOURCE_AIRPORT], airports))[0], 
+                            list(filter(lambda airport: airport.name == route[DESTINATION_AIRPORT], airports))[0], 
+                            float(route[DISTANCE]),
+                            int(route[DEMAND]),
+                            float(route[int(aircraft_type) + FUEL_OFFSET])
                         )
                     )
             
@@ -80,9 +88,6 @@ def import_routes(filepath: str) -> list[Route]:
 
 def main() -> None:
     """The entry point for the application"""
-    MINUTES_PER_DAY = 1440
-    SIMULATION_DURATION_DAYS = 14
-    SIMULATION_DURATION = MINUTES_PER_DAY * SIMULATION_DURATION_DAYS
     
     aircraft = list(itertools.chain.from_iterable([
         [AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, 0) for _ in range(15)],
@@ -91,17 +96,11 @@ def main() -> None:
         [AircraftFactory.create_aircraft(AircraftType.AIRBUS_A220_300, AircraftStatus.AVAILABLE, None, 0) for _ in range(13)]
     ]))
     airports = import_airports("./data/airports.csv")
-    routes = import_routes("./data/flights.csv")
+    routes = import_routes("./data/flights.csv", airports)
     
     for airport in airports:
-        airport.routes = list(filter(lambda route: route.source_airport == airport.name, routes))
-    
-    for route in routes:
-        route.source_airport = list(filter(lambda airport: airport.name == route.source_airport, airports))[0]
-        route.destination_airport = list(filter(lambda airport: airport.name == route.destination_airport, airports))[0]
-        pprint(f"{route.source_airport}, {route.source_airport.iata_code}")
+        airport.routes = list(filter(lambda route: route.source_airport.iata_code == airport.iata_code, routes))
 
-    
     simulation = Simulation(SIMULATION_DURATION, aircraft, airports, routes)
     
     structlog.configure(

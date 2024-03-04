@@ -44,8 +44,13 @@ class Aircraft:
         self.fuel_level = fuel_level
         self.fuel_capacity = fuel_capacity              # gallons
         self.fuel_efficiency = fuel_efficiency
+        self.flight_hours = 0
         self.wait_timer = WAIT_TIMERS.get(status, 0)
         self.max_range = max_range                      # km
+        
+    @property
+    def needs_maintenance(self) -> bool:
+        return self.flight_hours >= 200
         
     def __repr__(self) -> str:
         return self.tail_number
