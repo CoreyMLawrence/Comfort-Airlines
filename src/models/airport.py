@@ -6,6 +6,9 @@ from queue import Queue
 if TYPE_CHECKING:
     from models.passenger import Passenger
     from models.route import Route
+    
+NGATES_HUB = 11
+NMAINTENANCE_GATES_HUB = 3
 
 class Airport:
     def __init__(self, name: str, iata_code: str, city: str, state: str, latitude: float, longitude: float, routes: list[Route], passengers: list[Passenger], regional_airport: Union[Airport, None], metro_area: str, metro_population: int, gas_price: Decimal, takeoff_fee: Decimal, landing_fee: Decimal):
@@ -20,7 +23,8 @@ class Airport:
         self.regional_airport = regional_airport
         self.metro_area = metro_area
         self.metro_population = metro_population
-        self.gates = 11 if regional_airport is None else (min(metro_population // 1_000_000, 5))
+        self.gates = 11 if self.is_hub else (min(metro_population // 1_000_000, 5))
+        self.maintenance_gates = NMAINTENANCE_GATES_HUB if self.is_hub else 0
         self.gas_price = gas_price
         self.takeoff_fee = takeoff_fee
         self.landing_fee = landing_fee

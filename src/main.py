@@ -14,8 +14,8 @@ import structlog
 from haversine import haversine
 
 import log.processors
-from simulation import Simulation
-from constants import HUBS, HUB_NAMES, SIMULATION_DURATION, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
+from singletons.simulation import Simulation
+from constants import HUBS, SIMULATION_DURATION, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
 from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
 from models.airport import Airport
 from models.route import Route
@@ -39,10 +39,17 @@ def import_airports(filepath: str) -> list[Airport]:
         _ = next(rows)
         
         for row in rows:
-            if row[NAME] not in HUB_NAMES:
-                closest_hub = min(HUBS, key=lambda hub: haversine((airport.latitude,airport.longitude), (hub.latitude,hub.longitude)))
+            if row[NAME] not in HUBS:
+                closest_hub = next(iter(HUBS.values()))
+                latitude = float(row[LATITUDE])
+                longitude = float(row[LONGITUDE])
+                
+                for hub in HUBS.values():
+                    if haversine((latitude,longitude), (hub.latitude,hub.longitude)) < haversine((latitude,longitude), (closest_hub.latitude,closest_hub.longitude)):
+                        closest_hub = hub
+                
                 airport = Airport(
-                    row[NAME], row[IATA_CODE], row[CITY], row[STATE], float(row[LATITUDE]), float(row[LONGITUDE]), [], [], closest_hub,
+                    row[NAME], row[IATA_CODE], row[CITY], row[STATE], latitude, longitude, [], [], closest_hub,
                     row[METRO_AREA], int(row[METRO_POPULATION]), DEFAULT_GAS_PRICE, DEFAULT_TAKEOFF_FEE, DEFAULT_LANDING_FEE
                 )
         
@@ -52,7 +59,7 @@ def import_airports(filepath: str) -> list[Airport]:
     return airports
 
 def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
-    DELIMITER=","
+    DELIMITER = ","
     FUEL_OFFSET = 4
     
     SOURCE_AIRPORT = 0
@@ -76,8 +83,8 @@ def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
                     routes.append(
                         Route(
                             aircraft_type,
-                            list(filter(lambda airport: airport.name == route[SOURCE_AIRPORT], airports))[0], 
-                            list(filter(lambda airport: airport.name == route[DESTINATION_AIRPORT], airports))[0], 
+                            HUBS[route[SOURCE_AIRPORT]] if route[SOURCE_AIRPORT] in HUBS else list(filter(lambda airport: airport.name == route[SOURCE_AIRPORT], airports))[0], 
+                            HUBS[route[DESTINATION_AIRPORT]] if route[DESTINATION_AIRPORT] in HUBS else list(filter(lambda airport: airport.name == route[DESTINATION_AIRPORT], airports))[0], 
                             float(route[DISTANCE]),
                             int(route[DEMAND]),
                             float(route[int(aircraft_type) + FUEL_OFFSET])

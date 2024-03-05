@@ -76,6 +76,7 @@
                     - Append the aircraft to the tarmac queue
             - If waiting to depart and departure wait time (25m default, 35m if refueling) has elapsed
                 - Set flight status to in flight
+                - `[Subroutine::Flight::Depart]`
             - If waiting to deboard and deboarding time (15m) has elapsed:
                 - If aircraft needs maintenance and aircraft is at hub airport:
                     - Set aircraft status to in maintenance (unavailable)
@@ -119,7 +120,10 @@ passengers, scheduled, departure time, scheduled arrival time, aircraft tail num
 - Start timer for flight time (flight-dependent)
 - If there are any aircraft waiting on the tarmac:
     - Remove first aircraft from tarmac queue 
-    - `[Subroutine::Flight::Arrive]` Call arrival subroutine on first aircraft on tarmac
+    - Set aircraft status to deboarding
+    - Start aircraft deboarding wait timer
+- Else
+    - Mark gate as free
 
 ## SUBROUTINE: Flight::Arrive(aircraft, flight, ledger)
 - `[Subroutine::Ledger::Append]` Add landing fee to ledger
@@ -135,5 +139,4 @@ passengers, scheduled, departure time, scheduled arrival time, aircraft tail num
     - Append the aircraft to the tarmac queue
 
 ## SUBROUTINE: Ledger::Append(description: enum LedgerEntryType, cost: decimal)
-- Append the transaction to the ledger (type: `LedgerEntry`), including its description, the net cost, the current date, time,
-and location
+- Append the transaction to the ledger (type: `LedgerEntry`), including its description, the net cost, the current date, time, and location

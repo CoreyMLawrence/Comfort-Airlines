@@ -9,6 +9,7 @@ from __future__ import annotations
 from enum import IntEnum
 from typing import Union
 from models.airport import Airport
+from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
 
 class AircraftType(IntEnum):
     """Enumerated type. Defines the 4 types of aircraft"""
@@ -51,6 +52,50 @@ class Aircraft:
     @property
     def needs_maintenance(self) -> bool:
         return self.flight_hours >= 200
+        
+    def set_status(self, status: AircraftStatus) -> None:
+        """Sets the status of the aircraft AND sets the wait timer if applicable"""
+        if (self.status == status):
+            raise ValueError(f"Error: duplicate assignment of status {status.name} to aircraft {self.tail_number} (do you have a logic error?)")
+        
+        self.status = status
+        self.wait_timer = WAIT_TIMERS.get(status, 0)
+        
+    def depart(self) -> None:
+        Ledger.entries.append(LedgerEntryType.TAKEOFF_FEE, self.location.takeoff_fee)
+        
+        # TODO: - Record actual flight departure time in scheduler flight entry
+        # TODO: - If the aircraft needs to refuel:
+        # TODO:     - Refuel the aircraft with the required fuel for the trip
+        # TODO:     - `[Subroutine::Ledger::Append]` Add fuel costs to ledger
+        # TODO:     - Start timer for boarding wait time with extra refuel time (35m)
+        # TODO: - Else
+        # TODO:     - Start timer for boarding wait time without refueling (25m)
+        # TODO: - Set plane location to null
+        # TODO: - Start timer for flight time (flight-dependent)
+        
+        if len(self.location.tarmac) > 0:
+            aircraft = self.location.tarmac.get()
+            aircraft.set_status(AircraftStatus.DEBOARDING)
+        else:
+            self.location.gates += 1
+        
+        self.location = None
+        
+        
+    def arrive(self, airport: Airport) -> None:
+        """Simulates an aircraft landing at an airport"""
+        self.location = airport
+        Ledger.entries.append(LedgerEntryType.LANDING_FEE, airport.landing_fee)
+        # TODO: increase actual flight arrival time in scheduler flight entry
+        # TODO: increase aircraft flight hours by flight duration
+        # TODO: decrease the aircraft fuel amount by fuel used
+        if airport.gates > 0:
+            airport.gates -= 1
+            self.set_status(AircraftStatus.DEBOARDING)
+        else:
+            airport.tarmac.put(self)
+            self.set_status(AircraftStatus.ON_TARMAC)
         
     def __repr__(self) -> str:
         return self.tail_number
