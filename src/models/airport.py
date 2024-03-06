@@ -12,6 +12,27 @@ NMAINTENANCE_GATES_HUB = 3
 
 class Airport:
     def __init__(self, name: str, iata_code: str, city: str, state: str, latitude: float, longitude: float, routes: list[Route], passengers: list[Passenger], regional_airport: Union[Airport, None], metro_area: str, metro_population: int, gas_price: Decimal, takeoff_fee: Decimal, landing_fee: Decimal):
+        if not type(name) is str or not name:
+            raise ValueError("Airport name must be a non-empty string")
+        
+        if not type(name) is str or not iata_code:
+            raise ValueError("Airport IATA code must be a non-empty string")
+        
+        if not type(city) is str or not city:
+            raise ValueError("Airport city must be a non-empty string")
+        
+        if not type(state) is str or not state:
+            raise ValueError("Airport state must be a non-empty string")
+        
+        if not type(latitude) is float or latitude < -90.0 or latitude > 90.0:
+            raise ValueError("Airport latitude must be a float in the range [-90.0,90.0]")
+        
+        if not type(longitude) is float or longitude < -180.0 or longitude > 180.0:
+            raise ValueError("Airport latitude must be a float in the range [-180.0,180.0]")
+
+        # if any(True for route in routes):
+        #     raise ValueError()
+
         self.name = name
         self.iata_code = iata_code
         self.city = city

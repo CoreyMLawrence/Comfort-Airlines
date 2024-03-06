@@ -50,7 +50,8 @@ def test_aircraft_overfull_fuel_level(type, status, location,  fuel_capacity) ->
 
 def test_aircraft_factory_create_aircraft_type_error() -> None:
     """AircraftFactory.createAircraft() method test. Asserts that the status and location"""
-    _: Aircraft = AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, Airport(), 0)
+    airport = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", 0, 0, 0, 0)
+    _: Aircraft = AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, airport, 0)
     _: Aircraft = AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, 0)
     
     with pytest.raises(TypeError):
