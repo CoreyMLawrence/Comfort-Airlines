@@ -30,8 +30,14 @@ class Airport:
         if not type(longitude) is float or longitude < -180.0 or longitude > 180.0:
             raise ValueError("Airport latitude must be a float in the range [-180.0,180.0]")
 
-        # if any(True for route in routes):
-        #     raise ValueError()
+        if not type(gas_price) is Decimal or gas_price < Decimal("0.0"):
+            raise ValueError("Airport gas price must be a Decimal in range [0.0, inf]")
+        
+        if not type(takeoff_fee) is Decimal or takeoff_fee < Decimal("0.0"):
+            raise ValueError("Airport takeoff fee must be a Decimal in range [0.0, inf]")
+        
+        if not type(landing_fee) is Decimal or landing_fee < Decimal("0.0"):
+            raise ValueError("Airport landing fee must be a Decimal in range [0.0, inf]")
 
         self.name = name
         self.iata_code = iata_code

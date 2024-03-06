@@ -11,7 +11,6 @@ import pytest
 # Then import whatever you're testing. If you're importing the entire file (module)
 # then you can just write "import src.FILENAME", but if you're importing something specific
 # then you havve to write "from src.FILENAME import X, Y, Z".
-import src.main
 
 # To write a test, define a method whose name starts with "test_" and returns `None`.
 # Test your code with `assert` statements: https://www.w3schools.com/python/ref_keyword_assert.asp

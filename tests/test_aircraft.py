@@ -1,4 +1,7 @@
+from decimal import Decimal
+
 import pytest
+
 from models.aircraft import Airport, Aircraft, AircraftType, AircraftStatus, AircraftFactory
 
 @pytest.mark.parametrize("name, type, status, location, tail_number, passenger_capacity, cruise_speed, fuel_level, fuel_capacity, fuel_efficiency, wait_timer, max_range", 
@@ -50,7 +53,7 @@ def test_aircraft_overfull_fuel_level(type, status, location,  fuel_capacity) ->
 
 def test_aircraft_factory_create_aircraft_type_error() -> None:
     """AircraftFactory.createAircraft() method test. Asserts that the status and location"""
-    airport = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", 0, 0, 0, 0)
+    airport = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
     _: Aircraft = AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, airport, 0)
     _: Aircraft = AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, 0)
     
