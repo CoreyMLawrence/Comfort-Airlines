@@ -48,11 +48,45 @@ def test_airport_init_illegal_longitude(longitude) -> None:
          _ = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, longitude, [], [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
 
 
-@pytest.mark.parametrize("gates",
+@pytest.mark.parametrize("metro_population, expected_gates",
     [
-
+        (0, 0),
+        (999_999, 0),
+        (1_000_000, 1),
+        (1_999_999, 1),
+        (2_000_000, 2),
     ]
 )
-def test_airport_gates(gates: int) -> None:
-    pass
-
+def test_airport_init_airport_gates(metro_population: int, expected_gates: int) -> None:
+    hub = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", metro_population, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
+    airport = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], hub, "Metro", metro_population, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
+    assert airport.gates == expected_gates
+    
+@pytest.mark.parametrize("metro_population, expected_gates",
+    [
+        (0, 11),
+        (999_999, 11),
+        (1_000_000, 11),
+        (1_999_999, 11),
+        (2_000_000, 11),
+    ]
+)
+def test_airport_init_hub_gates(metro_population: int, expected_gates: int) -> None:
+    airport = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", metro_population, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
+    assert airport.gates == expected_gates
+    
+def test_airport_init_airport_maintenance_gates() -> None:
+    hub = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
+    airport = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], hub, "Metro", 0, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
+    assert airport.maintenance_gates == 0
+    
+def test_airport_init_hub_maintenance_gates() -> None:
+    hub = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
+    assert hub.maintenance_gates == 3
+    
+def test_airport_property_is_hub() -> None:
+    hub = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
+    airport = Airport("Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], hub, "Metro", 0, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
+    
+    assert hub.is_hub
+    assert not airport.is_hub
