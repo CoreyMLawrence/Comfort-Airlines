@@ -73,6 +73,7 @@ class Aircraft:
         # TODO:     - Start timer for boarding wait time without refueling (25m)
         # TODO: - Set plane location to null
         # TODO: - Start timer for flight time (flight-dependent)
+        # TODO: set passenger location to null
         
         if len(self.location.tarmac) > 0:
             aircraft = self.location.tarmac.get()

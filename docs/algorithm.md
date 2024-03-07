@@ -110,6 +110,7 @@ passengers, scheduled, departure time, scheduled arrival time, aircraft tail num
 ## SUBROUTINE: Flight::Depart(aircraft, flight, ledger)
 - `[Subroutine::Ledger::Append]` Add takeoff fee to ledger
 - Record actual flight departure time in scheduler flight entry
+- Set passenger location to null
 - If the aircraft needs to refuel:
     - Refuel the aircraft with the required fuel for the trip
     - `[Subroutine::Ledger::Append]` Add fuel costs to ledger
@@ -130,6 +131,7 @@ passengers, scheduled, departure time, scheduled arrival time, aircraft tail num
 - Record actual flight arrival time in scheduler flight entry
 - Increase aircraft flight hours by flight duration
 - Set plane location to destination airport
+- Set location of each passenger to destination airport
 - Decrease the aircraft fuel amount by fuel used
 - If there is any available gate, assign the gate to the aircraft
     - Set aircraft status to deboarding

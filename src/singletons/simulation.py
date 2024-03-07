@@ -79,6 +79,7 @@ class Simulation:
 
                     if aircraft.status == AircraftStatus.DEBOARDING and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
+                        # TODO update passenger location
                     
             self.logger.info(f"time: {self.time.value}")
             t.sleep(3)
