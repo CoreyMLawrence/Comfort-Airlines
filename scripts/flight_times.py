@@ -28,7 +28,7 @@ import math
 import csv
 import os
 
-delete_itermediate_files = True
+delete_intermediate_files = True
 
 # Arrays to store aircraft names and cruise speeds
 aircraft_names = []
@@ -363,7 +363,8 @@ for i in range(len(aircraft_names)):
                     # Write the data to the CSV file
                     csv_writer.writerow([origin, destination, weighted_distance])
 
-
+import csv
+import os
 
 def extract_aircraft_name(file_name):
     """
@@ -389,56 +390,47 @@ def combine_csv_files(output_file, input_files):
         output_file (str): Path to the output CSV file.
         input_files (list of str): Paths to the input CSV files.
     """
+    # Create a dictionary to store flight times for each aircraft
+    aircraft_times = {}
+
+    # Iterate through input files to collect flight times
+    for input_file in input_files:
+        aircraft_name = extract_aircraft_name(os.path.basename(input_file))
+        aircraft_times[aircraft_name] = {}
+
+        with open(input_file, 'r') as infile:
+            reader = csv.reader(infile)
+            # Skip header row
+            next(reader)
+
+            for row in reader:
+                origin_airport = row[0]
+                destination_airport = row[1]
+                flight_time = row[2]
+
+                # Store flight times in the dictionary
+                if origin_airport not in aircraft_times[aircraft_name]:
+                    aircraft_times[aircraft_name][origin_airport] = {}
+
+                aircraft_times[aircraft_name][origin_airport][destination_airport] = flight_time
+
+    # Write to the output CSV file
     with open(output_file, 'w', newline='') as outfile:
         writer = csv.writer(outfile)
-        
-        # Write the header row only once before the loop
-        writer.writerow(['Origin Airport', 'Destination Airport', 'Aircraft', 'Flight Time (Minutes)'])
-        
-        # Initialize the row counter
-        row_counter = 0
-        
-        # Iterate until the end of the files is reached
-        while True:
-            # Initialize a flag to track if the end of any file is reached
-            end_of_any_file = False
-            
-            # Loop through each input file
-            for input_file in input_files:
-                # Extract the aircraft name from the file name
-                aircraft_name = extract_aircraft_name(os.path.basename(input_file))
-                with open(input_file, 'r') as infile:
-                    reader = csv.reader(infile)
-                    
-                    # Skip the header row in the input file
-                    next(reader)
-                    
-                    # Skip rows until reaching the row_counter
-                    for _ in range(row_counter):
-                        next(reader, None)
-                    
-                    # Read the next row from the file
-                    row = next(reader, None)
-                    
-                    # If the row is not None, write it to the output file
-                    if row is not None:
-                        # Reorder the elements in the row
-                        reordered_row = [row[0], row[1], aircraft_name, row[2]]
-                        
-                        # Write the reordered row to the output file
-                        writer.writerow(reordered_row)
-                        
-                    else:
-                        # If the row is None, it means the end of the file is reached
-                        # Set the flag to True
-                        end_of_any_file = True
-            
-            # If the end of any file is reached, exit the loop
-            if end_of_any_file:
-                break
-            
-            # Increment the row counter
-            row_counter += 1
+
+        # Write the header row
+        header_row = ['Origin Airport', 'Destination Airport']
+        header_row.extend(aircraft_times.keys())
+        writer.writerow(header_row)
+
+        # Write flight times
+        for origin_airport, destinations in aircraft_times[next(iter(aircraft_times))].items():
+            for destination_airport in destinations:
+                row = [origin_airport, destination_airport]
+                for aircraft_name, times in aircraft_times.items():
+                    row.append(times.get(origin_airport, {}).get(destination_airport, ''))
+                writer.writerow(row)
+
 
 # Example usage:
 output_combined_csv = "../data/flight_times.csv"
@@ -446,6 +438,6 @@ input_files = ['../data/' + name for name in aircraft_names]  # assuming aircraf
 combine_csv_files(output_combined_csv, input_files)
 
 # Delete the non-combined files
-if (delete_itermediate_files == True):
+if (delete_intermediate_files == True):
     for input_file in input_files:
         os.remove(input_file)
