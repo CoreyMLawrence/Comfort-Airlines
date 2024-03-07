@@ -12,7 +12,6 @@ def test_airport_init_empty_or_null_name(name) -> None:
     with pytest.raises(ValueError):
         _ = Airport(name, "SAP", "Howdey", "Doodey", 25.0, -71.0, [], [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"), Decimal("0.0"))
 
-
 @pytest.mark.parametrize("iata_code", ["", None])
 def test_airport_init_empty_or_null_iata_code(iata_code) -> None:
     with pytest.raises(ValueError):
