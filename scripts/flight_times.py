@@ -26,6 +26,9 @@ Output:
 
 import math
 import csv
+import os
+
+delete_itermediate_files = True
 
 # Arrays to store aircraft names and cruise speeds
 aircraft_names = []
@@ -38,7 +41,7 @@ with open(aircraft_csv, 'r') as file:
     csv_reader = csv.DictReader(file)
     for row in csv_reader:
         aircraft_name = row['aircraft']
-        cruise_speed = float(row['cruise_speed (km/h)'])
+        cruise_speed = float(row['max_speed (km/h)'])
         
         # Replace spaces with underscores in the file name
         output_file_name = f'flight_times_{aircraft_name.replace(" ", "_")}.csv'
@@ -46,6 +49,8 @@ with open(aircraft_csv, 'r') as file:
         # Append aircraft name and cruise speed to arrays
         aircraft_names.append(output_file_name)
         cruise_speeds.append(cruise_speed)
+
+        print("Aircraft Names List:", aircraft_names)
 
 
 for i in range(len(aircraft_names)):
@@ -357,3 +362,90 @@ for i in range(len(aircraft_names)):
                     weighted_distance = time_matrix[i][j]
                     # Write the data to the CSV file
                     csv_writer.writerow([origin, destination, weighted_distance])
+
+
+
+def extract_aircraft_name(file_name):
+    """
+    Extracts the aircraft name from the input file name.
+
+    Args:
+        file_name (str): The input file name.
+
+    Returns:
+        str: The extracted aircraft name.
+    """
+    # Split the file name by '_' and remove the prefix 'flight_times_'
+    aircraft_name = file_name.split('_')[2:]
+    # Join the remaining parts and replace underscores with spaces
+    return ' '.join(aircraft_name).replace('.csv', '')
+
+
+def combine_csv_files(output_file, input_files):
+    """
+    Combines multiple CSV files into one CSV file.
+
+    Args:
+        output_file (str): Path to the output CSV file.
+        input_files (list of str): Paths to the input CSV files.
+    """
+    with open(output_file, 'w', newline='') as outfile:
+        writer = csv.writer(outfile)
+        
+        # Write the header row only once before the loop
+        writer.writerow(['source', 'destination', 'airplane type', 'time'])
+        
+        # Initialize the row counter
+        row_counter = 0
+        
+        # Iterate until the end of the files is reached
+        while True:
+            # Initialize a flag to track if the end of any file is reached
+            end_of_any_file = False
+            
+            # Loop through each input file
+            for input_file in input_files:
+                # Extract the aircraft name from the file name
+                aircraft_name = extract_aircraft_name(os.path.basename(input_file))
+                with open(input_file, 'r') as infile:
+                    reader = csv.reader(infile)
+                    
+                    # Skip the header row in the input file
+                    next(reader)
+                    
+                    # Skip rows until reaching the row_counter
+                    for _ in range(row_counter):
+                        next(reader, None)
+                    
+                    # Read the next row from the file
+                    row = next(reader, None)
+                    
+                    # If the row is not None, write it to the output file
+                    if row is not None:
+                        # Reorder the elements in the row
+                        reordered_row = [row[0], row[1], aircraft_name, row[2]]
+                        
+                        # Write the reordered row to the output file
+                        writer.writerow(reordered_row)
+                        
+                    else:
+                        # If the row is None, it means the end of the file is reached
+                        # Set the flag to True
+                        end_of_any_file = True
+            
+            # If the end of any file is reached, exit the loop
+            if end_of_any_file:
+                break
+            
+            # Increment the row counter
+            row_counter += 1
+
+# Example usage:
+output_combined_csv = "../data/flight_times.csv"
+input_files = ['../data/' + name for name in aircraft_names]  # assuming aircraft_names is the list of filenames
+combine_csv_files(output_combined_csv, input_files)
+
+# Delete the non-combined files
+if (delete_itermediate_files == True):
+    for input_file in input_files:
+        os.remove(input_file)
