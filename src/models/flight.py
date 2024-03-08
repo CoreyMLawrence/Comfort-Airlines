@@ -1,6 +1,5 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
-from time import struct_time
 
 
 from models.aircraft import Aircraft
@@ -8,9 +7,12 @@ from models.route import Route
 from models.passenger import Passenger
 
 class Flight:
-    def __init__(self, flight_number: int, aircraft: Aircraft, route: Route, passengers: list[Passenger]):
+    def __init__(self, flight_number: int, time: int, aircraft: Aircraft, route: Route, passengers: list[Passenger]):
         if not type(flight_number) is int or flight_number < 0:
             raise ValueError("Flight parameter 'flight_number' must be an integer greater than or equal to 0")
+        
+        if not type(time) is int or time < 0:
+            raise ValueError("Flight parameter 'time' must be an integer greater than or equal to 0")
         
         if not type(aircraft) is Aircraft:
             raise TypeError("Flight parameter 'aircraft' must be an Aircraft object")
@@ -22,6 +24,7 @@ class Flight:
             raise TypeError("Flight parameter 'passengers' must be a list of Passenger objects")
         
         self.flight_number = flight_number
+        self.time = time
         self.aircraft = aircraft
         self.route = route
         self.passengers = passengers

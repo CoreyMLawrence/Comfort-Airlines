@@ -4,14 +4,13 @@ from decimal import Decimal
 from queue import Queue
 
 if TYPE_CHECKING:
-    from models.passenger import Passenger
     from models.route import Route
     
 NGATES_HUB = 11
 NMAINTENANCE_GATES_HUB = 3
 
 class Airport:
-    def __init__(self, name: str, iata_code: str, city: str, state: str, latitude: float, longitude: float, routes: list[Route], passengers: list[Passenger], regional_airport: Union[Airport, None], metro_area: str, metro_population: int, gas_price: Decimal, takeoff_fee: Decimal, landing_fee: Decimal):
+    def __init__(self, name: str, iata_code: str, city: str, state: str, latitude: float, longitude: float, routes: list[Route], regional_airport: Union[Airport, None], metro_area: str, metro_population: int, gas_price: Decimal, takeoff_fee: Decimal, landing_fee: Decimal):
         if not type(name) is str or not name:
             raise ValueError("Airport name must be a non-empty string")
         
@@ -46,7 +45,6 @@ class Airport:
         self.latitude = latitude
         self.longitude = longitude
         self.routes = routes
-        self.passengers = passengers
         self.regional_airport = regional_airport
         self.metro_area = metro_area
         self.metro_population = metro_population

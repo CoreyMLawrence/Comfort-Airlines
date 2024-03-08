@@ -169,7 +169,7 @@ class AircraftFactory:
                 )
             
             case _:
-                raise ValueError(f"parameter 'aircraft_type' not in range of AircraftType enum: [{min(AircraftType)},{max(AircraftType)}].")
+                raise ValueError(f"Parameter 'aircraft_type' not in range of AircraftType enum: [{min(AircraftType)},{max(AircraftType)}].")
 
 WAIT_TIMERS: dict[AircraftStatus,int] = {
     AircraftStatus.IN_MAINTENANCE : 2160,

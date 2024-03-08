@@ -16,19 +16,11 @@ def aircraft() -> Aircraft:
         0.55, 5648
     )
     
-@pytest.fixture
-def airport(hub) -> Airport:
-    return Airport(
-        "Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, 
-        [], [], hub, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
-        Decimal("0.0")
-    )
-
 @pytest.fixture()
 def hub() -> Airport:
     return Airport(
         "Some hub", "SH", "Howdey", "Doodey", 25.0, -71.0, 
-        [], [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
+        [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
         Decimal("0.0")
     )
     
@@ -36,7 +28,7 @@ def hub() -> Airport:
 def airport(hub) -> Airport:
     return Airport(
         "Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, 
-        [], [], hub, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
+        [], hub, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
         Decimal("0.0")
     )
     
@@ -62,33 +54,43 @@ def passengers(airport, hub) -> list[Passenger]:
     ]
 
 def test_flight_init(aircraft, route, passengers) -> None:
-    flight = Flight(0, aircraft, route, passengers)
+    flight = Flight(0, 10, aircraft, route, passengers)
     
     assert flight.flight_number == 0
+    assert flight.time == 10
     assert flight.aircraft == aircraft
     assert flight.route == route
     assert flight.passengers == passengers
 
 @pytest.mark.parametrize("flight_number", [0, 1, 621913])
 def test_flight_init_flight_number_legal_value(flight_number, aircraft, route, passengers) -> None:
-    _ = Flight(flight_number, aircraft, route, passengers)
+    _ = Flight(flight_number, 0, aircraft, route, passengers)
 
 @pytest.mark.parametrize("flight_number", [-613, -1])
 def test_flight_init_flight_number_illegal_value(flight_number, aircraft, route, passengers) -> None:
     with pytest.raises(ValueError):
-        _ = Flight(flight_number, aircraft, route, passengers)
+        _ = Flight(flight_number, 0, aircraft, route, passengers)
+        
+@pytest.mark.parametrize("time", [0, 1, 11235])
+def test_flight_init_time_legal_value(time, aircraft, route, passengers) -> None:
+    _ = Flight(0, time, aircraft, route, passengers)
+
+@pytest.mark.parametrize("time", [-1398, -2, -1])
+def test_flight_init_time_illegal_value(time, aircraft, route, passengers) -> None:
+    with pytest.raises(ValueError):
+        _ = Flight(0, time, aircraft, route, passengers)
         
 def test_flight_init_flight_number_illegal_type(aircraft, route, passengers) -> None:
     with pytest.raises(ValueError):
-        _ = Flight("not an integer", aircraft, route, passengers)
+        _ = Flight("not an integer", 0, aircraft, route, passengers)
         
 def test_flight_init_aircraft_illegal_type(route, passengers) -> None:
     with pytest.raises(TypeError):
-        _ = Flight(0, "not an Aircraft object", route, passengers)
+        _ = Flight(0, 0, "not an Aircraft object", route, passengers)
         
 def test_flight_init_aircraft_illegal_type(aircraft, passengers) -> None:
     with pytest.raises(TypeError):
-        _ = Flight(0, aircraft, "not a Route object", passengers)
+        _ = Flight(0, 0, aircraft, "not a Route object", passengers)
 
 @pytest.mark.parametrize("passengers",
     [
@@ -98,4 +100,4 @@ def test_flight_init_aircraft_illegal_type(aircraft, passengers) -> None:
 )
 def test_flight_init_passengers_illegal_type(aircraft, route, passengers) -> None:
     with pytest.raises(TypeError):
-        _ = Flight(0, aircraft, route, passengers)
+        _ = Flight(0, 0, aircraft, route, passengers)

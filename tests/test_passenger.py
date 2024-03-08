@@ -9,7 +9,7 @@ from models.airport import Airport
 def hub() -> Airport:
     return Airport(
         "Some hub", "SH", "Howdey", "Doodey", 25.0, -71.0, 
-        [], [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
+        [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
         Decimal("0.0")
     )
     
@@ -17,7 +17,7 @@ def hub() -> Airport:
 def airport(hub) -> Airport:
     return Airport(
         "Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, 
-        [], [], hub, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
+        [], hub, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
         Decimal("0.0")
     )
 
@@ -30,9 +30,6 @@ def test_passenger_init(airport, hub) -> None:
 
 def test_passenger_init_location_legal_type_airport(airport, hub) -> None:
     passenger = Passenger(airport, hub)
-    
-def test_passenger_init_location_legal_type_none(hub) -> None:
-    _ = Passenger(None, hub)
     
 def test_passenger_init_location_illegal_type(hub) -> None:
     with pytest.raises(TypeError):

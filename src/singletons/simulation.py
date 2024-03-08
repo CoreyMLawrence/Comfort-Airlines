@@ -25,18 +25,21 @@ class Simulation:
         self.aircrafts = aircrafts
         self.airports = airports
         self.routes = routes
+        self.passengers: list[Passenger] = []
         
         self.time = ReferenceWrapper(0)
         self.logger = structlog.get_logger()
         
     def spawn_passengers(self) -> None:
-        for airport in self.airports:
-            for route in airport.routes:
-                airport.passengers.extend([Passenger(route.source_airport, route.destination_airport) for _ in range(route.demand)])
-            
+        self.passengers = list(filter(lambda passenger: passenger.location != passenger.source_airport, self.passengers))
+        
+        for route in self.routes:
+            self.passengers.extend([Passenger(route.source_airport, route.destination_airport) for _ in route.demand])
+
     def run(self) -> None:
         while self.time.value < self.duration:
             if self.time.value % MINUTES_PER_DAY == 0:
+                self.passengers = list(filter(lambda passenger: passenger.location != passenger.source_airport, self.passengers))
                 self.spawn_passengers()
                 
             for aircraft in self.aircrafts:
@@ -47,7 +50,7 @@ class Simulation:
                             aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
                         else:
                             # TODO: fix this bullshit
-                            # Schedule the aircrafr for a flight to the hub with the shortest wait time
+                            # Schedule the aircraft for a flight to the hub with the shortest wait time
                             #if len(available_hubs := list(filter(lambda hub: hub.maintenance_gates > 0, HUBS.values()))) > 0:
                             #    closest_available_hub = sorted()[0]
                             #
