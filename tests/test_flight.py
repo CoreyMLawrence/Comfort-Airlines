@@ -34,7 +34,7 @@ def airport(hub) -> Airport:
     
 @pytest.fixture
 def route(aircraft, airport, hub) -> Route:
-    return Route(aircraft, airport, hub, 0.0, 0, 0.0)
+    return Route(aircraft, airport, hub, 1.0, 1, 1.0)
 
 @pytest.fixture
 def passengers(airport, hub) -> list[Passenger]:

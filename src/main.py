@@ -49,7 +49,7 @@ def import_airports(filepath: str) -> list[Airport]:
                         closest_hub = hub
                 
                 airport = Airport(
-                    row[NAME], row[IATA_CODE], row[CITY], row[STATE], latitude, longitude, [], [], closest_hub,
+                    row[NAME], row[IATA_CODE], row[CITY], row[STATE], latitude, longitude, [], closest_hub,
                     row[METRO_AREA], int(row[METRO_POPULATION]), DEFAULT_GAS_PRICE, DEFAULT_TAKEOFF_FEE, DEFAULT_LANDING_FEE
                 )
         

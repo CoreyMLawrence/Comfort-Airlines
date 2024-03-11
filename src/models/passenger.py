@@ -9,7 +9,7 @@ if TYPE_CHECKING:
 class Passenger:
     uuid = 0
     
-    def __init__(self, source_airport, destination: Airport):
+    def __init__(self, source_airport: Airport, destination: Airport):
         if not type(source_airport) is Airport:
             raise TypeError("Passenger parameter 'source_airport' must be an Airport object")
         
