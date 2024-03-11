@@ -11,7 +11,7 @@ from enum import Enum
 from queue import Queue
 
 class AirportType(Enum):
-    """Enumerated type. Defines the 3 types of airports."""
+    """Enumerated type. Defines the 2 types of airports."""
     LOCAL = 0
     HUB = 1
 
