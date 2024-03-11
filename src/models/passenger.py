@@ -23,3 +23,47 @@ class Passenger:
         
         self.uuid = Passenger.uuid
         Passenger.uuid += 1
+
+    @property
+    def expected_departure_time(self) -> int:
+        if not self.flights_taken:
+            raise Exception(f"Passenger {self.uuid} has no scheduled flights. You have a logic error.")
+        
+        if self.flights_taken[0].expected_departure_time is None:
+            raise Exception(f"The expected departure time for passenger {self.uuid} has not been calculated. You have a logic error.")
+
+        return self.flights_taken[0].expected_departure_time
+
+    @property
+    def actual_departure_time(self) -> int:
+        if not self.flights_taken:
+            raise Exception(f"Passenger {self.uuid} has no scheduled flights. You have a logic error.")
+        
+        if self.flights_taken[0].actual_departure_time is None:
+            raise Exception(f"The actual departure time for passenger {self.uuid} has not been calculated. You have a logic error.")
+
+        return self.flights_taken[0].actual_departure_time
+
+    @property
+    def expected_arrival_time(self) -> int:
+        index_last_flight = len(self.flights_taken) - 1
+
+        if not self.flights_taken:
+            raise Exception(f"Passenger {self.uuid} has no scheduled flights. You have a logic error.")
+
+        if self.flights_taken[index_last_flight].expected_arrival_time is None:
+            raise Exception(f"The expected arrival time for passenger {self.uuid} has not been calculated. You have a logic error.")
+
+        return self.flights_taken[index_last_flight].expected_arrival_time
+    
+    @property
+    def actual_arrival_time(self) -> int:
+        index_last_flight = len(self.flights_taken) - 1
+
+        if not self.flights_taken:
+            raise Exception(f"Passenger {self.uuid} has no scheduled flights. You have a logic error.")
+
+        if self.flights_taken[index_last_flight].actual_arrival_time is None:
+            raise Exception(f"The actual arrival time for passenger {self.uuid} has not been calculated. You have a logic error.")
+
+        return self.flights_taken[index_last_flight].actual_arrival_time

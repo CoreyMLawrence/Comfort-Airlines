@@ -91,4 +91,3 @@ class Simulation:
                 if aircraft.wait_timer is not None:
                     aircraft.wait_timer -= 1
             self.time.value += 1
-            

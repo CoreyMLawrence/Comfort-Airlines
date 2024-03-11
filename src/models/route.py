@@ -16,7 +16,7 @@ class Route:
             raise TypeError("Parameter 'source_airport' must be an Airport object")
 
         if source_airport == destination_airport:
-            raise ValueError("Parameters 'source_airport' and 'destination_airport' cannot be the same Airport object")
+            raise ValueError("Parameters 'source_airport' and 'destination_airport' cannot be the same Airport object (do you have a logic error?)")
         
         if not type(distance) is float or distance <= 0.0:
             raise ValueError("Parameter 'distance' must be a float in the range (0.0,inf]")
