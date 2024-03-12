@@ -9,7 +9,7 @@
 #   For example, the `processor_code_location` function adds information about the source
 #   code to all log events.
 import inspect
-from reference_wrapper import ReferenceWrapper
+from helpers.reference_wrapper import ReferenceWrapper
 
 class CodeLocation:
     STRUCTLOG_STACK_FRAME_OFFSET = 4
