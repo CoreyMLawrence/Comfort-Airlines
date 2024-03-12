@@ -1,15 +1,22 @@
 import pytest
-from src.airport import Airport, AirportFactory, AirportType
+from decimal import Decimal
+from queue import Queue
+from src.airport import Airport, AirportType
 
-@pytest.mark.parametrize("name, iata_code, city, state, metro_population, is_hub, available_gates, latitude, longitude, gas_price, takeoff_fee, landing_fee", 
+@pytest.mark.parametrize("name, iata_code, city, state, metro_population, is_hub, available_gates, latitude, longitude, gas_price, takeoff_fee, landing_fee, tarmac", 
     [
-        ("Hartsfield-Jackson Atlanta International Airport", "ATL", "Atlanta", "Georgia", 5210000, True, 207, 33.6407, -84.4277, 2.75, 5000.00, 5000.00),
-        ("O'Hare International Airport", "ORD", "Chicago", "Illinois", 2695000, True, 185, 41.9742, -87.9073, 2.95, 5500.00, 5500.00),
+        ("John F. Kennedy International Airport", "JFK", "New York City", "New York", 18713220, False, 5, 40.6413, -73.7781, 2.50, Decimal('1000.00'), Decimal('500.00'), Queue()),
+        ("Los Angeles International Airport", "LAX", "Los Angeles", "California", 13310447, False, 5, 33.9416, -118.4085, 2.75, Decimal('1200.00'), Decimal('600.00'), Queue()),
+        ("Dallas/Fort Worth International Airport", "DFW", "Dallas/Fort Worth", "Texas", 7233323, True, 11, 32.8998, -97.0403, 2.65, Decimal('1100.00'), Decimal('550.00'), Queue()),
+        ("Denver International Airport", "DEN", "Denver", "Colorado", 2949387, True, 11, 39.8561, -104.6737, 2.45, Decimal('900.00'), Decimal('450.00'), Queue()),
     ]
 )
-def test_airport_factory_create_airport(name, iata_code, city, state, metro_population, is_hub, available_gates, latitude, longitude, gas_price, takeoff_fee, landing_fee) -> None:
-    """AirportFactory.create_airport() method test. Asserts that passing in the airport type correctly yields an airport with the correct information"""
-    airport = AirportFactory.create_airport(name, iata_code, city, state, metro_population, is_hub, available_gates, latitude, longitude, gas_price, takeoff_fee, landing_fee)
+def test_airport_constructor(
+        name, iata_code, city, state, metro_population, is_hub, available_gates, latitude, longitude, 
+        gas_price, takeoff_fee, landing_fee, tarmac
+    ):
+    """Airport class constructor test. Asserts that the attributes are initialized correctly."""
+    airport = Airport(name, iata_code, city, state, metro_population, is_hub, available_gates, latitude, longitude, gas_price, takeoff_fee, landing_fee, tarmac)
 
     assert airport.name == name
     assert airport.iata_code == iata_code
@@ -23,11 +30,4 @@ def test_airport_factory_create_airport(name, iata_code, city, state, metro_popu
     assert airport.gas_price == gas_price
     assert airport.takeoff_fee == takeoff_fee
     assert airport.landing_fee == landing_fee
-
-def test_airport_factory_create_airport_type_error() -> None:
-    """AirportFactory.create_airport() method test. Asserts that the airport factory handles type errors"""
-    with pytest.raises(TypeError):
-        AirportFactory.create_airport("Some Airport", "SPT", "Some City", "Some State", 1000000, True, 50, 42.0, -80.0, 3.0, 2000.0, 1500.0)
-
-if __name__ == "__main__":
-    pytest.main()
+    assert airport.tarmac == tarmac

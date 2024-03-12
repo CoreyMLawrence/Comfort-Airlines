@@ -5,8 +5,7 @@
 #
 # Description:
 #   This module defines and implements the model class `Airport` as well as the factories and enumerated types for constructing them.
-
-
+from decimal import Decimal
 from enum import Enum
 from queue import Queue
 
@@ -20,8 +19,7 @@ class Airport:
     def __init__(
             self, name: str, iata_code: str, city: str, state: str, metro_population: int,
             is_hub: bool, available_gates: int, latitude: float, longitude: float,
-            gas_price: float, takeoff_fee: float, landing_fee: float, tarmac: Queue,
-            constructor: str
+            gas_price: float, takeoff_fee: Decimal, landing_fee: Decimal, tarmac: Queue
         ):
         self.name = name
         self.iata_code = iata_code
@@ -36,18 +34,3 @@ class Airport:
         self.takeoff_fee = takeoff_fee
         self.landing_fee = landing_fee
         self.tarmac = tarmac
-        self.constructor = constructor
-
-class AirportFactory:
-    """Factory class to create Airport objects."""
-    @staticmethod
-    def create_airport(
-            name: str, iata_code: str, city: str, state: str, metro_population: int,
-            is_hub: bool, available_gates: int, latitude: float, longitude: float,
-            gas_price: float, takeoff_fee: float, landing_fee: float, constructor: str
-        ) -> Airport:
-        """Factory method to create Airport objects."""
-        return Airport(
-            name, iata_code, city, state, metro_population, is_hub, available_gates,
-            latitude, longitude, gas_price, takeoff_fee, landing_fee, Queue(), constructor
-        )
