@@ -4,38 +4,43 @@
 # Date: 2/19/2024
 #
 # Description:
-#   This module is the entry point to the program. All pre-programm initialization is performed
+#   This module is the entry point to the program. All pre-program initialization is performed
 #   here before the simulation is started.
-import structlog
-import processors
-import time
+from typing import TYPE_CHECKING
 
-from reference_wrapper import ReferenceWrapper
+import structlog
+
+from constants import SIMULATION_DURATION
+import log.processors as processors
+from helpers.reference_wrapper import ReferenceWrapper
+from singletons.simulation import Simulation
+
+if TYPE_CHECKING:
+    from models.aircraft import Aircraft
+    from models.aircraft import Airport
+    from models.route import Route
 
 def main() -> None:
     """The entry point for the application"""
-    simulation_time = ReferenceWrapper(0)
+
+    aircrafts: list[Aircraft] = []
+    airports: list[Airport] = []
+    routes: list[Route] = []
+    
+    simulation = Simulation(SIMULATION_DURATION, aircrafts, airports, routes)
     
     structlog.configure(
         processors=[
             processors.CodeLocation(),
             processors.ProcessorID(),
-            processors.ProcessorSimulationTime(simulation_time),
-            structlog.contextvars.merge_contextvars,
+            processors.ProcessorSimulationTime(simulation.time),
             structlog.processors.add_log_level,
             structlog.processors.TimeStamper(fmt="%H:%M:%S", utc=True, key="real_time"),
             structlog.processors.JSONRenderer()
         ]
     )
     
-
-    # EXAMPLE - FEEL FREE TO CHANGE
-    log = structlog.get_logger()
-
-    while True:
-        log.info("Hello, comfort airlines!")
-        simulation_time.value += 1
-        time.sleep(5)
+    simulation.run()
 
 if __name__ == "__main__":
     main()

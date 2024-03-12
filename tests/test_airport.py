@@ -1,7 +1,7 @@
 import pytest
 from decimal import Decimal
 from queue import Queue
-from src.airport import Airport, AirportType
+from models.airport import Airport, AirportType
 
 @pytest.mark.parametrize("name, iata_code, city, state, metro_population, is_hub, available_gates, latitude, longitude, gas_price, takeoff_fee, landing_fee, tarmac", 
     [

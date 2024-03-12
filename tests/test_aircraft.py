@@ -1,7 +1,7 @@
 import pytest
 from decimal import Decimal
 from queue import Queue
-from src.aircraft import Airport, Aircraft, AircraftType, AircraftStatus, AircraftFactory
+from models.aircraft import Airport, Aircraft, AircraftType, AircraftStatus, AircraftFactory
 
 @pytest.mark.parametrize("name, type, status, location, tail_number, passenger_capacity, cruise_speed, fuel_level, fuel_capacity, fuel_efficiency, wait_timer, max_range", 
     [
