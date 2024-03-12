@@ -52,11 +52,12 @@ COST_PER_TICKET = 4
 PROFIT_PER_FLIGHT = 5
 PERCENT_FULL = 6
 
-#indices of values in flight times docs
+# Indices of values in flight times docs
 SOURCE_AIRPORT = 0
 DESTINATION_AIRPORT = 1
 TYPE = 2
 TIME = 3
+
 #all of this should be fine, just rips all relevant data from each file and makes a dict of each of them
 with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_loss.csv") as flight_profit_data, open("data/flight_times.csv") as flight_time_data:
     reader = csv.reader(flight_data, delimiter=',')
@@ -72,7 +73,7 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
     times = [row for row in reader] 
     #start editing here i think unless i fucked something, format/edit as necessary
     with open("data/flight_master_record.csv", "w") as outfile:
-        outfile.write("source airport,destination airport,distance (weighted km), expected time ,number of passengers,Cost Per Ticket, Profit/Loss\n")
+        outfile.write("source airport, destination airport, distance (weighted km), number of passengers, expected time(737-600), expected time(767-800), expected time(A200-100),expected time(A220-300), Cost Per Ticket, Profit/Loss\n")
         for row_flights, row_profits, row_times in zip(flights, profits, times):
             #may need more asserts to match each entry
             assert row_flights[SOURCE_AIRPORT] == row_profits[SOURCE_AIRPORT]
@@ -85,6 +86,7 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
             #elif row_times[TYPE] == row_profit[TYPE] == Boeing 737-600:
             #elif row_times[TYPE] == row_profit[TYPE] == Boeing 737-800:
             
-            outfile.write(f"{row_flights[SOURCE_AIRPORT]},{row_flights[DESTINATION_AIRPORT]},
-                          {row_flights[DISTANCE_KM]},{row_flights[NUM_PASSENGERS]},{row_times[TYPE]}#<---- right here
+            outfile.write(f"{row_flights[SOURCE_AIRPORT]},{row_flights[DESTINATION_AIRPORT]}, \
+                          {row_flights[DISTANCE_KM]},{row_flights[NUM_PASSENGERS]}, \
+                          {row_times[TYPE]}, {row_times [TIME]}, \
                           {row_profits[COST_PER_TICKET]},{row_profits[PROFIT_PER_FLIGHT]}\n")
