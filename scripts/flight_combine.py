@@ -102,14 +102,14 @@ with open("data/flight_weighted_distances.csv", "r") as flight_data, open("data/
     flight_fuel = [row for row in reader]
     
     with open("data/flights.csv", "w") as outfile:
-        outfile.write("source airport,destination airport,distance (weighted in km),number of passengers for 2% market share (flight demand),Fuel for Boeing 737-600 (Gallons),Fuel for Boeing 767-800 (Gallons),Fuel for Airbus A200-100 (Gallons),Fuel for Airbus A220-300 (Gallons)\n")
+        outfile.write("source airport,destination airport,distance (weighted in km),number of passengers for 2% market share (flight demand),name,fuel\n")
         
         for row_flight, row_flight_demand, row_flight_fuel in zip(flights, flight_demand, flight_fuel):
             assert row_flight[SOURCE_AIRPORT] == row_flight_demand[SOURCE_AIRPORT]
             assert row_flight[DESTINATION_AIRPORT] == row_flight_demand[DESTINATION_AIRPORT]
             assert row_flight[DESTINATION_AIRPORT] == row_flight_fuel[DESTINATION_AIRPORT]
             
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_BOEING_737_600]},\n")
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_BOEING_767_800]}\n")
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_AIRBUS_A200_100]},\n")
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_AIRBUS_A220_300]}\n")
+            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},Boeing 737-600, {row_flight_fuel[FUEL_BOEING_737_600]},\n")
+            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},Boeing 767-800,{row_flight_fuel[FUEL_BOEING_767_800]}\n")
+            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},Airbus A200-100,{row_flight_fuel[FUEL_AIRBUS_A200_100]},\n")
+            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},Airbus A220-300,{row_flight_fuel[FUEL_AIRBUS_A220_300]}\n")
