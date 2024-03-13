@@ -33,8 +33,8 @@ def airport(hub) -> Airport:
     )
     
 @pytest.fixture
-def route(aircraft, airport, hub) -> Route:
-    return Route(aircraft, airport, hub, 1.0, 1, 1.0)
+def route(airport, hub) -> Route:
+    return Route(AircraftType.AIRBUS_A200_100, airport, hub, 1.0, 1, 1.0)
 
 @pytest.fixture
 def passengers(airport, hub) -> list[Passenger]:

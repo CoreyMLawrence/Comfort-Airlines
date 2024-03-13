@@ -2,12 +2,12 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 
 from models.airport import Airport
-from models.aircraft import Aircraft
+from models.aircraft import AircraftType
 
 class Route:
-    def __init__(self, aircraft: Aircraft, source_airport: Airport, destination_airport: Airport, distance: float, demand: int, fuel_requirement: float):
-        if not type(aircraft) is Aircraft:
-            raise TypeError("Parameter 'aircraft' must be an Aircraft object")
+    def __init__(self, aircraft_type: AircraftType, source_airport: Airport, destination_airport: Airport, distance: float, demand: int, fuel_requirement: float):
+        if not type(aircraft_type) is AircraftType:
+            raise TypeError("Parameter 'aircraft' must be an AircraftType object")
         
         if not type(source_airport) is Airport:
             raise TypeError("Parameter 'source_airport' must be an Airport object")
@@ -27,7 +27,7 @@ class Route:
         if not type(fuel_requirement) is float or fuel_requirement <= 0:
             raise ValueError("Paramter 'fuel_requirement' must be a float in the range (0.0,inf]")
 
-        self.aircraft = aircraft
+        self.aircraft_type = aircraft_type
         self.source_airport = source_airport
         self.destination_airport = destination_airport
         self.distance = distance
@@ -35,4 +35,4 @@ class Route:
         self.fuel_requirement = fuel_requirement
         
     def __repr__(self) -> str:
-        return f"{{ {self.aircraft=}, {self.source_airport=}, {self.destination_airport=}, {self.distance=}, {self.demand=}, {self.fuel_requirement=}}}"
+        return f"{{ {self.aircraft_type=}, {self.source_airport=}, {self.destination_airport=}, {self.distance=}, {self.demand=}, {self.fuel_requirement=}}}"
