@@ -86,7 +86,4 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
             #elif row_times[TYPE] == row_profit[TYPE] == Boeing 737-600:
             #elif row_times[TYPE] == row_profit[TYPE] == Boeing 737-800:
             
-            outfile.write(f"{row_flights[SOURCE_AIRPORT]},{row_flights[DESTINATION_AIRPORT]},\
-                          {row_flights[DISTANCE_KM]},{row_flights[NUM_PASSENGERS]},\
-                          {row_times[TYPE]}, {row_times [TIME]},\
-                          {row_profits[COST_PER_TICKET]},{row_profits[PROFIT_PER_FLIGHT]}\n")
+            outfile.write(f"{row_flights[SOURCE_AIRPORT]},{row_flights[DESTINATION_AIRPORT]},{row_flights[DISTANCE_KM]},{row_flights[NUM_PASSENGERS]},{row_times[TYPE]}, {row_times [TIME]},{row_profits[COST_PER_TICKET]},{row_profits[PROFIT_PER_FLIGHT]}\n")
