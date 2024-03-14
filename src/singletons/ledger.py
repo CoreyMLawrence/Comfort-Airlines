@@ -7,7 +7,8 @@ class LedgerEntryType(Enum):
     FUEL = 0
     TAKEOFF_FEE = 1
     LANDING_FEE = 2
-    TICKET_SALES = 3
+    PLANE_RENTAL = 3
+    TICKET_SALES = 4
 
 class LedgerEntry:
     def __init__(self, type: LedgerEntryType, net_profit: Decimal):
