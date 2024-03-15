@@ -1,5 +1,5 @@
 source airport,destination airport,distance (weighted in km),number of passengers for 2% market share (flight demand),name,fuel
-Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,1170.1452541878828,32,Boeing 737-600, 1322.2727320050656,
+Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,1170.1452541878828,32,Boeing 737-600,1322.2727320050656,
 Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,1170.1452541878828,32,Boeing 767-800,1652.840915006332
 Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,1170.1452541878828,32,Airbus A200-100,1275.8771975487475,
 Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,1170.1452541878828,32,Airbus A220-300,1101.8939433375544
