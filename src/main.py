@@ -15,83 +15,84 @@ from haversine import haversine
 
 import log.processors
 from singletons.simulation import Simulation
-from constants import HUBS, SIMULATION_DURATION, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
+from constants import HUB_NAMES, SIMULATION_DURATION, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
 from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
 from models.airport import Airport
 from models.route import Route
 
-def import_airports(filepath: str) -> list[Airport]:
-    DELIMITER = ","
+def import_hubs(filepath: str) -> list[Airport]:
+    # rank,airport,iata code,city,state,metro area,metro population,latitude,longitude
     RANK = 0
-    NAME = 1
+    AIRPORT_NAME = 1
     IATA_CODE = 2
     CITY = 3
-    STATE =  4
-    METRO_AREA = 5
-    METRO_POPULATION = 6
+    STATE = 4
+    METRO_AREA_NAME = 5
+    METRO_AREA_POPULATION = 6
+    LATITUDE = 7
+    LONGITUDE = 8
+
+    with open(filepath, "r") as data:
+        reader = csv.reader(data, delimiter=",")
+        _ = next(reader)
+        hubs = []
+        
+        for row in reader:
+            if row[AIRPORT_NAME] in HUB_NAMES:
+                hubs.append(
+                    Airport(
+                        row[AIRPORT_NAME], row[IATA_CODE], row[CITY], row[STATE], 
+                        float(row[LATITUDE]), float(row[LONGITUDE]), [], None, 
+                        row[METRO_AREA_NAME], int(row[METRO_AREA_POPULATION]),
+                        DEFAULT_GAS_PRICE, DEFAULT_TAKEOFF_FEE, DEFAULT_LANDING_FEE
+                    )
+                )
+            
+    return hubs
+            
+
+def import_airports(filepath: str, airports: list[Airport]) -> None:
+    RANK = 0
+    AIRPORT_NAME = 1
+    IATA_CODE = 2
+    CITY = 3
+    STATE = 4
+    METRO_AREA_NAME = 5
+    METRO_AREA_POPULATION = 6
     LATITUDE = 7
     LONGITUDE = 8
     
-    airports = []
-    
-    with open(filepath, "r") as file:
-        rows = csv.reader(file, delimiter=DELIMITER)
-        _ = next(rows)
-        
-        for row in rows:
-            if row[NAME] not in HUBS:
-                closest_hub = next(iter(HUBS.values()))
-                latitude = float(row[LATITUDE])
-                longitude = float(row[LONGITUDE])
-                
-                for hub in HUBS.values():
-                    if haversine((latitude,longitude), (hub.latitude,hub.longitude)) < haversine((latitude,longitude), (closest_hub.latitude,closest_hub.longitude)):
-                        closest_hub = hub
-                
-                airport = Airport(
-                    row[NAME], row[IATA_CODE], row[CITY], row[STATE], latitude, longitude, [], closest_hub,
-                    row[METRO_AREA], int(row[METRO_POPULATION]), DEFAULT_GAS_PRICE, DEFAULT_TAKEOFF_FEE, DEFAULT_LANDING_FEE
-                )
-        
-                airports.append(airport)
-                
-            
-    return airports
+    with open(filepath, "r") as data:
+       reader = csv.reader(data, delimiter=",")
+       _ = next(reader)
+       for row in reader:
+           if not row[AIRPORT_NAME] in HUB_NAMES:
+               name = row[AIRPORT_NAME]
+               iata_code = row[IATA_CODE]
+               city = row[CITY]
+               state = row[STATE]
+               latitude = float(row[LATITUDE])
+               longitude = float(row[LONGITUDE])
+               routes = []
+               metro_area = row[METRO_AREA_NAME]
+               metro_population = int(row[METRO_AREA_POPULATION])
+               
+               closest_hub = airports[0]
+               for i in range(len(HUB_NAMES)):
+                   hub = airports[i]
+                   
+                   if haversine((latitude,longitude), (hub.latitude,hub.longitude)) < haversine((latitude,longitude),(closest_hub.latitude,closest_hub.longitude)):
+                       closest_hub = hub
+               
+               airports.append(
+                   Airport(
+                       name, iata_code, city, state, latitude, longitude, routes, closest_hub,
+                       metro_area, metro_population, DEFAULT_GAS_PRICE, DEFAULT_TAKEOFF_FEE, DEFAULT_LANDING_FEE
+                   )
+               ) 
 
-def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
-    DELIMITER = ","
-    FUEL_OFFSET = 4
-    
-    SOURCE_AIRPORT = 0
-    DESTINATION_AIRPORT = 1
-    DISTANCE = 2
-    DEMAND = 3
-    FUEL_REQUIRED_BOEING_737_600 = 4
-    FUEL_REQUIRED_BOEING_737_800 = 5
-    FUEL_REQUIRED_AIRBUS_A200_100 = 6
-    FUEL_REQUIRED_AIRBUS_A220_300 = 7
-
-    routes = []
-    
-    with open(filepath, "r") as file:
-        rows = csv.reader(file, delimiter=DELIMITER)
-        _ = next(rows)
-        
-        for route in rows:
-            for aircraft_type in AircraftType:
-                if float(route[int(aircraft_type) + FUEL_OFFSET]) != -1:
-                    routes.append(
-                        Route(
-                            aircraft_type,
-                            HUBS[route[SOURCE_AIRPORT]] if route[SOURCE_AIRPORT] in HUBS else list(filter(lambda airport: airport.name == route[SOURCE_AIRPORT], airports))[0], 
-                            HUBS[route[DESTINATION_AIRPORT]] if route[DESTINATION_AIRPORT] in HUBS else list(filter(lambda airport: airport.name == route[DESTINATION_AIRPORT], airports))[0], 
-                            float(route[DISTANCE]),
-                            int(route[DEMAND]),
-                            float(route[int(aircraft_type) + FUEL_OFFSET])
-                        )
-                    )
-            
-    return routes
+def import_routes(filename: str) -> list[Route]:
+    return []
 
 def main() -> None:
     """The entry point for the application"""
@@ -102,11 +103,17 @@ def main() -> None:
         [AircraftFactory.create_aircraft(AircraftType.AIRBUS_A200_100, AircraftStatus.AVAILABLE, None, 0) for _ in range(12)],
         [AircraftFactory.create_aircraft(AircraftType.AIRBUS_A220_300, AircraftStatus.AVAILABLE, None, 0) for _ in range(13)]
     ]))
-    airports = import_airports("./data/airports.csv")
-    routes = import_routes("./data/flights.csv", airports)
     
-    for airport in airports:
-        airport.routes = list(filter(lambda route: route.source_airport.iata_code == airport.iata_code, routes))
+    # Import hubs
+    # Import local airports
+    # Import routes
+    # Set routes for airports
+    airports = import_hubs("./data/airports.csv")
+    import_airports("./data/airports.csv", airports)
+    routes = import_routes()
+
+    #for airport in airports:
+    #    airport.routes = list(filter(lambda route: route.source_airport == airport.name, routes))
 
     simulation = Simulation(SIMULATION_DURATION, aircraft, airports, routes)
     
@@ -122,7 +129,7 @@ def main() -> None:
         ]
     )
     
-    simulation.run()
+    # simulation.run()
 
 if __name__ == "__main__":
     main()

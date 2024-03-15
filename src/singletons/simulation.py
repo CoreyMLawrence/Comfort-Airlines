@@ -7,7 +7,7 @@ from pprint import pprint
 import structlog
 from haversine import haversine
 
-from constants import HUBS, MINUTES_PER_DAY
+from constants import MINUTES_PER_DAY
 from singletons.scheduler import Scheduler
 
 from helpers.reference_wrapper import ReferenceWrapper
