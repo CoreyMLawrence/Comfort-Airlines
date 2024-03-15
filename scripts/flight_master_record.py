@@ -74,7 +74,7 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
     times = [row for row in reader] 
     #start editing here i think unless i fucked something, format/edit as necessary
     with open("data/flight_master_record.csv", "w") as outfile:
-        outfile.write("source airport, destination airport, distance (weighted km), number of passengers, aircraft type, expected time, ticket cost, net profit\n")
+        outfile.write("source airport, destination airport, distance (weighted km), fuel, number of passengers, aircraft type, expected time, ticket cost, net profit\n")
         for row_flights, row_profits, row_times in zip(flights, profits, times):
             #may need more asserts to match each entry
             assert row_flights[FLIGHTS_SOURCE_AIRPORT] == row_profits[PROFITS_SOURCE_AIRPORT]
@@ -89,4 +89,4 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
             
             #print(f"{row_flights[FLIGHTS_SOURCE_AIRPORT]},{row_flights[FLIGHTS_DESTINATION_AIRPORT]},{row_flights[FLIGHTS_DISTANCE_KM]},{row_flights[FLIGHTS_NUM_PASSENGERS]},{row_times[TIMES_AIRCRAFT_TYPE]},{row_times[TIMES_FLIGHT_TIME]},{row_profits[PROFITS_COST_PER_TICKET]},{row_profits[PROFITS_PROFIT_PER_FLIGHT]}")
             
-            outfile.write(f"{row_flights[FLIGHTS_SOURCE_AIRPORT]},{row_flights[FLIGHTS_DESTINATION_AIRPORT]},{row_flights[FLIGHTS_DISTANCE_KM]},{row_flights[FLIGHTS_NUM_PASSENGERS]},{row_times[TIMES_AIRCRAFT_TYPE]},{row_times[TIMES_FLIGHT_TIME]},{row_profits[PROFITS_COST_PER_TICKET]},{row_profits[PROFITS_PROFIT_PER_FLIGHT]}\n")
+            outfile.write(f"{row_flights[FLIGHTS_SOURCE_AIRPORT]},{row_flights[FLIGHTS_DESTINATION_AIRPORT]},{row_flights[FLIGHTS_DISTANCE_KM]},{row_flights[FLIGHTS_FUEL]},{row_flights[FLIGHTS_NUM_PASSENGERS]},{row_times[TIMES_AIRCRAFT_TYPE]},{row_times[TIMES_FLIGHT_TIME]},{row_profits[PROFITS_COST_PER_TICKET]},{row_profits[PROFITS_PROFIT_PER_FLIGHT]}\n")
