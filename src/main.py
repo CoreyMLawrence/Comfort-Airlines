@@ -9,6 +9,7 @@
 import itertools
 import csv
 from pprint import pprint
+from decimal import Decimal
 
 import structlog
 from haversine import haversine
@@ -91,8 +92,45 @@ def import_airports(filepath: str, airports: list[Airport]) -> None:
                    )
                ) 
 
-def import_routes(filename: str) -> list[Route]:
-    return []
+def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
+    SOURCE_AIRPORT = 0
+    DESTINATION_AIRPORT = 1
+    DISTANCE = 2
+    FUEL_REQUIREMENT = 3
+    NUMBER_OF_PASSENGERS = 4
+    AIRCRAFT_TYPE = 5
+    EXPECTED_TIME = 6
+    TICKET_COST = 7
+    NET_PROFIT = 8
+    
+    AIRCRAFT_TYPES = {
+        "Boeing 737-600" : AircraftType.BOEING_737_600,
+        "Boeing 767-800" : AircraftType.BOEING_737_800,
+        "Airbus A200-100" : AircraftType.AIRBUS_A200_100,
+        "Airbus A220-300" : AircraftType.AIRBUS_A220_300
+    }
+    
+    routes = []
+    
+    with open(filepath, "r") as data:
+        reader = csv.reader(data, delimiter=",")
+        _ = next(reader)
+        
+        for row in reader:
+            if row[FUEL_REQUIREMENT].strip() != "-1":
+                aircraft_type = AIRCRAFT_TYPES[row[AIRCRAFT_TYPE]]
+                source_airport = next((airport for airport in airports if airport.name == row[SOURCE_AIRPORT]))
+                destination_airport = next((airport for airport in airports if airport.name == row[DESTINATION_AIRPORT]))
+                
+                routes.append(
+                    Route(
+                        aircraft_type, source_airport, destination_airport, float(row[DISTANCE]), 
+                        int(row[NUMBER_OF_PASSENGERS]), float(row[FUEL_REQUIREMENT]), float(row[EXPECTED_TIME]),
+                        Decimal(row[TICKET_COST]), Decimal(row[NET_PROFIT])
+                    )
+                )
+    
+    return routes
 
 def main() -> None:
     """The entry point for the application"""
@@ -104,16 +142,14 @@ def main() -> None:
         [AircraftFactory.create_aircraft(AircraftType.AIRBUS_A220_300, AircraftStatus.AVAILABLE, None, 0) for _ in range(13)]
     ]))
     
-    # Import hubs
-    # Import local airports
-    # Import routes
-    # Set routes for airports
     airports = import_hubs("./data/airports.csv")
     import_airports("./data/airports.csv", airports)
-    routes = import_routes()
+    
+    routes = import_routes("./data/flight_master_record.csv", airports)
+    routes.sort(key=lambda route: route.net_profit)
 
-    #for airport in airports:
-    #    airport.routes = list(filter(lambda route: route.source_airport == airport.name, routes))
+    for airport in airports:
+        airport.routes = list(filter(lambda route: route.source_airport == airport.name, routes))
 
     simulation = Simulation(SIMULATION_DURATION, aircraft, airports, routes)
     
@@ -129,7 +165,7 @@ def main() -> None:
         ]
     )
     
-    # simulation.run()
+    simulation.run()
 
 if __name__ == "__main__":
     main()

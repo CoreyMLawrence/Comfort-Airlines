@@ -34,7 +34,7 @@ class Simulation:
         self.passengers = list(filter(lambda passenger: passenger.location != passenger.source_airport, self.passengers))
         
         for route in self.routes:
-            self.passengers.extend([Passenger(route.source_airport, route.destination_airport) for _ in route.demand])
+            self.passengers.extend([Passenger(route.source_airport, route.destination_airport) for _ in range(route.demand)])
 
     def run(self) -> None:
         while self.time.value < self.duration:
@@ -49,6 +49,8 @@ class Simulation:
                             aircraft.location.maintenance_gates -= 1
                             aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
                         else:
+                            # TODO: HEY DUMBASS, FIX THE LOCATIONS OF THE AIRCRAFT
+                            
                             # TODO: fix this bullshit
                             # Schedule the aircraft for a flight to the hub with the shortest wait time
                             #if len(available_hubs := list(filter(lambda hub: hub.maintenance_gates > 0, HUBS.values()))) > 0:
