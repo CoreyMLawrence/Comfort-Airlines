@@ -10,27 +10,6 @@
 
 import csv
 
-"""
-    FOR ZACH:
-    Corey will be making an all-in-one flight_times.csv in the format shown below, all you should have to do is:
-    
-    (correctly) zip the files together into one coherent csv and output the proper stuff. 
-    My first approach was to elif the 4 kinds of planes and "manually" zip them togther, you can continue that way or find another,
-    my checks are commented out for ease
-    The outfile requirements (what each of the columns are) are all correct, feel free to double check.
-    the output (the .write in the loop) will also need edited, should only be 1-2 fields (there is an arrow to it below),
-    related to the type/time (i did most of them right)
-    
-    this whole thing will then be used as the basis for the flights class, 
-    but that will be trivial if all the needed info is in this things csv output file.
-    
-    basically just making one csv with all the class needs in one place
-    
-    
-    
- """
-
-
 
 
 # Indices of values in flights.csv
