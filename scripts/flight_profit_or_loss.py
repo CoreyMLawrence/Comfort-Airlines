@@ -28,7 +28,7 @@ takeoff_fee = 2000
 landing_fee = 2000
 gas = 6.19              # gallons
 KMtoM = 0.621371        # converts to miles
-break_even_percentage = 0.3
+break_even_percentage = 0.33
 
 # File-reading constants
 FILE_START = 0

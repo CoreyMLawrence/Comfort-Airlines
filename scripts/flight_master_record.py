@@ -13,29 +13,30 @@ import csv
 
 
 # Indices of values in flights.csv
-SOURCE_AIRPORT = 0
-DESTINATION_AIRPORT = 1
-DISTANCE_KM = 2
-NUM_PASSENGERS = 3
-FUEL_B600 = 4
-FUEL_B800 = 5
-FUEL_A100 = 6
-FUEL_A300 = 7
+# source airport,destination airport,distance (weighted in km),number of passengers for 2% market share (flight demand),name,fuel
+FLIGHTS_SOURCE_AIRPORT = 0
+FLIGHTS_DESTINATION_AIRPORT = 1
+FLIGHTS_DISTANCE_KM = 2
+FLIGHTS_NUM_PASSENGERS = 3
+FLIGHTS_AIRCRAFT_TYPE = 4
+FLIGHTS_FUEL = 5
 
 # Indices of values in flight_profit_or_loss.csv
-SOURCE_AIRPORT = 0
-DESTINATION_AIRPORT = 1
-TYPE = 2
-TOTAL_COST = 3
-COST_PER_TICKET = 4
-PROFIT_PER_FLIGHT = 5
-PERCENT_FULL = 6
+# source airport,destination airport,airplane type,total Cost,break even cost per ticket, profit/loss per flight, percent full
+PROFITS_SOURCE_AIRPORT = 0
+PROFITS_DESTINATION_AIRPORT = 1
+PROFITS_AIRCRAFT_TYPE = 2
+PROFITS_TOTAL_COST = 3
+PROFITS_COST_PER_TICKET = 4
+PROFITS_PROFIT_PER_FLIGHT = 5
+PROFITS_PERCENT_FULL = 6
 
 # Indices of values in flight times docs
-SOURCE_AIRPORT = 0
-DESTINATION_AIRPORT = 1
-TYPE = 2
-TIME = 3
+# source,destination,airplane type,time
+TIMES_SOURCE_AIRPORT = 0
+TIMES_DESTINATION_AIRPORT = 1
+TIMES_AIRCRAFT_TYPE = 2
+TIMES_FLIGHT_TIME = 3
 
 #all of this should be fine, just rips all relevant data from each file and makes a dict of each of them
 with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_loss.csv") as flight_profit_data, open("data/flight_times.csv") as flight_time_data:
@@ -52,17 +53,19 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
     times = [row for row in reader] 
     #start editing here i think unless i fucked something, format/edit as necessary
     with open("data/flight_master_record.csv", "w") as outfile:
-        outfile.write("source airport, destination airport, distance (weighted km), number of passengers, expected time(737-600), expected time(767-800), expected time(A200-100),expected time(A220-300), Cost Per Ticket, Profit/Loss\n")
+        outfile.write("source airport, destination airport, distance (weighted km), fuel, number of passengers, aircraft type, expected time, ticket cost, net profit\n")
         for row_flights, row_profits, row_times in zip(flights, profits, times):
             #may need more asserts to match each entry
-            assert row_flights[SOURCE_AIRPORT] == row_profits[SOURCE_AIRPORT]
-            assert row_flights[DESTINATION_AIRPORT] == row_profits[DESTINATION_AIRPORT]
-            assert row_flights[DESTINATION_AIRPORT] == row_times[DESTINATION_AIRPORT]
+            assert row_flights[FLIGHTS_SOURCE_AIRPORT] == row_profits[PROFITS_SOURCE_AIRPORT]
+            assert row_flights[FLIGHTS_DESTINATION_AIRPORT] == row_profits[PROFITS_DESTINATION_AIRPORT]
             
+            assert row_flights[FLIGHTS_SOURCE_AIRPORT] == row_times[TIMES_SOURCE_AIRPORT]
+            assert row_flights[FLIGHTS_DESTINATION_AIRPORT] == row_times[TIMES_DESTINATION_AIRPORT]
             
-            #if row_times[TYPE] == row_profit[TYPE] == Airbus A220-100:
-            #elif row_times[TYPE] == row_profit[TYPE] == Airbus A220-300:
-            #elif row_times[TYPE] == row_profit[TYPE] == Boeing 737-600:
-            #elif row_times[TYPE] == row_profit[TYPE] == Boeing 737-800:
+            assert row_flights[FLIGHTS_AIRCRAFT_TYPE] == row_profits[PROFITS_AIRCRAFT_TYPE]
+            assert row_flights[FLIGHTS_AIRCRAFT_TYPE] == row_times[TIMES_AIRCRAFT_TYPE]
+        
             
-            outfile.write(f"{row_flights[SOURCE_AIRPORT]},{row_flights[DESTINATION_AIRPORT]},{row_flights[DISTANCE_KM]},{row_flights[NUM_PASSENGERS]},{row_times[TYPE]}, {row_times [TIME]},{row_profits[COST_PER_TICKET]},{row_profits[PROFIT_PER_FLIGHT]}\n")
+            #print(f"{row_flights[FLIGHTS_SOURCE_AIRPORT]},{row_flights[FLIGHTS_DESTINATION_AIRPORT]},{row_flights[FLIGHTS_DISTANCE_KM]},{row_flights[FLIGHTS_NUM_PASSENGERS]},{row_times[TIMES_AIRCRAFT_TYPE]},{row_times[TIMES_FLIGHT_TIME]},{row_profits[PROFITS_COST_PER_TICKET]},{row_profits[PROFITS_PROFIT_PER_FLIGHT]}")
+            
+            outfile.write(f"{row_flights[FLIGHTS_SOURCE_AIRPORT]},{row_flights[FLIGHTS_DESTINATION_AIRPORT]},{row_flights[FLIGHTS_DISTANCE_KM]},{row_flights[FLIGHTS_FUEL]},{row_flights[FLIGHTS_NUM_PASSENGERS]},{row_times[TIMES_AIRCRAFT_TYPE]},{row_times[TIMES_FLIGHT_TIME]},{row_profits[PROFITS_COST_PER_TICKET]},{row_profits[PROFITS_PROFIT_PER_FLIGHT]}\n")
