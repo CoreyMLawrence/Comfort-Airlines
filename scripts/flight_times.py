@@ -34,7 +34,7 @@ delete_itermediate_files = True
 aircraft_names = []
 cruise_speeds = []
 
-aircraft_csv = '../data/aircraft.csv'
+aircraft_csv = './data/aircraft.csv'
 
 # Read aircraft data from the CSV file
 with open(aircraft_csv, 'r') as file:
@@ -55,7 +55,7 @@ with open(aircraft_csv, 'r') as file:
 
 for i in range(len(aircraft_names)):
     CRUISE_SPEED = cruise_speeds[i] * .8
-    output_csv_path = f"../data/{aircraft_names[i]}"
+    output_csv_path = f"./data/{aircraft_names[i]}"
 
     # Function to calculate the taxi time for an airport
     def taxi_time(population, airport):
@@ -237,8 +237,8 @@ for i in range(len(aircraft_names)):
 
 
     # Input and output file paths
-    airports_csv = '../data/airports.csv'
-    weighted_distances_csv = '../data/flight_weighted_distances.csv'
+    airports_csv = './data/airports.csv'
+    weighted_distances_csv = './data/flight_weighted_distances.csv'
 
     # Read populations, and airport names from CSV file
     populations = []
@@ -441,8 +441,8 @@ def combine_csv_files(output_file, input_files):
             row_counter += 1
 
 # Example usage:
-output_combined_csv = "../data/flight_times.csv"
-input_files = ['../data/' + name for name in aircraft_names]  # assuming aircraft_names is the list of filenames
+output_combined_csv = "./data/flight_times.csv"
+input_files = ['./data/' + name for name in aircraft_names]  # assuming aircraft_names is the list of filenames
 combine_csv_files(output_combined_csv, input_files)
 
 # Delete the non-combined files

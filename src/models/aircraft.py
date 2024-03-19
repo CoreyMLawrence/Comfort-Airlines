@@ -6,27 +6,28 @@
 # Description:
 #   This module defines and implements the model class `Aircraft` as well as the factories and enumerated types for constructing them.
 from __future__ import annotations
-from enum import IntEnum
+from enum import IntEnum, auto
 from typing import Union
 from models.airport import Airport
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
 
 class AircraftType(IntEnum):
     """Enumerated type. Defines the 4 types of aircraft"""
-    BOEING_737_600 = 0
-    BOEING_737_800 = 1
-    AIRBUS_A200_100 = 2
-    AIRBUS_A220_300 = 3
+    BOEING_737_600 = auto()
+    BOEING_737_800 = auto()
+    AIRBUS_A200_100 = auto()
+    AIRBUS_A220_300 = auto()
     
 class AircraftStatus(IntEnum):
     """Enumerated type. Defines the 7 unique possible states of an aircraft"""
-    AVAILABLE = 0
-    IN_MAINTENANCE = 1
-    ON_TARMAC = 2
-    BOARDING_WITHOUT_REFUELING = 3
-    BOARDING_WITH_REFUELING = 4
-    DEBOARDING = 5
-    IN_FLIGHT = 6
+    AVAILABLE = auto()
+    IN_MAINTENANCE = auto()
+    IN_MAINTENANCE_QUEUE = auto()
+    ON_TARMAC = auto()
+    BOARDING_WITHOUT_REFUELING = auto()
+    BOARDING_WITH_REFUELING = auto()
+    DEBOARDING = auto()
+    IN_FLIGHT = auto()
 
 class Aircraft:
     """Model class. A generic representation of an aircraft. Type is indicated by AirCraft.Type"""

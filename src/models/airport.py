@@ -54,7 +54,11 @@ class Airport:
         self.takeoff_fee = takeoff_fee
         self.landing_fee = landing_fee
         self.tarmac = Queue()
+        self.maintenance_queue = Queue()
         
     @property
     def is_hub(self) -> bool:
         return self.regional_airport is None
+    
+    def __repr__(self) -> str:
+        return self.name

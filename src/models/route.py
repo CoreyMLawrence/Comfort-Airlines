@@ -48,4 +48,4 @@ class Route:
         self.net_profit = net_profit
         
     def __repr__(self) -> str:
-        return f"{{ {self.aircraft_type=}, {self.source_airport=}, {self.destination_airport=}, {self.distance=}, {self.demand=}, {self.fuel_requirement=}}}"
+        return f"{self.source_airport} => {self.destination_airport}"

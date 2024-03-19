@@ -18,14 +18,28 @@ class Scheduler:
 
         return id
         
-    def schedule_flight(aircraft: Aircraft, route: Route, passengers: list[Passenger]) -> Flight:
+    def schedule_flight(aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]) -> Flight:
+        raise NotImplementedError()
+            
         flight = Flight(
             Scheduler.__next_flight_uuid(),
             aircraft,
-            route,
+            routes[0],
             passengers
         )   
         
         Scheduler.flights.append(flight)
         return flight
     
+    def schedule_maintenance_flight(aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]) -> Flight:
+        raise NotImplementedError()
+        
+        flight = Flight(
+            Scheduler.__next_flight_uuid(),
+            aircraft,
+            routes[0],
+            passengers     
+        )
+        
+        Scheduler.flights.append(flight)
+        return flight

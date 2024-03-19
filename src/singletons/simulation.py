@@ -7,7 +7,7 @@ from pprint import pprint
 import structlog
 from haversine import haversine
 
-from constants import MINUTES_PER_DAY
+from constants import HUB_NAMES, MINUTES_PER_DAY
 from singletons.scheduler import Scheduler
 
 from helpers.reference_wrapper import ReferenceWrapper
@@ -24,6 +24,7 @@ class Simulation:
         self.duration = duration
         self.aircrafts = aircrafts
         self.airports = airports
+        self.hubs = self.airports[:len(HUB_NAMES)]
         self.routes = routes
         self.passengers: list[Passenger] = []
         
@@ -49,34 +50,18 @@ class Simulation:
                             aircraft.location.maintenance_gates -= 1
                             aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
                         else:
-                            # TODO: HEY DUMBASS, FIX THE LOCATIONS OF THE AIRCRAFT
-                            
-                            # TODO: fix this bullshit
-                            # Schedule the aircraft for a flight to the hub with the shortest wait time
-                            #if len(available_hubs := list(filter(lambda hub: hub.maintenance_gates > 0, HUBS.values()))) > 0:
-                            #    closest_available_hub = sorted()[0]
-                            #
-                            #Scheduler.schedule_flight(aircraft, None, [])
-                            #closest_available_hub.maintenance_gates -= 1
-                            #aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
-                            pass
+                            Scheduler.schedule_maintenance_flight(aircraft, self.routes, self.passengers)
                     else:
                         # Schedule the aircraft for the most profitable, available flight that can be made within operating hours (if any)
-                        pass
+                        Scheduler.schedule_flight(aircraft, self.routes, self.passengers)
                 else:
                     if aircraft.status == AircraftStatus.IN_FLIGHT and aircraft.wait_timer <= 0:
                         aircraft.arrive()
-                    
                     if aircraft.status == AircraftStatus.IN_MAINTENANCE and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
                         aircraft.flight_hours = 0
                         
-                        if aircraft.location.gates > 0:
-                            aircraft.location.gates -= 1
-                            aircraft.set_status(AircraftStatus.AVAILABLE)
-                        else:
-                            aircraft.location.tarmac.put(aircraft)
-                            aircraft.set_status(AircraftStatus.ON_TARMAC)
+                        aircraft.location.assign_gate(aircraft)
                     
                     if aircraft.status in [AircraftStatus.BOARDING_WITHOUT_REFUELING, AircraftStatus.BOARDING_WITH_REFUELING] and aircraft.wait_timer <= 0:
                        aircraft.set_status(AircraftStatus.IN_FLIGHT)

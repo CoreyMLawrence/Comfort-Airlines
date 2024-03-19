@@ -5,9 +5,14 @@
 #
 # Description:
 #   This module defines and implements the model class `Airport` as well as the factories and enumerated types for constructing them.
-from decimal import Decimal
+from __future__ import annotations
+from typing import TYPE_CHECKING
 from enum import Enum
-from queue import Queue
+from models.aircraft import Aircraft, AircraftStatus
+
+if TYPE_CHECKING:
+    from decimal import Decimal
+    from queue import Queue
 
 class AirportType(Enum):
     """Enumerated type. Defines the 2 types of airports."""
@@ -34,3 +39,11 @@ class Airport:
         self.takeoff_fee = takeoff_fee
         self.landing_fee = landing_fee
         self.tarmac = tarmac
+
+    def assign_gate(self, aircraft: Aircraft) -> None:
+        if self.gates > 0:
+            self.gates -= 1
+            aircraft.set_status(AircraftStatus.AVAILABLE)
+        else:
+            self.tarmac.put(aircraft)
+            aircraft.set_status(AircraftStatus.ON_TARMAC)

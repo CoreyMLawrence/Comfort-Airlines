@@ -22,8 +22,7 @@ import math
 import csv
 
 # Radius of the Earth in kilometers
-radius_of_earth = 6378.14  
-print("Radius of the Earth:", radius_of_earth)
+radius_of_earth = 6378.14
 
 # Function to calculate the Haversine distance between two points given their latitudes and longitudes
 def haversine_distance(lat1, lon1, lat2, lon2):
@@ -101,8 +100,8 @@ def wdistance(lat1, lon1, lat2, lon2):
     return weightedDistance
 
 # Input and output file paths
-csv_file_path = '../data/airports.csv'
-output_csv_path = '../data/flight_weighted_distances.csv'
+csv_file_path = './data/airports.csv'
+output_csv_path = './data/flight_weighted_distances.csv'
 
 # Read latitude, longitude, and airport names from CSV file
 coordinates = []

@@ -13,11 +13,12 @@ from decimal import Decimal
 
 import structlog
 from haversine import haversine
+import random
 
 import log.processors
 from singletons.simulation import Simulation
 from constants import HUB_NAMES, SIMULATION_DURATION, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
-from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
+from models.aircraft import Aircraft, AircraftFactory, AircraftType, AircraftStatus
 from models.airport import Airport
 from models.route import Route
 
@@ -135,7 +136,7 @@ def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
 def main() -> None:
     """The entry point for the application"""
     
-    aircraft = list(itertools.chain.from_iterable([
+    aircrafts = list(itertools.chain.from_iterable([
         [AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, 0) for _ in range(15)],
         [AircraftFactory.create_aircraft(AircraftType.BOEING_737_800, AircraftStatus.AVAILABLE, None, 0) for _ in range(15)],
         [AircraftFactory.create_aircraft(AircraftType.AIRBUS_A200_100, AircraftStatus.AVAILABLE, None, 0) for _ in range(12)],
@@ -143,15 +144,25 @@ def main() -> None:
     ]))
     
     airports = import_hubs("./data/airports.csv")
+    
     import_airports("./data/airports.csv", airports)
     
     routes = import_routes("./data/flight_master_record.csv", airports)
-    routes.sort(key=lambda route: route.net_profit)
+    routes.sort(key=lambda route: route.net_profit, reverse=True)
 
     for airport in airports:
-        airport.routes = list(filter(lambda route: route.source_airport == airport.name, routes))
+        airport.routes = list(filter(lambda route: route.source_airport.name == airport.name, routes))
+        
+    for aircraft in aircrafts:
+        aircraft.location = airports[random.randint(0, len(HUB_NAMES) - 1)]
+        
+        if aircraft.location.gates > 0:
+            aircraft.location.gates -= 1
+        else:
+            aircraft.set_status(AircraftStatus.ON_TARMAC)
+            aircraft.location.tarmac.put(aircraft)
 
-    simulation = Simulation(SIMULATION_DURATION, aircraft, airports, routes)
+    simulation = Simulation(SIMULATION_DURATION, aircrafts, airports, routes)
     
     structlog.configure(
         processors=[

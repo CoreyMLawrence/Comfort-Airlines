@@ -50,6 +50,7 @@
 #### 3. Simulation
 - Until 2 weeks time in minutes has passed:
     - If a day has passed:
+        - Eliminate passengers that are still at source airport (did not take a flight)
         - Spawn new passengers for each route
     - For each aircraft:
         - If the aircraft is available:
