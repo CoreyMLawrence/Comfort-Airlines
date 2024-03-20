@@ -1,8 +1,7 @@
 from decimal import Decimal
-from models.airport import Airport
 
 # Debugging
-DEBUG = False
+DEBUG = True
 VERBOSE = DEBUG and False
 
 # Simulation constants

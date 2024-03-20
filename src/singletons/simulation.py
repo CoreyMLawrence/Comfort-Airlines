@@ -37,6 +37,8 @@ class Simulation:
             self.logger.info("spawned passengers", num_passengers=len(self.passengers))
 
     def run(self) -> None:
+        self.logger.info("started simulation")
+
         while self.time.value < self.duration:
             if self.time.value % MINUTES_PER_DAY == 0:
                 self.spawn_passengers()
@@ -48,26 +50,32 @@ class Simulation:
                             aircraft.location.maintenance_gates -= 1
                             aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
                         else:
-                            Scheduler.schedule_flight(self.time, aircraft, self.routes, self.passengers)
+                            Scheduler.schedule_flight(self.time.value, aircraft, self.routes, self.passengers)
                     else:
-                        Scheduler.schedule_flight(self.time, aircraft, self.routes, self.passengers)
+                        Scheduler.schedule_flight(self.time.value, aircraft, self.routes, self.passengers)
                 else:
                     if aircraft.status == AircraftStatus.IN_FLIGHT and aircraft.wait_timer <= 0:
-                        aircraft.arrive(self.time)
+                        aircraft.arrive(self.time.value)
                     if aircraft.status == AircraftStatus.IN_MAINTENANCE and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
-                        aircraft.flight_hours = 0
-                        
+                        aircraft.flight_minutes = 0
                         aircraft.location.assign_gate(aircraft)
+
+                        if len(aircraft.location.maintenance_queue) > 0:
+                            queued_aircraft = aircraft.location.maintenance_queue.pop(0)
+                            queued_aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
+                        else:
+                            aircraft.location.maintenance_gates += 1
+
                     
                     if aircraft.status in [AircraftStatus.BOARDING_WITHOUT_REFUELING, AircraftStatus.BOARDING_WITH_REFUELING] and aircraft.wait_timer <= 0:
                        aircraft.set_status(AircraftStatus.IN_FLIGHT)
                        aircraft.wait_timer = aircraft.flight.route.expected_time
-                       aircraft.depart(self.time)
+                       aircraft.depart(self.time.value)
 
                     if aircraft.status == AircraftStatus.DEBOARDING and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
-                        aircraft.flight.actual_arrival_time = self.time
+                        aircraft.flight.actual_arrival_time = self.time.value
                         for passenger in aircraft.flight.passengers:
                             passenger.location = aircraft.location
             
@@ -75,3 +83,5 @@ class Simulation:
                 if aircraft.wait_timer is not None:
                     aircraft.wait_timer -= 1
             self.time.value += 1
+
+        self.logger.info("ended simulation")

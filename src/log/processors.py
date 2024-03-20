@@ -9,6 +9,8 @@
 #   For example, the `processor_code_location` function adds information about the source
 #   code to all log events.
 import inspect
+import os
+
 from helpers.reference_wrapper import ReferenceWrapper
 
 class CodeLocation:
@@ -18,7 +20,7 @@ class CodeLocation:
     def __call__(logger, log_method, event_dict):
         frame_info = inspect.getouterframes(inspect.currentframe())[CodeLocation.STRUCTLOG_STACK_FRAME_OFFSET]
         
-        event_dict["source_file"] = frame_info.filename
+        event_dict["source_file"] = os.path.basename(frame_info.filename)
         event_dict["source_function"] = frame_info.function
         event_dict["source_line"] = frame_info.lineno
         
@@ -29,7 +31,7 @@ class ProcessorID:
         self.id = 0
 
     def __call__(self, _, __, event_dict):
-        event_dict["id"] = self.id
+        event_dict["Log_id"] = self.id
         self.id += 1
         return event_dict
     

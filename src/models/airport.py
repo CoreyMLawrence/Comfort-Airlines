@@ -1,8 +1,6 @@
 from __future__ import annotations
 from typing import Union, TYPE_CHECKING
 from decimal import Decimal
-from queue import Queue
-
 from models.aircraft import AircraftStatus
 
 if TYPE_CHECKING:
@@ -56,8 +54,8 @@ class Airport:
         self.gas_price = gas_price
         self.takeoff_fee = takeoff_fee
         self.landing_fee = landing_fee
-        self.tarmac = Queue()
-        self.maintenance_queue = Queue()
+        self.tarmac: list[Aircraft] = []
+        self.maintenance_queue: list[Aircraft] = []
         
     @property
     def is_hub(self) -> bool:
@@ -65,12 +63,20 @@ class Airport:
     
     def assign_gate(self, aircraft: Aircraft) -> None:
         """Assigns the aircraft to a gate if there is a gate available, otherwise assigns it to the tarmac"""
-        if self.gates > 0:
-            self.gates -= 1
-            aircraft.set_status(AircraftStatus.DEBOARDING)
+        if aircraft.needs_maintenance:
+            if self.maintenance_gates > 0:
+                self.maintenance_gates -= 1
+                aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
+            else:
+                self.maintenance_queue.append(aircraft)
+                aircraft.set_status(AircraftStatus.ON_TARMAC)
         else:
-            self.tarmac.put(aircraft)
-            aircraft.set_status(AircraftStatus.ON_TARMAC)
+            if self.gates > 0:
+                self.gates -= 1
+                aircraft.set_status(AircraftStatus.DEBOARDING)
+            else:
+                self.tarmac.append(aircraft)
+                aircraft.set_status(AircraftStatus.ON_TARMAC)
     
     def __repr__(self) -> str:
         return self.name

@@ -33,6 +33,6 @@ class Ledger:
     
     def record(entry: LedgerEntry) -> None:
         if DEBUG:
-            Ledger.logger.info("recorded ledger entry", type=entry.type, net_profit=entry.net_profit, location=entry.location)
+            Ledger.logger.info("recorded ledger entry", type=entry.type.name, net_profit=str(entry.net_profit), location=entry.location.name)
         
         Ledger.entries.append(entry)

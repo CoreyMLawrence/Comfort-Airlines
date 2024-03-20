@@ -6,7 +6,7 @@ from models.airport import Airport
 from models.aircraft import AircraftType
 
 class Route:
-    def __init__(self, aircraft_type: AircraftType, source_airport: Airport, destination_airport: Airport, distance: float, demand: int, fuel_requirement: float, expected_time: float, ticket_cost: Decimal, net_profit: Decimal):
+    def __init__(self, aircraft_type: AircraftType, source_airport: Airport, destination_airport: Airport, distance: float, demand: int, fuel_requirement: float, expected_time: int, ticket_cost: Decimal, net_profit: Decimal):
         if not type(aircraft_type) is AircraftType:
             raise TypeError("Parameter 'aircraft' must be an AircraftType object")
         

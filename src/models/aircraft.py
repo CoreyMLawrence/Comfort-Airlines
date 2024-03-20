@@ -14,6 +14,7 @@ from constants import MINUTES_PER_HOUR
 
 if TYPE_CHECKING:
     from models.flight import Flight
+    from models.airport import Airport
 
 class AircraftType(IntEnum):
     """Enumerated type. Defines the 4 types of aircraft"""
@@ -72,7 +73,7 @@ class Aircraft:
         self.flight.actual_departure_time = time
         
         if len(self.location.tarmac) > 0:
-            aircraft = self.location.tarmac.get()
+            aircraft = self.location.tarmac.pop(0)
             aircraft.set_status(AircraftStatus.DEBOARDING)
         else:
             self.location.gates += 1

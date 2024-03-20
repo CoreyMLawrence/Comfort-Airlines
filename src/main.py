@@ -126,7 +126,7 @@ def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
                 routes.append(
                     Route(
                         aircraft_type, source_airport, destination_airport, float(row[DISTANCE]), 
-                        int(row[NUMBER_OF_PASSENGERS]), float(row[FUEL_REQUIREMENT]), float(row[EXPECTED_TIME]),
+                        int(row[NUMBER_OF_PASSENGERS]), float(row[FUEL_REQUIREMENT]), int(float(row[EXPECTED_TIME])),
                         Decimal(row[TICKET_COST]), Decimal(row[NET_PROFIT])
                     )
                 )
@@ -144,7 +144,6 @@ def main() -> None:
     ]))
     
     airports = import_hubs("./data/airports.csv")
-    
     import_airports("./data/airports.csv", airports)
     
     routes = import_routes("./data/flight_master_record.csv", airports)
@@ -155,12 +154,12 @@ def main() -> None:
         
     for aircraft in aircrafts:
         aircraft.location = airports[random.randint(0, len(HUB_NAMES) - 1)]
-        
+
         if aircraft.location.gates > 0:
             aircraft.location.gates -= 1
         else:
+            aircraft.location.tarmac.append(aircraft)
             aircraft.set_status(AircraftStatus.ON_TARMAC)
-            aircraft.location.tarmac.put(aircraft)
 
     simulation = Simulation(SIMULATION_DURATION, aircrafts, airports, routes)
     

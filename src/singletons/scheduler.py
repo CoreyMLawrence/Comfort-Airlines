@@ -6,11 +6,11 @@ import structlog
 from constants import DEBUG
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
 from models.aircraft import Aircraft, AircraftStatus, WAIT_TIMERS
+from models.flight import Flight
 
 if TYPE_CHECKING:
     from models.route import Route
     from models.passenger import Passenger
-    from models.flight import Flight
 
 class Scheduler:
     flight_uuid = 0
@@ -51,8 +51,10 @@ class Scheduler:
         expected_departure_time = time + (WAIT_TIMERS[AircraftStatus.BOARDING_WITH_REFUELING] if aircraft.status == AircraftStatus.BOARDING_WITH_REFUELING else WAIT_TIMERS[AircraftStatus.BOARDING_WITHOUT_REFUELING])
         expected_arrival_time = expected_departure_time + route.expected_time + WAIT_TIMERS[AircraftStatus.DEBOARDING]
     
+        # self, flight_number: int, time: int, aircraft: Aircraft, route: Route, passengers: list[Passenger], expected_departure_time: int, expected_arrival_time: int
         flight = Flight(
             Scheduler.__next_flight_uuid(),
+            time,
             aircraft,
             route,
             passengers,
@@ -61,7 +63,7 @@ class Scheduler:
         )
         
         if DEBUG:
-            Scheduler.logger.info("scheduled flight", aircraft_tail_number=aircraft.tail_number, source_airport=route.source_airport, destination_airport=route.destination_airport)
+            Scheduler.logger.info("scheduled flight", aircraft_tail_number=aircraft.tail_number, source_airport=route.source_airport.name, destination_airport=route.destination_airport.name)
         
         aircraft.flight = flight
         Scheduler.flights.append(flight)
