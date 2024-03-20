@@ -3,6 +3,10 @@ from typing import TYPE_CHECKING
 from decimal import Decimal
 from enum import Enum
 
+import structlog
+
+from constants import DEBUG
+
 if TYPE_CHECKING:
     from models.airport import Airport
 
@@ -25,3 +29,10 @@ class LedgerEntry:
 
 class Ledger:
     entries: list[LedgerEntry] = []
+    logger = structlog.get_logger()
+    
+    def record(entry: LedgerEntry) -> None:
+        if DEBUG:
+            Ledger.logger.info("recorded transaction", type=entry.type, net_profit=entry.net_profit, location=entry.location)
+        
+        Ledger.entries.append(entry)

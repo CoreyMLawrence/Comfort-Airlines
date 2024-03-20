@@ -3,7 +3,10 @@ from typing import Union, TYPE_CHECKING
 from decimal import Decimal
 from queue import Queue
 
+from models.aircraft import AircraftStatus
+
 if TYPE_CHECKING:
+    from models.aircraft import Aircraft
     from models.route import Route
     
 NGATES_HUB = 11
@@ -59,6 +62,15 @@ class Airport:
     @property
     def is_hub(self) -> bool:
         return self.regional_airport is None
+    
+    def assign_gate(self, aircraft: Aircraft) -> None:
+        """Assigns the aircraft to a gate if there is a gate available, otherwise assigns it to the tarmac"""
+        if self.gates > 0:
+            self.gates -= 1
+            aircraft.set_status(AircraftStatus.DEBOARDING)
+        else:
+            self.tarmac.put(aircraft)
+            aircraft.set_status(AircraftStatus.ON_TARMAC)
     
     def __repr__(self) -> str:
         return self.name

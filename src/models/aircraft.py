@@ -6,10 +6,15 @@
 # Description:
 #   This module defines and implements the model class `Aircraft` as well as the factories and enumerated types for constructing them.
 from __future__ import annotations
+from typing import TYPE_CHECKING
 from enum import IntEnum, auto
 from typing import Union
 from models.airport import Airport
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
+from constants import MINUTES_PER_HOUR
+
+if TYPE_CHECKING:
+    from models.flight import Flight
 
 class AircraftType(IntEnum):
     """Enumerated type. Defines the 4 types of aircraft"""
@@ -46,13 +51,14 @@ class Aircraft:
         self.fuel_level = fuel_level
         self.fuel_capacity = fuel_capacity              # gallons
         self.fuel_efficiency = fuel_efficiency
-        self.flight_hours = 0
+        self.flight_minutes = 0
         self.wait_timer = WAIT_TIMERS.get(status, 0)
         self.max_range = max_range                      # km
+        self.flight: Flight = None
         
     @property
     def needs_maintenance(self) -> bool:
-        return self.flight_hours >= 200
+        return self.flight_minutes >= (200 * MINUTES_PER_HOUR)
         
     def set_status(self, status: AircraftStatus) -> None:
         """Sets the status of the aircraft AND sets the wait timer if applicable"""
@@ -63,18 +69,8 @@ class Aircraft:
         self.wait_timer = WAIT_TIMERS.get(status, 0)
         
     def depart(self, time: int) -> None:
-        Ledger.entries.append(LedgerEntryType.TAKEOFF_FEE, self.location.takeoff_fee, time, self.location)
-        
-        # TODO: - Record actual flight departure time in scheduler flight entry
-        # TODO: - If the aircraft needs to refuel:
-        # TODO:     - Refuel the aircraft with the required fuel for the trip
-        # TODO:     - `[Subroutine::Ledger::Append]` Add fuel costs to ledger
-        # TODO:     - Start timer for boarding wait time with extra refuel time (35m)
-        # TODO: - Else
-        # TODO:     - Start timer for boarding wait time without refueling (25m)
-        # TODO: - Set plane location to null
-        # TODO: - Start timer for flight time (flight-dependent)
-        # TODO: set passenger location to null
+        Ledger.record(LedgerEntry(LedgerEntryType.TAKEOFF_FEE, self.location.takeoff_fee, time, self.location))
+        self.flight.actual_departure_time = time
         
         if len(self.location.tarmac) > 0:
             aircraft = self.location.tarmac.get()
@@ -83,27 +79,23 @@ class Aircraft:
             self.location.gates += 1
         
         self.location = None
+        for passenger in self.flight.passengers:
+            passenger.location = None
         
         
     def arrive(self, airport: Airport, time: int) -> None:
         """Simulates an aircraft landing at an airport"""
         self.location = airport
-        Ledger.entries.append(LedgerEntryType.LANDING_FEE, airport.landing_fee)
-        # TODO: increase actual flight arrival time in scheduler flight entry
-        # TODO: increase aircraft flight hours by flight duration
-        # TODO: decrease the aircraft fuel amount by fuel used
-        if airport.gates > 0:
-            airport.gates -= 1
-            self.set_status(AircraftStatus.DEBOARDING)
-        else:
-            airport.tarmac.put(self)
-            self.set_status(AircraftStatus.ON_TARMAC)
+        Ledger.record(LedgerEntry(LedgerEntryType.LANDING_FEE, airport.landing_fee, time, airport))
+        self.flight_minutes += self.flight.route.expected_time
+        self.fuel_level -= self.flight.route.fuel_requirement
+        
+        airport.assign_gate(self)
         
     def __repr__(self) -> str:
         return self.tail_number
 
 class AircraftFactory:
-    # Static class variables
     uuid = 0
         
     @staticmethod

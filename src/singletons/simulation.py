@@ -7,7 +7,7 @@ from pprint import pprint
 import structlog
 from haversine import haversine
 
-from constants import HUB_NAMES, MINUTES_PER_DAY
+from constants import HUB_NAMES, MINUTES_PER_DAY, DEBUG
 from singletons.scheduler import Scheduler
 
 from helpers.reference_wrapper import ReferenceWrapper
@@ -36,11 +36,13 @@ class Simulation:
         
         for route in self.routes:
             self.passengers.extend([Passenger(route.source_airport, route.destination_airport) for _ in range(route.demand)])
+            
+        if DEBUG:
+            self.logger.info("spawned passengers", num_passengers=len(self.passengers))
 
     def run(self) -> None:
         while self.time.value < self.duration:
             if self.time.value % MINUTES_PER_DAY == 0:
-                self.passengers = list(filter(lambda passenger: passenger.location != passenger.source_airport, self.passengers))
                 self.spawn_passengers()
                 
             for aircraft in self.aircrafts:
@@ -50,13 +52,12 @@ class Simulation:
                             aircraft.location.maintenance_gates -= 1
                             aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
                         else:
-                            Scheduler.schedule_maintenance_flight(aircraft, self.routes, self.passengers)
+                            Scheduler.schedule_flight(self.time, aircraft, self.routes, self.passengers)
                     else:
-                        # Schedule the aircraft for the most profitable, available flight that can be made within operating hours (if any)
-                        Scheduler.schedule_flight(aircraft, self.routes, self.passengers)
+                        Scheduler.schedule_flight(self.time, aircraft, self.routes, self.passengers)
                 else:
                     if aircraft.status == AircraftStatus.IN_FLIGHT and aircraft.wait_timer <= 0:
-                        aircraft.arrive()
+                        aircraft.arrive(self.time)
                     if aircraft.status == AircraftStatus.IN_MAINTENANCE and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
                         aircraft.flight_hours = 0
@@ -65,14 +66,14 @@ class Simulation:
                     
                     if aircraft.status in [AircraftStatus.BOARDING_WITHOUT_REFUELING, AircraftStatus.BOARDING_WITH_REFUELING] and aircraft.wait_timer <= 0:
                        aircraft.set_status(AircraftStatus.IN_FLIGHT)
-                       aircraft.depart()
+                       aircraft.wait_timer = aircraft.flight.route.expected_time
+                       aircraft.depart(self.time)
 
                     if aircraft.status == AircraftStatus.DEBOARDING and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
-                        # TODO update passenger location
-                    
-            self.logger.info(f"time: {self.time.value}")
-            t.sleep(3)
+                        aircraft.flight.actual_arrival_time = self.time
+                        for passenger in aircraft.flight.passengers:
+                            passenger.location = aircraft.location
             
             for aircraft in self.aircrafts:
                 if aircraft.wait_timer is not None:
