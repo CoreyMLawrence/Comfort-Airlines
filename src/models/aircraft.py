@@ -9,8 +9,11 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 from enum import IntEnum, auto
 from typing import Union
+
+import structlog
+
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
-from constants import MINUTES_PER_HOUR
+from constants import MINUTES_PER_HOUR, DEBUG, VERBOSE
 
 if TYPE_CHECKING:
     from models.flight import Flight
@@ -36,6 +39,8 @@ class AircraftStatus(IntEnum):
 
 class Aircraft:
     """Model class. A generic representation of an aircraft. Type is indicated by AirCraft.Type"""
+    logger = structlog.get_logger()
+
     def __init__(
             self, name: str, type: AircraftType, status: AircraftStatus, location: Union[Airport | None], 
             tail_number: str, passenger_capacity: int, cruise_speed: int, fuel_level: int, fuel_capacity: int, 

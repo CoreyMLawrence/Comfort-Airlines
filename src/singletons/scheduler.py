@@ -1,5 +1,6 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
+from decimal import Decimal
 
 import structlog
 
@@ -42,7 +43,7 @@ class Scheduler:
         passengers = list(filter(lambda passenger: passenger.location == route.source_airport and passenger.destination == route.destination_airport, passengers))
         
         if aircraft.fuel_level < route.fuel_requirement:
-            Ledger.record(LedgerEntry(LedgerEntryType.FUEL, (aircraft.fuel_capacity - aircraft.fuel_level) * aircraft.location.gas_price, time, aircraft.location))
+            Ledger.record(LedgerEntry(LedgerEntryType.FUEL, Decimal((aircraft.fuel_capacity - aircraft.fuel_level)) * aircraft.location.gas_price, time, aircraft.location))
             aircraft.fuel_level = aircraft.fuel_capacity
             aircraft.set_status(AircraftStatus.BOARDING_WITH_REFUELING)
         else:
@@ -67,3 +68,6 @@ class Scheduler:
         
         aircraft.flight = flight
         Scheduler.flights.append(flight)
+
+    def serialize(filepath: str) -> None:
+        pass

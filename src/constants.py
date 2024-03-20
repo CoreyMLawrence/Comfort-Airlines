@@ -4,6 +4,9 @@ from decimal import Decimal
 DEBUG = True
 VERBOSE = DEBUG and False
 
+# Data
+SIMULATION_OUTPUT_DIRECTORY = "simulation-output"
+
 # Simulation constants
 MINUTES_PER_HOUR = 60
 MINUTES_PER_DAY = MINUTES_PER_HOUR * 24

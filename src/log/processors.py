@@ -31,7 +31,7 @@ class ProcessorID:
         self.id = 0
 
     def __call__(self, _, __, event_dict):
-        event_dict["Log_id"] = self.id
+        event_dict["log_id"] = self.id
         self.id += 1
         return event_dict
     

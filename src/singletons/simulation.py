@@ -55,7 +55,8 @@ class Simulation:
                         Scheduler.schedule_flight(self.time.value, aircraft, self.routes, self.passengers)
                 else:
                     if aircraft.status == AircraftStatus.IN_FLIGHT and aircraft.wait_timer <= 0:
-                        aircraft.arrive(self.time.value)
+                        aircraft.arrive(aircraft.flight.route.destination_airport, self.time.value)
+
                     if aircraft.status == AircraftStatus.IN_MAINTENANCE and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
                         aircraft.flight_minutes = 0
@@ -67,7 +68,6 @@ class Simulation:
                         else:
                             aircraft.location.maintenance_gates += 1
 
-                    
                     if aircraft.status in [AircraftStatus.BOARDING_WITHOUT_REFUELING, AircraftStatus.BOARDING_WITH_REFUELING] and aircraft.wait_timer <= 0:
                        aircraft.set_status(AircraftStatus.IN_FLIGHT)
                        aircraft.wait_timer = aircraft.flight.route.expected_time
@@ -75,9 +75,11 @@ class Simulation:
 
                     if aircraft.status == AircraftStatus.DEBOARDING and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
-                        aircraft.flight.actual_arrival_time = self.time.value
-                        for passenger in aircraft.flight.passengers:
-                            passenger.location = aircraft.location
+                        
+                        if not aircraft.flight is None:
+                            aircraft.flight.actual_arrival_time = self.time.value
+                            for passenger in aircraft.flight.passengers:
+                                passenger.location = aircraft.location
             
             for aircraft in self.aircrafts:
                 if aircraft.wait_timer is not None:

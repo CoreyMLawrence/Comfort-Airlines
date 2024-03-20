@@ -7,9 +7,10 @@
 #   This module is the entry point to the program. All pre-program initialization is performed
 #   here before the simulation is started.
 import itertools
-import csv
 from pprint import pprint
 from decimal import Decimal
+import os
+import csv
 
 import structlog
 from haversine import haversine
@@ -17,8 +18,10 @@ import random
 
 import log.processors
 from singletons.simulation import Simulation
-from constants import HUB_NAMES, SIMULATION_DURATION, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
-from models.aircraft import Aircraft, AircraftFactory, AircraftType, AircraftStatus
+from singletons.scheduler import Scheduler
+from singletons.ledger import Ledger
+from constants import HUB_NAMES, SIMULATION_DURATION, SIMULATION_OUTPUT_DIRECTORY, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
+from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
 from models.airport import Airport
 from models.route import Route
 
@@ -130,7 +133,7 @@ def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
                         Decimal(row[TICKET_COST]), Decimal(row[NET_PROFIT])
                     )
                 )
-    
+
     return routes
 
 def main() -> None:
@@ -176,6 +179,13 @@ def main() -> None:
     )
     
     simulation.run()
+
+    if not os.path.exists(SIMULATION_OUTPUT_DIRECTORY):
+        os.mkdir(SIMULATION_OUTPUT_DIRECTORY)
+
+    Ledger.serialize(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "ledger.csv"))
+    Scheduler.serialize(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "schedule.csv"))
+
 
 if __name__ == "__main__":
     main()

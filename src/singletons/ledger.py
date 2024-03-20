@@ -36,3 +36,6 @@ class Ledger:
             Ledger.logger.info("recorded ledger entry", type=entry.type.name, net_profit=str(entry.net_profit), location=entry.location.name)
         
         Ledger.entries.append(entry)
+
+    def serialize(filepath: str) -> None:
+        pass
