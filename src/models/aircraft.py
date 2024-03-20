@@ -9,7 +9,6 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 from enum import IntEnum, auto
 from typing import Union
-from models.airport import Airport
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
 from constants import MINUTES_PER_HOUR
 
@@ -113,9 +112,6 @@ class AircraftFactory:
         """Factory class to create Aircraft objects. Uses AircraftType as the API."""
         if not type(aircraft_type) is AircraftType:
             raise TypeError(f"parameter 'aircraft_type' is not of enum type 'AircraftType'. Got type: {type(aircraft_type).__name__}")
-        
-        if not type(location) is Airport and not location is None:
-            raise TypeError(f"parameter 'location' must be an airport or None")
 
         if fuel_level < 0:
             raise ValueError("fuel_level cannot be negative")

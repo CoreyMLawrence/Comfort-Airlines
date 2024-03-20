@@ -1,11 +1,7 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
-import itertools
-import time as t
-from pprint import pprint
 
 import structlog
-from haversine import haversine
 
 from constants import HUB_NAMES, MINUTES_PER_DAY, DEBUG
 from singletons.scheduler import Scheduler

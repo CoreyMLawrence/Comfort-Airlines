@@ -24,7 +24,7 @@ class Scheduler:
 
         return id
         
-    def schedule_flight(time: int, aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]) -> Flight | None:
+    def schedule_flight(time: int, aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]):
         compatible_routes = filter(lambda route: route.source_airport == aircraft.location, routes)
         compatible_routes = filter(lambda route: route.aircraft_type == aircraft.type, compatible_routes)
         compatible_routes = filter(lambda route: route.fuel_requirement <= aircraft.fuel_capacity, compatible_routes)
@@ -34,7 +34,9 @@ class Scheduler:
             compatible_routes = filter(lambda route: route.destination_airport.is_hub, compatible_routes)
             
         if not compatible_routes:
-            return None
+            if DEBUG:
+                Scheduler.logger.info("no flight could be scheduled", aircraft_tail_number=aircraft.tail_number)
+            return
 
         route = max(list(compatible_routes), key=lambda route: route.net_profit)
         passengers = list(filter(lambda passenger: passenger.location == route.source_airport and passenger.destination == route.destination_airport, passengers))
@@ -63,5 +65,3 @@ class Scheduler:
         
         aircraft.flight = flight
         Scheduler.flights.append(flight)
-        
-        return flight
