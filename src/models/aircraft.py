@@ -62,8 +62,8 @@ class Aircraft:
         self.status = status
         self.wait_timer = WAIT_TIMERS.get(status, 0)
         
-    def depart(self) -> None:
-        Ledger.entries.append(LedgerEntryType.TAKEOFF_FEE, self.location.takeoff_fee)
+    def depart(self, time: int) -> None:
+        Ledger.entries.append(LedgerEntryType.TAKEOFF_FEE, self.location.takeoff_fee, time, self.location)
         
         # TODO: - Record actual flight departure time in scheduler flight entry
         # TODO: - If the aircraft needs to refuel:
@@ -85,7 +85,7 @@ class Aircraft:
         self.location = None
         
         
-    def arrive(self, airport: Airport) -> None:
+    def arrive(self, airport: Airport, time: int) -> None:
         """Simulates an aircraft landing at an airport"""
         self.location = airport
         Ledger.entries.append(LedgerEntryType.LANDING_FEE, airport.landing_fee)
