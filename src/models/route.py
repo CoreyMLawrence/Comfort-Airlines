@@ -11,7 +11,8 @@ from models.aircraft import AircraftType
 from models.airport import Airport
 
 class Route:
-    def __init__(self, aircraft_type, source_airport, destination_airport, distance, daily_demand, estimated_flight_time, fuel_requirement):
+    def __init__(self, aircraft_type: AircraftType, source_airport: Airport, destination_airport: Airport, distance: float, daily_demand: int,
+                 estimated_flight_time: int, fuel_requirement: float):
         # Check for aircraft type
         if not isinstance(aircraft_type, AircraftType):
             raise TypeError("Aircraft type must be an instance of AircraftType")
