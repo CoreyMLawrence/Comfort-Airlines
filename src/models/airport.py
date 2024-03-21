@@ -33,11 +33,11 @@ class Airport:
         if not type(gas_price) is Decimal or gas_price < Decimal("0.0"):
             raise ValueError("Airport gas price must be a Decimal in range [0.0, inf]")
         
-        if not type(takeoff_fee) is Decimal or takeoff_fee < Decimal("0.0"):
-            raise ValueError("Airport takeoff fee must be a Decimal in range [0.0, inf]")
+        if not type(takeoff_fee) is Decimal:
+            raise ValueError("Airport takeoff fee must be a Decimal")
         
-        if not type(landing_fee) is Decimal or landing_fee < Decimal("0.0"):
-            raise ValueError("Airport landing fee must be a Decimal in range [0.0, inf]")
+        if not type(landing_fee) is Decimal:
+            raise ValueError("Airport landing fee must be a Decimal")
 
         self.name = name
         self.iata_code = iata_code

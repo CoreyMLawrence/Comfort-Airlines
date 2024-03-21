@@ -19,7 +19,7 @@ import random
 import log.processors
 from singletons.simulation import Simulation
 from singletons.scheduler import Scheduler
-from singletons.ledger import Ledger
+from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
 from constants import HUB_NAMES, SIMULATION_DURATION, SIMULATION_OUTPUT_DIRECTORY, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
 from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
 from models.airport import Airport
@@ -164,7 +164,7 @@ def main() -> None:
             aircraft.location.tarmac.append(aircraft)
             aircraft.set_status(AircraftStatus.ON_TARMAC)
 
-    simulation = Simulation(SIMULATION_DURATION, aircrafts, airports, routes)
+    simulation = Simulation(500, aircrafts, airports, routes)
     
     structlog.configure(
         processors=[
@@ -178,11 +178,11 @@ def main() -> None:
         ]
     )
     
-    # TODO: PUT TIMER HERE
     # TODO: LIMIT NUMBER OF PASSENGERS PER FLIGHT
     # TODO: DECREASE DEMAND OF PASSENGERS AFTER FLYING TO DESTINATION
-    # TODO: address case in serialization where flights have not landed yet (empty entries)
-    # TODO: add ticket sales profits
+
+    for aircraft in aircrafts:
+        Ledger.record(LedgerEntry(LedgerEntryType.PLANE_RENTAL, aircraft.rental_cost, 0, None))
     
     simulation.run()
 

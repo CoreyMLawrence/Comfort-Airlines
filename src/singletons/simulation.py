@@ -7,6 +7,7 @@ from constants import HUB_NAMES, MINUTES_PER_DAY, DEBUG
 from singletons.scheduler import Scheduler
 
 from helpers.reference_wrapper import ReferenceWrapper
+from helpers.decorators import timed
 
 from models.passenger import Passenger
 from models.aircraft import Aircraft, AircraftStatus
@@ -31,11 +32,12 @@ class Simulation:
         self.passengers = list(filter(lambda passenger: passenger.location != passenger.source_airport, self.passengers))
         
         for route in self.routes:
-            self.passengers.extend([Passenger(route.source_airport, route.destination_airport) for _ in range(route.demand)])
+            self.passengers.extend([Passenger(route.source_airport, route.destination_airport) for _ in range(route.daily_demand)])
             
         if DEBUG:
             self.logger.info("spawned passengers", num_passengers=len(self.passengers))
 
+    @timed
     def run(self) -> None:
         self.logger.info("started simulation")
 

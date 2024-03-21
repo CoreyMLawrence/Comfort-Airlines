@@ -9,6 +9,7 @@ from constants import DEBUG
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
 from models.aircraft import Aircraft, AircraftStatus, WAIT_TIMERS
 from models.flight import Flight
+from helpers.default import default
 
 if TYPE_CHECKING:
     from models.route import Route
@@ -48,11 +49,14 @@ class Scheduler:
         passengers = list(filter(lambda passenger: passenger.location == route.source_airport and passenger.destination == route.destination_airport, passengers))
         
         if aircraft.fuel_level < route.fuel_requirement:
-            Ledger.record(LedgerEntry(LedgerEntryType.FUEL, Decimal((aircraft.fuel_capacity - aircraft.fuel_level)) * aircraft.location.gas_price, time, aircraft.location))
+            Ledger.record(LedgerEntry(LedgerEntryType.FUEL, -(Decimal((aircraft.fuel_capacity - aircraft.fuel_level)) * aircraft.location.gas_price), time, aircraft.location))
             aircraft.fuel_level = aircraft.fuel_capacity
             aircraft.set_status(AircraftStatus.BOARDING_WITH_REFUELING)
         else:
             aircraft.set_status(AircraftStatus.BOARDING_WITHOUT_REFUELING)
+
+        for passenger in passengers:
+            passenger.location = None
     
         expected_departure_time = time + (WAIT_TIMERS[AircraftStatus.BOARDING_WITH_REFUELING] if aircraft.status == AircraftStatus.BOARDING_WITH_REFUELING else WAIT_TIMERS[AircraftStatus.BOARDING_WITHOUT_REFUELING])
         expected_arrival_time = expected_departure_time + route.expected_time + WAIT_TIMERS[AircraftStatus.DEBOARDING]
@@ -88,5 +92,5 @@ class Scheduler:
                 writer.writerow([
                     flight.flight_number, flight.route.source_airport, flight.route.destination_airport,
                     len(flight.passengers), flight.expected_departure_time, flight.expected_arrival_time,
-                    flight.actual_departure_time, flight.actual_arrival_time, flight.aircraft.tail_number
+                    default(flight.actual_departure_time, "null"), default(flight.actual_arrival_time, "null"), flight.aircraft.tail_number
                 ])

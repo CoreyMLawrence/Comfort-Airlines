@@ -41,7 +41,8 @@ class Route:
         self.source_airport = source_airport
         self.destination_airport = destination_airport
         self.distance = distance
-        self.demand = demand
+        self.current_demand = demand
+        self.daily_demand = demand
         self.fuel_requirement = fuel_requirement
         self.expected_time = expected_time
         self.ticket_cost = ticket_cost

@@ -8,6 +8,7 @@
 from __future__ import annotations
 from typing import TYPE_CHECKING
 from enum import IntEnum, auto
+from decimal import Decimal
 from typing import Union
 
 import structlog
@@ -44,7 +45,7 @@ class Aircraft:
     def __init__(
             self, name: str, type: AircraftType, status: AircraftStatus, location: Union[Airport | None], 
             tail_number: str, passenger_capacity: int, cruise_speed: int, fuel_level: int, fuel_capacity: int, 
-            fuel_efficiency: float, max_range: int
+            fuel_efficiency: float, max_range: int, rental_cost: Decimal
         ):
         self.name = name
         self.type = type
@@ -60,6 +61,7 @@ class Aircraft:
         self.wait_timer = WAIT_TIMERS.get(status, 0)
         self.max_range = max_range                      # km
         self.flight: Flight = None
+        self.rental_cost = rental_cost
         
     @property
     def needs_maintenance(self) -> bool:
@@ -75,6 +77,7 @@ class Aircraft:
         
     def depart(self, time: int) -> None:
         Ledger.record(LedgerEntry(LedgerEntryType.TAKEOFF_FEE, self.location.takeoff_fee, time, self.location))
+        Ledger.record(LedgerEntry(LedgerEntryType.TICKET_SALES, self.flight.route.ticket_cost * Decimal(len(self.flight.passengers)), time, self.location))
         self.flight.actual_departure_time = time
         
         if len(self.location.tarmac) > 0:
@@ -84,8 +87,6 @@ class Aircraft:
             self.location.gates += 1
         
         self.location = None
-        for passenger in self.flight.passengers:
-            passenger.location = None
         
         
     def arrive(self, airport: Airport, time: int) -> None:
@@ -130,7 +131,7 @@ class AircraftFactory:
                 return Aircraft(
                     "Boeing 737-600", AircraftType.BOEING_737_600, status, location,
                     AircraftFactory.__next_tail_number(), 119, 1101, fuel_level, 6875, 
-                    0.55, 5648
+                    0.55, 5648, Decimal("-245000")
                 )
     
             case AircraftType.BOEING_737_800:
@@ -140,7 +141,7 @@ class AircraftFactory:
                 return Aircraft(
                     "Boeing 767-800", AircraftType.BOEING_737_800, status, location,
                     AircraftFactory.__next_tail_number(), 189, 1101, fuel_level, 6875, 
-                    0.44, 5665
+                    0.44, 5665, Decimal("-270000")
                 )
                 
             case AircraftType.AIRBUS_A200_100:
@@ -150,7 +151,7 @@ class AircraftFactory:
                 return Aircraft(
                     "Airbus A200-100", AircraftType.AIRBUS_A200_100, status, location,
                     AircraftFactory.__next_tail_number(), 135, 1012, fuel_level, 5790, 
-                    0.57, 5460
+                    0.57, 5460, Decimal("-192000")
                 )
             
             case AircraftType.AIRBUS_A220_300:
@@ -160,7 +161,7 @@ class AircraftFactory:
                 return Aircraft(
                     "Airbus A220-300", AircraftType.AIRBUS_A220_300, status, location,
                     AircraftFactory.__next_tail_number(), 160, 1012, fuel_level, 5790, 
-                    0.66, 5920
+                    0.66, 5920, Decimal("-228000")
                 )
             
             case _:

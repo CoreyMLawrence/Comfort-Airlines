@@ -1,110 +1,153 @@
 flight number,source airport,destination airport,number of passengers,scheduled departure time,scheduled arrival time,actual departure time,actual arrival time,aircraft tail number
-0,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,252,35,304,N00000
-1,Denver International Airport,Los Angeles International Airport,144,35,212,35,212,N00001
-2,O'Hare International Airport,Los Angeles International Airport,496,35,314,35,396,N00002
-3,O'Hare International Airport,Los Angeles International Airport,496,35,314,35,396,N00003
-4,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,252,35,304,N00004
-5,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,252,35,304,N00005
-6,Denver International Airport,Los Angeles International Airport,144,35,212,35,212,N00006
-7,O'Hare International Airport,Los Angeles International Airport,496,35,314,35,406,N00007
-8,Denver International Airport,Los Angeles International Airport,144,35,212,35,212,N00008
-9,Denver International Airport,Los Angeles International Airport,144,35,212,35,212,N00009
-10,Denver International Airport,Los Angeles International Airport,144,35,212,35,212,N00010
-11,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,488,N00011
-12,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,498,N00012
-13,Denver International Airport,Los Angeles International Airport,144,35,212,35,253,N00013
-14,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,,N00014
-15,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,,N00015
-16,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,,N00016
-17,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,252,35,304,N00017
-18,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,252,35,345,N00018
-19,Denver International Airport,Los Angeles International Airport,144,35,212,35,253,N00019
-20,O'Hare International Airport,Los Angeles International Airport,496,35,314,35,447,N00020
-21,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,,N00021
-22,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,,N00022
-23,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,,N00023
-24,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,252,35,345,N00024
-25,O'Hare International Airport,Los Angeles International Airport,496,35,314,35,447,N00025
-26,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,,N00026
-27,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,,N00027
-28,O'Hare International Airport,Los Angeles International Airport,496,35,314,35,447,N00028
-29,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,252,35,345,N00029
-30,O'Hare International Airport,Los Angeles International Airport,496,35,328,35,447,N00030
-31,Denver International Airport,Los Angeles International Airport,144,35,218,35,253,N00031
-32,O'Hare International Airport,Los Angeles International Airport,496,35,328,35,457,N00032
-33,Denver International Airport,Los Angeles International Airport,144,35,218,35,253,N00033
-34,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,262,35,345,N00034
-35,Denver International Airport,Los Angeles International Airport,144,35,218,35,253,N00035
-36,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,262,35,355,N00036
-37,Denver International Airport,Los Angeles International Airport,144,35,218,35,294,N00037
-38,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,351,35,,N00038
-39,O'Hare International Airport,Los Angeles International Airport,496,35,328,35,488,N00039
-40,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,262,35,396,N00040
-41,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,262,35,396,N00041
-42,O'Hare International Airport,Los Angeles International Airport,496,35,328,35,488,N00042
-43,O'Hare International Airport,Los Angeles International Airport,496,35,328,35,488,N00044
-44,Denver International Airport,Dallas/Fort Worth International Airport,60,86,246,86,246,N00043
-45,O'Hare International Airport,Dallas/Fort Worth International Airport,204,86,264,86,264,N00045
-46,Denver International Airport,Dallas/Fort Worth International Airport,60,86,246,86,246,N00046
-47,Denver International Airport,Dallas/Fort Worth International Airport,60,86,246,86,246,N00047
-48,Denver International Airport,Dallas/Fort Worth International Airport,60,86,246,86,246,N00048
-49,Dallas/Fort Worth International Airport,O'Hare International Airport,204,86,266,86,266,N00049
-50,O'Hare International Airport,Dallas/Fort Worth International Airport,204,86,264,86,264,N00050
-51,Dallas/Fort Worth International Airport,O'Hare International Airport,204,86,266,86,266,N00051
-52,Hartsfield-Jackson Atlanta International Airport,O'Hare International Airport,160,86,241,86,241,N00052
-53,Dallas/Fort Worth International Airport,O'Hare International Airport,204,86,266,86,266,N00053
-54,Denver International Airport,Dallas/Fort Worth International Airport,60,86,246,86,246,N00054
-55,Los Angeles International Airport,O'Hare International Airport,528,238,522,238,,N00001
-56,Los Angeles International Airport,O'Hare International Airport,528,238,522,238,,N00006
-57,Los Angeles International Airport,O'Hare International Airport,528,238,522,238,,N00008
-58,Los Angeles International Airport,O'Hare International Airport,528,238,522,238,,N00009
-59,Los Angeles International Airport,O'Hare International Airport,528,238,522,238,,N00010
-60,O'Hare International Airport,San Francisco International Airport,192,267,572,267,,N00052
-61,Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,152,272,373,272,373,N00043
-62,Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,152,272,373,272,373,N00046
-63,Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,152,272,373,272,373,N00047
-64,Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,152,272,373,272,373,N00048
-65,Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,152,272,373,272,373,N00054
-66,Los Angeles International Airport,John F. Kennedy International Airport,368,279,643,279,,N00013
-67,Los Angeles International Airport,John F. Kennedy International Airport,368,289,653,289,,N00019
-68,Los Angeles International Airport,John F. Kennedy International Airport,368,289,675,289,,N00031
-69,Los Angeles International Airport,John F. Kennedy International Airport,368,289,675,289,,N00033
-70,Los Angeles International Airport,John F. Kennedy International Airport,368,289,675,289,,N00035
-71,Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,152,290,391,290,414,N00045
-72,Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,152,290,391,290,414,N00050
-73,O'Hare International Airport,San Francisco International Airport,192,292,597,292,,N00049
-74,O'Hare International Airport,San Francisco International Airport,192,292,597,292,,N00051
-75,O'Hare International Airport,George Bush Intercontinental Airport,192,292,483,292,483,N00053
-76,Los Angeles International Airport,LaGuardia Airport,368,330,715,330,,N00037
-77,Los Angeles International Airport,LaGuardia Airport,368,330,694,330,,N00000
-78,Los Angeles International Airport,LaGuardia Airport,368,330,694,330,,N00004
-79,Los Angeles International Airport,LaGuardia Airport,368,330,694,330,,N00005
-80,Los Angeles International Airport,LaGuardia Airport,368,340,704,340,,N00017
-81,Los Angeles International Airport,Newark Liberty International Airport,368,381,743,381,,N00018
-82,Los Angeles International Airport,Newark Liberty International Airport,368,381,743,381,,N00024
-83,Los Angeles International Airport,Newark Liberty International Airport,368,381,743,381,,N00029
-84,Los Angeles International Airport,Newark Liberty International Airport,368,381,764,381,,N00034
-85,Los Angeles International Airport,Newark Liberty International Airport,368,391,774,391,,N00036
-86,George Bush Intercontinental Airport,Los Angeles International Airport,360,399,641,399,,N00043
-87,George Bush Intercontinental Airport,Los Angeles International Airport,360,399,641,399,,N00046
-88,George Bush Intercontinental Airport,Los Angeles International Airport,360,399,641,399,,N00047
-89,George Bush Intercontinental Airport,Los Angeles International Airport,360,399,641,399,,N00048
-90,George Bush Intercontinental Airport,Los Angeles International Airport,360,399,641,399,,N00054
-91,Los Angeles International Airport,Philadelphia International Airport,340,432,788,432,,N00002
-92,Los Angeles International Airport,Philadelphia International Airport,340,432,788,432,,N00003
-93,Los Angeles International Airport,Philadelphia International Airport,340,432,809,432,,N00040
-94,Los Angeles International Airport,Philadelphia International Airport,340,432,809,432,,N00041
-95,Los Angeles International Airport,Philadelphia International Airport,340,442,798,442,,N00007
-96,George Bush Intercontinental Airport,O'Hare International Airport,188,440,632,440,,N00045
-97,George Bush Intercontinental Airport,O'Hare International Airport,188,440,632,440,,N00050
-98,Los Angeles International Airport,Dallas/Fort Worth International Airport,420,473,693,473,,N00020
-99,Los Angeles International Airport,Dallas/Fort Worth International Airport,420,473,693,473,,N00025
-100,Los Angeles International Airport,Dallas/Fort Worth International Airport,420,473,693,473,,N00028
-101,Los Angeles International Airport,Dallas/Fort Worth International Airport,420,473,702,473,,N00030
-102,Los Angeles International Airport,Dallas/Fort Worth International Airport,420,483,712,483,,N00032
-103,George Bush Intercontinental Airport,Dallas/Fort Worth International Airport,148,509,610,,,N00053
-104,Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,336,524,830,,,N00011
-105,Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,336,524,847,,,N00039
-106,Los Angeles International Airport,George Bush Intercontinental Airport,388,514,759,,,N00042
-107,Los Angeles International Airport,George Bush Intercontinental Airport,388,514,759,,,N00044
-108,Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,336,534,840,,,N00012
+0,Denver International Airport,Los Angeles International Airport,144,35,212,35,212,N00000
+1,O'Hare International Airport,Los Angeles International Airport,496,35,314,35,314,N00001
+2,Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,308,35,335,35,335,N00002
+3,Dallas/Fort Worth International Airport,Los Angeles International Airport,388,35,252,35,252,N00003
+4,Denver International Airport,Dallas/Fort Worth International Airport,60,35,191,35,191,N00004
+5,Hartsfield-Jackson Atlanta International Airport,O'Hare International Airport,160,35,187,35,187,N00005
+6,Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,128,35,200,35,200,N00006
+7,Denver International Airport,O'Hare International Airport,76,35,219,35,219,N00007
+8,O'Hare International Airport,San Francisco International Airport,192,35,325,35,325,N00008
+9,Dallas/Fort Worth International Airport,O'Hare International Airport,204,35,209,35,209,N00009
+10,Dallas/Fort Worth International Airport,San Francisco International Airport,148,35,277,35,277,N00010
+11,Denver International Airport,Phoenix Sky Harbor International Airport,40,35,184,35,184,N00011
+12,O'Hare International Airport,Dallas/Fort Worth International Airport,204,35,208,35,208,N00012
+13,O'Hare International Airport,George Bush Intercontinental Airport,192,35,220,35,220,N00013
+14,Denver International Airport,Salt Lake City International Airport,8,35,161,35,161,N00014
+15,Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,152,35,136,35,136,N00015
+16,Dallas/Fort Worth International Airport,Austin-Bergstrom International Airport,52,35,126,35,126,N00016
+17,Dallas/Fort Worth International Airport,Hartsfield-Jackson Atlanta International Airport,128,35,201,35,201,N00017
+18,Hartsfield-Jackson Atlanta International Airport,Charlotte Douglas International Airport,44,35,136,35,136,N00018
+19,Denver International Airport,Harry Reid International Airport,16,35,187,35,187,N00019
+20,O'Hare International Airport,Newark Liberty International Airport,180,35,198,35,198,N00020
+21,Dallas/Fort Worth International Airport,Phoenix Sky Harbor International Airport,104,35,213,35,213,N00021
+22,Denver International Airport,Minneapolis-Saint Paul International Airport,28,35,193,35,193,N00022
+23,Denver International Airport,George Bush Intercontinental Airport,56,35,214,35,214,N00023
+24,O'Hare International Airport,LaGuardia Airport,180,35,199,35,199,N00024
+25,Denver International Airport,San Francisco International Airport,56,35,224,35,224,N00025
+26,Dallas/Fort Worth International Airport,Newark Liberty International Airport,140,35,270,35,270,N00026
+27,O'Hare International Airport,John F. Kennedy International Airport,180,35,200,35,200,N00027
+28,Denver International Airport,Austin-Bergstrom International Airport,20,35,204,35,204,N00028
+29,Denver International Airport,San Diego International Airport,24,35,211,35,211,N00029
+30,O'Hare International Airport,Philadelphia International Airport,168,35,197,35,197,N00031
+31,Dallas/Fort Worth International Airport,LaGuardia Airport,140,35,283,35,283,N00032
+32,O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,164,35,191,35,191,N00034
+33,O'Hare International Airport,Detroit Metropolitan Airport,116,35,138,35,138,N00036
+34,O'Hare International Airport,Logan International Airport,132,35,220,35,220,N00038
+35,Hartsfield-Jackson Atlanta International Airport,George Bush Intercontinental Airport,120,35,198,35,198,N00039
+36,Dallas/Fort Worth International Airport,John F. Kennedy International Airport,140,35,283,35,283,N00043
+37,Hartsfield-Jackson Atlanta International Airport,Newark Liberty International Airport,112,35,205,35,205,N00046
+38,Hartsfield-Jackson Atlanta International Airport,John F. Kennedy International Airport,112,35,207,35,207,N00051
+39,Dallas/Fort Worth International Airport,Philadelphia International Airport,132,35,273,35,273,N00052
+40,Denver International Airport,Hartsfield-Jackson Atlanta International Airport,48,86,313,86,313,N00030
+41,Denver International Airport,Seattle-Tacoma International Airport,32,86,288,86,288,N00033
+42,Denver International Airport,Detroit Metropolitan Airport,36,86,302,86,302,N00035
+43,Denver International Airport,Nashville International Airport,16,86,289,86,289,N00037
+44,O'Hare International Airport,Minneapolis-Saint Paul International Airport,100,86,200,86,200,N00040
+45,Denver International Airport,Newark Liberty International Airport,52,86,367,86,367,N00041
+46,Denver International Airport,Philadelphia International Airport,48,86,361,86,361,N00042
+47,O'Hare International Airport,Phoenix Sky Harbor International Airport,132,86,337,86,337,N00044
+48,Denver International Airport,LaGuardia Airport,52,86,369,86,369,N00045
+49,O'Hare International Airport,Nashville International Airport,56,86,216,86,216,N00047
+50,O'Hare International Airport,Charlotte Douglas International Airport,72,86,239,86,239,N00048
+51,Denver International Airport,John F. Kennedy International Airport,52,86,369,86,369,N00049
+52,Denver International Airport,Charlotte Douglas International Airport,20,86,328,86,328,N00050
+53,Denver International Airport,Tampa International Airport,24,86,355,86,355,N00053
+54,O'Hare International Airport,Washington Dulles International Airport,56,86,238,86,238,N00054
+55,Austin-Bergstrom International Airport,Dallas/Fort Worth International Airport,48,152,243,152,243,N00016
+56,George Bush Intercontinental Airport,Los Angeles International Airport,360,162,393,162,393,N00015
+57,Charlotte Douglas International Airport,Hartsfield-Jackson Atlanta International Airport,44,162,263,162,263,N00018
+58,Detroit Metropolitan Airport,Los Angeles International Airport,216,164,482,164,482,N00036
+59,Salt Lake City International Airport,Los Angeles International Airport,60,187,333,187,333,N00014
+60,Phoenix Sky Harbor International Airport,Los Angeles International Airport,240,210,332,210,332,N00011
+61,O'Hare International Airport,Seattle-Tacoma International Airport,108,213,490,213,490,N00005
+62,Harry Reid International Airport,Los Angeles International Airport,112,213,314,213,314,N00019
+63,Dallas/Fort Worth International Airport,Detroit Metropolitan Airport,92,217,409,217,409,N00004
+64,Hartsfield-Jackson Atlanta International Airport,LaGuardia Airport,112,217,389,217,389,N00034
+65,Minneapolis-Saint Paul International Airport,Los Angeles International Airport,184,219,474,219,474,N00022
+66,Philadelphia International Airport,Los Angeles International Airport,312,223,590,223,null,N00031
+67,Newark Liberty International Airport,Los Angeles International Airport,340,234,586,234,null,N00020
+68,George Bush Intercontinental Airport,O'Hare International Airport,188,224,416,224,416,N00039
+69,LaGuardia Airport,Los Angeles International Airport,340,235,589,235,null,N00024
+70,Dallas/Fort Worth International Airport,Logan International Airport,104,226,489,226,489,N00006
+71,John F. Kennedy International Airport,Los Angeles International Airport,340,236,590,236,null,N00027
+72,Minneapolis-Saint Paul International Airport,O'Hare International Airport,96,226,340,226,340,N00040
+73,Hartsfield-Jackson Atlanta International Airport,Nashville International Airport,36,227,327,227,327,N00017
+74,Austin-Bergstrom International Airport,Los Angeles International Airport,120,230,446,230,446,N00028
+75,Newark Liberty International Airport,Paris Charles de Gaulle Airport,120,241,772,241,null,N00046
+76,John F. Kennedy International Airport,Paris Charles de Gaulle Airport,120,243,773,243,null,N00051
+77,Dallas/Fort Worth International Airport,Denver International Airport,64,234,389,234,389,N00012
+78,O'Hare International Airport,Denver International Airport,80,235,417,235,417,N00009
+79,San Diego International Airport,Phoenix Sky Harbor International Airport,44,237,345,237,345,N00029
+80,Los Angeles International Airport,O'Hare International Airport,528,238,522,238,null,N00000
+81,Phoenix Sky Harbor International Airport,Harry Reid International Airport,28,239,342,239,342,N00021
+82,George Bush Intercontinental Airport,Dallas/Fort Worth International Airport,148,240,341,240,341,N00023
+83,Nashville International Airport,Hartsfield-Jackson Atlanta International Airport,32,242,342,242,342,N00047
+84,O'Hare International Airport,Tampa International Airport,84,245,441,245,441,N00007
+85,George Bush Intercontinental Airport,San Francisco International Airport,140,246,511,246,null,N00013
+86,Logan International Airport,Los Angeles International Airport,244,256,647,256,null,N00038
+87,San Francisco International Airport,Los Angeles International Airport,356,250,362,250,365,N00025
+88,Washington Dulles International Airport,Newark Liberty International Airport,36,264,362,264,362,N00054
+89,Charlotte Douglas International Airport,O'Hare International Airport,68,265,417,265,417,N00048
+90,Dallas/Fort Worth International Airport,Nashville International Airport,44,269,422,269,422,N00016
+91,Los Angeles International Airport,John F. Kennedy International Airport,368,278,642,278,null,N00003
+92,Hartsfield-Jackson Atlanta International Airport,Philadelphia International Airport,104,289,446,289,446,N00018
+93,Newark Liberty International Airport,O'Hare International Airport,176,296,458,296,458,N00026
+94,Philadelphia International Airport,O'Hare International Airport,164,299,461,299,461,N00052
+95,San Francisco International Airport,O'Hare International Airport,188,303,598,303,null,N00010
+96,LaGuardia Airport,O'Hare International Airport,176,309,477,309,477,N00032
+97,John F. Kennedy International Airport,O'Hare International Airport,176,309,478,309,478,N00043
+98,Seattle-Tacoma International Airport,Los Angeles International Airport,200,314,508,314,null,N00033
+99,Nashville International Airport,O'Hare International Airport,52,315,445,315,445,N00037
+100,Detroit Metropolitan Airport,O'Hare International Airport,112,328,430,328,430,N00035
+101,Hartsfield-Jackson Atlanta International Airport,Tampa International Airport,52,339,469,339,469,N00030
+102,Los Angeles International Airport,LaGuardia Airport,368,350,714,350,null,N00001
+103,Los Angeles International Airport,Newark Liberty International Airport,368,350,712,350,null,N00019
+104,San Francisco International Airport,Dallas/Fort Worth International Airport,148,351,597,351,null,N00008
+105,Nashville International Airport,Charlotte Douglas International Airport,16,353,464,353,464,N00017
+106,Charlotte Douglas International Airport,Philadelphia International Airport,44,354,487,354,487,N00050
+107,Los Angeles International Airport,Philadelphia International Airport,340,358,714,358,null,N00011
+108,Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,336,359,665,359,null,N00014
+109,Los Angeles International Airport,Dallas/Fort Worth International Airport,420,361,581,361,null,N00002
+110,Phoenix Sky Harbor International Airport,San Francisco International Airport,92,363,519,363,null,N00044
+111,O'Hare International Airport,Ronald Reagan Washington National Airport,56,366,520,366,null,N00040
+112,Dallas/Fort Worth International Airport,Minneapolis-Saint Paul International Airport,76,367,545,367,null,N00023
+113,Harry Reid International Airport,Phoenix Sky Harbor International Airport,28,368,471,368,471,N00021
+114,Hartsfield-Jackson Atlanta International Airport,Detroit Metropolitan Airport,72,368,520,368,null,N00047
+115,Phoenix Sky Harbor International Airport,San Diego International Airport,44,371,479,371,479,N00029
+116,Tampa International Airport,Los Angeles International Airport,156,381,720,381,null,N00053
+117,Philadelphia International Airport,Logan International Airport,84,387,493,387,493,N00042
+118,Newark Liberty International Airport,Logan International Airport,92,388,484,388,484,N00054
+119,Los Angeles International Airport,George Bush Intercontinental Airport,388,391,625,391,null,N00025
+120,Newark Liberty International Airport,Dallas/Fort Worth International Airport,140,393,636,393,null,N00041
+121,LaGuardia Airport,Paris Charles de Gaulle Airport,120,405,934,405,null,N00045
+122,John F. Kennedy International Airport,Logan International Airport,92,395,483,395,483,N00049
+123,Denver International Airport,Logan International Airport,40,415,700,415,null,N00012
+124,LaGuardia Airport,Dallas/Fort Worth International Airport,140,415,660,415,null,N00034
+125,Los Angeles International Airport,Logan International Airport,272,429,809,429,null,N00015
+126,Detroit Metropolitan Airport,Newark Liberty International Airport,80,435,570,435,null,N00004
+127,O'Hare International Airport,Baltimore/Washington International Airport,56,442,598,442,null,N00039
+128,Denver International Airport,Washington Dulles International Airport,16,443,687,443,null,N00009
+129,O'Hare International Airport,Orlando International Airport,72,443,645,443,null,N00048
+130,Nashville International Airport,Detroit Metropolitan Airport,24,448,580,448,null,N00016
+131,O'Hare International Airport,Fort Lauderdale-Hollywood International Airport,84,456,680,456,null,N00035
+132,Tampa International Airport,Fort Lauderdale-Hollywood International Airport,28,467,556,467,null,N00007
+133,O'Hare International Airport,Miami International Airport,84,471,697,471,null,N00037
+134,Philadelphia International Airport,Detroit Metropolitan Airport,76,472,603,472,null,N00018
+135,Los Angeles International Airport,San Francisco International Airport,388,472,584,472,null,N00028
+136,O'Hare International Airport,Austin-Bergstrom International Airport,64,494,684,494,null,N00026
+137,O'Hare International Airport,San Diego International Airport,88,487,778,487,null,N00052
+138,Charlotte Douglas International Airport,Washington Dulles International Airport,16,490,600,490,null,N00017
+139,Tampa International Airport,Miami International Airport,28,495,592,495,null,N00030
+140,Phoenix Sky Harbor International Airport,Dallas/Fort Worth International Airport,100,497,676,497,null,N00021
+141,Los Angeles International Airport,Detroit Metropolitan Airport,240,510,818,null,null,N00022
+142,O'Hare International Airport,Harry Reid International Airport,60,513,773,null,null,N00032
+143,O'Hare International Airport,Salt Lake City International Airport,32,504,733,null,null,N00043
+144,San Diego International Airport,Harry Reid International Airport,20,505,608,null,null,N00029
+145,Los Angeles International Airport,Minneapolis-Saint Paul International Airport,204,518,789,null,null,N00036
+146,Logan International Airport,Paris Charles de Gaulle Airport,88,519,1025,null,null,N00049
+147,Logan International Airport,LaGuardia Airport,88,510,598,null,null,N00054
+148,Philadelphia International Airport,Hartsfield-Jackson Atlanta International Airport,104,513,673,null,null,N00050
+149,Logan International Airport,O'Hare International Airport,128,515,693,null,null,N00006
+150,Seattle-Tacoma International Airport,San Francisco International Airport,76,516,672,null,null,N00005
+151,Logan International Airport,John F. Kennedy International Airport,88,519,607,null,null,N00042

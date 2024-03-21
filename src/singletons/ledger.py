@@ -7,6 +7,7 @@ import csv
 import structlog
 
 from constants import DEBUG
+from helpers.default import default
 
 if TYPE_CHECKING:
     from models.airport import Airport
@@ -31,7 +32,7 @@ class Ledger:
     
     def record(entry: LedgerEntry) -> None:
         if DEBUG:
-            Ledger.logger.info("recorded ledger entry", type=entry.type.name, net_profit=str(entry.net_profit), location=entry.location.name)
+            Ledger.logger.info("recorded ledger entry", type=entry.type.name, net_profit=str(entry.net_profit), location=entry.location.name if not entry.location is None else "null")
         
         Ledger.entries.append(entry)
 
@@ -41,4 +42,4 @@ class Ledger:
             writer.writerow(["item", "net profit", "time", "location"])
             
             for entry in Ledger.entries:
-                writer.writerow([entry.type.name, entry.net_profit, entry.time, entry.location])
+                writer.writerow([entry.type.name, entry.net_profit, entry.time, entry.location if not entry.location is None else "null"])
