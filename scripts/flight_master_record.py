@@ -4,9 +4,19 @@
 # Script: flight_master_record.py
 # Depends on: "flight_times_(Airbus_A200-100/300, Boeing_737-600/800)".csv, "flights.csv", "flight_profit_or_loss.csv"
 # Input: 
-#   Lists of the source and destination airports and the distance between them, the flight demand for them, profit for them,
+#   Lists of the source and destination airports and the distance between them, the flight demand for them, profit for them
 # Output: 
 #   An aggregated list of the lists
+
+    """
+    This is the master record generator that is fed into the simulation, 
+    it combines flight_times.py, and flight_profit_or_loss.py, and the previous combination script of flight_combine.py
+    flight_combine combines "airports.csv", "flight_distance.csv", "flight_fuel_capacity.csv". 
+    there is a master runner script "pipeline.ps1" that recalculates everything from the start, reference that for execution order.
+    This outputs an aggregate of all data needed to start/run the simulation
+    
+    """
+
 
 import csv
 

@@ -4,7 +4,7 @@ import pytest
 
 from models.passenger import Passenger
 from models.airport import Airport
-
+#setup test airports
 @pytest.fixture()
 def hub() -> Airport:
     return Airport(
@@ -12,7 +12,7 @@ def hub() -> Airport:
         [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
         Decimal("0.0")
     )
-    
+#add hub to some test airport
 @pytest.fixture
 def airport(hub) -> Airport:
     return Airport(
@@ -34,7 +34,7 @@ def test_passenger_init_location_legal_type_airport(airport, hub) -> None:
 def test_passenger_init_location_illegal_type(hub) -> None:
     with pytest.raises(TypeError):
         _ = Passenger("not an Airport object", hub)
-        
+#tests auto increment     
 def test_passenger_uuid_generation(airport, hub) -> None:
     a = Passenger(airport, hub)
     b = Passenger(airport, hub)
