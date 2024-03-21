@@ -9,8 +9,10 @@ The table of contents provide quick-access to the major sections of the document
 1. [Introduction](#1-introduction)
 2. [Functional Requirements](#2-functional-requirements)
 3. [Non-functional Requirements](#3-non-functional-requirements)
-4. [Assurance](#4-assurance)
-5. [Appendix](#5-appendix)
+4. [Deliverables](#4-deliverables)
+5. [Unattempted Functionality](#5-unattempted-functionality)
+6. [Assurance](#6-assurance)
+7. [Appendix](#6-appendix)
 
 # 1. Introduction
 
@@ -161,31 +163,105 @@ and testability
 - All units should be scientific units
 - Time should be stored in UTC in ISO 8601-compliant formats
 
-# 4. Assurance
+# 4. Deliverables
+The following subsections will all be delivered to the client. 
 
-## 4.1 Client Feedback
+## 4.1 Data 
+A suite of .csv data files that are used by the scripts. The following list details the name of the file and its contents.
+1. `aircraft` -- aircraft name, passenger capacity, max speed (in km/h), max fuel (gallons), max range (km), and miles per galon.
+2. `airports` -- rank (based on most popular), airport name, IATA code, city, state, metropolitan area, metropolitan population, latitude, longitude.
+3. `flight_fuel_capacity` -- source airport, destination airport, fuel for Boeing 737-600 (gallons), fuel for Boeing 767-800 (gallons), fuel for Airbus A200-100 (gallons), fuel for Airbus A220-300 (gallons).
+4. `flight_master_record` -- source airport, destination airport, distance (weighted km), fuel, number of passengers, aircraft type, expected time, ticket cost, net profit. This is a merge of tmp other scripts.
+
+## 4.2 Scripts
+A suite of Python scripts that helped us create, edit, or merge data files. The following list details the name of the script and what it does. All scripts create a .csv data file.
+1. `flight_combine` -- creates an aggregated list of: source airport, destination airport, distance, number of passengers.
+2. `flight_demand` -- creates a list of flights between each airport and the number of passengers (based on 0.5% of the source airport's metropolitan population) that want to take that flight (for a 2% market share) each day.
+3. `flight_fuel_capacity` -- creates a list of flights between each airport and the amount of fuel required for it.
+4. `flight_master_record` -- creates an aggregated list of: source airport, destination airport, distance, fuel required, number of passengers, profit.
+5. `flight_profit_or_loss` -- creates a list of all possible flight combinations between the 4 planes and over 800 routes. Note: this script creates two .csv files: one for profitable flights and one for unprofitable flights. This script is purely a monetary calculation, and does not account for max fuel capacity, refuel, etc. It only accounts for a generic takeoff and landing fee, and gas price.
+6. `flight_profit_per_hour` -- identical to `flight_profit_or_loss`, but determines the profit or loss by the hour.
+7. `flight_times` -- creates a list of the estimated flight times between pairs of airports.
+8. `flight_weighted_distances` -- creates a list of the weighted distances between pairs of airports. 
+9. `overlapping_airports` -- creates a filtered mapping of metropolitan areas to airports where the airports share the same metropolitan area.
+10. `pipline.ps1` -- powershell script to run the following scripts in order: `flight_weighted_distances`, `flight_demand`, `flight_fuel_capacity`, `flight_combine`, `flight_profit_or_loss`.
+
+## 4.3 Models
+A suite of Python classes that serve as the fundamental objects. All are Python scripts. The following list details the name of the module and what it contains.
+1. `aircraft`:
+    - the baseline aircraft class containing aircraft name, model type, status, location, tail number, passenger capacity, cruise speed, fuel level, feul capacity, fuel efficiency, max range, and a wait timer for its status.
+    - an enumerated aircraft type class for determining the model aircraft.
+    - an enumerated aircraft status class for determing what the aircraft is currently doing.
+    - an aircraft factory class (for determining the next tail number and initialize an aircraft) that contains the following functions:
+        - `__next_tail_number` -- calculates the plane's tail number.
+        - `create_aircraft` -- creates an aircraft object and initializes it with appropriate values.
+    - a dictionary of wait timers.
+2. `airport`:
+    - the baseline airport class containing the airport name, IATA code, city, state, metropolitan population, if the airport is a hub, available gates, latitude, longitude, gas price, takeoff fee, landing fee, and a tarmac queue.
+    - an enumerated airport type class for determining if the airport is a hub or not.
+3. `flight`:
+    - the baseline flight class containing the flight number, scheduled time, aircraft type, flight path (route), and number of passengers.
+4. `passenger`:
+    - the baseline passenger class containing the source airport of the passenger, location of the passenger, the passenger's destination, number of flights taken, and a unique passenger ID.
+    - `expected_departure_time` -- return the passenger's expected departure time.
+    - `actual_departure_time` -- return the passenger's actual departure time.
+    - `expected_arrival_time` -- return the passenger's expected arrival time.
+    - `actual_arrival_time` -- return the passenger's actual arrival time.
+5. `route`:
+    - the baseline route class containing the type of aircraft flying said route, the source airport, destination airport, flight path distance, daily passengers, estimated flight time, and fuel requirement.
+The following modules are helper or main modules.
+6. `reference_wrapper` -- class used to pass primitive types by reference in Python.
+7. `processors` -- defines several functions in a function pipeline that transforms a log event.
+8. `simulation` -- tmp class that contains details about the simulation.
+9. `constants` -- holds all constant values used.
+10. `main` -- entry point to the program, and takes care of all pre-program initialization before starting.
+
+## 4.4 Documentation
+These documents detail the thought process as well as specifics about the execution. As stated before, all documentation follows the Markdown format.
+1. `algorithm` -- contains definitions of phrases used, progam input and output, aircraft statuses, ledger entries, and pseudocode for the main algorithm.
+2. `docker` -- notes on how to use the docker, with links to official docker documentation.
+3. `logging` -- details on the usage and implementation of logging information.
+4. `requirements` -- software requirements specification (this document).
+5. `testing` -- details types of testing, and the method of testing.
+The following directories contain multiple documents about their topics.
+1. `diagrams` -- contains outlines of modules and an Entity Relational Diagram (ERD) of the database.
+2. `meeting minutes` -- notes about what the group discussed in group meetings.
+3. `process` -- a rough introduction to the process, if one were to re-create this project.
+4. `standards` -- project specifications for code, documentation, and the general project. 
+5. `timeline` -- a rough timeline of production.
+
+## 4.5 Database
+The client will receive a database that contains tmp
+
+# 5. Unattempted Functionality
+n/a.
+
+# 6. Assurance
+
+## 6.1 Client Feedback
 The development team must meet with the client at least once per week to update the client on their progress and 
 present their development plans for the following week for approval. The presentation should include the team' s
 understanding of the functional and non-functional requirements to be planned or implemented that week. By the end
 of the meeting with the client, the development team must have a clear requirements specification.
 
-## 4.2 Software Testing
+## 6.2 Software Testing
 All software should be rigorously tested to ensure the developed software complies with client requirements. Application
 code should be tested with PyTest for a minimum of 50% code coverage. These tests must include unit, integration, and 
 system tests. Software tests will be integrated into the development workflow to ensure any commit does not inadvertently
 break previous code.
 
-# 5. Appendix
+# 7. Appendix
 
-## 5.1 Glossary
+## 7.1 Glossary
 | Term | Definition |
 | ---- | ---------- |
 | Client | Comfort Airlines, the contracting company |
 | Company confidential | Proprietary; owned by Comfort Airlines |
 | Timetable | A standard schedule as defined by the IATA |
-`
-## 5.2 Revision History
+
+## 7.2 Revision History
 | Date | Added | Updated | Removed |
 | ---- | ----- | ------- | ------- |
 | 2024-02-15 | SRS 5 major sections and major section content | nil | nil |
 | 2024-02-21 | Added more description functional requirements | nil | nil |
+| 2024-03-19 | Added Deliverables and Unattempted Functionality sections | nil | nil |
