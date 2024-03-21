@@ -5,6 +5,7 @@
 #
 # Description:
 #   This module defines and implements the model class `Airport` as well as the factories and enumerated types for constructing them.
+
 from decimal import Decimal
 from enum import Enum
 from queue import Queue
@@ -48,11 +49,11 @@ class Airport:
         
         # Check is_hub type
         if not type(is_hub) is bool:
-            raise TypeError(f"parameter 'is_hub' is not of type 'bool:'. Got type: {type(is_hub)}")
+            raise TypeError(f"parameter 'is_hub' is not of type 'bool'. Got type: {type(is_hub)}")
         
         # Check available_gates type
         if not type(available_gates) is int:
-            raise TypeError(f"parameter 'available_gates' is not of type 'int:'. Got type: {type(available_gates)}")
+            raise TypeError(f"parameter 'available_gates' is not of type 'int'. Got type: {type(available_gates)}")
         
         # Check for positive available_gates
         if available_gates < 0:
@@ -60,7 +61,7 @@ class Airport:
         
         # Check latitude type
         if not type(latitude) is float:
-            raise TypeError(f"parameter 'latitude' is not of type 'float:'. Got type: {type(latitude)}")
+            raise TypeError(f"parameter 'latitude' is not of type 'float'. Got type: {type(latitude)}")
         
         # Check if latitude is in proper range (-90 to 90)
         if latitude < -90 or latitude > 90:
@@ -68,7 +69,7 @@ class Airport:
         
         # Check longitude type
         if not type(longitude) is float:
-            raise TypeError(f"parameter 'longitude' is not of type 'float:'. Got type: {type(longitude)}")
+            raise TypeError(f"parameter 'longitude' is not of type 'float'. Got type: {type(longitude)}")
         
         # Check if longitude is in proper range (-90 to 90)
         if longitude < -180 or longitude > 180:
@@ -76,7 +77,7 @@ class Airport:
         
         # Check gas_price type
         if not type(gas_price) is float:
-            raise TypeError(f"parameter 'gas_price' is not of type 'float:'. Got type: {type(gas_price)}")
+            raise TypeError(f"parameter 'gas_price' is not of type 'float'. Got type: {type(gas_price)}")
         
         # Check for positive gas_price
         if gas_price < 0:
@@ -84,7 +85,7 @@ class Airport:
         
         # Check takeoff_fee type
         if not type(takeoff_fee) is Decimal:
-            raise TypeError(f"parameter 'takeoff_fee' is not of type 'Decimal:'. Got type: {type(takeoff_fee)}")
+            raise TypeError(f"parameter 'takeoff_fee' is not of type 'Decimal'. Got type: {type(takeoff_fee)}")
         
         # Check for positive takeoff_fee
         if takeoff_fee < 0:
@@ -92,7 +93,7 @@ class Airport:
         
         # Check landing_fee type
         if not type(landing_fee) is Decimal:
-            raise TypeError(f"parameter 'landing_fee' is not of type 'Decimal:'. Got type: {type(landing_fee)}")
+            raise TypeError(f"parameter 'landing_fee' is not of type 'Decimal'. Got type: {type(landing_fee)}")
         
         # Check for positive landing_fee
         if landing_fee < 0:
@@ -100,7 +101,7 @@ class Airport:
         
         # Check tarmac type
         if not type(tarmac) is Queue:
-            raise TypeError(f"parameter 'tarmac' is not of type 'Queue:'. Got type: {type(tarmac)}")
+            raise TypeError(f"parameter 'tarmac' is not of type 'Queue'. Got type: {type(tarmac)}")
         
         self.name = name
         self.iata_code = iata_code
