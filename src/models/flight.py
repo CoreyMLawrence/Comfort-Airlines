@@ -13,7 +13,8 @@ from models.passenger import Passenger
 class Flight:
     """Model class. A generic representation of a flight."""
     def __init__(
-            self, flight_number: int, scheduled_time: int, aircraft: Aircraft, route: Route, passengers: list[Passenger]
+            self, flight_number: int, scheduled_time: int, aircraft: Aircraft, route: Route, passengers: list[Passenger], 
+            expected_departure_time: int, expected_arrival_time: int
         ):
         
         # Check flight_number type
@@ -40,13 +41,36 @@ class Flight:
         if not type(route) is Route:
             raise TypeError(f"parameter 'route' is not of type 'Route'. Got type: {type(route)}")
         
+        # Check route type
+        if not type(route) is Route:
+            raise TypeError(f"parameter 'route' is not of type 'Route'. Got type: {type(route)}")
+        
         # Check type for all passengers
         if any(not type(passenger) is Passenger for passenger in passengers):
             raise TypeError("Flight parameter 'passengers' must be a list of Passenger objects")
+        
+        # Check expected_departure_time type
+        if not type(expected_departure_time) is int:
+            raise TypeError(f"parameter 'expected_departure_time' is not of type 'int'. Got type: {type(expected_departure_time)}")
+        
+        # Check for positive expected_departure_time
+        if expected_departure_time < 0:
+            raise ValueError("expected_departure_time cannot be negative")
+        
+        # Check expected_arrival_time type
+        if not type(expected_arrival_time) is int:
+            raise TypeError(f"parameter 'expected_arrival_time' is not of type 'int'. Got type: {type(expected_arrival_time)}")
+        
+        # Check for positive expected_arrival_time
+        if expected_arrival_time < 0:
+            raise ValueError("expected_arrival_time cannot be negative")
         
         self.flight_number = flight_number
         self.scheduled_time = scheduled_time
         self.aircraft = aircraft
         self.route = route
         self.passengers = passengers
-
+        self.expected_departure_time = expected_departure_time
+        self.expected_arrival_time = expected_arrival_time
+        self.actual_departure_time = None
+        self.actual_arrival_time = None
