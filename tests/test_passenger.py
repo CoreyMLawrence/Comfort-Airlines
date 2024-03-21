@@ -1,4 +1,5 @@
 from decimal import Decimal
+from queue import Queue
 
 import pytest
 
@@ -8,17 +9,15 @@ from models.airport import Airport
 @pytest.fixture()
 def hub() -> Airport:
     return Airport(
-        "Some hub", "SH", "Howdey", "Doodey", 25.0, -71.0, 
-        [], None, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
-        Decimal("0.0")
+        "Dallas/Fort Worth International Airport", "DFW", "Dallas/Fort Worth", "Texas", 7233323, True, 11, 32.8998, 
+        -97.0403, 2.65, Decimal('1100.00'), Decimal('550.00'), Queue()
     )
 #add hub to some test airport
 @pytest.fixture
 def airport(hub) -> Airport:
     return Airport(
-        "Some Airport", "SAP", "Howdey", "Doodey", 25.0, -71.0, 
-        [], hub, "Metro", 0, Decimal("0.0"), Decimal("0.0"),
-        Decimal("0.0")
+        "John F. Kennedy International Airport", "JFK", "New York City", "New York", 18713220, 
+        False, 5, 40.6413, -73.7781, 2.50, Decimal('1000.00'), Decimal('500.00'), Queue()
     )
 
 def test_passenger_init(airport, hub) -> None:
