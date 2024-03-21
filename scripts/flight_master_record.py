@@ -1,22 +1,12 @@
 # Team: Foobar
-# Authors: Parker Blue, Zach 
+# Authors: Parker Blue, Zach Christopher
 # Date: 1/31/2024
 # Script: flight_master_record.py
-# Depends on: "flight_times.csv", "flights.csv", "flight_profit_or_loss.csv"
+# Depends on: "flight_times_(Airbus_A200-100/300, Boeing_737-600/800)".csv, "flights.csv", "flight_profit_or_loss.csv"
 # Input: 
-#   Lists of the source and destination airports and the distance between them, the flight demand for them, profit for them
+#   Lists of the source and destination airports and the distance between them, the flight demand for them, profit for them,
 # Output: 
 #   An aggregated list of the lists
-
-"""
-    This is the master record generator that is fed into the simulation, 
-    it uses the output of flight_times.py, and flight_profit_or_loss.py, and the previous combination script of flight_combine.py
-    flight_combine combines "airports.csv", "flight_distance.csv", "flight_fuel_capacity.csv". 
-    there is a master runner script "pipeline.ps1" that recalculates everything from the start, reference that for execution order.
-    This outputs an aggregate of all data needed to start/run the simulation
-    
-"""
-
 
 import csv
 
@@ -48,7 +38,7 @@ TIMES_DESTINATION_AIRPORT = 1
 TIMES_AIRCRAFT_TYPE = 2
 TIMES_FLIGHT_TIME = 3
 
-#all of this should be fine, just rips all relevant data from each file and makes a dict of each of them
+#Takes all relevant data from each file and makes a dict of each of them
 with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_loss.csv") as flight_profit_data, open("data/flight_times.csv") as flight_time_data:
     reader = csv.reader(flight_data, delimiter=',')
     _ = next(reader)
@@ -61,11 +51,11 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
     reader = csv.reader(flight_time_data, delimiter=',')
     _ = next(reader)
     times = [row for row in reader] 
-    #start editing here i think unless i fucked something, format/edit as necessary
+
     with open("data/flight_master_record.csv", "w") as outfile:
         outfile.write("source airport, destination airport, distance (weighted km), fuel, number of passengers, aircraft type, expected time, ticket cost, net profit\n")
         for row_flights, row_profits, row_times in zip(flights, profits, times):
-            #may need more asserts to match each entry
+            #Asserts to match each entry
             assert row_flights[FLIGHTS_SOURCE_AIRPORT] == row_profits[PROFITS_SOURCE_AIRPORT]
             assert row_flights[FLIGHTS_DESTINATION_AIRPORT] == row_profits[PROFITS_DESTINATION_AIRPORT]
             
@@ -74,8 +64,6 @@ with open("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_l
             
             assert row_flights[FLIGHTS_AIRCRAFT_TYPE] == row_profits[PROFITS_AIRCRAFT_TYPE]
             assert row_flights[FLIGHTS_AIRCRAFT_TYPE] == row_times[TIMES_AIRCRAFT_TYPE]
-        
             
-            #print(f"{row_flights[FLIGHTS_SOURCE_AIRPORT]},{row_flights[FLIGHTS_DESTINATION_AIRPORT]},{row_flights[FLIGHTS_DISTANCE_KM]},{row_flights[FLIGHTS_NUM_PASSENGERS]},{row_times[TIMES_AIRCRAFT_TYPE]},{row_times[TIMES_FLIGHT_TIME]},{row_profits[PROFITS_COST_PER_TICKET]},{row_profits[PROFITS_PROFIT_PER_FLIGHT]}")
-            
+            #Combines csv's into output file
             outfile.write(f"{row_flights[FLIGHTS_SOURCE_AIRPORT]},{row_flights[FLIGHTS_DESTINATION_AIRPORT]},{row_flights[FLIGHTS_DISTANCE_KM]},{row_flights[FLIGHTS_FUEL]},{row_flights[FLIGHTS_NUM_PASSENGERS]},{row_times[TIMES_AIRCRAFT_TYPE]},{row_times[TIMES_FLIGHT_TIME]},{row_profits[PROFITS_COST_PER_TICKET]},{row_profits[PROFITS_PROFIT_PER_FLIGHT]}\n")
