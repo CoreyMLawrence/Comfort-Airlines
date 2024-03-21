@@ -19,14 +19,11 @@ class LedgerEntryType(Enum):
     TICKET_SALES = 4
 
 class LedgerEntry:
-    def __init__(self, type: LedgerEntryType, net_profit: Decimal, time: int, location: Airport):
+    def __init__(self, type: LedgerEntryType, net_profit: Decimal, time: int, location: Airport | None):
         self.type = type
         self.net_profit = net_profit
         self.time = time
         self.location = location
-        
-    def __repr__(self) -> str:
-        return f"[{self.type.name}] {self.net_profit} (location: {self.location}, time: {self.time})"
 
 class Ledger:
     entries: list[LedgerEntry] = []

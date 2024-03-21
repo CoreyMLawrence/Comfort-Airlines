@@ -26,7 +26,11 @@ class Scheduler:
 
         return id
         
+    @staticmethod
     def schedule_flight(time: int, aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]):
+        if aircraft.status != AircraftStatus.AVAILABLE:
+            raise ValueError("Precondition failed: aircraft is not available for scheduling")
+        
         compatible_routes = filter(lambda route: route.source_airport == aircraft.location, routes)
         compatible_routes = filter(lambda route: route.aircraft_type == aircraft.type, compatible_routes)
         compatible_routes = filter(lambda route: route.fuel_requirement <= aircraft.fuel_capacity, compatible_routes)
@@ -70,6 +74,7 @@ class Scheduler:
         aircraft.flight = flight
         Scheduler.flights.append(flight)
 
+    @staticmethod
     def serialize(filepath: str) -> None:
         with open(filepath, "w", newline="") as outfile:
             writer = csv.writer(outfile, delimiter=",")
