@@ -1,3 +1,12 @@
+# Team: Foobar
+# Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
+# Authors: Corey Lawrence, Zach Christopher
+# Date: 3/21/2024
+#
+# Description:
+#   This module defines and implements the model class `route` which provides an object associated with 
+#   a specific source, destination, and aircraft type.
+
 from models.aircraft import AircraftType
 from models.airport import Airport
 
