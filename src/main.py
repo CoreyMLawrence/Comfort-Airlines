@@ -178,6 +178,11 @@ def main() -> None:
         ]
     )
     
+    # TODO: PUT TIMER HERE
+    # TODO: LIMIT NUMBER OF PASSENGERS PER FLIGHT
+    # TODO: DECREASE DEMAND OF PASSENGERS AFTER FLYING TO DESTINATION
+    # TODO: address case in serialization where flights have not landed yet (empty entries)
+    
     simulation.run()
 
     if not os.path.exists(SIMULATION_OUTPUT_DIRECTORY):

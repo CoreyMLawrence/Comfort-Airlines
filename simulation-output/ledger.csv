@@ -1,0 +1,241 @@
+item,net profit,time,location
+FUEL,42556.25,0,Dallas/Fort Worth International Airport
+FUEL,42556.25,0,Denver International Airport
+FUEL,42556.25,0,O'Hare International Airport
+FUEL,42556.25,0,O'Hare International Airport
+FUEL,42556.25,0,Dallas/Fort Worth International Airport
+FUEL,42556.25,0,Dallas/Fort Worth International Airport
+FUEL,42556.25,0,Denver International Airport
+FUEL,42556.25,0,O'Hare International Airport
+FUEL,42556.25,0,Denver International Airport
+FUEL,42556.25,0,Denver International Airport
+FUEL,42556.25,0,Denver International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Denver International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Dallas/Fort Worth International Airport
+FUEL,42556.25,0,Dallas/Fort Worth International Airport
+FUEL,42556.25,0,Denver International Airport
+FUEL,42556.25,0,O'Hare International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Dallas/Fort Worth International Airport
+FUEL,42556.25,0,O'Hare International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,42556.25,0,O'Hare International Airport
+FUEL,42556.25,0,Dallas/Fort Worth International Airport
+FUEL,35840.10,0,O'Hare International Airport
+FUEL,35840.10,0,Denver International Airport
+FUEL,35840.10,0,O'Hare International Airport
+FUEL,35840.10,0,Denver International Airport
+FUEL,35840.10,0,Dallas/Fort Worth International Airport
+FUEL,35840.10,0,Denver International Airport
+FUEL,35840.10,0,Dallas/Fort Worth International Airport
+FUEL,35840.10,0,Denver International Airport
+FUEL,35840.10,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,35840.10,0,O'Hare International Airport
+FUEL,35840.10,0,Dallas/Fort Worth International Airport
+FUEL,35840.10,0,Dallas/Fort Worth International Airport
+FUEL,35840.10,0,O'Hare International Airport
+FUEL,35840.10,0,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,Denver International Airport
+TAKEOFF_FEE,2000,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+TAKEOFF_FEE,2000,35,O'Hare International Airport
+FUEL,35840.10,51,Denver International Airport
+FUEL,35840.10,51,O'Hare International Airport
+FUEL,35840.10,51,Denver International Airport
+FUEL,35840.10,51,Denver International Airport
+FUEL,35840.10,51,Denver International Airport
+FUEL,35840.10,51,Dallas/Fort Worth International Airport
+FUEL,35840.10,51,O'Hare International Airport
+FUEL,35840.10,51,Dallas/Fort Worth International Airport
+FUEL,35840.10,51,Hartsfield-Jackson Atlanta International Airport
+FUEL,35840.10,51,Dallas/Fort Worth International Airport
+FUEL,35840.10,51,Denver International Airport
+TAKEOFF_FEE,2000,86,Denver International Airport
+TAKEOFF_FEE,2000,86,O'Hare International Airport
+TAKEOFF_FEE,2000,86,Denver International Airport
+TAKEOFF_FEE,2000,86,Denver International Airport
+TAKEOFF_FEE,2000,86,Denver International Airport
+TAKEOFF_FEE,2000,86,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,86,O'Hare International Airport
+TAKEOFF_FEE,2000,86,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,86,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,2000,86,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,86,Denver International Airport
+LANDING_FEE,2000,197,Los Angeles International Airport
+LANDING_FEE,2000,197,Los Angeles International Airport
+LANDING_FEE,2000,197,Los Angeles International Airport
+LANDING_FEE,2000,197,Los Angeles International Airport
+LANDING_FEE,2000,197,Los Angeles International Airport
+LANDING_FEE,2000,197,Los Angeles International Airport
+LANDING_FEE,2000,197,Los Angeles International Airport
+LANDING_FEE,2000,203,Los Angeles International Airport
+LANDING_FEE,2000,203,Los Angeles International Airport
+LANDING_FEE,2000,203,Los Angeles International Airport
+LANDING_FEE,2000,203,Los Angeles International Airport
+LANDING_FEE,2000,226,O'Hare International Airport
+LANDING_FEE,2000,231,Dallas/Fort Worth International Airport
+LANDING_FEE,2000,231,Dallas/Fort Worth International Airport
+LANDING_FEE,2000,231,Dallas/Fort Worth International Airport
+LANDING_FEE,2000,231,Dallas/Fort Worth International Airport
+LANDING_FEE,2000,231,Dallas/Fort Worth International Airport
+LANDING_FEE,2000,237,Los Angeles International Airport
+LANDING_FEE,2000,237,Los Angeles International Airport
+LANDING_FEE,2000,237,Los Angeles International Airport
+LANDING_FEE,2000,237,Los Angeles International Airport
+LANDING_FEE,2000,237,Los Angeles International Airport
+LANDING_FEE,2000,237,Los Angeles International Airport
+LANDING_FEE,2000,237,Los Angeles International Airport
+TAKEOFF_FEE,2000,238,Los Angeles International Airport
+TAKEOFF_FEE,2000,238,Los Angeles International Airport
+TAKEOFF_FEE,2000,238,Los Angeles International Airport
+TAKEOFF_FEE,2000,238,Los Angeles International Airport
+TAKEOFF_FEE,2000,238,Los Angeles International Airport
+LANDING_FEE,2000,247,Los Angeles International Airport
+LANDING_FEE,2000,247,Los Angeles International Airport
+LANDING_FEE,2000,247,Los Angeles International Airport
+LANDING_FEE,2000,247,Los Angeles International Airport
+LANDING_FEE,2000,249,Dallas/Fort Worth International Airport
+LANDING_FEE,2000,249,Dallas/Fort Worth International Airport
+LANDING_FEE,2000,251,O'Hare International Airport
+LANDING_FEE,2000,251,O'Hare International Airport
+LANDING_FEE,2000,251,O'Hare International Airport
+FUEL,12044.42404573466861620545387,254,Los Angeles International Airport
+FUEL,9297.450140567112912322045304,254,Los Angeles International Airport
+FUEL,9297.450140567112912322045304,254,Los Angeles International Airport
+FUEL,9297.450140567112912322045304,254,Los Angeles International Airport
+TAKEOFF_FEE,2000,267,O'Hare International Airport
+TAKEOFF_FEE,2000,272,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,272,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,272,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,272,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,272,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,279,Los Angeles International Airport
+TAKEOFF_FEE,2000,289,Los Angeles International Airport
+TAKEOFF_FEE,2000,289,Los Angeles International Airport
+TAKEOFF_FEE,2000,289,Los Angeles International Airport
+TAKEOFF_FEE,2000,289,Los Angeles International Airport
+TAKEOFF_FEE,2000,290,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,290,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,2000,292,O'Hare International Airport
+TAKEOFF_FEE,2000,292,O'Hare International Airport
+TAKEOFF_FEE,2000,292,O'Hare International Airport
+FUEL,9297.450140567112912322045304,295,Los Angeles International Airport
+LANDING_FEE,2000,299,Los Angeles International Airport
+LANDING_FEE,2000,299,Los Angeles International Airport
+LANDING_FEE,2000,299,Los Angeles International Airport
+LANDING_FEE,2000,299,Los Angeles International Airport
+LANDING_FEE,2000,299,Los Angeles International Airport
+LANDING_FEE,2000,299,Los Angeles International Airport
+FUEL,17200.71787472740487828559708,305,Los Angeles International Airport
+LANDING_FEE,2000,313,Los Angeles International Airport
+LANDING_FEE,2000,313,Los Angeles International Airport
+LANDING_FEE,2000,313,Los Angeles International Airport
+LANDING_FEE,2000,313,Los Angeles International Airport
+LANDING_FEE,2000,313,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+LANDING_FEE,2000,320,Los Angeles International Airport
+TAKEOFF_FEE,2000,330,Los Angeles International Airport
+TAKEOFF_FEE,2000,330,Los Angeles International Airport
+TAKEOFF_FEE,2000,330,Los Angeles International Airport
+TAKEOFF_FEE,2000,330,Los Angeles International Airport
+LANDING_FEE,2000,336,Los Angeles International Airport
+TAKEOFF_FEE,2000,340,Los Angeles International Airport
+FUEL,17200.71787472740487828559708,346,Los Angeles International Airport
+FUEL,17200.71787472740487828559708,346,Los Angeles International Airport
+FUEL,17200.71787472740487828559708,346,Los Angeles International Airport
+FUEL,13277.74713136852479237859370,346,Los Angeles International Airport
+FUEL,13277.74713136852479237859370,356,Los Angeles International Airport
+LANDING_FEE,2000,358,George Bush Intercontinental Airport
+LANDING_FEE,2000,358,George Bush Intercontinental Airport
+LANDING_FEE,2000,358,George Bush Intercontinental Airport
+LANDING_FEE,2000,358,George Bush Intercontinental Airport
+LANDING_FEE,2000,358,George Bush Intercontinental Airport
+LANDING_FEE,2000,376,George Bush Intercontinental Airport
+LANDING_FEE,2000,376,George Bush Intercontinental Airport
+TAKEOFF_FEE,2000,381,Los Angeles International Airport
+TAKEOFF_FEE,2000,381,Los Angeles International Airport
+TAKEOFF_FEE,2000,381,Los Angeles International Airport
+TAKEOFF_FEE,2000,381,Los Angeles International Airport
+TAKEOFF_FEE,2000,391,Los Angeles International Airport
+FUEL,19372.83501419518703642097535,397,Los Angeles International Airport
+FUEL,19372.83501419518703642097535,397,Los Angeles International Airport
+FUEL,13277.74713136852479237859370,397,Los Angeles International Airport
+FUEL,13277.74713136852479237859370,397,Los Angeles International Airport
+TAKEOFF_FEE,2000,399,George Bush Intercontinental Airport
+TAKEOFF_FEE,2000,399,George Bush Intercontinental Airport
+TAKEOFF_FEE,2000,399,George Bush Intercontinental Airport
+TAKEOFF_FEE,2000,399,George Bush Intercontinental Airport
+TAKEOFF_FEE,2000,399,George Bush Intercontinental Airport
+FUEL,19372.83501419518703642097535,407,Los Angeles International Airport
+TAKEOFF_FEE,2000,432,Los Angeles International Airport
+TAKEOFF_FEE,2000,432,Los Angeles International Airport
+TAKEOFF_FEE,2000,432,Los Angeles International Airport
+TAKEOFF_FEE,2000,432,Los Angeles International Airport
+TAKEOFF_FEE,2000,440,George Bush Intercontinental Airport
+TAKEOFF_FEE,2000,440,George Bush Intercontinental Airport
+TAKEOFF_FEE,2000,442,Los Angeles International Airport
+LANDING_FEE,2000,468,George Bush Intercontinental Airport
+TAKEOFF_FEE,2000,473,Los Angeles International Airport
+TAKEOFF_FEE,2000,473,Los Angeles International Airport
+TAKEOFF_FEE,2000,473,Los Angeles International Airport
+TAKEOFF_FEE,2000,473,Los Angeles International Airport
+TAKEOFF_FEE,2000,483,Los Angeles International Airport
+FUEL,21580.67358706504022848093882,489,Los Angeles International Airport
+FUEL,18693.08641720588415410020389,489,Los Angeles International Airport
+FUEL,21580.67358706504022848093882,499,Los Angeles International Airport

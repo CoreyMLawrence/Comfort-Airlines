@@ -2,6 +2,7 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 from decimal import Decimal
 from enum import Enum
+import csv
 
 import structlog
 
@@ -38,4 +39,9 @@ class Ledger:
         Ledger.entries.append(entry)
 
     def serialize(filepath: str) -> None:
-        pass
+        with open(filepath, "w", newline="") as outfile:
+            writer = csv.writer(outfile, delimiter=",")
+            writer.writerow(["item", "net profit", "time", "location"])
+            
+            for entry in Ledger.entries:
+                writer.writerow([entry.type.name, entry.net_profit, entry.time, entry.location])
