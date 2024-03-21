@@ -4,7 +4,7 @@
 # Date: 3/18/2024
 #
 # Description:
-#   This module defines and implements the model class `Flight` as well as the and enumerated types for constructing them.
+#   This module defines and implements the model class `Flight`.
 
 from models.aircraft import Aircraft
 from models.route import Route
