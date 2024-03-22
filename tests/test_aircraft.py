@@ -1,3 +1,12 @@
+# Team: Foobar
+# Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
+# Authors: Anthony Cox, Will Wadsworth
+# Date: 3/9/2024
+#
+# Description:
+#   This module tests the model class `Aircraft`.
+
+# Import necessary libraries and modules
 import pytest
 from decimal import Decimal
 from queue import Queue

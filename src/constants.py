@@ -1,3 +1,11 @@
+# Team: Foobar
+# Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
+# Authors: Anthony Cox
+# Date: 3/21/2024
+#
+# Description:
+#   This program creates the constant variables that we will use in our simulation.
+
 from decimal import Decimal
 from models.airport import Airport
 

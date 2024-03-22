@@ -1,3 +1,12 @@
+# Team: Foobar
+# Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
+# Authors: Parker Blue, Anthony Cox
+# Date: 3/21/2024
+#
+# Description:
+#   This module tests the model class `Passenger`.
+
+# Import necessary libraries and modules
 from decimal import Decimal
 from queue import Queue
 

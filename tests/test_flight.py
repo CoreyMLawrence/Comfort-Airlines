@@ -4,7 +4,7 @@
 # Date: 3/21/2024
 #
 # Description:
-#   This module tests the model class `Airport` as well as the factories and enumerated types for constructing them.
+#   This module tests the model class `Flight`.
 
 # Import necessary libraries and modules
 import pytest

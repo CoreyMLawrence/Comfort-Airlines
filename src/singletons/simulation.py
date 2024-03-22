@@ -1,3 +1,11 @@
+# Team: Foobar
+# Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson, Parker Blue, Will Wadsworth, Zach Christopher
+# Authors: Anthony Cox
+# Date: 3/21/2024
+#
+# Description:
+#   This is the file that will implement and run the simulation.
+
 from __future__ import annotations
 from typing import TYPE_CHECKING
 import time
