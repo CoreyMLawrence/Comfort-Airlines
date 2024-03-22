@@ -63,6 +63,8 @@ class Airport:
     
     def assign_gate(self, aircraft: Aircraft) -> None:
         """Assigns the aircraft to a gate if there is a gate available, otherwise assigns it to the tarmac"""
+        aircraft.location = self
+        
         if aircraft.needs_maintenance:
             if self.maintenance_gates > 0:
                 self.maintenance_gates -= 1

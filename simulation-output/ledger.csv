@@ -55,453 +55,439 @@ PLANE_RENTAL,-228000,0,null
 PLANE_RENTAL,-228000,0,null
 PLANE_RENTAL,-228000,0,null
 FUEL,-42556.25,0,Denver International Airport
-FUEL,-42556.25,0,O'Hare International Airport
 FUEL,-42556.25,0,Hartsfield-Jackson Atlanta International Airport
-FUEL,-42556.25,0,Dallas/Fort Worth International Airport
-FUEL,-42556.25,0,Denver International Airport
-FUEL,-42556.25,0,Hartsfield-Jackson Atlanta International Airport
-FUEL,-42556.25,0,Hartsfield-Jackson Atlanta International Airport
-FUEL,-42556.25,0,Denver International Airport
 FUEL,-42556.25,0,O'Hare International Airport
-FUEL,-42556.25,0,Dallas/Fort Worth International Airport
-FUEL,-42556.25,0,Dallas/Fort Worth International Airport
-FUEL,-42556.25,0,Denver International Airport
+FUEL,-42556.25,0,O'Hare International Airport
 FUEL,-42556.25,0,O'Hare International Airport
 FUEL,-42556.25,0,O'Hare International Airport
 FUEL,-42556.25,0,Denver International Airport
-FUEL,-42556.25,0,Dallas/Fort Worth International Airport
-FUEL,-42556.25,0,Dallas/Fort Worth International Airport
+FUEL,-42556.25,0,O'Hare International Airport
 FUEL,-42556.25,0,Dallas/Fort Worth International Airport
 FUEL,-42556.25,0,Hartsfield-Jackson Atlanta International Airport
-FUEL,-42556.25,0,Denver International Airport
+FUEL,-42556.25,0,O'Hare International Airport
+FUEL,-42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,-42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,-42556.25,0,O'Hare International Airport
 FUEL,-42556.25,0,O'Hare International Airport
 FUEL,-42556.25,0,Dallas/Fort Worth International Airport
 FUEL,-42556.25,0,Denver International Airport
-FUEL,-42556.25,0,Denver International Airport
 FUEL,-42556.25,0,O'Hare International Airport
-FUEL,-42556.25,0,Denver International Airport
+FUEL,-42556.25,0,Dallas/Fort Worth International Airport
 FUEL,-42556.25,0,Dallas/Fort Worth International Airport
 FUEL,-42556.25,0,O'Hare International Airport
+FUEL,-42556.25,0,O'Hare International Airport
 FUEL,-42556.25,0,Denver International Airport
 FUEL,-42556.25,0,Denver International Airport
-FUEL,-35840.10,0,O'Hare International Airport
-FUEL,-35840.10,0,Dallas/Fort Worth International Airport
-FUEL,-35840.10,0,O'Hare International Airport
-FUEL,-35840.10,0,O'Hare International Airport
-FUEL,-35840.10,0,O'Hare International Airport
-FUEL,-35840.10,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,-42556.25,0,Dallas/Fort Worth International Airport
+FUEL,-42556.25,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,-42556.25,0,Denver International Airport
+FUEL,-42556.25,0,Denver International Airport
+FUEL,-35840.10,0,Denver International Airport
 FUEL,-35840.10,0,Dallas/Fort Worth International Airport
 FUEL,-35840.10,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,-35840.10,0,Dallas/Fort Worth International Airport
+FUEL,-35840.10,0,Denver International Airport
+FUEL,-35840.10,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,-35840.10,0,Denver International Airport
+FUEL,-35840.10,0,Denver International Airport
+FUEL,-35840.10,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,-35840.10,0,Hartsfield-Jackson Atlanta International Airport
+FUEL,-35840.10,0,Hartsfield-Jackson Atlanta International Airport
 FUEL,-35840.10,0,Hartsfield-Jackson Atlanta International Airport
 FUEL,-35840.10,0,Dallas/Fort Worth International Airport
 TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,54992.17469616084864,35,Denver International Airport
-TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,324674.2092632093040,35,O'Hare International Airport
+TICKET_SALES,45444.92214474403464,35,Denver International Airport
 TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,220656.1522129094592,35,Hartsfield-Jackson Atlanta International Airport
-TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,192996.0766001360208,35,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,18919.16952437102640,35,Denver International Airport
-TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,48436.8818305818080,35,Hartsfield-Jackson Atlanta International Airport
-TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,43681.76098612784000,35,Hartsfield-Jackson Atlanta International Airport
-TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,29907.30554968998580,35,Denver International Airport
+TICKET_SALES,85253.5133549877456,35,Hartsfield-Jackson Atlanta International Airport
 TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,131627.6542692919104,35,O'Hare International Airport
-TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,74812.88800708813056,35,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,84124.2547086798224,35,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,12039.58334096401360,35,Denver International Airport
+TICKET_SALES,77895.6268191973935,35,O'Hare International Airport
 TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,74213.0604628492212,35,O'Hare International Airport
+TICKET_SALES,77895.6268191973935,35,O'Hare International Airport
 TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,77231.30065513678656,35,O'Hare International Airport
+TICKET_SALES,77895.6268191973935,35,O'Hare International Airport
+TAKEOFF_FEE,-2000,35,O'Hare International Airport
+TICKET_SALES,77895.6268191973935,35,O'Hare International Airport
 TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,1878.87552129275536,35,Denver International Airport
+TICKET_SALES,9547.25255141681400,35,Denver International Airport
+TAKEOFF_FEE,-2000,35,O'Hare International Airport
+TICKET_SALES,13091.7019864197300,35,O'Hare International Airport
 TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,19198.72329979032552,35,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,6119.07489703444792,35,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,32366.98395963672064,35,Dallas/Fort Worth International Airport
+TICKET_SALES,59192.0956582891404,35,Dallas/Fort Worth International Airport
 TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,5581.87108880706668,35,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,85253.5133549877456,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,-2000,35,O'Hare International Airport
+TICKET_SALES,81581.7232189882153,35,O'Hare International Airport
+TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,50149.1255029339680,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,36024.9308614952197,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,-2000,35,O'Hare International Airport
+TICKET_SALES,50045.9310503036951,35,O'Hare International Airport
+TAKEOFF_FEE,-2000,35,O'Hare International Airport
+TICKET_SALES,43290.9519366620457,35,O'Hare International Airport
+TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
+TICKET_SALES,70656.78623952808377,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,35,Denver International Airport
+TICKET_SALES,1337.65114881286104,35,Denver International Airport
+TAKEOFF_FEE,-2000,35,O'Hare International Airport
+TICKET_SALES,22837.72650760321710,35,O'Hare International Airport
+TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
+TICKET_SALES,29907.63438710183440,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
+TICKET_SALES,51217.7308385017653,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,35,O'Hare International Airport
+TICKET_SALES,56500.81235651873664,35,O'Hare International Airport
+TAKEOFF_FEE,-2000,35,O'Hare International Airport
+TICKET_SALES,896.83829137331328,35,O'Hare International Airport
+TAKEOFF_FEE,-2000,35,Denver International Airport
+TICKET_SALES,13831.88606746132380,35,Denver International Airport
+TAKEOFF_FEE,-2000,35,Denver International Airport
+TICKET_SALES,8770.13062769874640,35,Denver International Airport
+TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
+TICKET_SALES,4064.8992728969655,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,9045.56105812149898,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,-2000,35,Denver International Airport
+TICKET_SALES,22197.7691385346664,35,Denver International Airport
 TAKEOFF_FEE,-2000,35,Denver International Airport
 TICKET_SALES,3607.71200633981968,35,Denver International Airport
-TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,44927.062499404080,35,O'Hare International Airport
+TAKEOFF_FEE,-2000,35,Denver International Airport
+TICKET_SALES,18561.78437188912200,35,Denver International Airport
 TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,29559.36423774898096,35,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,6725.22462014109756,35,Denver International Airport
-TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,16008.4492634704344,35,Denver International Airport
-TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,45579.4275570441300,35,O'Hare International Airport
-TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,17278.52767779127584,35,Denver International Airport
+TICKET_SALES,21468.51911677320225,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,37597.2006481533568,35,Hartsfield-Jackson Atlanta International Airport
 TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,57996.16523289028300,35,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,45880.23996101903580,35,O'Hare International Airport
+TICKET_SALES,2703.44314803810695,35,Dallas/Fort Worth International Airport
 TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,5286.594466651960,35,Denver International Airport
-TAKEOFF_FEE,-2000,35,Denver International Airport
-TICKET_SALES,6742.4037805926912,35,Denver International Airport
-TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,47242.86058856125944,35,O'Hare International Airport
-TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,66470.6084477759100,35,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,43031.0391991158664,35,O'Hare International Airport
-TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,18759.70029060994528,35,O'Hare International Airport
-TAKEOFF_FEE,-2000,35,O'Hare International Airport
-TICKET_SALES,43855.5798131089848,35,O'Hare International Airport
+TICKET_SALES,19934.3603424534016,35,Denver International Airport
 TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
 TICKET_SALES,33900.4564298719080,35,Hartsfield-Jackson Atlanta International Airport
-TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,50092.3491742320780,35,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,35,Denver International Airport
+TICKET_SALES,7898.6746295551276,35,Denver International Airport
+TAKEOFF_FEE,-2000,35,Denver International Airport
+TICKET_SALES,4718.74869804397340,35,Denver International Airport
 TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
 TICKET_SALES,25747.94279291865792,35,Hartsfield-Jackson Atlanta International Airport
 TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
 TICKET_SALES,26066.70717014146272,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,26099.76259981177472,35,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,-2000,35,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,22278.20212016541272,35,Hartsfield-Jackson Atlanta International Airport
 TAKEOFF_FEE,-2000,35,Dallas/Fort Worth International Airport
-TICKET_SALES,44902.84617116555796,35,Dallas/Fort Worth International Airport
-FUEL,-35840.10,51,Denver International Airport
+TICKET_SALES,29044.555423769472,35,Dallas/Fort Worth International Airport
+FUEL,-42556.25,51,O'Hare International Airport
+FUEL,-42556.25,51,O'Hare International Airport
+FUEL,-35840.10,51,O'Hare International Airport
+FUEL,-35840.10,51,O'Hare International Airport
+FUEL,-35840.10,51,O'Hare International Airport
+FUEL,-35840.10,51,O'Hare International Airport
+FUEL,-35840.10,51,O'Hare International Airport
+FUEL,-35840.10,51,O'Hare International Airport
+FUEL,-35840.10,51,O'Hare International Airport
 FUEL,-35840.10,51,Denver International Airport
 FUEL,-35840.10,51,Denver International Airport
 FUEL,-35840.10,51,Denver International Airport
 FUEL,-35840.10,51,O'Hare International Airport
 FUEL,-35840.10,51,Denver International Airport
-FUEL,-35840.10,51,Denver International Airport
-FUEL,-35840.10,51,O'Hare International Airport
-FUEL,-35840.10,51,Denver International Airport
-FUEL,-35840.10,51,O'Hare International Airport
-FUEL,-35840.10,51,O'Hare International Airport
-FUEL,-35840.10,51,Denver International Airport
-FUEL,-35840.10,51,Denver International Airport
-FUEL,-35840.10,51,Denver International Airport
-FUEL,-35840.10,51,O'Hare International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,20300.0929687808928,86,Denver International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,11876.7572994995360,86,Denver International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,14468.9928821585892,86,Denver International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,5956.29367662320240,86,Denver International Airport
 TAKEOFF_FEE,-2000,86,O'Hare International Airport
-TICKET_SALES,18799.49874099168300,86,O'Hare International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,27738.9493871198696,86,Denver International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,18752.8515440500416,86,Denver International Airport
+TICKET_SALES,44927.062499404080,86,O'Hare International Airport
 TAKEOFF_FEE,-2000,86,O'Hare International Airport
-TICKET_SALES,47723.2208088738696,86,O'Hare International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,20959.3773070667804,86,Denver International Airport
+TICKET_SALES,45579.4275570441300,86,O'Hare International Airport
 TAKEOFF_FEE,-2000,86,O'Hare International Airport
-TICKET_SALES,9170.49021418464032,86,O'Hare International Airport
+TICKET_SALES,40228.07753565636345,86,O'Hare International Airport
 TAKEOFF_FEE,-2000,86,O'Hare International Airport
-TICKET_SALES,14478.12923493557232,86,O'Hare International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,21023.6442295905896,86,Denver International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,6938.5544081827680,86,Denver International Airport
-TAKEOFF_FEE,-2000,86,Denver International Airport
-TICKET_SALES,9144.0820813922256,86,Denver International Airport
+TICKET_SALES,13409.35917855212115,86,O'Hare International Airport
 TAKEOFF_FEE,-2000,86,O'Hare International Airport
-TICKET_SALES,11127.68703839238376,86,O'Hare International Airport
-LANDING_FEE,-2000,111,Austin-Bergstrom International Airport
+TICKET_SALES,37963.01297295101205,86,O'Hare International Airport
+TAKEOFF_FEE,-2000,86,O'Hare International Airport
+TICKET_SALES,9279.84761561024739,86,O'Hare International Airport
+TAKEOFF_FEE,-2000,86,O'Hare International Airport
+TICKET_SALES,35421.8920236624510,86,O'Hare International Airport
+TAKEOFF_FEE,-2000,86,O'Hare International Airport
+TICKET_SALES,5874.27912074943536,86,O'Hare International Airport
+TAKEOFF_FEE,-2000,86,O'Hare International Airport
+TICKET_SALES,14988.24751290184792,86,O'Hare International Airport
+TAKEOFF_FEE,-2000,86,Denver International Airport
+TICKET_SALES,5976.30964388341104,86,Denver International Airport
+TAKEOFF_FEE,-2000,86,Denver International Airport
+TICKET_SALES,9018.1484298909952,86,Denver International Airport
+TAKEOFF_FEE,-2000,86,Denver International Airport
+TICKET_SALES,15337.9938820803888,86,Denver International Airport
+TAKEOFF_FEE,-2000,86,O'Hare International Airport
+TICKET_SALES,14835.4301905237700,86,O'Hare International Airport
+TAKEOFF_FEE,-2000,86,Denver International Airport
+TICKET_SALES,10952.54737009567380,86,Denver International Airport
 LANDING_FEE,-2000,121,George Bush Intercontinental Airport
-LANDING_FEE,-2000,121,Charlotte Douglas International Airport
-LANDING_FEE,-2000,123,Detroit Metropolitan Airport
+LANDING_FEE,-2000,121,George Bush Intercontinental Airport
 LANDING_FEE,-2000,146,Salt Lake City International Airport
-TAKEOFF_FEE,-2000,152,Austin-Bergstrom International Airport
-TICKET_SALES,5654.60575052964240,152,Austin-Bergstrom International Airport
 TAKEOFF_FEE,-2000,162,George Bush Intercontinental Airport
-TICKET_SALES,147239.13828926722680,162,George Bush Intercontinental Airport
-TAKEOFF_FEE,-2000,162,Charlotte Douglas International Airport
-TICKET_SALES,5573.7673373196892,162,Charlotte Douglas International Airport
-TAKEOFF_FEE,-2000,164,Detroit Metropolitan Airport
-TICKET_SALES,134202.3443786328264,164,Detroit Metropolitan Airport
+TICKET_SALES,62711.5338213229260,162,George Bush Intercontinental Airport
+TAKEOFF_FEE,-2000,162,George Bush Intercontinental Airport
+TICKET_SALES,62711.5338213229260,162,George Bush Intercontinental Airport
 LANDING_FEE,-2000,169,Phoenix Sky Harbor International Airport
 LANDING_FEE,-2000,172,O'Hare International Airport
+LANDING_FEE,-2000,172,O'Hare International Airport
 LANDING_FEE,-2000,172,Harry Reid International Airport
+LANDING_FEE,-2000,174,Detroit Metropolitan Airport
 LANDING_FEE,-2000,176,Dallas/Fort Worth International Airport
-LANDING_FEE,-2000,176,Hartsfield-Jackson Atlanta International Airport
-LANDING_FEE,-2000,178,Minneapolis-Saint Paul International Airport
-LANDING_FEE,-2000,182,Philadelphia International Airport
-LANDING_FEE,-2000,183,Newark Liberty International Airport
+LANDING_FEE,-2000,181,Philadelphia International Airport
+LANDING_FEE,-2000,182,Minneapolis-Saint Paul International Airport
 LANDING_FEE,-2000,183,George Bush Intercontinental Airport
-LANDING_FEE,-2000,184,LaGuardia Airport
-LANDING_FEE,-2000,185,Dallas/Fort Worth International Airport
-LANDING_FEE,-2000,185,John F. Kennedy International Airport
 LANDING_FEE,-2000,185,Minneapolis-Saint Paul International Airport
-LANDING_FEE,-2000,186,Hartsfield-Jackson Atlanta International Airport
 TAKEOFF_FEE,-2000,187,Salt Lake City International Airport
-TICKET_SALES,17838.9918220793820,187,Salt Lake City International Airport
-LANDING_FEE,-2000,189,Austin-Bergstrom International Airport
+TICKET_SALES,1292.29023648460296,187,Salt Lake City International Airport
+LANDING_FEE,-2000,190,Dallas/Fort Worth International Airport
 LANDING_FEE,-2000,190,Newark Liberty International Airport
+LANDING_FEE,-2000,190,Hartsfield-Jackson Atlanta International Airport
 LANDING_FEE,-2000,192,John F. Kennedy International Airport
+LANDING_FEE,-2000,192,LaGuardia Airport
+LANDING_FEE,-2000,193,Dallas/Fort Worth International Airport
 LANDING_FEE,-2000,193,Dallas/Fort Worth International Airport
 LANDING_FEE,-2000,194,O'Hare International Airport
-LANDING_FEE,-2000,196,San Diego International Airport
+LANDING_FEE,-2000,194,O'Hare International Airport
+LANDING_FEE,-2000,194,Austin-Bergstrom International Airport
 LANDING_FEE,-2000,197,Los Angeles International Airport
-LANDING_FEE,-2000,198,Phoenix Sky Harbor International Airport
-FUEL,-10154.19830515568179180263542,199,Newark Liberty International Airport
-LANDING_FEE,-2000,199,George Bush Intercontinental Airport
-FUEL,-10359.73729619426049794128630,200,LaGuardia Airport
-FUEL,-10454.51349133346114285814110,201,John F. Kennedy International Airport
-LANDING_FEE,-2000,201,Nashville International Airport
+LANDING_FEE,-2000,197,Los Angeles International Airport
 LANDING_FEE,-2000,204,O'Hare International Airport
+LANDING_FEE,-2000,204,George Bush Intercontinental Airport
 LANDING_FEE,-2000,205,George Bush Intercontinental Airport
-LANDING_FEE,-2000,205,Logan International Airport
-FUEL,-7036.338831263126030535204336,206,Newark Liberty International Airport
-FUEL,-7172.981385629017231622128747,208,John F. Kennedy International Airport
-LANDING_FEE,-2000,209,San Francisco International Airport
+LANDING_FEE,-2000,205,George Bush Intercontinental Airport
 TAKEOFF_FEE,-2000,210,Phoenix Sky Harbor International Airport
-TICKET_SALES,54802.91681795772720,210,Phoenix Sky Harbor International Airport
+TICKET_SALES,30633.05781946338264,210,Phoenix Sky Harbor International Airport
 TAKEOFF_FEE,-2000,213,O'Hare International Airport
-TICKET_SALES,69859.0099872252,213,O'Hare International Airport
+TICKET_SALES,45998.441688963309,213,O'Hare International Airport
+TAKEOFF_FEE,-2000,213,O'Hare International Airport
+TICKET_SALES,3725.61557731386478,213,O'Hare International Airport
 TAKEOFF_FEE,-2000,213,Harry Reid International Airport
 TICKET_SALES,14466.82765244069360,213,Harry Reid International Airport
+LANDING_FEE,-2000,215,San Francisco International Airport
+TAKEOFF_FEE,-2000,215,Detroit Metropolitan Airport
+TICKET_SALES,74256.94724983020000,215,Detroit Metropolitan Airport
 TAKEOFF_FEE,-2000,217,Dallas/Fort Worth International Airport
-TICKET_SALES,39148.96810961858260,217,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,217,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,34070.6293767397488,217,Hartsfield-Jackson Atlanta International Airport
-TAKEOFF_FEE,-2000,219,Minneapolis-Saint Paul International Airport
-TICKET_SALES,82293.92264289442648,219,Minneapolis-Saint Paul International Airport
-FUEL,-9457.713788511539332830579951,221,Logan International Airport
-TAKEOFF_FEE,-2000,223,Philadelphia International Airport
-TICKET_SALES,228015.1296121004904,223,Philadelphia International Airport
-LANDING_FEE,-2000,223,Washington Dulles International Airport
+TICKET_SALES,6119.07489703444792,217,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,222,Philadelphia International Airport
+TICKET_SALES,87024.8845359903520,222,Philadelphia International Airport
+TAKEOFF_FEE,-2000,223,Minneapolis-Saint Paul International Airport
+TICKET_SALES,68292.2953882192365,223,Minneapolis-Saint Paul International Airport
 TAKEOFF_FEE,-2000,224,George Bush Intercontinental Airport
-TICKET_SALES,65598.1535343244348,224,George Bush Intercontinental Airport
-LANDING_FEE,-2000,224,Charlotte Douglas International Airport
-TAKEOFF_FEE,-2000,226,Dallas/Fort Worth International Airport
-TICKET_SALES,63415.2596732178784,226,Dallas/Fort Worth International Airport
+TICKET_SALES,41807.6892142152840,224,George Bush Intercontinental Airport
 TAKEOFF_FEE,-2000,226,Minneapolis-Saint Paul International Airport
-TICKET_SALES,18088.92852596908992,226,Minneapolis-Saint Paul International Airport
-TAKEOFF_FEE,-2000,227,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,4450.37519180359584,227,Hartsfield-Jackson Atlanta International Airport
-LANDING_FEE,-2000,228,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,230,Austin-Bergstrom International Airport
-TICKET_SALES,45079.3752377661240,230,Austin-Bergstrom International Airport
+TICKET_SALES,18619.35426319093825,226,Minneapolis-Saint Paul International Airport
+LANDING_FEE,-2000,227,Hartsfield-Jackson Atlanta International Airport
+LANDING_FEE,-2000,227,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,-2000,231,Dallas/Fort Worth International Airport
+TICKET_SALES,65734.9352459668080,231,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,231,Newark Liberty International Airport
+TICKET_SALES,88605.8590451900480,231,Newark Liberty International Airport
+TAKEOFF_FEE,-2000,231,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,5617.94570465778672,231,Hartsfield-Jackson Atlanta International Airport
+LANDING_FEE,-2000,233,Philadelphia International Airport
+LANDING_FEE,-2000,233,Philadelphia International Airport
+TAKEOFF_FEE,-2000,233,John F. Kennedy International Airport
+TICKET_SALES,89238.9294557458400,233,John F. Kennedy International Airport
+TAKEOFF_FEE,-2000,233,LaGuardia Airport
+TICKET_SALES,89072.3426263724000,233,LaGuardia Airport
 TAKEOFF_FEE,-2000,234,Dallas/Fort Worth International Airport
-TICKET_SALES,20060.2919034796224,234,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,234,Newark Liberty International Airport
-TICKET_SALES,227102.2298750278160,234,Newark Liberty International Airport
+TICKET_SALES,7389.2926433299844,234,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,234,Dallas/Fort Worth International Airport
+TICKET_SALES,29559.36423774898096,234,Dallas/Fort Worth International Airport
+LANDING_FEE,-2000,234,Newark Liberty International Airport
 TAKEOFF_FEE,-2000,235,O'Hare International Airport
-TICKET_SALES,31194.4105007199760,235,O'Hare International Airport
-TAKEOFF_FEE,-2000,235,LaGuardia Airport
-TICKET_SALES,228360.9950940913120,235,LaGuardia Airport
-TAKEOFF_FEE,-2000,236,John F. Kennedy International Airport
-TICKET_SALES,228810.515109860980,236,John F. Kennedy International Airport
+TICKET_SALES,9669.75829667185408,235,O'Hare International Airport
+TAKEOFF_FEE,-2000,235,O'Hare International Airport
+TICKET_SALES,15845.24347293406176,235,O'Hare International Airport
+LANDING_FEE,-2000,235,LaGuardia Airport
+TAKEOFF_FEE,-2000,235,Austin-Bergstrom International Airport
+TICKET_SALES,5786.33536187542608,235,Austin-Bergstrom International Airport
 LANDING_FEE,-2000,237,Los Angeles International Airport
-TAKEOFF_FEE,-2000,237,San Diego International Airport
-TICKET_SALES,6437.0551439603112,237,San Diego International Airport
+LANDING_FEE,-2000,237,Los Angeles International Airport
+LANDING_FEE,-2000,237,Los Angeles International Airport
 TAKEOFF_FEE,-2000,238,Los Angeles International Airport
-TICKET_SALES,352931.1176721181104,238,Los Angeles International Airport
-TAKEOFF_FEE,-2000,239,Phoenix Sky Harbor International Airport
-TICKET_SALES,3747.7309515274272,239,Phoenix Sky Harbor International Airport
-TAKEOFF_FEE,-2000,240,George Bush Intercontinental Airport
-TICKET_SALES,18666.76782892099384,240,George Bush Intercontinental Airport
-TAKEOFF_FEE,-2000,241,Newark Liberty International Airport
-TICKET_SALES,97665.5888844136080,241,Newark Liberty International Airport
-TAKEOFF_FEE,-2000,242,Nashville International Airport
-TICKET_SALES,4008.30054844388224,242,Nashville International Airport
-TAKEOFF_FEE,-2000,243,John F. Kennedy International Airport
-TICKET_SALES,97307.686787579520,243,John F. Kennedy International Airport
+TICKET_SALES,79543.1875056478317,238,Los Angeles International Airport
+TAKEOFF_FEE,-2000,238,Los Angeles International Airport
+TICKET_SALES,79543.1875056478317,238,Los Angeles International Airport
+LANDING_FEE,-2000,241,John F. Kennedy International Airport
+LANDING_FEE,-2000,241,John F. Kennedy International Airport
 TAKEOFF_FEE,-2000,245,O'Hare International Airport
-TICKET_SALES,36484.27733111376096,245,O'Hare International Airport
+TICKET_SALES,12155.0875972531208,245,O'Hare International Airport
+TAKEOFF_FEE,-2000,245,George Bush Intercontinental Airport
+TICKET_SALES,47105.0570592223335,245,George Bush Intercontinental Airport
 TAKEOFF_FEE,-2000,246,George Bush Intercontinental Airport
-TICKET_SALES,86964.513464478160,246,George Bush Intercontinental Airport
-LANDING_FEE,-2000,248,Hartsfield-Jackson Atlanta International Airport
-TAKEOFF_FEE,-2000,250,San Francisco International Airport
-TICKET_SALES,55045.47062247408344,250,San Francisco International Airport
-LANDING_FEE,-2000,255,Newark Liberty International Airport
-TAKEOFF_FEE,-2000,256,Logan International Airport
-TICKET_SALES,191521.0767064262332,256,Logan International Airport
-LANDING_FEE,-2000,258,Philadelphia International Airport
-LANDING_FEE,-2000,262,San Francisco International Airport
-TAKEOFF_FEE,-2000,264,Washington Dulles International Airport
-TICKET_SALES,4494.04420314269952,264,Washington Dulles International Airport
-TAKEOFF_FEE,-2000,265,Charlotte Douglas International Airport
-TICKET_SALES,13604.62842689700744,265,Charlotte Douglas International Airport
-LANDING_FEE,-2000,268,LaGuardia Airport
-LANDING_FEE,-2000,268,John F. Kennedy International Airport
-TAKEOFF_FEE,-2000,269,Dallas/Fort Worth International Airport
-TICKET_SALES,10027.46369425617300,269,Dallas/Fort Worth International Airport
+TICKET_SALES,18666.76782892099384,246,George Bush Intercontinental Airport
+TAKEOFF_FEE,-2000,246,George Bush Intercontinental Airport
+TICKET_SALES,16007.42072020731379,246,George Bush Intercontinental Airport
+FUEL,-10154.19830515568179180263542,250,Newark Liberty International Airport
+FUEL,-10359.73729619426049794128630,251,LaGuardia Airport
+FUEL,-17200.71787472740487828559708,253,Los Angeles International Airport
+LANDING_FEE,-2000,253,San Diego International Airport
+TAKEOFF_FEE,-2000,256,San Francisco International Airport
+TICKET_SALES,25599.48750064858680,256,San Francisco International Airport
+TAKEOFF_FEE,-2000,268,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,5620.44445679515248,268,Hartsfield-Jackson Atlanta International Airport
+TAKEOFF_FEE,-2000,268,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,8484.4648321740008,268,Hartsfield-Jackson Atlanta International Airport
 LANDING_FEE,-2000,273,Seattle-Tacoma International Airport
-LANDING_FEE,-2000,274,Nashville International Airport
+TAKEOFF_FEE,-2000,274,Philadelphia International Airport
+TICKET_SALES,98660.3926206204045,274,Philadelphia International Airport
+TAKEOFF_FEE,-2000,274,Philadelphia International Airport
+TICKET_SALES,12423.9012929670139,274,Philadelphia International Airport
 TAKEOFF_FEE,-2000,278,Los Angeles International Airport
-TICKET_SALES,333162.8940687443424,278,Los Angeles International Airport
+TICKET_SALES,79543.1875056478317,278,Los Angeles International Airport
+TAKEOFF_FEE,-2000,278,Los Angeles International Airport
+TICKET_SALES,86943.6842821810758,278,Los Angeles International Airport
+TAKEOFF_FEE,-2000,282,John F. Kennedy International Airport
+TICKET_SALES,101224.0235803372875,282,John F. Kennedy International Airport
+TAKEOFF_FEE,-2000,282,John F. Kennedy International Airport
+TICKET_SALES,33741.3411934457625,282,John F. Kennedy International Airport
+TAKEOFF_FEE,-2000,285,Newark Liberty International Airport
+TICKET_SALES,120230.5922867794320,285,Newark Liberty International Airport
+TAKEOFF_FEE,-2000,286,LaGuardia Airport
+TICKET_SALES,120896.9974027542240,286,LaGuardia Airport
 LANDING_FEE,-2000,287,Detroit Metropolitan Airport
-TAKEOFF_FEE,-2000,289,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,24621.3501349543208,289,Hartsfield-Jackson Atlanta International Airport
-TAKEOFF_FEE,-2000,296,Newark Liberty International Airport
-TICKET_SALES,43603.3123651728240,296,Newark Liberty International Airport
+TAKEOFF_FEE,-2000,288,Los Angeles International Airport
+TICKET_SALES,131335.0919186387571,288,Los Angeles International Airport
+LANDING_FEE,-2000,293,Austin-Bergstrom International Airport
+LANDING_FEE,-2000,294,Harry Reid International Airport
+TAKEOFF_FEE,-2000,294,San Diego International Airport
+TICKET_SALES,6291.40314809096728,294,San Diego International Airport
 LANDING_FEE,-2000,298,Hartsfield-Jackson Atlanta International Airport
 LANDING_FEE,-2000,299,Los Angeles International Airport
 LANDING_FEE,-2000,299,Los Angeles International Airport
-TAKEOFF_FEE,-2000,299,Philadelphia International Airport
-TICKET_SALES,35257.15031973001264,299,Philadelphia International Airport
-TAKEOFF_FEE,-2000,303,San Francisco International Airport
-TICKET_SALES,131798.2799577702876,303,San Francisco International Airport
-TAKEOFF_FEE,-2000,309,LaGuardia Airport
-TICKET_SALES,51761.6972180223168,309,LaGuardia Airport
-TAKEOFF_FEE,-2000,309,John F. Kennedy International Airport
-TICKET_SALES,39945.1461564964336,309,John F. Kennedy International Airport
+LANDING_FEE,-2000,299,Los Angeles International Airport
+LANDING_FEE,-2000,299,Los Angeles International Airport
+LANDING_FEE,-2000,299,Los Angeles International Airport
+LANDING_FEE,-2000,299,Los Angeles International Airport
 LANDING_FEE,-2000,310,San Francisco International Airport
-LANDING_FEE,-2000,312,Nashville International Airport
-LANDING_FEE,-2000,313,Charlotte Douglas International Airport
+LANDING_FEE,-2000,310,San Francisco International Airport
+LANDING_FEE,-2000,310,Dallas/Fort Worth International Airport
 TAKEOFF_FEE,-2000,314,Seattle-Tacoma International Airport
-TICKET_SALES,71371.09688352217000,314,Seattle-Tacoma International Airport
+TICKET_SALES,43424.28716050780160,314,Seattle-Tacoma International Airport
 FUEL,-19372.83501419518703642097535,315,Los Angeles International Airport
-FUEL,-12111.25346854355899267829955,315,Los Angeles International Airport
-TAKEOFF_FEE,-2000,315,Nashville International Airport
-TICKET_SALES,10841.06026924208392,315,Nashville International Airport
+FUEL,-19372.83501419518703642097535,315,Los Angeles International Airport
+FUEL,-19372.83501419518703642097535,315,Los Angeles International Airport
+FUEL,-19372.83501419518703642097535,315,Los Angeles International Airport
+FUEL,-19372.83501419518703642097535,315,Los Angeles International Airport
 LANDING_FEE,-2000,317,Los Angeles International Airport
-LANDING_FEE,-2000,318,Los Angeles International Airport
+LANDING_FEE,-2000,317,Charlotte Douglas International Airport
 LANDING_FEE,-2000,320,Los Angeles International Airport
-LANDING_FEE,-2000,322,Phoenix Sky Harbor International Airport
-LANDING_FEE,-2000,325,O'Hare International Airport
-LANDING_FEE,-2000,326,Dallas/Fort Worth International Airport
-LANDING_FEE,-2000,327,Harry Reid International Airport
-LANDING_FEE,-2000,327,Hartsfield-Jackson Atlanta International Airport
+LANDING_FEE,-2000,320,Los Angeles International Airport
+LANDING_FEE,-2000,320,Los Angeles International Airport
 TAKEOFF_FEE,-2000,328,Detroit Metropolitan Airport
-TICKET_SALES,18088.96121735094112,328,Detroit Metropolitan Airport
-LANDING_FEE,-2000,330,Phoenix Sky Harbor International Airport
+TICKET_SALES,25989.93153744057000,328,Detroit Metropolitan Airport
+LANDING_FEE,-2000,332,Dallas/Fort Worth International Airport
+TAKEOFF_FEE,-2000,334,Austin-Bergstrom International Airport
+TICKET_SALES,45079.3752377661240,334,Austin-Bergstrom International Airport
+TAKEOFF_FEE,-2000,335,Harry Reid International Airport
+TICKET_SALES,3754.2924850717272,335,Harry Reid International Airport
 TAKEOFF_FEE,-2000,339,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,10832.48195292494608,339,Hartsfield-Jackson Atlanta International Airport
-LANDING_FEE,-2000,340,Tampa International Airport
-LANDING_FEE,-2000,346,Philadelphia International Airport
-LANDING_FEE,-2000,347,Los Angeles International Airport
-LANDING_FEE,-2000,347,Newark Liberty International Airport
+TICKET_SALES,14423.13802562194944,339,Hartsfield-Jackson Atlanta International Airport
+LANDING_FEE,-2000,349,Nashville International Airport
 TAKEOFF_FEE,-2000,350,Los Angeles International Airport
-TICKET_SALES,332498.9296599077136,350,Los Angeles International Airport
+TICKET_SALES,107734.7402015776542,350,Los Angeles International Airport
 TAKEOFF_FEE,-2000,350,Los Angeles International Airport
-TICKET_SALES,253735.809547466288,350,Los Angeles International Airport
+TICKET_SALES,54320.0370764257080,350,Los Angeles International Airport
+TAKEOFF_FEE,-2000,350,Los Angeles International Airport
+TICKET_SALES,107520.0343193723313,350,Los Angeles International Airport
+TAKEOFF_FEE,-2000,350,Los Angeles International Airport
+TICKET_SALES,107520.0343193723313,350,Los Angeles International Airport
+TAKEOFF_FEE,-2000,350,Los Angeles International Airport
+TICKET_SALES,107520.0343193723313,350,Los Angeles International Airport
 TAKEOFF_FEE,-2000,351,San Francisco International Airport
-TICKET_SALES,85568.1446684964884,351,San Francisco International Airport
-LANDING_FEE,-2000,352,Newark Liberty International Airport
-TAKEOFF_FEE,-2000,353,Nashville International Airport
-TICKET_SALES,2433.92944408507168,353,Nashville International Airport
-LANDING_FEE,-2000,354,LaGuardia Airport
-LANDING_FEE,-2000,354,John F. Kennedy International Airport
-TAKEOFF_FEE,-2000,354,Charlotte Douglas International Airport
-TICKET_SALES,7539.00676092371588,354,Charlotte Douglas International Airport
-TAKEOFF_FEE,-2000,358,Los Angeles International Airport
-TICKET_SALES,299668.4711998742220,358,Los Angeles International Airport
-TAKEOFF_FEE,-2000,359,Los Angeles International Airport
-TICKET_SALES,246505.5496535687664,359,Los Angeles International Airport
-TAKEOFF_FEE,-2000,361,Los Angeles International Airport
-TICKET_SALES,211825.31414884393680,361,Los Angeles International Airport
-TAKEOFF_FEE,-2000,363,Phoenix Sky Harbor International Airport
-TICKET_SALES,19314.8200438455244,363,Phoenix Sky Harbor International Airport
-TAKEOFF_FEE,-2000,366,O'Hare International Airport
-TICKET_SALES,14752.0084755856008,366,O'Hare International Airport
-TAKEOFF_FEE,-2000,367,Dallas/Fort Worth International Airport
-TICKET_SALES,21573.22350433568896,367,Dallas/Fort Worth International Airport
-TAKEOFF_FEE,-2000,368,Harry Reid International Airport
-TICKET_SALES,3754.2924850717272,368,Harry Reid International Airport
-TAKEOFF_FEE,-2000,368,Hartsfield-Jackson Atlanta International Airport
-TICKET_SALES,14423.13802562194944,368,Hartsfield-Jackson Atlanta International Airport
-FUEL,-15350.40343692559993542090524,370,LaGuardia Airport
-TAKEOFF_FEE,-2000,371,Phoenix Sky Harbor International Airport
-TICKET_SALES,6422.40878199897592,371,Phoenix Sky Harbor International Airport
-LANDING_FEE,-2000,374,Denver International Airport
-LANDING_FEE,-2000,374,LaGuardia Airport
-LANDING_FEE,-2000,378,Los Angeles International Airport
-TAKEOFF_FEE,-2000,381,Tampa International Airport
-TICKET_SALES,77709.3826300492272,381,Tampa International Airport
-TAKEOFF_FEE,-2000,387,Philadelphia International Airport
-TICKET_SALES,11603.88274242964452,387,Philadelphia International Airport
-TAKEOFF_FEE,-2000,388,Newark Liberty International Airport
-TICKET_SALES,11275.0828876348248,388,Newark Liberty International Airport
-TAKEOFF_FEE,-2000,391,Los Angeles International Airport
-TICKET_SALES,161333.11327117817528,391,Los Angeles International Airport
-TAKEOFF_FEE,-2000,393,Newark Liberty International Airport
-TICKET_SALES,64809.0043921273100,393,Newark Liberty International Airport
-LANDING_FEE,-2000,394,Detroit Metropolitan Airport
-FUEL,-22356.57897259335058151918929,394,Los Angeles International Airport
-TAKEOFF_FEE,-2000,395,John F. Kennedy International Airport
-TICKET_SALES,11022.29365454346476,395,John F. Kennedy International Airport
-LANDING_FEE,-2000,401,O'Hare International Airport
-LANDING_FEE,-2000,402,Denver International Airport
-LANDING_FEE,-2000,402,O'Hare International Airport
-TAKEOFF_FEE,-2000,405,LaGuardia Airport
-TICKET_SALES,97271.3595858272520,405,LaGuardia Airport
-LANDING_FEE,-2000,407,Nashville International Airport
-TAKEOFF_FEE,-2000,415,Denver International Airport
-TICKET_SALES,26849.7052470796840,415,Denver International Airport
-TAKEOFF_FEE,-2000,415,LaGuardia Airport
-TICKET_SALES,65424.43514376041580,415,LaGuardia Airport
-LANDING_FEE,-2000,415,O'Hare International Airport
-LANDING_FEE,-2000,426,Tampa International Airport
-TAKEOFF_FEE,-2000,429,Los Angeles International Airport
-TICKET_SALES,198523.2103305253088,429,Los Angeles International Airport
-LANDING_FEE,-2000,430,O'Hare International Airport
-LANDING_FEE,-2000,431,Philadelphia International Airport
-LANDING_FEE,-2000,431,Los Angeles International Airport
-TAKEOFF_FEE,-2000,435,Detroit Metropolitan Airport
-TICKET_SALES,21285.41240705264480,435,Detroit Metropolitan Airport
-TAKEOFF_FEE,-2000,442,O'Hare International Airport
-TICKET_SALES,14897.2709979958312,442,O'Hare International Airport
-TAKEOFF_FEE,-2000,443,Denver International Airport
-TICKET_SALES,9185.5408345483776,443,Denver International Airport
-LANDING_FEE,-2000,443,O'Hare International Airport
-TAKEOFF_FEE,-2000,443,O'Hare International Airport
-TICKET_SALES,20287.88605265334048,443,O'Hare International Airport
-LANDING_FEE,-2000,446,O'Hare International Airport
-TAKEOFF_FEE,-2000,448,Nashville International Airport
-TICKET_SALES,4425.04046955419856,448,Nashville International Airport
-LANDING_FEE,-2000,449,Charlotte Douglas International Airport
-LANDING_FEE,-2000,454,Tampa International Airport
-LANDING_FEE,-2000,456,Phoenix Sky Harbor International Airport
-TAKEOFF_FEE,-2000,456,O'Hare International Airport
-TICKET_SALES,35225.05617306725868,456,O'Hare International Airport
-LANDING_FEE,-2000,459,Los Angeles International Airport
-FUEL,-29541.97417604386173479724675,459,O'Hare International Airport
-LANDING_FEE,-2000,462,O'Hare International Airport
-LANDING_FEE,-2000,463,O'Hare International Airport
-LANDING_FEE,-2000,464,San Diego International Airport
-TAKEOFF_FEE,-2000,467,Tampa International Airport
-TICKET_SALES,4878.8526296822368,467,Tampa International Airport
-LANDING_FEE,-2000,467,Los Angeles International Airport
-LANDING_FEE,-2000,468,Logan International Airport
-LANDING_FEE,-2000,469,Logan International Airport
-TAKEOFF_FEE,-2000,471,O'Hare International Airport
-TICKET_SALES,35580.0486717401628,471,O'Hare International Airport
-TAKEOFF_FEE,-2000,472,Philadelphia International Airport
-TICKET_SALES,13870.3503784853888,472,Philadelphia International Airport
-TAKEOFF_FEE,-2000,472,Los Angeles International Airport
-TICKET_SALES,59834.35058822889104,472,Los Angeles International Airport
-LANDING_FEE,-2000,472,Philadelphia International Airport
-LANDING_FEE,-2000,474,Logan International Airport
-LANDING_FEE,-2000,475,Seattle-Tacoma International Airport
-FUEL,-30984.26354046320557245053351,475,Los Angeles International Airport
-FUEL,-23145.02426205208334067719989,478,O'Hare International Airport
-LANDING_FEE,-2000,478,Logan International Airport
-FUEL,-23717.73956033221953475731425,483,Los Angeles International Airport
-FUEL,-17160.87620835475388503255090,484,Logan International Airport
-TAKEOFF_FEE,-2000,487,O'Hare International Airport
-TICKET_SALES,36578.239027020152,487,O'Hare International Airport
-TAKEOFF_FEE,-2000,490,Charlotte Douglas International Airport
-TICKET_SALES,2411.37241500959136,490,Charlotte Douglas International Airport
+TICKET_SALES,26045.52947036914545,351,San Francisco International Airport
+TAKEOFF_FEE,-2000,351,San Francisco International Airport
+TICKET_SALES,22324.73954603069610,351,San Francisco International Airport
+TAKEOFF_FEE,-2000,351,Dallas/Fort Worth International Airport
+TICKET_SALES,49560.86900978997980,351,Dallas/Fort Worth International Airport
+LANDING_FEE,-2000,353,Nashville International Airport
+LANDING_FEE,-2000,354,Los Angeles International Airport
+TAKEOFF_FEE,-2000,358,Charlotte Douglas International Airport
+TICKET_SALES,5611.56400036147740,358,Charlotte Douglas International Airport
+FUEL,-21580.67358706504022848093882,366,Los Angeles International Airport
+FUEL,-21580.67358706504022848093882,366,Los Angeles International Airport
+FUEL,-21580.67358706504022848093882,366,Los Angeles International Airport
+FUEL,-13624.49398340856301729218103,366,Los Angeles International Airport
+FUEL,-12111.25346854355899267829955,366,Los Angeles International Airport
+LANDING_FEE,-2000,370,Charlotte Douglas International Airport
+TAKEOFF_FEE,-2000,373,Dallas/Fort Worth International Airport
+TICKET_SALES,58588.82459583562500,373,Dallas/Fort Worth International Airport
+LANDING_FEE,-2000,377,Logan International Airport
+LANDING_FEE,-2000,377,Logan International Airport
+LANDING_FEE,-2000,378,Washington Dulles International Airport
+LANDING_FEE,-2000,383,Tampa International Airport
+LANDING_FEE,-2000,388,Phoenix Sky Harbor International Airport
+LANDING_FEE,-2000,389,Los Angeles International Airport
+LANDING_FEE,-2000,389,Los Angeles International Airport
+TAKEOFF_FEE,-2000,390,Nashville International Airport
+TICKET_SALES,3961.157662926976,390,Nashville International Airport
+FUEL,-16610.56743981428862753091380,393,Logan International Airport
+FUEL,-20763.20929976786078441364225,393,Logan International Airport
+TAKEOFF_FEE,-2000,394,Nashville International Airport
+TICKET_SALES,10841.06026924208392,394,Nashville International Airport
+LANDING_FEE,-2000,397,Phoenix Sky Harbor International Airport
+TAKEOFF_FEE,-2000,401,Los Angeles International Airport
+TICKET_SALES,9938.8267017907197,401,Los Angeles International Airport
+TAKEOFF_FEE,-2000,401,Los Angeles International Airport
+TICKET_SALES,106918.9884155169385,401,Los Angeles International Airport
+TAKEOFF_FEE,-2000,401,Los Angeles International Airport
+TICKET_SALES,106918.9884155169385,401,Los Angeles International Airport
+TAKEOFF_FEE,-2000,401,Los Angeles International Airport
+TICKET_SALES,89634.932720572330,401,Los Angeles International Airport
+TAKEOFF_FEE,-2000,401,Los Angeles International Airport
+TICKET_SALES,127771.6228166116494,401,Los Angeles International Airport
+TAKEOFF_FEE,-2000,411,Charlotte Douglas International Airport
+TICKET_SALES,2411.37241500959136,411,Charlotte Douglas International Airport
+LANDING_FEE,-2000,417,O'Hare International Airport
+FUEL,-17257.71008410715374338906258,417,Los Angeles International Airport
+FUEL,-17257.71008410715374338906258,417,Los Angeles International Airport
+TAKEOFF_FEE,-2000,419,Washington Dulles International Airport
+TICKET_SALES,4436.88152780025468,419,Washington Dulles International Airport
+LANDING_FEE,-2000,422,O'Hare International Airport
+LANDING_FEE,-2000,423,Phoenix Sky Harbor International Airport
+TAKEOFF_FEE,-2000,424,Tampa International Airport
+TICKET_SALES,77709.3826300492272,424,Tampa International Airport
+TAKEOFF_FEE,-2000,428,Logan International Airport
+TICKET_SALES,109332.9373017349321,428,Logan International Airport
+TAKEOFF_FEE,-2000,428,Logan International Airport
+TICKET_SALES,88183.0941096794750,428,Logan International Airport
+TAKEOFF_FEE,-2000,429,Phoenix Sky Harbor International Airport
+TICKET_SALES,7926.1914533026335,429,Phoenix Sky Harbor International Airport
+TAKEOFF_FEE,-2000,438,Phoenix Sky Harbor International Airport
+TICKET_SALES,3747.7309515274272,438,Phoenix Sky Harbor International Airport
+TAKEOFF_FEE,-2000,442,Los Angeles International Airport
+TICKET_SALES,58379.14290326580990,442,Los Angeles International Airport
+LANDING_FEE,-2000,444,Hartsfield-Jackson Atlanta International Airport
+LANDING_FEE,-2000,448,Los Angeles International Airport
+LANDING_FEE,-2000,448,Los Angeles International Airport
+LANDING_FEE,-2000,451,Los Angeles International Airport
+TAKEOFF_FEE,-2000,452,Los Angeles International Airport
+TICKET_SALES,101671.6620572674830,452,Los Angeles International Airport
+TAKEOFF_FEE,-2000,452,Los Angeles International Airport
+TICKET_SALES,12049.9747623428128,452,Los Angeles International Airport
+TAKEOFF_FEE,-2000,458,O'Hare International Airport
+TICKET_SALES,12483.16961916360448,458,O'Hare International Airport
+LANDING_FEE,-2000,461,San Francisco International Airport
+TAKEOFF_FEE,-2000,463,O'Hare International Airport
+TICKET_SALES,63433.03596383470860,463,O'Hare International Airport
+FUEL,-24293.37607118237783652148210,464,Los Angeles International Airport
+FUEL,-24293.37607118237783652148210,464,Los Angeles International Airport
+TAKEOFF_FEE,-2000,464,Phoenix Sky Harbor International Airport
+TICKET_SALES,6422.40878199897592,464,Phoenix Sky Harbor International Airport
+LANDING_FEE,-2000,470,San Francisco International Airport
+LANDING_FEE,-2000,475,Hartsfield-Jackson Atlanta International Airport
+LANDING_FEE,-2000,475,Los Angeles International Airport
+LANDING_FEE,-2000,476,Detroit Metropolitan Airport
+FUEL,-25284.83249036327843896287959,477,San Francisco International Airport
+LANDING_FEE,-2000,478,Los Angeles International Airport
+TAKEOFF_FEE,-2000,485,Hartsfield-Jackson Atlanta International Airport
+TICKET_SALES,7159.223953253152,485,Hartsfield-Jackson Atlanta International Airport
+FUEL,-23621.52628890874143962719245,486,San Francisco International Airport
+FUEL,-23917.67711895405223913257942,491,Los Angeles International Airport
+TAKEOFF_FEE,-2000,492,Los Angeles International Airport
+TICKET_SALES,58379.14290326580990,492,Los Angeles International Airport
 LANDING_FEE,-2000,493,Los Angeles International Airport
-TAKEOFF_FEE,-2000,494,O'Hare International Airport
-TICKET_SALES,19955.60994248884864,494,O'Hare International Airport
-TAKEOFF_FEE,-2000,495,Tampa International Airport
-TICKET_SALES,4307.31477996406832,495,Tampa International Airport
-LANDING_FEE,-2000,496,San Francisco International Airport
-TAKEOFF_FEE,-2000,497,Phoenix Sky Harbor International Airport
-TICKET_SALES,28691.8672994861100,497,Phoenix Sky Harbor International Airport
+TAKEOFF_FEE,-2000,499,Los Angeles International Airport
+TICKET_SALES,87304.0488356389381,499,Los Angeles International Airport
+TAKEOFF_FEE,-2000,499,Los Angeles International Airport
+TICKET_SALES,87304.0488356389381,499,Los Angeles International Airport

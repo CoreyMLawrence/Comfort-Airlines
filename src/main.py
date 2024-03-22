@@ -155,8 +155,8 @@ def main() -> None:
     for airport in airports:
         airport.routes = list(filter(lambda route: route.source_airport.name == airport.name, routes))
         
-    for aircraft in aircrafts:
-        aircraft.location = airports[random.randint(0, len(HUB_NAMES) - 1)]
+    for index, aircraft in enumerate(aircrafts):
+        aircraft.location = airports[index % len(HUB_NAMES)]
 
         if aircraft.location.gates > 0:
             aircraft.location.gates -= 1
@@ -177,9 +177,6 @@ def main() -> None:
             structlog.processors.JSONRenderer()
         ]
     )
-    
-    # TODO: LIMIT NUMBER OF PASSENGERS PER FLIGHT
-    # TODO: DECREASE DEMAND OF PASSENGERS AFTER FLYING TO DESTINATION
 
     for aircraft in aircrafts:
         Ledger.record(LedgerEntry(LedgerEntryType.PLANE_RENTAL, aircraft.rental_cost, 0, None))

@@ -44,6 +44,8 @@ class Simulation:
         while self.time.value < self.duration:
             if self.time.value % MINUTES_PER_DAY == 0:
                 self.spawn_passengers()
+                for route in self.routes:
+                    route.current_demand = route.daily_demand
                 
             for aircraft in self.aircrafts:
                 if aircraft.status == AircraftStatus.AVAILABLE:
