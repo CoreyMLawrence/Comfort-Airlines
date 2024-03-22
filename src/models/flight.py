@@ -21,7 +21,7 @@ class Flight:
         if not type(flight_number) is int:
             raise TypeError(f"parameter 'flight_number' is not of type 'int'. Got type: {type(flight_number)}")
 
-        # Check for positive flight_number
+        # Check if negative flight_number
         if flight_number < 0:
             raise ValueError("flight_number cannot be negative")
         
@@ -29,17 +29,13 @@ class Flight:
         if not type(scheduled_time) is int:
             raise TypeError(f"parameter 'scheduled_time' is not of type 'int'. Got type: {type(scheduled_time)}")
         
-        # Check for positive scheduled_time
+        # Check if negative scheduled_time
         if scheduled_time < 0:
             raise ValueError("scheduled_time cannot be negative")
         
         # Check aircraft type
         if not type(aircraft) is Aircraft:
             raise TypeError(f"parameter 'aircraft' is not of type 'Aircraft'. Got type: {type(aircraft)}")
-        
-        # Check route type
-        if not type(route) is Route:
-            raise TypeError(f"parameter 'route' is not of type 'Route'. Got type: {type(route)}")
         
         # Check route type
         if not type(route) is Route:
@@ -53,7 +49,7 @@ class Flight:
         if not type(expected_departure_time) is int:
             raise TypeError(f"parameter 'expected_departure_time' is not of type 'int'. Got type: {type(expected_departure_time)}")
         
-        # Check for positive expected_departure_time
+        # Check if negative expected_departure_time
         if expected_departure_time < 0:
             raise ValueError("expected_departure_time cannot be negative")
         
@@ -61,7 +57,7 @@ class Flight:
         if not type(expected_arrival_time) is int:
             raise TypeError(f"parameter 'expected_arrival_time' is not of type 'int'. Got type: {type(expected_arrival_time)}")
         
-        # Check for positive expected_arrival_time
+        # Check if negative expected_arrival_time
         if expected_arrival_time < 0:
             raise ValueError("expected_arrival_time cannot be negative")
         

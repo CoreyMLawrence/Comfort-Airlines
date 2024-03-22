@@ -72,3 +72,84 @@ def test_flight_constructor(
     assert flight.expected_arrival_time == expected_arrival_time
     
 # Add more tests down here.
+
+####################################### For Temporary Reference ####################################################
+# Check flight_number type
+def test_flight_number_type_error(aircraft_test, route_test, passengers_test) -> None:
+    """Flight Constructor test. Asserts that the status and location"""
+    with pytest.raises(TypeError):
+        _: Flight = Flight(flight_number, scheduled_time, aircraft_test, route_test, passengers_test, expected_departure_time, expected_arrival_time)
+        _: Flight = Flight(1, 123, aircraft_test, route_test, passengers_test, 163, 383)
+
+# Check for negative flight_number
+def test_flight_negative_flight_number(aircraft_test, route_test, passengers_test) -> None:
+    """Aircraft.__init__() method test. Tests that the aircraft class constructor protects against negative fuel levels"""
+    _: Flight = Flight(flight_number, scheduled_time, aircraft_test, route_test, passengers_test, expected_departure_time, expected_arrival_time)
+    _: Flight = Flight(1, 123, aircraft_test, route_test, passengers_test, 163, 383)
+    
+    with pytest.raises(ValueError):
+        _: Flight = Flight(flight_number, scheduled_time, aircraft_test, route_test, passengers_test, expected_departure_time, expected_arrival_time)
+        _: Flight = Flight(1, 123, aircraft_test, route_test, passengers_test, 163, 383)
+####################################### For Temporary Reference ####################################################
+
+
+
+
+# Check flight_number type
+def test_flight_number_type_error(aircraft_test, route_test, passengers_test) -> None:
+    """Flight Constructor test. Asserts that the status and location"""
+    with pytest.raises(TypeError):
+        _: Flight = Flight("this is not an int", 123, aircraft_test, route_test, passengers_test, 163, 383)
+
+# Check if negative flight_number
+def test_flight_negative_flight_number(aircraft_test, route_test, passengers_test) -> None:
+    """Aircraft.__init__() method test. Tests that the aircraft class constructor protects against negative fuel levels"""
+    _: Flight = Flight(0, 123, aircraft_test, route_test, passengers_test, 163, 383)
+    
+    with pytest.raises(ValueError):
+        _: Flight = Flight(-1, 123, aircraft_test, route_test, passengers_test, 163, 383)
+
+# Check scheduled_time type
+def test_flight_scheduled_time_type_error(aircraft_test, route_test, passengers_test) -> None:
+    """Flight Constructor test. Asserts that the status and location"""
+    with pytest.raises(TypeError):
+        _: Flight = Flight(1, "this is not an int", aircraft_test, route_test, passengers_test, 163, 383)
+
+
+# Check if negative scheduled_time
+def test_flight_negative_scheduled_time(aircraft_test, route_test, passengers_test) -> None:
+    """Aircraft.__init__() method test. Tests that the aircraft class constructor protects against negative fuel levels"""
+    _: Flight = Flight(1, 0, aircraft_test, route_test, passengers_test, 163, 383)
+    
+    with pytest.raises(ValueError):
+        _: Flight = Flight(1, -1, aircraft_test, route_test, passengers_test, 163, 383)
+
+
+# Check Aircraft type
+def test_flight_aircraft_type_error(route_test, passengers_test) -> None:
+    """Flight Constructor test. Asserts that the status and location"""
+    with pytest.raises(TypeError):
+        _: Flight = Flight(1, 123, "this is not an Aircraft", route_test, passengers_test, 163, 383)
+
+
+# Check Route type
+def test_flight_route_type_error(aircraft_test, passengers_test) -> None:
+    """Flight Constructor test. Asserts that the status and location"""
+    with pytest.raises(TypeError):
+        _: Flight = Flight(1, 123, aircraft_test, "this is not a Route", passengers_test, 163, 383)
+
+
+# Check type for all passengers
+
+
+# Check expected_departure_time type
+
+
+# Check if negative expected_departure_time
+
+
+# Check expected_arrival_time type
+
+
+# Check if negative expected_arrival_time
+

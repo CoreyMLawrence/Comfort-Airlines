@@ -43,7 +43,7 @@ class Airport:
         if not type(metro_population) is int:
             raise TypeError(f"parameter 'metro_population' is not of type 'int'. Got type: {type(metro_population)}")
         
-        # Check for positive metro_population
+        # Check if negative metro_population
         if metro_population < 0:
             raise ValueError("metro_population cannot be negative")
         
@@ -55,7 +55,7 @@ class Airport:
         if not type(available_gates) is int:
             raise TypeError(f"parameter 'available_gates' is not of type 'int'. Got type: {type(available_gates)}")
         
-        # Check for positive available_gates
+        # Check if negative available_gates
         if available_gates < 0:
             raise ValueError("available_gates cannot be negative")
         
@@ -79,7 +79,7 @@ class Airport:
         if not type(gas_price) is float:
             raise TypeError(f"parameter 'gas_price' is not of type 'float'. Got type: {type(gas_price)}")
         
-        # Check for positive gas_price
+        # Check if negative gas_price
         if gas_price < 0:
             raise ValueError("gas_price cannot be negative")
         
@@ -87,7 +87,7 @@ class Airport:
         if not type(takeoff_fee) is Decimal:
             raise TypeError(f"parameter 'takeoff_fee' is not of type 'Decimal'. Got type: {type(takeoff_fee)}")
         
-        # Check for positive takeoff_fee
+        # Check if negative takeoff_fee
         if takeoff_fee < 0:
             raise ValueError("takeoff_fee cannot be negative")
         
@@ -95,7 +95,7 @@ class Airport:
         if not type(landing_fee) is Decimal:
             raise TypeError(f"parameter 'landing_fee' is not of type 'Decimal'. Got type: {type(landing_fee)}")
         
-        # Check for positive landing_fee
+        # Check if negative landing_fee
         if landing_fee < 0:
             raise ValueError("landing_fee cannot be negative")
         
