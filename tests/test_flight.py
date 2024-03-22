@@ -54,7 +54,7 @@ def passengers_test(airport1, airport2) -> list[Passenger]:
 # Define the test function with parameterized inputs to test the constructor of Flight class
 @pytest.mark.parametrize("flight_number, scheduled_time, expected_departure_time, expected_arrival_time", 
     [
-        (1, 123, 163, 383)
+        (1, 123, 163, 383),
     ]
 )
 def test_flight_constructor(
@@ -107,11 +107,15 @@ def test_flight_route_type_error(aircraft_test, passengers_test) -> None:
     with pytest.raises(TypeError):
         _: Flight = Flight(1, 123, aircraft_test, "this is not a Route", passengers_test, 163, 383)
 
-# Test type for all passengers
-def test_flight_passengers_type_error(aircraft_test, route_test, passengers_test) -> None:
+# Test type for all passengers (method 1)
+def test_flight_passengers_type_error1(aircraft_test, route_test, passengers_test) -> None:
     passengers_test.append("not a passenger")
     with pytest.raises(TypeError):
         _: Flight = Flight(1, 123, aircraft_test, route_test, passengers_test, 163, 383)
+
+# Test type for all passengers (method 2)
+def test_flight_passengers_type_error2(aircraft_test, route_test, passengers_test) -> None:
+    with pytest.raises(TypeError):
         _: Flight = Flight(1, 123, aircraft_test, route_test, "this is not a Passenger list", 163, 383)
 
 # Test expected_departure_time type
