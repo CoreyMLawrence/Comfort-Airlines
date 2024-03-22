@@ -71,7 +71,7 @@ class Airport:
         if not type(longitude) is float:
             raise TypeError(f"parameter 'longitude' is not of type 'float'. Got type: {type(longitude)}")
         
-        # Check if longitude is in proper range (-90 to 90)
+        # Check if longitude is in proper range (-180 to 180)
         if longitude < -180 or longitude > 180:
             raise ValueError("longitude value must be between -180 and 180")
         

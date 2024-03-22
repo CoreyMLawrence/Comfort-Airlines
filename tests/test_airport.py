@@ -44,3 +44,64 @@ def test_airport_constructor(
     assert airport.takeoff_fee == takeoff_fee
     assert airport.landing_fee == landing_fee
     assert airport.tarmac == tarmac
+    
+
+####################################### For Temporary Reference ####################################################
+# Check flight_number type
+def test_flight_number_type_error(aircraft_test, route_test, passengers_test) -> None:
+    """Flight Constructor test. Asserts that the status and location"""
+    with pytest.raises(TypeError):
+        _: Flight = Flight(flight_number, scheduled_time, aircraft_test, route_test, passengers_test, expected_departure_time, expected_arrival_time)
+        _: Flight = Flight(1, 123, aircraft_test, route_test, passengers_test, 163, 383)
+
+# Check for negative flight_number
+def test_flight_negative_flight_number(aircraft_test, route_test, passengers_test) -> None:
+    """Aircraft.__init__() method test. Tests that the aircraft class constructor protects against negative fuel levels"""
+    _: Flight = Flight(flight_number, scheduled_time, aircraft_test, route_test, passengers_test, expected_departure_time, expected_arrival_time)
+    _: Flight = Flight(1, 123, aircraft_test, route_test, passengers_test, 163, 383)
+
+    with pytest.raises(ValueError):
+        _: Flight = Flight(flight_number, scheduled_time, aircraft_test, route_test, passengers_test, expected_departure_time, expected_arrival_time)
+        _: Flight = Flight(1, 123, aircraft_test, route_test, passengers_test, 163, 383)
+####################################### For Temporary Reference ####################################################
+
+
+# Check name type
+
+# Check iata_code type
+
+# Check city type
+
+# Check state type
+
+# Check metro_population type
+
+# Check if negative metro_population
+
+# Check is_hub type
+
+# Check available_gates type
+
+# Check if negative available_gates
+
+# Check latitude type
+
+# Check if latitude is in proper range (-90 to 90)
+
+# Check longitude type
+
+# Check if longitude is in proper range (-180 to 180)
+
+# Check gas_price type
+
+# Check if negative gas_price
+
+# Check takeoff_fee type
+
+# Check if negative takeoff_fee
+
+# Check landing_fee type
+
+# Check if negative landing_fee
+
+# Check tarmac type
