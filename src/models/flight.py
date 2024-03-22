@@ -70,3 +70,27 @@ class Flight:
         self.expected_arrival_time = expected_arrival_time
         self.actual_departure_time = None
         self.actual_arrival_time = None
+        
+
+    def set_actual_departure_time(self, actual_departure_time: int) -> None:
+        # Check actual_departure_time type
+        if not type(actual_departure_time) is int:
+            raise TypeError(f"parameter 'actual_departure_time' is not of type 'int'. Got type: {type(actual_departure_time)}")
+        
+        # Check if negative actual_departure_time
+        if actual_departure_time < 0:
+            raise ValueError("actual_departure_time cannot be negative")
+        
+        self.actual_departure_time = actual_departure_time
+        
+
+    def set_actual_arrival_time(self, actual_arrival_time: int) -> None:
+        # Check actual_arrival_time type
+        if not type(actual_arrival_time) is int:
+            raise TypeError(f"parameter 'actual_arrival_time' is not of type 'int'. Got type: {type(actual_arrival_time)}")
+        
+        # Check if negative actual_arrival_time
+        if actual_arrival_time < 0:
+            raise ValueError("actual_arrival_time cannot be negative")
+        
+        self.actual_arrival_time = actual_arrival_time
