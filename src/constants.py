@@ -1,7 +1,7 @@
 from decimal import Decimal
 
 # Debugging
-DEBUG = True
+DEBUG = False
 VERBOSE = DEBUG and False
 
 # Data

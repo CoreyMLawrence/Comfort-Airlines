@@ -3,10 +3,11 @@ from typing import TYPE_CHECKING
 from decimal import Decimal
 from enum import Enum
 import csv
+import os
 
 import structlog
 
-from constants import DEBUG
+from constants import DEBUG, SIMULATION_OUTPUT_DIRECTORY
 from helpers.default import default
 
 if TYPE_CHECKING:
@@ -27,19 +28,18 @@ class LedgerEntry:
         self.location = location
 
 class Ledger:
-    entries: list[LedgerEntry] = []
-    logger = structlog.get_logger()
-    
-    def record(entry: LedgerEntry) -> None:
+    def __init__(self):
+        self.logger = structlog.get_logger()
+        self.outfile = open(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "ledger.csv"), "w", newline="")
+        self.writer = csv.writer(self.outfile, delimiter=",")
+        
+        self.writer.writerow(["item", "net profit", "time", "location"])
+
+    def __del__(self):
+        self.outfile.close()
+
+    def record(self, entry: LedgerEntry) -> None:
         if DEBUG:
             Ledger.logger.info("recorded ledger entry", type=entry.type.name, net_profit=str(entry.net_profit), location=entry.location.name if not entry.location is None else "null")
         
-        Ledger.entries.append(entry)
-
-    def serialize(filepath: str) -> None:
-        with open(filepath, "w", newline="") as outfile:
-            writer = csv.writer(outfile, delimiter=",")
-            writer.writerow(["item", "net profit", "time", "location"])
-            
-            for entry in Ledger.entries:
-                writer.writerow([entry.type.name, entry.net_profit, entry.time, entry.location if not entry.location is None else "null"])
+        self.writer.writerow([entry.type.name, entry.net_profit, entry.time, entry.location if not entry.location is None else "null"])

@@ -75,9 +75,9 @@ class Aircraft:
         self.status = status
         self.wait_timer = WAIT_TIMERS.get(status, 0)
         
-    def depart(self, time: int) -> None:
-        Ledger.record(LedgerEntry(LedgerEntryType.TAKEOFF_FEE, self.location.takeoff_fee, time, self.location))
-        Ledger.record(LedgerEntry(LedgerEntryType.TICKET_SALES, self.flight.route.ticket_cost * Decimal(len(self.flight.passengers)), time, self.location))
+    def depart(self, ledger: Ledger, time: int) -> None:
+        ledger.record(LedgerEntry(LedgerEntryType.TAKEOFF_FEE, self.location.takeoff_fee, time, self.location))
+        ledger.record(LedgerEntry(LedgerEntryType.TICKET_SALES, self.flight.route.ticket_cost * Decimal(len(self.flight.passengers)), time, self.location))
         self.flight.actual_departure_time = time
         
         if len(self.location.tarmac) > 0:
@@ -89,10 +89,10 @@ class Aircraft:
         self.location = None
         
         
-    def arrive(self, airport: Airport, time: int) -> None:
+    def arrive(self, ledger: Ledger, airport: Airport, time: int) -> None:
         """Simulates an aircraft landing at an airport"""
         self.location = airport
-        Ledger.record(LedgerEntry(LedgerEntryType.LANDING_FEE, airport.landing_fee, time, airport))
+        ledger.record(LedgerEntry(LedgerEntryType.LANDING_FEE, airport.landing_fee, time, airport))
         self.flight_minutes += self.flight.route.expected_time
         self.fuel_level -= self.flight.route.fuel_requirement
         

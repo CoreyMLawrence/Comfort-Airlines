@@ -15,10 +15,12 @@ from models.aircraft import Aircraft, AircraftStatus
 if TYPE_CHECKING:
     from models.airport import Airport
     from models.route import Route
+    from singletons.ledger import Ledger
 
 class Simulation:
-    def __init__(self, duration: int, aircrafts: list[Aircraft], airports: list[Airport], routes: list[Route]):
+    def __init__(self, duration: int, ledger: Ledger, aircrafts: list[Aircraft], airports: list[Airport], routes: list[Route]):
         self.duration = duration
+        self.ledger = ledger
         self.aircrafts = aircrafts
         self.airports = airports
         self.hubs = self.airports[:len(HUB_NAMES)]
@@ -54,12 +56,12 @@ class Simulation:
                             aircraft.location.maintenance_gates -= 1
                             aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
                         else:
-                            Scheduler.schedule_flight(self.time.value, aircraft, self.routes, self.passengers)
+                            Scheduler.schedule_flight(self.ledger, self.time.value, aircraft, self.routes, self.passengers)
                     else:
-                        Scheduler.schedule_flight(self.time.value, aircraft, self.routes, self.passengers)
+                        Scheduler.schedule_flight(self.ledger, self.time.value, aircraft, self.routes, self.passengers)
                 else:
                     if aircraft.status == AircraftStatus.IN_FLIGHT and aircraft.wait_timer <= 0:
-                        aircraft.arrive(aircraft.flight.route.destination_airport, self.time.value)
+                        aircraft.arrive(self.ledger, aircraft.flight.route.destination_airport, self.time.value)
 
                     if aircraft.status == AircraftStatus.IN_MAINTENANCE and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)
@@ -75,7 +77,7 @@ class Simulation:
                     if aircraft.status in [AircraftStatus.BOARDING_WITHOUT_REFUELING, AircraftStatus.BOARDING_WITH_REFUELING] and aircraft.wait_timer <= 0:
                        aircraft.set_status(AircraftStatus.IN_FLIGHT)
                        aircraft.wait_timer = aircraft.flight.route.expected_time
-                       aircraft.depart(self.time.value)
+                       aircraft.depart(self.ledger, self.time.value)
 
                     if aircraft.status == AircraftStatus.DEBOARDING and aircraft.wait_timer <= 0:
                         aircraft.set_status(AircraftStatus.AVAILABLE)

@@ -2,10 +2,11 @@ from __future__ import annotations
 from typing import TYPE_CHECKING
 from decimal import Decimal
 import csv
+from pprint import pprint
 
 import structlog
 
-from constants import DEBUG
+from constants import DEBUG, VERBOSE
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
 from models.aircraft import Aircraft, AircraftStatus, WAIT_TIMERS
 from models.flight import Flight
@@ -14,6 +15,7 @@ from helpers.default import default
 if TYPE_CHECKING:
     from models.route import Route
     from models.passenger import Passenger
+    from singletons.ledger import Ledger
 
 class Scheduler:
     flight_uuid = 0
@@ -28,29 +30,38 @@ class Scheduler:
         return id
         
     @staticmethod
-    def schedule_flight(time: int, aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]):
+    def schedule_flight(ledger: Ledger, time: int, aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]):
         if aircraft.status != AircraftStatus.AVAILABLE:
             raise ValueError("Precondition failed: aircraft is not available for scheduling")
         
-        print(f"1: {len(routes)=}")
-        compatible_routes = filter(lambda route: route.source_airport == aircraft.location, routes)
-        compatible_routes = filter(lambda route: route.aircraft_type == aircraft.type, compatible_routes)
-        compatible_routes = filter(lambda route: route.fuel_requirement <= aircraft.fuel_capacity, compatible_routes)
-        compatible_routes = filter(lambda route: len(list(filter(lambda passenger: passenger.location == route.source_airport and passenger.destination == route.destination_airport, passengers))) > 0, compatible_routes)
-        print(f"2. {len(list(compatible_routes))=}")
-        
+        compatible_routes = list(filter(lambda route: route.source_airport == aircraft.location, routes))
+        if VERBOSE:
+            print(f"1. {len(compatible_routes)=}")
+
+        compatible_routes = list(filter(lambda route: route.aircraft_type == aircraft.type, compatible_routes))
+        if VERBOSE:
+            print(f"2. {len(compatible_routes)=}")
+
+        compatible_routes = list(filter(lambda route: route.fuel_requirement <= aircraft.fuel_capacity, compatible_routes))
+        if VERBOSE:
+            print(f"3. {len(compatible_routes)=}")
+
+        compatible_routes = list(filter(lambda route: len(list(filter(lambda passenger: passenger.location == route.source_airport and passenger.destination == route.destination_airport, passengers))) > 0, compatible_routes))
+        if VERBOSE:
+            print(f"4. {len(compatible_routes)=}")
+
+        compatible_routes = list(filter(lambda route: route.current_demand > 0, compatible_routes))
+
         if aircraft.needs_maintenance:
-            compatible_routes = filter(lambda route: route.destination_airport.is_hub, compatible_routes)
-            print(f"3. {len(list(compatible_routes))=}")
-            
-        compatible_routes = list(compatible_routes)
-            
+            compatible_routes = list(filter(lambda route: route.destination_airport.is_hub, compatible_routes))
+            if VERBOSE:
+                print(f"6. {len(compatible_routes)=}")
+
         if len(compatible_routes) == 0:
             if DEBUG:
                 Scheduler.logger.info("no flight could be scheduled", aircraft_tail_number=aircraft.tail_number)
             return
 
-        print(f"4. {len(compatible_routes)=}")
         route = max(compatible_routes, key=lambda route: route.net_profit)
         passengers = list(filter(
                             lambda passenger: passenger.location == route.source_airport 
@@ -58,9 +69,11 @@ class Scheduler:
                             passengers
         ))[:aircraft.passenger_capacity]
         route.daily_demand -= min(route.daily_demand, len(passengers))
-        
+        if VERBOSE:
+            Scheduler.logger.debug("decreased route daily demand", route=str(route), current_demand=route.current_demand, daily_demand=route.daily_demand)
+
         if aircraft.fuel_level < route.fuel_requirement:
-            Ledger.record(LedgerEntry(LedgerEntryType.FUEL, -(Decimal((aircraft.fuel_capacity - aircraft.fuel_level)) * aircraft.location.gas_price), time, aircraft.location))
+            ledger.record(LedgerEntry(LedgerEntryType.FUEL, -(Decimal((aircraft.fuel_capacity - aircraft.fuel_level)) * aircraft.location.gas_price), time, aircraft.location))
             aircraft.fuel_level = aircraft.fuel_capacity
             aircraft.set_status(AircraftStatus.BOARDING_WITH_REFUELING)
         else:
@@ -82,8 +95,7 @@ class Scheduler:
             expected_arrival_time
         )
         
-        if DEBUG:
-            Scheduler.logger.info("scheduled flight", aircraft_tail_number=aircraft.tail_number, source_airport=route.source_airport.name, destination_airport=route.destination_airport.name)
+        Scheduler.logger.info("scheduled flight", aircraft_tail_number=aircraft.tail_number, source_airport=route.source_airport.name, destination_airport=route.destination_airport.name)
         
         aircraft.flight = flight
         Scheduler.flights.append(flight)

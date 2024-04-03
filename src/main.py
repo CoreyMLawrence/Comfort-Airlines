@@ -164,7 +164,8 @@ def main() -> None:
             aircraft.location.tarmac.append(aircraft)
             aircraft.set_status(AircraftStatus.ON_TARMAC)
 
-    simulation = Simulation(500, aircrafts, airports, routes)
+    ledger = Ledger()
+    simulation = Simulation(1000, ledger, aircrafts, airports, routes)
     
     structlog.configure(
         processors=[
@@ -179,14 +180,13 @@ def main() -> None:
     )
 
     for aircraft in aircrafts:
-        Ledger.record(LedgerEntry(LedgerEntryType.PLANE_RENTAL, aircraft.rental_cost, 0, None))
+        ledger.record(LedgerEntry(LedgerEntryType.PLANE_RENTAL, aircraft.rental_cost, 0, None))
     
     simulation.run()
 
     if not os.path.exists(SIMULATION_OUTPUT_DIRECTORY):
         os.mkdir(SIMULATION_OUTPUT_DIRECTORY)
 
-    Ledger.serialize(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "ledger.csv"))
     Scheduler.serialize(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "schedule.csv"))
 
 
