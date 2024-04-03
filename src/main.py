@@ -181,6 +181,7 @@ def main() -> None:
 
     for aircraft in aircrafts:
         ledger.record(LedgerEntry(LedgerEntryType.PLANE_RENTAL, aircraft.rental_cost, 0, None))
+        #The lease cost of a Boeing 747-400 is $300,000/month. needs to be added
     
     simulation.run()
 
@@ -192,3 +193,21 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+
+
+""" PARIS INFO    -- New plane added to aircraft csv to accomodate flights
+Take off and landing fees are Euro 2100. The cost of aviation fuel in Paris is Euro 1.97/liter. The cost of fuel and take-off and landing fees are billed to the airline at the end of each month.
+
+
+The exchange rate at the end of each month is derived from xe.com (Use the exchange rate that existed on 01/31/23 as the exchange rate for 01/31/24 etc),
+
+
+Timetables should be produced in both English and French. For each route, provide the origin airport, destination airport indicating arrival and landing times. List all stopovers and the amount of time on the ground during each stop-over. Also list the total time and total distance travelled.
+
+
+Pay attention to metric versus imperial units of measurement, and the way city names are spelled in each language. The timetable must present the information in a culturally correct manner.
+
+
+Also ay attention to daylight savings. Not all states observe daylight savings, and France and the US do not necessaily start and end daylight savings on the same dates. 
+
+"""

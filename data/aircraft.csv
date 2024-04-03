@@ -1,5 +1,6 @@
 aircraft,passenger_capacity,max_speed (km/h),max_fuel_capacity (gallons),max_range (km),mpg (mpg)
 Boeing 737-600,119,1101,6875,5648,0.55
-Boeing 767-800,189,1101,6875,5665,0.44
-Airbus A200-100,135,1012,5790,5460,0.57
+Boeing 767-800,189,1101,6875,5665,0.45
+Airbus A200-100,135,1012,5790,5460,0.6
 Airbus A220-300,160,1012,5790,5920,0.66
+Boeing 747-400,416,1086,53765,11260,0.22
