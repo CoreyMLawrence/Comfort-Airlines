@@ -5,7 +5,7 @@ DEBUG = False
 VERBOSE = DEBUG and False
 
 # Data
-SIMULATION_OUTPUT_DIRECTORY = "simulation-output"
+SIMULATION_OUTPUT_DIRECTORY = "reports"
 
 # Simulation constants
 MINUTES_PER_HOUR = 60

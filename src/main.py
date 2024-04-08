@@ -20,6 +20,10 @@ import log.processors
 from singletons.simulation import Simulation
 from singletons.scheduler import Scheduler
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
+from singletons.reports.passenger_report import PassengerReport
+from singletons.reports.airport_report import AirportReport
+from singletons.reports.aircraft_report import AircraftReport
+from singletons.reports.flight_report import FlightReport
 from constants import HUB_NAMES, SIMULATION_DURATION, SIMULATION_OUTPUT_DIRECTORY, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
 from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
 from models.airport import Airport
@@ -165,7 +169,7 @@ def main() -> None:
             aircraft.set_status(AircraftStatus.ON_TARMAC)
 
     ledger = Ledger()
-    simulation = Simulation(1000, ledger, aircrafts, airports, routes)
+    simulation = Simulation(SIMULATION_DURATION // 4, ledger, aircrafts, airports, routes)
     
     structlog.configure(
         processors=[
@@ -187,8 +191,11 @@ def main() -> None:
 
     if not os.path.exists(SIMULATION_OUTPUT_DIRECTORY):
         os.mkdir(SIMULATION_OUTPUT_DIRECTORY)
-
-    Scheduler.serialize(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "schedule.csv"))
+    
+    PassengerReport.generate(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "passengers.csv"), simulation)
+    AirportReport.generate(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "airports.csv"), simulation)
+    AircraftReport.generate(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "aircrafts.csv"), simulation)
+    FlightReport.generate(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "flights.csv"), simulation)
 
 
 if __name__ == "__main__":

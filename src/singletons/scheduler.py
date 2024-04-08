@@ -78,9 +78,6 @@ class Scheduler:
             aircraft.set_status(AircraftStatus.BOARDING_WITH_REFUELING)
         else:
             aircraft.set_status(AircraftStatus.BOARDING_WITHOUT_REFUELING)
-
-        for passenger in passengers:
-            passenger.location = None
     
         expected_departure_time = time + (WAIT_TIMERS[AircraftStatus.BOARDING_WITH_REFUELING] if aircraft.status == AircraftStatus.BOARDING_WITH_REFUELING else WAIT_TIMERS[AircraftStatus.BOARDING_WITHOUT_REFUELING])
         expected_arrival_time = expected_departure_time + route.expected_time + WAIT_TIMERS[AircraftStatus.DEBOARDING]
@@ -95,24 +92,12 @@ class Scheduler:
             expected_arrival_time
         )
         
+        for passenger in passengers:
+            passenger.location = None
+            passenger.flights_taken.append(flight)
+        
         Scheduler.logger.info("scheduled flight", aircraft_tail_number=aircraft.tail_number, source_airport=route.source_airport.name, destination_airport=route.destination_airport.name)
         
         aircraft.flight = flight
+        aircraft.flights_taken.append(flight)
         Scheduler.flights.append(flight)
-
-    @staticmethod
-    def serialize(filepath: str) -> None:
-        with open(filepath, "w", newline="") as outfile:
-            writer = csv.writer(outfile, delimiter=",")
-            writer.writerow([
-                "flight number", "source airport", "destination airport", 
-                "number of passengers", "scheduled departure time", "scheduled arrival time", 
-                "actual departure time", "actual arrival time", "aircraft tail number"
-            ])
-            
-            for flight in Scheduler.flights:
-                writer.writerow([
-                    flight.flight_number, flight.route.source_airport, flight.route.destination_airport,
-                    len(flight.passengers), flight.expected_departure_time, flight.expected_arrival_time,
-                    default(flight.actual_departure_time, "null"), default(flight.actual_arrival_time, "null"), flight.aircraft.tail_number
-                ])

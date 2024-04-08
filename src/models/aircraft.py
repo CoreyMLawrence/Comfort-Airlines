@@ -21,11 +21,13 @@ if TYPE_CHECKING:
     from models.airport import Airport
 
 class AircraftType(IntEnum):
-    """Enumerated type. Defines the 4 types of aircraft"""
+    """Enumerated type. Defines the 5 types of aircraft"""
+    BOEING_747_400 = auto() 
     BOEING_737_600 = auto()
     BOEING_737_800 = auto()
     AIRBUS_A200_100 = auto()
     AIRBUS_A220_300 = auto()
+    
     
 class AircraftStatus(IntEnum):
     """Enumerated type. Defines the 7 unique possible states of an aircraft"""
@@ -61,6 +63,7 @@ class Aircraft:
         self.wait_timer = WAIT_TIMERS.get(status, 0)
         self.max_range = max_range                      # km
         self.flight: Flight = None
+        self.flights_taken: list[Flight] = []
         self.rental_cost = rental_cost
         
     @property
@@ -124,6 +127,13 @@ class AircraftFactory:
             raise ValueError("fuel_level cannot be negative")
 
         match aircraft_type:
+            case AircraftType.BOEING_747_400:
+                return Aircraft(
+                    "Boeing 747-400", AircraftType.BOEING_747_400, status, location,
+                    AircraftFactory.__next_tail_number(), 416, 1086, fuel_level, 53765,
+                    0.22, 11260, Decimal("-300000")
+                )
+            
             case AircraftType.BOEING_737_600:
                 if fuel_level > 6875:
                     raise ValueError(f"Fuel level is greater than Boeing 737-600 fuel capacity: {6875}")
