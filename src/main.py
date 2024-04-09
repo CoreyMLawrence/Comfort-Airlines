@@ -169,7 +169,7 @@ def main() -> None:
             aircraft.set_status(AircraftStatus.ON_TARMAC)
 
     ledger = Ledger()
-    simulation = Simulation(SIMULATION_DURATION // 4, ledger, aircrafts, airports, routes)
+    simulation = Simulation(SIMULATION_DURATION // 2, ledger, aircrafts, airports, routes)
     
     structlog.configure(
         processors=[
