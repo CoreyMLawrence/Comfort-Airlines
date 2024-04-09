@@ -60,7 +60,7 @@ with open ("data/aircraft.csv", "r") as aircraft_data, open("data/flight_weighte
             flight_distance = float(flight[DISTANCE])
             # Check for flights with -1 distance (illegal flight)
             if (flight_distance < 0):
-                kpg_output += (",-1,-1,-1,-1")
+                kpg_output += (",-1,-1,-1,-1,-1")
             else:
                 for aircraft in aircrafts:
                     flight_kpg = (float(aircraft[MPG]) * MPG_2_KPG)

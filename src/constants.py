@@ -2,7 +2,7 @@ from decimal import Decimal
 
 # Debugging
 DEBUG = False
-VERBOSE = DEBUG and False
+VERBOSE = DEBUG and True
 
 # Data
 SIMULATION_OUTPUT_DIRECTORY = "reports"

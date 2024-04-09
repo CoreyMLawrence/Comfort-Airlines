@@ -27,6 +27,7 @@ FUEL_BOEING_737_600 = 2
 FUEL_BOEING_767_800 = 3
 FUEL_AIRBUS_A200_100 = 4
 FUEL_AIRBUS_A220_300 = 5
+FUEL_BOEING_747_400 = 6
 
 with open("data/flight_weighted_distances.csv", "r") as flight_data, open("data/flight_demand.csv") as flight_demand_data, open("data/flight_fuel_capacity.csv") as flight_fuel_data:
     # 1. Import flight data
@@ -52,8 +53,11 @@ with open("data/flight_weighted_distances.csv", "r") as flight_data, open("data/
             assert row_flight[DESTINATION_AIRPORT] == row_flight_demand[DESTINATION_AIRPORT]
             assert row_flight[DESTINATION_AIRPORT] == row_flight_fuel[DESTINATION_AIRPORT]
             
+
             outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Boeing 737-600,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_BOEING_737_600]}\n")
             outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Boeing 767-800,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_BOEING_767_800]}\n")
             outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Airbus A200-100,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_AIRBUS_A200_100]}\n")
             outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Airbus A220-300,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_AIRBUS_A220_300]}\n")
+            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Boeing 747-400,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_BOEING_747_400]}\n")
+            
             

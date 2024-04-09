@@ -40,6 +40,6 @@ class Ledger:
 
     def record(self, entry: LedgerEntry) -> None:
         if DEBUG:
-            Ledger.logger.info("recorded ledger entry", type=entry.type.name, net_profit=str(entry.net_profit), location=entry.location.name if not entry.location is None else "null")
+            self.logger.info("recorded ledger entry", type=entry.type.name, net_profit=str(entry.net_profit), location=entry.location.name if not entry.location is None else "null")
         
         self.writer.writerow([entry.type.name, entry.net_profit, entry.time, entry.location if not entry.location is None else "null"])

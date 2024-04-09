@@ -19,14 +19,16 @@ MPG = {
     "Boeing 737-600" : 0.55,
     "Boeing 767-800" : 0.44,
     "Airbus A200-100" : 0.57,
-    "Airbus A220-300" : 0.66
+    "Airbus A220-300" : 0.66,
+    "Boeing 747-400" : 0.22
 }
 
 CAPACITY = {
     "Boeing 737-600" : 119,
     "Boeing 767-800" : 189,
     "Airbus A200-100" : 135,
-    "Airbus A220-300" : 160
+    "Airbus A220-300" : 160,
+    "Boeing 747-400" : 416
 }
 
 # Formula constants

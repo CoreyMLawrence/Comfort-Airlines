@@ -26,31 +26,21 @@ radius_of_earth = 6378.14
 
 # Function to calculate the Haversine distance between two points given their latitudes and longitudes
 def haversine_distance(lat1, lon1, lat2, lon2):
-    print("\nEntering haversine_distance function...")
-    print("Input latitudes and longitudes:", lat1, lon1, lat2, lon2)
-    
     # Convert degrees to radians
     phi_A, lambda_A, phi_B, lambda_B = map(math.radians, [lat1, lon1, lat2, lon2])
-    print("Converted to radians:", phi_A, lambda_A, phi_B, lambda_B)
     
     # Calculate the distance using Haversine formula
     distance = radius_of_earth * math.acos(math.sin(phi_A) * math.sin(phi_B) + math.cos(phi_A) * math.cos(phi_B) * math.cos(lambda_A - lambda_B))
-    print("Calculated distance:", distance)
     
     # If the distance is less than 242 km, set it to -1
     if distance < 242:
         distance = -1
-        print("Distance adjusted to -1 due to being less than 242 km.")
     
     return distance
 
 # Function to calculate the weighted distance between two points considering the direction of travel
 def wdistance(lat1, lon1, lat2, lon2):
-    print("\nEntering wdistance function...")
-    print("Input latitudes and longitudes:", lat1, lon1, lat2, lon2)
-    
     distance = haversine_distance(lat1, lon1, lat2, lon2)
-    print("Haversine distance:", distance)
     
     if distance < 0:
         return distance
@@ -75,18 +65,15 @@ def wdistance(lat1, lon1, lat2, lon2):
 
     # Calculate the dot product of the two vectors
     dot_product = x1 * x2 + y1 * y2 + z1 * z2
-    print("Dot product:", dot_product)
 
     # Calculate the angle between the two vectors
     angle = math.degrees(math.acos(dot_product))
-    print("Angle between vectors:", angle)
 
     # Calculate the percentage of angle
     if angle <= 90:
         percentage = angle / 90
     else:
         percentage = (angle - 90) / 90
-    print("Percentage of angle:", percentage)
 
     # Adjust weighted distance based on direction of travel
     if deltaLon > 0:  # Going West - flight time increases
@@ -96,7 +83,6 @@ def wdistance(lat1, lon1, lat2, lon2):
     else:  # Going exactly north or south
         weightedDistance = distance
 
-    print("Final weighted distance:", weightedDistance)
     return weightedDistance
 
 # Input and output file paths
@@ -126,7 +112,6 @@ for i in range(num_points):
             # Print origin and destination airports
             origin = airport_names[i]
             destination = airport_names[j]
-            print("\n\nCalculating distance from", origin, "to", destination)
             # Calculate weighted distance between each pair of airports
             distance_matrix[i][j] = wdistance(lat1, lon1, lat2, lon2)
         else:

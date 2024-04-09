@@ -33,18 +33,10 @@ class Scheduler:
     def schedule_flight(ledger: Ledger, time: int, aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]):
         if aircraft.status != AircraftStatus.AVAILABLE:
             raise ValueError("Precondition failed: aircraft is not available for scheduling")
-        
-        compatible_routes = list(filter(lambda route: route.source_airport == aircraft.location, routes))
-        if VERBOSE:
-            print(f"1. {len(compatible_routes)=}")
 
-        compatible_routes = list(filter(lambda route: route.aircraft_type == aircraft.type, compatible_routes))
+        compatible_routes = list(filter(lambda route: route.aircraft_type == aircraft.type, routes))
         if VERBOSE:
             print(f"2. {len(compatible_routes)=}")
-
-        compatible_routes = list(filter(lambda route: route.fuel_requirement <= aircraft.fuel_capacity, compatible_routes))
-        if VERBOSE:
-            print(f"3. {len(compatible_routes)=}")
 
         compatible_routes = list(filter(lambda route: len(list(filter(lambda passenger: passenger.location == route.source_airport and passenger.destination == route.destination_airport, passengers))) > 0, compatible_routes))
         if VERBOSE:

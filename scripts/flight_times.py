@@ -50,8 +50,6 @@ with open(aircraft_csv, 'r') as file:
         aircraft_names.append(output_file_name)
         cruise_speeds.append(cruise_speed)
 
-        print("Aircraft Names List:", aircraft_names)
-
 
 for i in range(len(aircraft_names)):
     CRUISE_SPEED = cruise_speeds[i] * .8
@@ -111,8 +109,6 @@ for i in range(len(aircraft_names)):
 
     # Function to calculate ascent time and ground distance
     def ascent_time(trip_altitude):
-        print("\nInside ascent_time function:")
-        print("trip_altitude:", trip_altitude)
 
         # Given data
         time_sum = 0
@@ -130,8 +126,6 @@ for i in range(len(aircraft_names)):
         ground_distance = ground_speed * time_to_10000_feet/60 #km
         time_sum += time_to_10000_feet
         trip_altitude -= 10000
-        print("time_sum after first segment:", time_sum)
-        print("trip_altitude after first segment:", trip_altitude)
         
         if (trip_altitude > 0):
             ground_speed = 518.56  # kmph (280 knots)
@@ -146,16 +140,12 @@ for i in range(len(aircraft_names)):
             time_to_cruising_altitude = altitude_to_ascend / vertical_speed /60 # minutes
             ground_distance += ground_speed * time_to_cruising_altitude/60 #(km)
             time_sum += time_to_cruising_altitude
-            print("time_sum after second segment:", time_sum)
 
         result = [time_sum, ground_distance]
         return result
 
     # Function to calculate ramp-up time and distance
     def ramp_up(CRUISE_SPEED, trip_altitude):
-        print("\nInside ramp_up function:")
-        print("CRUISE_SPEED:", CRUISE_SPEED)
-        print("trip_altitude:", trip_altitude)
 
         if trip_altitude > 10000:
             initial_speed_kph = 518.56  # kmph (280 knots)
@@ -180,10 +170,6 @@ for i in range(len(aircraft_names)):
 
     # Function to calculate ramp-down time and distance
     def ramp_down(CRUISE_SPEED, trip_altitude):
-        print("\nInside ramp_down function:")
-        print("CRUISE_SPEED:", CRUISE_SPEED)
-        print("trip_altitude:", trip_altitude)
-
         # Given data
         if trip_altitude > 10000:
             final_speed_kph = 518.56  # kmph (280 knots)
@@ -209,8 +195,6 @@ for i in range(len(aircraft_names)):
 
     # Function to calculate descent time and ground distance
     def descent_time(trip_altitude):
-        print("\nInside descent_time function:")
-        print("trip_altitude:", trip_altitude)
 
         time_sum = 0
         descent_distance = 0
@@ -221,15 +205,11 @@ for i in range(len(aircraft_names)):
             altitude_to_descend = trip_altitude - 10000  # feet
             descent_distance += (altitude_to_descend / 1000) * dist_per_1000_feet
             time_sum += (descent_distance / speed)*60
-            print("descent_distance after first segment:", descent_distance)
-            print("time_sum after first segment:", time_sum)
 
         # starting at 10000 feet - lower speed and descend to 0
         speed = 370.4  # kmph (200 knots)
         descent_distance += (10000 / 1000) * dist_per_1000_feet
         time_sum += (descent_distance / speed)*60
-        print("descent_distance after second segment:", descent_distance)
-        print("time_sum after second segment:", time_sum)
 
         ground_distance = descent_distance  # Update to use descent_distance instead of trip_altitude
         result = [time_sum, ground_distance]
@@ -251,9 +231,6 @@ for i in range(len(aircraft_names)):
             populations.append((metro_pop))
             airport_names.append(airport_name)
 
-    print("\nPopulations:", populations)
-    print("Airport Names:", airport_names)
-
     # Read weighted distances from CSV file
     weighted_distances = []
     with open(weighted_distances_csv, 'r') as file:
@@ -263,12 +240,9 @@ for i in range(len(aircraft_names)):
             distance_temp = float(row[2])
             weighted_distances.append((distance_temp))
 
-    print("Weighted Distances:", weighted_distances)
-
     num_points = len(populations)
     k = 0
     time_matrix = [[0.0] * num_points for _ in range(num_points)]
-    print("Time Matrix:", time_matrix)
 
     # Calculate flight times between pairs of airports
     for i in range(num_points):
@@ -281,68 +255,42 @@ for i in range(len(aircraft_names)):
                 destination_airport_name = airport_names[j]
                 distance = weighted_distances[k]
                 trip_altitude = cruising_altitude(distance)
-                print("\n Flying from: ", origin_airport_name, "to: ", destination_airport_name, "\n")
-                print("Weighted Distance: ", distance)
-                print("\n k = ",k)
+                
                 # Calculate taxi time before takeoff
                 taxi_time_before_takeoff = taxi_time(origin_population, origin_airport_name) + 1
                 time_sum += taxi_time_before_takeoff
-                print("Taxi time before takeoff:", taxi_time_before_takeoff)
-                print("Time sum after taxi time before takeoff:", time_sum)
 
                 # Calculate taxi time before landing
                 taxi_time_after_landing = taxi_time(destination_population, destination_airport_name) + 2
                 time_sum += taxi_time_after_landing
-                print("Taxi time after landing:", taxi_time_after_landing)
-                print("Time sum after taxi time after landing:", time_sum)
 
                 # Calculate ascent time and distance
                 ascent_result = ascent_time(trip_altitude)
                 time_sum += ascent_result[0]
                 distance -= ascent_result[1]
-                print("Ascent time:", ascent_result[0])
-                print("Ascent distance:", ascent_result[1])
-                print("Remaining distance after ascent:", distance)
-                print("Time sum after ascent time:", time_sum)
 
                 # Calculate descent time and distance
                 descent_result = descent_time(trip_altitude)
                 time_sum += descent_result[0]
                 distance -= descent_result[1]
-                print("Descent time:", descent_result[0])
-                print("Descent distance:", descent_result[1])
-                print("Remaining distance after descent:", distance)
-                print("Time sum after descent time:", time_sum)
 
                 # Calculate ramp-up time and distance
                 ramp_up_result = ramp_up(CRUISE_SPEED, trip_altitude)
                 time_sum += ramp_up_result[0]
                 distance -= ramp_up_result[1]
-                print("Ramp-up time:", ramp_up_result[0])
-                print("Ramp-up distance:", ramp_up_result[1])
-                print("Remaining distance after ramp-up:", distance)
-                print("Time sum after ramp-up time:", time_sum)
 
                 # Calculate ramp-down time and distance
                 ramp_down_result = ramp_down(CRUISE_SPEED, trip_altitude)
                 time_sum += ramp_down_result[0]
                 distance -= ramp_down_result[1]
-                print("Ramp-down time:", ramp_down_result[0])
-                print("Ramp-down distance:", ramp_down_result[1])
-                print("Remaining distance after ramp-down:", distance)
-                print("Time sum after ramp-down time:", time_sum)
 
                 # Calculate time for cruising
                 cruising_time = distance / CRUISE_SPEED * 60
                 time_sum += cruising_time
-                print("Time for cruising:", cruising_time)
-                print("Time sum after cruising time:", time_sum)
-
 
                 # Store the calculated time in the time matrix
                 time_matrix[i][j] = time_sum
                 k+=1
-                print("\n time: ",time_sum)
             else:
                 time_matrix[i][j] = -1  # Set diagonal elements to -1
 

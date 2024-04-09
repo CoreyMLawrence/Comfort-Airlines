@@ -20,10 +20,10 @@ import log.processors
 from singletons.simulation import Simulation
 from singletons.scheduler import Scheduler
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
-from singletons.reports.passenger_report import PassengerReport
-from singletons.reports.airport_report import AirportReport
-from singletons.reports.aircraft_report import AircraftReport
-from singletons.reports.flight_report import FlightReport
+from models.reports.passenger_report import PassengerReport
+from models.reports.airport_report import AirportReport
+from models.reports.aircraft_report import AircraftReport
+from models.reports.flight_report import FlightReport
 from constants import HUB_NAMES, SIMULATION_DURATION, SIMULATION_OUTPUT_DIRECTORY, DEFAULT_LANDING_FEE, DEFAULT_TAKEOFF_FEE, DEFAULT_GAS_PRICE
 from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
 from models.airport import Airport
@@ -115,7 +115,8 @@ def import_routes(filepath: str, airports: list[Airport]) -> list[Route]:
         "Boeing 737-600" : AircraftType.BOEING_737_600,
         "Boeing 767-800" : AircraftType.BOEING_737_800,
         "Airbus A200-100" : AircraftType.AIRBUS_A200_100,
-        "Airbus A220-300" : AircraftType.AIRBUS_A220_300
+        "Airbus A220-300" : AircraftType.AIRBUS_A220_300,
+        "Boeing 747-400" : AircraftType.BOEING_747_400
     }
     
     routes = []
@@ -146,6 +147,7 @@ def main() -> None:
     aircrafts = list(itertools.chain.from_iterable([
         [AircraftFactory.create_aircraft(AircraftType.BOEING_737_600, AircraftStatus.AVAILABLE, None, 0) for _ in range(15)],
         [AircraftFactory.create_aircraft(AircraftType.BOEING_737_800, AircraftStatus.AVAILABLE, None, 0) for _ in range(15)],
+        [AircraftFactory.create_aircraft(AircraftType.BOEING_747_400, AircraftStatus.AVAILABLE, None, 0) for _ in range(1)],
         [AircraftFactory.create_aircraft(AircraftType.AIRBUS_A200_100, AircraftStatus.AVAILABLE, None, 0) for _ in range(12)],
         [AircraftFactory.create_aircraft(AircraftType.AIRBUS_A220_300, AircraftStatus.AVAILABLE, None, 0) for _ in range(13)]
     ]))
@@ -168,8 +170,16 @@ def main() -> None:
             aircraft.location.tarmac.append(aircraft)
             aircraft.set_status(AircraftStatus.ON_TARMAC)
 
+    if not os.path.exists(SIMULATION_OUTPUT_DIRECTORY):
+        os.mkdir(SIMULATION_OUTPUT_DIRECTORY)
+
+    passenger_report = PassengerReport(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "passengers.csv"))
+    airport_report = AirportReport(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "airports.csv"))
+    aircraft_report = AircraftReport(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "aircrafts.csv"))
+    flight_report = FlightReport(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "flights.csv"))
     ledger = Ledger()
-    simulation = Simulation(SIMULATION_DURATION // 2, ledger, aircrafts, airports, routes)
+        
+    simulation = Simulation(SIMULATION_DURATION // 4, ledger, passenger_report, airport_report, aircraft_report, flight_report, aircrafts, airports, routes)
     
     structlog.configure(
         processors=[
@@ -185,17 +195,8 @@ def main() -> None:
 
     for aircraft in aircrafts:
         ledger.record(LedgerEntry(LedgerEntryType.PLANE_RENTAL, aircraft.rental_cost, 0, None))
-        #The lease cost of a Boeing 747-400 is $300,000/month. needs to be added
     
     simulation.run()
-
-    if not os.path.exists(SIMULATION_OUTPUT_DIRECTORY):
-        os.mkdir(SIMULATION_OUTPUT_DIRECTORY)
-    
-    PassengerReport.generate(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "passengers.csv"), simulation)
-    AirportReport.generate(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "airports.csv"), simulation)
-    AircraftReport.generate(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "aircrafts.csv"), simulation)
-    FlightReport.generate(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "flights.csv"), simulation)
 
 
 if __name__ == "__main__":
