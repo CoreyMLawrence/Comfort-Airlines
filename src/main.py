@@ -179,7 +179,7 @@ def main() -> None:
     flight_report = FlightReport(os.path.join(SIMULATION_OUTPUT_DIRECTORY, "flights.csv"))
     ledger = Ledger()
         
-    simulation = Simulation(SIMULATION_DURATION // 4, ledger, passenger_report, airport_report, aircraft_report, flight_report, aircrafts, airports, routes)
+    simulation = Simulation(SIMULATION_DURATION, ledger, passenger_report, airport_report, aircraft_report, flight_report, aircrafts, airports, routes)
     
     structlog.configure(
         processors=[

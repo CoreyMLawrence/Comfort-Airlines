@@ -6,11 +6,12 @@ from pprint import pprint
 
 import structlog
 
-from constants import DEBUG, VERBOSE
+from constants import DEBUG, VERBOSE, AGGREGATE
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
 from models.aircraft import Aircraft, AircraftStatus, WAIT_TIMERS
 from models.flight import Flight
 from helpers.default import default
+from helpers.first import first
 
 if TYPE_CHECKING:
     from models.route import Route
@@ -34,15 +35,19 @@ class Scheduler:
         if aircraft.status != AircraftStatus.AVAILABLE:
             raise ValueError("Precondition failed: aircraft is not available for scheduling")
 
-        compatible_routes = list(filter(lambda route: route.aircraft_type == aircraft.type, routes))
+        compatible_routes = [route for route in routes if route.aircraft_type == aircraft.type and route.current_demand > 0]
         if VERBOSE:
             print(f"2. {len(compatible_routes)=}")
 
-        compatible_routes = list(filter(lambda route: len(list(filter(lambda passenger: passenger.location == route.source_airport and passenger.destination == route.destination_airport, passengers))) > 0, compatible_routes))
+        compatible_routes = [
+            route for route in compatible_routes if len([
+                passenger for passenger in passengers 
+                if passenger.location == route.source_airport and passenger.destination == route.destination_airport
+            ]) > 0
+        ]
+        
         if VERBOSE:
             print(f"4. {len(compatible_routes)=}")
-
-        compatible_routes = list(filter(lambda route: route.current_demand > 0, compatible_routes))
 
         if aircraft.needs_maintenance:
             compatible_routes = list(filter(lambda route: route.destination_airport.is_hub, compatible_routes))
@@ -55,11 +60,16 @@ class Scheduler:
             return
 
         route = max(compatible_routes, key=lambda route: route.net_profit)
-        passengers = list(filter(
-                            lambda passenger: passenger.location == route.source_airport 
-                            and passenger.destination == route.destination_airport, 
-                            passengers
-        ))[:aircraft.passenger_capacity]
+        if AGGREGATE and not aircraft.location.is_hub:
+            route_to_regional_airport = first(lambda r: r.destination_airport == route.destination_airport.regional_airport, compatible_routes)
+            if not route_to_regional_airport is None:
+                route = route_to_regional_airport
+            
+        
+        passengers = [
+            passenger for passenger in passengers 
+            if passenger.location == route.source_airport and passenger.destination == route.destination_airport
+        ][:aircraft.passenger_capacity]
         route.daily_demand -= min(route.daily_demand, len(passengers))
         if VERBOSE:
             Scheduler.logger.debug("decreased route daily demand", route=str(route), current_demand=route.current_demand, daily_demand=route.daily_demand)
