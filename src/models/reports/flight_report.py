@@ -17,7 +17,7 @@ class FlightReport(Report):
         self.writer.writerow([
             "flight number", "source airport", "destination airport", 
             "number of passengers", "scheduled departure time", "scheduled arrival time", 
-            "actual departure time", "actual arrival time", "aircraft tail number"
+            "actual departure time", "actual arrival time", "aircraft tail number", "aircraft type"
         ])
         
     def __del__(self) -> None:
@@ -28,5 +28,5 @@ class FlightReport(Report):
         self.writer.writerow([
             flight.flight_number, flight.route.source_airport, flight.route.destination_airport,
             len(flight.passengers), flight.expected_departure_time, flight.expected_arrival_time,
-            default(flight.actual_departure_time, "null"), default(flight.actual_arrival_time, "null"), flight.aircraft.tail_number
+            default(flight.actual_departure_time, "null"), default(flight.actual_arrival_time, "null"), flight.aircraft.tail_number, flight.aircraft.name
         ])
