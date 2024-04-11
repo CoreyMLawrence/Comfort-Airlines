@@ -2,7 +2,8 @@ from decimal import Decimal
 
 import pytest
 
-from models.aircraft import Airport, Aircraft, AircraftType, AircraftStatus, AircraftFactory
+from models.aircraft import Aircraft, AircraftType, AircraftStatus, AircraftFactory
+from models.airport import Airport
 
 @pytest.mark.parametrize("name, type, status, location, tail_number, passenger_capacity, cruise_speed, fuel_level, fuel_capacity, fuel_efficiency, wait_timer, max_range", 
     [
