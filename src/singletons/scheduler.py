@@ -60,7 +60,7 @@ class Scheduler:
             return
 
         route = max(compatible_routes, key=lambda route: route.net_profit)
-        if AGGREGATE and not aircraft.location.is_hub:
+        if AGGREGATE and not route.destination_airport.is_hub:
             route_to_regional_airport = first(lambda r: r.destination_airport == route.destination_airport.regional_airport, compatible_routes)
             if not route_to_regional_airport is None:
                 route = route_to_regional_airport
