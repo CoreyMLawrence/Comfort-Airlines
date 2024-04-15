@@ -28,6 +28,7 @@ from constants import HUB_NAMES, SIMULATION_DURATION, SIMULATION_OUTPUT_DIRECTOR
 from models.aircraft import AircraftFactory, AircraftType, AircraftStatus
 from models.airport import Airport
 from models.route import Route
+from helpers.first import first_or_error
 
 def import_hubs(filepath: str) -> list[Airport]:
     # rank,airport,iata code,city,state,metro area,metro population,latitude,longitude
@@ -162,7 +163,10 @@ def main() -> None:
         airport.routes = list(filter(lambda route: route.source_airport.name == airport.name, routes))
         
     for index, aircraft in enumerate(aircrafts):
-        aircraft.location = airports[index % len(HUB_NAMES)]
+        if aircraft.type == AircraftType.BOEING_747_400:
+            aircraft.location = [airport for airport in airports if airport.name == "John F. Kennedy International Airport"][0]
+        else:
+            aircraft.location = airports[index % len(HUB_NAMES)]
 
         if aircraft.location.gates > 0:
             aircraft.location.gates -= 1
@@ -201,21 +205,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-
-""" PARIS INFO    -- New plane added to aircraft csv to accomodate flights
-Take off and landing fees are Euro 2100. The cost of aviation fuel in Paris is Euro 1.97/liter. The cost of fuel and take-off and landing fees are billed to the airline at the end of each month.
-
-
-The exchange rate at the end of each month is derived from xe.com (Use the exchange rate that existed on 01/31/23 as the exchange rate for 01/31/24 etc),
-
-
-Timetables should be produced in both English and French. For each route, provide the origin airport, destination airport indicating arrival and landing times. List all stopovers and the amount of time on the ground during each stop-over. Also list the total time and total distance travelled.
-
-
-Pay attention to metric versus imperial units of measurement, and the way city names are spelled in each language. The timetable must present the information in a culturally correct manner.
-
-
-Also ay attention to daylight savings. Not all states observe daylight savings, and France and the US do not necessaily start and end daylight savings on the same dates. 
-
-"""

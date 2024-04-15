@@ -10,7 +10,7 @@ from helpers.reference_wrapper import ReferenceWrapper
 from helpers.decorators import timed
 
 from models.passenger import Passenger
-from models.aircraft import Aircraft, AircraftStatus
+from models.aircraft import Aircraft, AircraftStatus, AircraftType
 
 if TYPE_CHECKING:
     from models.airport import Airport

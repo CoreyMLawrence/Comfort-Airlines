@@ -6,9 +6,9 @@ from pprint import pprint
 
 import structlog
 
-from constants import DEBUG, VERBOSE, AGGREGATE
+from constants import DEBUG, VERBOSE, AGGREGATE, HUB_NAMES, MINUTES_PER_DAY
 from singletons.ledger import Ledger, LedgerEntry, LedgerEntryType
-from models.aircraft import Aircraft, AircraftStatus, WAIT_TIMERS
+from models.aircraft import Aircraft, AircraftStatus, AircraftType, WAIT_TIMERS
 from models.flight import Flight
 from helpers.default import default
 from helpers.first import first
@@ -29,6 +29,13 @@ class Scheduler:
         Scheduler.flight_uuid += 1
 
         return id
+    
+    @staticmethod
+    def __within_operating_hours(time: int) -> bool:
+        ONE_AM = 60
+        FIVE_AM = 300
+        time %= MINUTES_PER_DAY
+        return time < ONE_AM or time > FIVE_AM
         
     @staticmethod
     def schedule_flight(ledger: Ledger, time: int, aircraft: Aircraft, routes: list[Route], passengers: list[Passenger]):
@@ -36,8 +43,25 @@ class Scheduler:
             raise ValueError("Precondition failed: aircraft is not available for scheduling")
 
         compatible_routes = [route for route in routes if route.aircraft_type == aircraft.type and route.current_demand > 0]
-        if VERBOSE:
-            print(f"2. {len(compatible_routes)=}")
+        compatible_routes = [route for route in compatible_routes if Scheduler.__within_operating_hours(time + route.expected_time)]
+
+        if aircraft.type == AircraftType.BOEING_747_400:
+            if aircraft.needs_maintenance:
+                compatible_routes = [
+                    route for route in compatible_routes
+                    if route.destination_airport.name in HUB_NAMES
+                ]
+            else:
+                if aircraft.location.name == "John F. Kennedy International Airport":
+                    compatible_routes = [
+                        route for route in compatible_routes
+                        if route.destination_airport.name == "Paris Charles de Gaulle Airport"
+                    ]
+                else:
+                    compatible_routes = [
+                        route for route in compatible_routes
+                        if route.destination_airport.name == "John F. Kennedy International Airport"
+                    ]
 
         compatible_routes = [
             route for route in compatible_routes if len([
@@ -45,14 +69,9 @@ class Scheduler:
                 if passenger.location == route.source_airport and passenger.destination == route.destination_airport
             ]) > 0
         ]
-        
-        if VERBOSE:
-            print(f"4. {len(compatible_routes)=}")
 
         if aircraft.needs_maintenance:
-            compatible_routes = list(filter(lambda route: route.destination_airport.is_hub, compatible_routes))
-            if VERBOSE:
-                print(f"6. {len(compatible_routes)=}")
+            compatible_routes = [route for route in compatible_routes if route.destination_airport.is_hub]
 
         if len(compatible_routes) == 0:
             if DEBUG:
@@ -64,7 +83,7 @@ class Scheduler:
             route_to_regional_airport = first(lambda r: r.destination_airport == route.destination_airport.regional_airport, compatible_routes)
             if not route_to_regional_airport is None:
                 route = route_to_regional_airport
-            
+        
         
         passengers = [
             passenger for passenger in passengers 
@@ -98,7 +117,7 @@ class Scheduler:
             passenger.location = None
             passenger.flights_taken.append(flight)
         
-        Scheduler.logger.info("scheduled flight", aircraft_tail_number=aircraft.tail_number, source_airport=route.source_airport.name, destination_airport=route.destination_airport.name)
+        Scheduler.logger.info("scheduled flight", aircraft_tail_number=aircraft.tail_number, source_airport=route.source_airport.name, destination_airport=route.destination_airport.name, aircraft_type=aircraft.type.name)
         
         aircraft.flight = flight
         aircraft.flights_taken.append(flight)
