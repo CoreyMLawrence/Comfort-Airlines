@@ -31,7 +31,7 @@ import math
 If were to be implemented: 
  - need a minutes_delayed attribute somewhere (plane or route); below uses a placeholder minutes_delayed tied to the aircraft
  - update actual departure/landing times to be different that expected
- - doublecheck math for #3
+ - doublecheck math for #3 Im sure Corey/whoever did flight_weighted_distance or time has a better idea than me
  - not sure if to make status in maintence or in maintnence quee, or if we have a tag for needs maintenence, all for #5
  - needs to be able to "cancel" a flight for #6
  - needs a place to call the functions
