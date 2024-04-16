@@ -39,6 +39,7 @@ class AircraftStatus(IntEnum):
     BOARDING_WITH_REFUELING = auto()
     DEBOARDING = auto()
     IN_FLIGHT = auto()
+    DELAYED = auto()
 
 class Aircraft:
     """Model class. A generic representation of an aircraft. Type is indicated by AirCraft.Type"""

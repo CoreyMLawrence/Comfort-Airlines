@@ -43,7 +43,10 @@ class Scheduler:
             raise ValueError("Precondition failed: aircraft is not available for scheduling")
 
         compatible_routes = [route for route in routes if route.aircraft_type == aircraft.type and route.current_demand > 0]
-        compatible_routes = [route for route in compatible_routes if Scheduler.__within_operating_hours(time + route.expected_time)]
+        compatible_routes = [
+            route for route in compatible_routes 
+            if Scheduler.__within_operating_hours(time) and Scheduler.__within_operating_hours(time + route.expected_time)
+        ]
 
         if aircraft.type == AircraftType.BOEING_747_400:
             if aircraft.needs_maintenance:

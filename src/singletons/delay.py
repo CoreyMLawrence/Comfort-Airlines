@@ -1,31 +1,13 @@
-import random
 from __future__ import annotations
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Union
+import random
+import math
 
-import structlog
-
-from constants import HUB_NAMES, MINUTES_PER_DAY, DEBUG, VERBOSE
-from singletons.scheduler import Scheduler
-
-from helpers.reference_wrapper import ReferenceWrapper
-from helpers.decorators import timed
-
-from models.passenger import Passenger
 from models.aircraft import Aircraft, AircraftStatus
 
 if TYPE_CHECKING:
-    from models.airport import Airport
+    from models.flight import Flight
     from models.route import Route
-    from singletons.ledger import Ledger
-    from models.reports.passenger_report import PassengerReport
-    from models.reports.airport_report import AirportReport
-    from models.reports.aircraft_report import AircraftReport
-    from models.reports.flight_report import FlightReport
-
-import math
-
-
-
 
 '''
 If were to be implemented: 
@@ -35,27 +17,33 @@ If were to be implemented:
  - not sure if to make status in maintence or in maintnence quee, or if we have a tag for needs maintenence, all for #5
  - needs to be able to "cancel" a flight for #6
  - needs a place to call the functions
- 
 
+    match get_book(&book_name) {
+        Some(book) => 
+    }
 '''
 
 # Delay 1: 25% of all flights encounter bad weather and the flight time is extended for a random amount of time between 1 minute and 15% of the flight time.
-def delay_1(flight):
-    if random.random() < 0.25:  # 25% chance of delay
-        delay = random.randint(1, int(0.15 * flight.aircraft.minutes_delayed))
-        flight.aircraft.minutes_delayed += delay
-        print(f"Delay 1: Bad weather caused a delay of {delay} minutes.")
+def delay_1(flight: Flight) -> Union[None,int]:
+    DELAY_CHANCE = 0.25
+    
+    if random.random() < DELAY_CHANCE:
+        delay = random.randint(1, math.floor(0.15 * flight.route.expected_time))
+
+        flight.aircraft.status = AircraftStatus.DELAYED
+        flight.aircraft.wait_timer = delay
 
 # Delay 2: 20% of all flights originating above 40° N are delayed on the ground (not at the gate) due to icing for a random amount of time between 10 minutes and 45 minutes.
-def delay_2(flight):
+def delay_2(flight: Flight):
     if flight.aircraft.location.latitude > 40:  # Flights originating above 40° N
         if random.random() < 0.20:  # 20% chance of delay
             delay = random.randint(10, 45)
-            flight.aircraft.minutes_delayed += delay
-            print(f"Delay 2: Icing caused a delay of {delay} minutes.")
+            
+            flight.aircraft.status = AircraftStatus.DELAYED
+            flight.aircraft.wait_timer = delay
 
 # Delay 3: There is a strong jet stream and flights travelling due East have flight times extended by 12%, flights travelling due West have flights shortened by 12%. All other flights have flight times impacted accordingly based on the initial heading of the flight.
-def delay_3(flight):
+def delay_3(flight: Flight):
     def calculate_direction_percentage(lat1, lon1, lat2, lon2):
         # Convert latitude and longitude from degrees to radians
         lat1 = math.radians(lat1)
@@ -90,28 +78,33 @@ def delay_3(flight):
         west_percent = west_percent / 100 * 12
 
         return east_percent, west_percent
-    east, west = calculate_direction_percentage(flight.route.source_airport.latitude,flight.route.source_airport.longitude
-                                   , flight.route.destination_airport.latitude, flight.route.destination_airport.longitude)
+    east, west = calculate_direction_percentage(
+                    flight.route.source_airport.latitude, flight.route.source_airport.longitude, 
+                    flight.route.destination_airport.latitude, flight.route.destination_airport.longitude
+                )
+    
     if east > west:
-        delay = flight.route.expected_arrival_time *east
+        delay = flight.route.expected_arrival_time * east
+        
+        flight.aircraft.status = AircraftStatus.DELAYED
+        flight.aircraft.wait_timer = delay
     else:
-        delay = flight.route.expected_arrival_time *-west # less delay due to west ??
-    print(f"Delay 1: Strong jetsream wind caused a delay of {delay} minutes.")
+        delay = flight.route.expected_arrival_time * -west
     
 
 
 # Delay 4: 5% of flights are delayed at the gate by a random amount of time ranging from 5 minutes to 90 minutes.
-def delay_4(flight):
+def delay_4(flight: Flight):
     if random.random() < 0.05:  # 5% chance of delay
         delay = random.randint(5, 90)
-        flight.aircraft.minutes_delayed += delay
-        print(f"Delay 4: Gate delay caused a delay of {delay} minutes.")
+
+        flight.aircraft.status = AircraftStatus.DELAYED
+        flight.aircraft.wait_timer = delay
 
 # Delay 5: You suffer an aircraft failure at one of the major Comfort Airline hubs. The aircraft is taken out of commission for the entire day. The aircraft is towed away from the gate for unscheduled maintenance.
-def delay_5(flight):
+def delay_5(flight: Flight):
     if flight.aircraft.location.is_hub():  # Check if the airport is a hub
-        flight.aircraft.status = AircraftStatus.IN_MAINTENANCE # or in maintence queue
-        print("Delay 5: Aircraft is out of commission for the entire day due to a failure.")
+        flight.aircraft.set_status(AircraftStatus.IN_MAINTENANCE)
         
 # Delay 6: 8% of all flights originating west of 103° W are cancelled. Passengers must be put of other flights in order to reach their destination.
 def delay_6(flight):
@@ -120,3 +113,19 @@ def delay_6(flight):
         pass
         
 
+DAILY_DELAY = [
+    None,
+    None,
+    delay_1,
+    None,
+    delay_2,
+    None,
+    delay_3,
+    None,
+    delay_4,
+    None,
+    delay_5,
+    None,
+    delay_6,
+    None
+]
