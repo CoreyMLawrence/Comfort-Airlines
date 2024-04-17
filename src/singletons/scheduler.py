@@ -45,7 +45,7 @@ class Scheduler:
         compatible_routes = [route for route in routes if route.aircraft_type == aircraft.type and route.current_demand > 0]
         compatible_routes = [
             route for route in compatible_routes 
-            if Scheduler.__within_operating_hours(time) and Scheduler.__within_operating_hours(time + route.expected_time)
+            if Scheduler.__within_operating_hours(time + WAIT_TIMERS[AircraftStatus.BOARDING_WITH_REFUELING]) and Scheduler.__within_operating_hours(time + route.expected_time)
         ]
 
         if aircraft.type == AircraftType.BOEING_747_400:
