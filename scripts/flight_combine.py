@@ -23,13 +23,16 @@ NUM_PASSENGERS = 2
 # Indices of values in flight_fuel_capacity.csv
 # SOURCE_AIRPORT = 0
 # DESTINATION_AIRPORT = 1
-FUEL_BOEING_737_600 = 2
-FUEL_BOEING_767_800 = 3
-FUEL_AIRBUS_A200_100 = 4
-FUEL_AIRBUS_A220_300 = 5
-FUEL_BOEING_747_400 = 6
 
-with open("data/flight_weighted_distances.csv", "r") as flight_data, open("data/flight_demand.csv") as flight_demand_data, open("data/flight_fuel_capacity.csv") as flight_fuel_data:
+# Indices of values in aircraft.csv
+AIRCRAFT = 0
+PASSENGER_CAPACITY = 1
+CRUISE_SPEED = 2
+MAX_FUEL_CAPACITY = 3
+MAX_RANGE = 4
+MPG = 5
+
+with open("data/flight_weighted_distances.csv", "r") as flight_data, open("data/flight_demand.csv") as flight_demand_data, open("data/flight_fuel_capacity.csv") as flight_fuel_data, open("data/aircraft.csv", "r") as aircraft_data:
     # 1. Import flight data
     reader = csv.reader(flight_data, delimiter=',')
     _ = next(reader)
@@ -45,6 +48,11 @@ with open("data/flight_weighted_distances.csv", "r") as flight_data, open("data/
     _ = next(reader)
     flight_fuel = [row for row in reader]
     
+    # 4. Import aircraft data
+    reader = csv.reader(aircraft_data, delimiter=',')
+    _ = next(reader)
+    aircrafts = [row for row in reader]
+    
     with open("data/flights.csv", "w") as outfile:
         outfile.write("source airport,destination airport,aircraft type,distance (weighted in km),number of passengers for 2% market share (flight demand), fuel (gallons)\n")
         
@@ -53,11 +61,9 @@ with open("data/flight_weighted_distances.csv", "r") as flight_data, open("data/
             assert row_flight[DESTINATION_AIRPORT] == row_flight_demand[DESTINATION_AIRPORT]
             assert row_flight[DESTINATION_AIRPORT] == row_flight_fuel[DESTINATION_AIRPORT]
             
-
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Boeing 737-600,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_BOEING_737_600]}\n")
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Boeing 767-800,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_BOEING_767_800]}\n")
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Airbus A200-100,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_AIRBUS_A200_100]}\n")
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Airbus A220-300,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_AIRBUS_A220_300]}\n")
-            outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},Boeing 747-400,{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[FUEL_BOEING_747_400]}\n")
+            CURRENT_AIRCRAFT_INDEX = 2     # current index of aircraft type. Starts at 2, goes up to the total number of aircraft types.
+            for aircraft in aircrafts:
+                outfile.write(f"{row_flight[SOURCE_AIRPORT]},{row_flight_demand[DESTINATION_AIRPORT]},{aircraft[AIRCRAFT]},{row_flight[DISTANCE_KM]},{row_flight_demand[NUM_PASSENGERS]},{row_flight_fuel[CURRENT_AIRCRAFT_INDEX]}\n")
+                CURRENT_AIRCRAFT_INDEX += 1
             
             
