@@ -92,7 +92,7 @@ class Scheduler:
             passenger for passenger in passengers 
             if passenger.location == route.source_airport and passenger.destination == route.destination_airport
         ][:aircraft.passenger_capacity]
-        route.daily_demand -= min(route.daily_demand, len(passengers))
+        route.current_demand -= min(route.current_demand, len(passengers))
         if VERBOSE:
             Scheduler.logger.debug("decreased route daily demand", route=str(route), current_demand=route.current_demand, daily_demand=route.daily_demand)
 
