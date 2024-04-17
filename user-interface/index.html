@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="./js/airports.js"></script>
+    <script src="./js/schedule.js"></script>
+    <script src="./js/menu.js"></script>
+    <script src="./js/login.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="icon" href="./images/logo.png" sizes="any" type="image/png" />
+  </head>
+  <body>
+    <div class="container">
+      <a id="refreshLink" href="./">
+        <img src="./images/logo.png" id="logo-login" />
+      </a>
+      <form id="loginForm">
+        <div class="form-group">
+          <input
+            type="text"
+            id="username"
+            name="username"
+            placeholder="Full Name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Password"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <select id="city" name="city" required>
+            <option value="" disabled selected>Starting location</option>
+          </select>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+    </div>
+  </body>
+</html>

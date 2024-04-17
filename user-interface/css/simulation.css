@@ -1,0 +1,74 @@
+.container {
+  height: 100%;
+}
+.boxes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-row-gap: 30px;
+}
+
+h3 {
+  color: white;
+  margin: 0.25em;
+}
+
+.lighter {
+  font-weight: lighter;
+}
+
+.planeBox {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  padding: 0.5em 1em 0.5em 1em;
+  width: 25em;
+  height: 15em;
+  border-radius: 1.5em;
+  background: linear-gradient(to top, #7638ea, #957dff);
+  box-shadow: 0px 0.5em 1em 0px rgba(0, 0, 0, 0.1);
+}
+
+.pair {
+  display: flex;
+  flex-direction: row;
+}
+
+.planeRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+table {
+  width: 100%;
+  font-size: larger;
+}
+
+th {
+  padding-top: 0.35em;
+  text-align: left;
+  color: white;
+}
+
+td {
+  text-align: right;
+  color: white;
+}
+
+.separator {
+  border-bottom: solid 3px rgb(225, 225, 225, 100);
+  margin-top: 0.25em;
+  border-radius: 0.2em;
+  width: 90%;
+}
+
+.loading-bar {
+  margin-top: 0.5em;
+  border-radius: 0.2em;
+  height: 5px;
+  background-color: rgb(225, 225, 225, 50);
+  width: 0;
+  transition: width 0.5s ease;
+  max-width: 24em;
+}

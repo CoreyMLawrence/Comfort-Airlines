@@ -1,0 +1,130 @@
+@font-face {
+  font-family: 'SF Pro';
+  src: url('../sf-pro-display_regular.woff2') format('woff2');
+}
+
+.container {
+  height: auto !important;
+}
+
+#scheduleCustomer {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Style for table headers */
+#scheduleCustomer th {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-weight: bold;
+}
+
+/* Style for table data cells */
+#scheduleCustomer td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+/* Style for even rows */
+#scheduleCustomer tr:nth-child(even) td {
+  background-color: #f2f2f2;
+}
+
+/* Style for odd rows */
+#scheduleCustomer tr:nth-child(odd) td {
+  background-color: #fff;
+}
+
+#scheduleCustomer td:first-child {
+  border-left: none;
+}
+
+#scheduleCustomer td:last-child {
+  border-right: none;
+}
+
+#scheduleCustomer tr:first-child th {
+  border-top: none;
+}
+
+#scheduleCustomer tr:last-child td {
+  border-bottom: none;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  border: none;
+  border-radius: 1.5em !important;
+}
+
+table th,
+table td {
+  padding: 10px;
+  text-align: left;
+}
+
+table th {
+  background-color: #7638ea;
+  color: white;
+  font-weight: bold;
+}
+
+table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+table tr:hover {
+  background-color: #f0f0f0;
+}
+
+table th,
+table td {
+  border: none;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  width: 20em;
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type='text'],
+input[type='password'],
+select {
+  font-size: 1em;
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 1.5em;
+  text-align: center;
+}
+
+#input {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+  width: 100%;
+  margin-top: 2em;
+}
+
+label {
+  font-size: 1.2em;
+  padding-bottom: 0.25em;
+}

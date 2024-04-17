@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Schedule Information</title>
+  </head>
+  <body>
+    <div id="scheduleInfo"></div>
+    <div id="scheduleInfo"></div>
+
+    <script>
+      // Retrieve schedule data from session storage
+      const schedule = JSON.parse(sessionStorage.getItem('schedule'));
+
+      // Get the div to display schedule information
+      const scheduleInfoDiv = document.getElementById('scheduleInfo');
+
+      // Create a list element
+      const list = document.createElement('ul');
+
+      // Iterate over the schedule data and create list items to display the information
+      schedule.flightNumber.forEach((flight, index) => {
+        const listItem = document.createElement('li');
+        listItem.textContent = `Flight ${flight}: ${schedule.sourceCity[index]} to ${schedule.destinationCity[index]}, Passenger Count: ${schedule.passengerCount[index]}, Scheduled Departure: ${schedule.scheduledDepartureTime[index]}, Scheduled Arrival: ${schedule.scheduledArrivalTime[index]}`;
+        list.appendChild(listItem);
+      });
+
+      // Append the list to the schedule information div
+      scheduleInfoDiv.appendChild(list);
+    </script>
+  </body>
+</html>
