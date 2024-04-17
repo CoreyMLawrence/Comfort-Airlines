@@ -1,4 +1,4 @@
-#Parker Blue
+#Parker Blue, Dylan Hudson
 #script that runs all possibe flight combinations  (4 plane types, 800+routes)
 # and creates csvs of profitable and loss flights separately
 # NOTE: does not account for (max) fuel capacity, refuel, etc, purely monetary calc
@@ -15,21 +15,31 @@ DISTANCE_KM = 3
 DEMAND = 4
 FUEL_REQUIRED = 5
 
-MPG = {
-    "Boeing 737-600" : 0.55,
-    "Boeing 767-800" : 0.44,
-    "Airbus A200-100" : 0.57,
-    "Airbus A220-300" : 0.66,
-    "Boeing 747-400" : 0.22
-}
 
-CAPACITY = {
-    "Boeing 737-600" : 119,
-    "Boeing 767-800" : 189,
-    "Airbus A200-100" : 135,
-    "Airbus A220-300" : 160,
-    "Boeing 747-400" : 416
-}
+# Indices of values in aircraft.csv
+AIRCRAFT = 0
+PASSENGER_CAPACITY = 1
+MAX_SPEED = 2
+MAX_FUEL_CAPACITY = 3
+MAX_RANGE = 4
+MPG_INDEX = 5
+
+# File-reading constants
+FILE_START = 0
+
+# Read aircraft data from aircraft.csv
+aircraft_data = {}
+with open("data/aircraft.csv", "r") as aircraft_file:
+    aircraft_reader = csv.reader(aircraft_file)
+    next(aircraft_reader)  # Skip header row
+    for row in aircraft_reader:
+        aircraft_name = row[AIRCRAFT]
+        passenger_capacity = int(row[PASSENGER_CAPACITY])
+        mpg = float(row[MPG_INDEX])
+        aircraft_data[aircraft_name] = {
+            'passenger_capacity': passenger_capacity,
+            'mpg': mpg
+        }
 
 # Formula constants
 takeoff_fee = 2000
@@ -37,9 +47,6 @@ landing_fee = 2000
 gas = 6.19              # gallons
 KMtoM = 0.621371        # converts to miles
 break_even_percentage = 0.3
-
-# File-reading constants
-FILE_START = 0
 
 
 with open ("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_loss.csv", "w") as outfile1:# open("data/flight_profit_or_loss_loss.csv", "w") as outfile2:
@@ -61,8 +68,8 @@ with open ("data/flights.csv", "r") as flight_data, open("data/flight_profit_or_
         demand = float(row_flight[DEMAND])
         distance_km = float(row_flight[DISTANCE_KM])
         aircraft_name = row_flight[AIRCRAFT_TYPE]
-        capacity = int(CAPACITY[row_flight[AIRCRAFT_TYPE]])
-        mpg = float(MPG[row_flight[AIRCRAFT_TYPE]])
+        capacity = int(aircraft_data[row_flight[AIRCRAFT_TYPE]]['passenger_capacity'])
+        mpg = float(aircraft_data[row_flight[AIRCRAFT_TYPE]]['mpg'])
 
 
         #clac

@@ -35,7 +35,7 @@ DESIRED_FUEL_MULTIPLIER = 1.0    # Amount of fuel we want for flights (100% of f
 FILE_START = 0
 
 # Open CSVs
-with open ("data/aircraft.csv", "r") as aircraft_data, open("data/flight_weighted_distances.csv", "r") as flight_data:
+with open("data/aircraft.csv", "r") as aircraft_data, open("data/flight_weighted_distances.csv", "r") as flight_data:
     # 1. Import aircraft data
     reader = csv.reader(aircraft_data, delimiter=',')
     _ = next(reader)
