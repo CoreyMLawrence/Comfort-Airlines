@@ -70,5 +70,5 @@ td {
   background-color: rgb(225, 225, 225, 50);
   width: 0;
   transition: width 0.5s ease;
-  max-width: 24em;
+  max-width: 25em;
 }
