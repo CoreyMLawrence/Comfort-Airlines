@@ -3,7 +3,7 @@ Summary of the contents of this project. All content and code is copyrighted by 
 considered a part of the project.
 
 # Running the Project
-First, install all project dependencies using `pip3 install -r requirements.txt`. Then, run the project with `python3 src/main.py`. 
+First, change to the `github` subdirectory. Then, install all project dependencies using `pip3 install -r requirements.txt`. Then, run the project with `python3 src/main.py`. 
 If you do not have Python 3.10+ installed, you will need to install it from the [Official Python Downloads](https://www.python.org/downloads/) page.
 After the program finishes, there will be 5 reports generated in the `reports` folder. See the table below for contents
 
