@@ -9,7 +9,7 @@ function formatCurrency(amount) {
 }
 
 // Function to display the table
-function displayTable(divId, ledgerByLocation, totalProfits) {
+function displayTable(divId, ledgerByLocation, totalProfits, timeLimit) {
   const div = document.getElementById(divId);
 
   // Clear the div before appending the new table
@@ -41,7 +41,8 @@ function displayTable(divId, ledgerByLocation, totalProfits) {
   });
 
   // Initialize totals
-  let totalExpenses = 0;
+  let totalProfitsDisplayed = 0;
+  let totalExpensesDisplayed = 0;
 
   // Create table body
   sortedLocations.forEach((location) => {
@@ -60,8 +61,11 @@ function displayTable(divId, ledgerByLocation, totalProfits) {
       ledgerByLocation[location].profits + ledgerByLocation[location].expenses;
     cell4.textContent = formatCurrency(netProfit);
 
-    // Update totals
-    totalExpenses += ledgerByLocation[location].expenses;
+    // Update totals only if the item is within the time limit
+    if (ledgerByLocation[location].time <= timeLimit) {
+      totalProfitsDisplayed += ledgerByLocation[location].profits;
+      totalExpensesDisplayed += ledgerByLocation[location].expenses;
+    }
   });
 
   // Add row for totals
@@ -72,9 +76,11 @@ function displayTable(divId, ledgerByLocation, totalProfits) {
   const totalCell4 = totalRow.insertCell();
 
   totalCell1.textContent = 'Total';
-  totalCell2.textContent = formatCurrency(totalProfits);
-  totalCell3.textContent = formatCurrency(totalExpenses);
-  totalCell4.textContent = formatCurrency(totalProfits + totalExpenses);
+  totalCell2.textContent = formatCurrency(totalProfitsDisplayed);
+  totalCell3.textContent = formatCurrency(totalExpensesDisplayed);
+  totalCell4.textContent = formatCurrency(
+    totalProfitsDisplayed + totalExpensesDisplayed
+  );
 
   // Add row for totals
   const totalRow2 = table.insertRow();
@@ -84,9 +90,11 @@ function displayTable(divId, ledgerByLocation, totalProfits) {
   const totalCell8 = totalRow2.insertCell();
 
   totalCell5.textContent = 'Total × 2 (monthly)';
-  totalCell6.textContent = formatCurrency(totalProfits * 2);
-  totalCell7.textContent = formatCurrency(totalExpenses * 2);
-  totalCell8.textContent = formatCurrency((totalProfits + totalExpenses) * 2);
+  totalCell6.textContent = formatCurrency(totalProfitsDisplayed * 2);
+  totalCell7.textContent = formatCurrency(totalExpensesDisplayed * 2);
+  totalCell8.textContent = formatCurrency(
+    (totalProfitsDisplayed + totalExpensesDisplayed) * 2
+  );
 
   // Append table to the specified div
   div.appendChild(table);
@@ -96,10 +104,6 @@ function displayTable(divId, ledgerByLocation, totalProfits) {
 async function displayLedgerByLocation(divId, timeLimit) {
   // Hardcoded CSV file path
   const url = '../github/reports/ledger.csv';
-
-  // Initialize totalProfits variable
-  // let totalProfits = 0;
-  let totalExpenses = 0;
 
   try {
     // Fetch the CSV file
@@ -119,39 +123,44 @@ async function displayLedgerByLocation(divId, timeLimit) {
     // Initialize an associative array to store expenses and profits by location
     const ledgerByLocation = {};
 
-    // Initialize a variable to store the running total of expenses for the "Aircraft Rental Fee" location
-    let feeExpenses = 0;
-
-    // Function to process each line
-    function processLine(line) {
+    // Process each line of the CSV file, starting from index 1 (skipping the header row)
+    for (let i = 1; i < lines.length; i++) {
       // Split the line by comma
-      const [item, netProfit, lineTime, location] = line.split(',');
+      const [item, netProfit, lineTime, location] = lines[i].split(',');
       // Ensure all fields are present
       if (!item || !netProfit || !lineTime || !location) {
-        console.log(
-          'item: ',
-          item,
-          'netProfit: ',
-          netProfit,
-          'lineTime: ',
-          lineTime,
-          'location: ',
-          location
-        );
-        return;
+        // console.log(
+        //   'item: ',
+        //   item,
+        //   'netProfit: ',
+        //   netProfit,
+        //   'lineTime: ',
+        //   lineTime,
+        //   'location: ',
+        //   location
+        // );
+        continue;
       }
       const profit = parseFloat(netProfit);
       const time = parseInt(lineTime);
       // Check if time is within the limit
       if (time > timeLimit) {
-        return;
+        continue;
       }
 
       // If location is "null", set expense to the amount and location to "Fee"
       if (location.trim() === 'null') {
         // Add the profit to the running total of expenses for the "Fee" location
-        feeExpenses += profit / 2;
-        return;
+        if ('Aircraft Rental Fee' in ledgerByLocation) {
+          ledgerByLocation['Aircraft Rental Fee'].expenses += profit / 2;
+        } else {
+          ledgerByLocation['Aircraft Rental Fee'] = {
+            profits: 0,
+            expenses: profit / 2,
+            time: time,
+          };
+        }
+        continue;
       }
 
       // Update totalProfits variable based on profit value
@@ -176,31 +185,22 @@ async function displayLedgerByLocation(divId, timeLimit) {
           ledgerByLocation[location] = {
             profits: profit,
             expenses: 0,
+            time: time,
           };
         } else {
           ledgerByLocation[location] = {
             expenses: profit,
             profits: -profit,
+            time: time,
           };
         }
-        console.log(location);
-        console.log(ledgerByLocation[location]);
+        // console.log(location);
+        // console.log(ledgerByLocation[location]);
       }
     }
 
-    // Process each line of the CSV file, starting from index 1 (skipping the header row)
-    for (let i = 1; i < lines.length; i++) {
-      processLine(lines[i]);
-    }
-
-    // Set the running total of expenses for the "Fee" location
-    ledgerByLocation['Aircraft Rental Fee'] = {
-      profits: 0,
-      expenses: feeExpenses,
-    };
-
     // Display the ledger table
-    displayTable(divId, ledgerByLocation, totalProfits);
+    displayTable(divId, ledgerByLocation, totalProfits, timeLimit);
   } catch (error) {
     console.error('Error displaying ledger:', error);
   }
