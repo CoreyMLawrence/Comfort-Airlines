@@ -1,0 +1,362 @@
+Team: Foobar
+Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson,
+           Parker Blue, Will Wadsworth, Zach Christopher
+
+Description: Defect log for team Foobar
+
+---------------------------------------------------------------------------------------------------
+
+Date: 1.15.2024
+ID: CA-001
+Severity: Moderate
+Priority: Medium
+Description: Shortest path algorithm used to determine flight routes not reliably using the
+             true shortest paths.
+Steps to reproduce: 1. Run shortest path algorithm on airports.
+                    2. Calculate distances by hand.
+                    3. Algorithm output distances do not align with manual calculations.
+Assigned to: Zach Christopher
+
+Status: Completed (1.17.2024)
+Comments: Algorithm logic was not correct.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 1.23.2024
+ID: CA-002
+Severity: Severe
+Priority: High
+Description: Script to calculate flight demand is wildly inflated.
+Steps to reproduce: 1. Run script to calculate flight demand.
+                    2. Perform flight demand calculations by hand.
+                    3. Observe difference in script output and manual calculations.
+Assigned to: Anthony Cox, Will Wadsworth
+
+Status: Completed (1.26.2024)
+Comments: A developer was using incorrect base data.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 2.1.2024
+ID: CA-003
+Severity: Severe
+Priority: High
+Description: Scripts (flight_demand.csv, flight_fuel_capacity.csv, and flight_profit_loss.csv) 
+             calculate inaccurate data.
+Steps to reproduce: 1. Run scripts.
+                    2. Run calculations manually.
+                    3. Observe difference.
+Assigned to: Parker Blue
+
+Status: Completed (2.6.2024)
+Comments: Converted distance in flight_demand.csv, flight_fuel_capacity.csv, and 
+          flight_profit_loss.csv to weighted distance. Added percent full for possible number of 
+          plane per day.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 2.6.2024
+ID: CA-004
+Severity: Moderate
+Priority: Medium
+Description: Script to create the database does not complete execution.
+Steps to reproduce: 1. Run create_db.py script.
+                    2. Wait.
+                    3. Program fails execution, noting it was unable to connect to the docker.
+Assigned to: Dylan Hudson, Will Wadsworth
+
+Status: Completed (2.8.2024)
+Comments: Incorrect usage of the dockers and incorrect IP used in the script.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 2.17.2024
+ID: CA-005
+Severity: Moderate
+Priority: Medium
+Description: Aircraft object not initializing properly, causing TypeError exceptions during
+             simulation startup.
+Steps to reproduce: 1. Run simulation.
+                    2. Initialize an aircraft.
+                    3. Simulation crashes with a TypeError returned.
+Assigned to: Anthony Cox, Will Wadsworth
+
+Status: Completed (2.20.2024)
+Comments: Added type-checking to Aircraft class constructor.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 2.18.2024
+ID: CA-006
+Severity: Severe
+Priority: High
+Description: Docker application crashes due to ports.
+Steps to reproduce: 1. Start Docker application.
+                    2. Docker application crashes.
+Assigned to: Anthony Cox
+
+Status: Completed (2.19.2024)
+Comments: Updated application port exposed by docker from 8000 to 32000 because 8000 is reserved
+          by Apple on Macs, which causes the application to crash.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 2.19.2024
+ID: CA-007
+Severity: Minimal
+Priority: Low
+Description: Aircraft class constructor can be provided impossible fuel levels.
+Steps to reproduce: 1. Initialize an aircraft with a fuel level less than 0 or greater than its
+                       capacity.
+Assigned to: Anthony Cox, Will Wadsworth
+
+Status: Completed (2.20.2024)
+Comments: Updated class constructor to include error checking.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 2.19.2024
+ID: CA-008
+Severity: Moderate
+Priority: High
+Description: Aircraft maintenance object not triggering maintenance tasks.
+Steps to reproduce: 1. Run simulation.
+                    2. Wait for simulation to finish.
+                    3. Aircraft maintenance hours are way above 200.
+Assigned to: Anthony Cox, Will Wadsworth
+
+Status: Completed (2.21.2024)
+Comments: There was no check for maintenance hours, added.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 2.22.2024
+ID: CA-009
+Severity: Severe
+Priority: Medium
+Description: Route object storing NULL destinations, leading to incorrect flight paths in the
+             simulation.
+Steps to reproduce: 1. Run simulation.
+                    2. Wait for simulation to finish.
+                    3. Simulation output lists NULL destination for some flights.
+Assigned to: Parker Blue, Zach Christopher
+
+Status: Completed (2.25.2024)
+Comments: Added TypeError checking and NULL exception handling in class constructor.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 3.10.2024
+ID: CA-010
+Severity: Moderate
+Priority: Medium
+Description: Flight scheduling object not considering airport curfew times.
+Steps to reproduce: 1. Run simulation.
+                    2. Generated output includes arrival times between 1 AM and 5 AM.
+Assigned to: Parker Blue, Zach Christopher
+
+Status: Completed (3.14.2024)
+Comments: 
+
+---------------------------------------------------------------------------------------------------
+
+Date: 3.20.2024
+ID: CA-011
+Severity: Moderate
+Priority: Low
+Description: Route module does not accurately track flight demand for a given flight.
+Steps to reproduce: 1. Run simulation.
+                    2. Note demand for a flight for each airport/aircraft in the log.
+                    3. Observe that passenger count is not accurate over each day.
+Assigned to: Zach Christopher, Corey Lawrence
+
+Status: Completed (3.21.2024)
+Comments: Separated flight demand variable into two: current, daily demand. Script now resets 
+          current demand to daily demand after each day. 
+
+---------------------------------------------------------------------------------------------------
+
+Date: 3.20.2024
+ID: CA-012
+Severity: Moderate
+Priority: Low
+Description: Flight module does not include expected/actual arrival times.
+Steps to reproduce: 1. Run simulation.
+                    2. Observe that the flight module does not keep track of the expected/actual
+                       times.
+Assigned to: Dylan Hudson
+
+Status: Completed (3.21.2024)
+Comments: Added four respective data members initialized to None, and update after flight has 
+          landed.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.1.2024
+ID: CA-013
+Severity: Moderate
+Priority: Low
+Description: Simulation takes forever to calculate.
+Steps to reproduce: 1. Run simulation.
+                    2. Wait.
+                    3. Simulation is still running after 700 minutes.
+Assigned to: Anthony Cox
+
+Status: Completed (4.9.2024)
+Comments: For lambda functions, instead of creating a filter object and then casting it to a
+          list object, create only a single list via conditional construction.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.8.2024
+ID: CA-014
+Severity: Severe
+Priority: High
+Description: Simulation not generating output.
+Steps to reproduce: 1. Run simulation.
+                    2. Wait for simulation to finish.
+                    3. Observe the reports folder is empty.
+Assigned to: Anthony Cox
+
+Status: Completed (4.9.2024)
+Comments: Folder was mis-named, renamed to correct name.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.8.2024
+ID: CA-015
+Severity: Moderate
+Priority: Low
+Description: Incorrect departure time displayed in flight details.
+Steps to reproduce: 1. Search for a flight.
+                    2. Select a flight.
+                    3. Displayed departure time does not match the scheduled departure time.
+Assigned to: Anthony Cox, Corey Lawrence
+
+Status: Completed (4.12.2024)
+Comments: Updated the flight details retrieval function to display the correct departure time.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.10.2024
+ID: CA-016
+Severity: Minimal
+Priority: Low
+Description: Passenger cannot purchase ticket if special characters are used in name fields.
+Steps to reproduce: 1. Load Comfort Airlines website.
+                    2. Login using a special character in the name field.
+                    3. Ticket lists do not load.
+Assigned to: Corey Lawrence
+
+Status: Open
+Comments: 
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.10.2024
+ID: CA-017
+Severity: Severe
+Priority: High
+Description: Error occurs when attempting to cancel a flight reservation.
+Steps to reproduce: 1. Load Comfort Airlines website.
+                    2. Login.
+                    3. Search for and purchase a flight.
+                    4. Navigate to your trips, select your ticket, and click 'Cancel flight.'
+                    5. Page reloads.
+Assigned to: Corey Lawrence
+
+Status: Open
+Comments: 
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.11.2024
+ID: CA-018
+Severity: Minimal
+Priority: Low
+Description: Simulation output lists flight number as tail number.
+Steps to reproduce: 1. Run simulation.
+                    2. Wait for simulation to finish.
+                    3. Aircraft tail number shows aircraft flight number.
+Assigned to: Anthony Cox, Parker Blue
+
+Status: Open
+Comments: 
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.10.2024
+ID: CA-019
+Severity: Minimal
+Priority: Low
+Description: GUI is not displaying correct ticket price, and re-running the code gives you a
+             new seat.
+Steps to reproduce: 1. Load Comfort Airlines website.
+                    2. Ticket price in CSV does not match displayed ticket price.
+                    3. Re-running gives the user a new seat each time.
+Assigned to: Corey Lawrence
+
+Status: Open
+Comments: Created when timteable is imported and added then, so only displayed once instead at one time.
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.10.2024
+ID: CA-020
+Severity: Minimal
+Priority: Low
+Description: About 20,000 passengers went missing on some flights in the records.
+Steps to reproduce: 1. Run simulation
+                    2. Wait for simulation to finish.
+                    3. Ticket profits do not match number of tickets purchased by passengers.
+Assigned to: Parker Blue, Anthony Cox
+
+Status: Completed (4.11.2024)
+Comments: 
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.15.2024
+ID: CA-021
+Severity: Moderate
+Priority: High
+Description: Simulation not flying to Paris.
+Steps to reproduce: 1. Run simulation
+                    2. Wait for simulation to finish.
+                    3. In flights.csv report file, a Paris flight is not found.
+Assigned to: Anthony Cox
+
+Status: Open
+Comments: 
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.16.2024
+ID: CA-022
+Severity: Minimal
+Priority: Low
+Description: 'Starting location' in simulation GUI loads in a smaller size than other fields.
+Steps to reproduce: 1. Load simulation GUI.
+                    2. 'Starting location' field appears smaller than name fields.
+Assigned to: Corey Lawrence
+
+Status: Open
+Comments: 
+
+---------------------------------------------------------------------------------------------------
+
+Date: 4.17.2024
+ID: CA-023
+Severity: Severe
+Priority: High
+Description: Future passengers (depending on route) were missing, affecting sales.
+Steps to reproduce: 1. Run simulation
+                    2. Wait for simulation to finish.
+                    3. Flights towards the end of the simulation did not have enough passengers,
+                       when they should have.
+Assigned to: Anthony Cox
+
+Status: Completed (4.17.2024)
+Comments: Daily demand (constant) in scheduler module was being decremented instead of
+          current demand.
+
