@@ -1,0 +1,871 @@
+source airport,destination airport,company flight demand
+Hartsfield-Jackson Atlanta International Airport,Dallas/Fort Worth International Airport,32
+Hartsfield-Jackson Atlanta International Airport,Denver International Airport,12
+Hartsfield-Jackson Atlanta International Airport,O'Hare International Airport,40
+Hartsfield-Jackson Atlanta International Airport,Los Angeles International Airport,77
+Hartsfield-Jackson Atlanta International Airport,John F. Kennedy International Airport,28
+Hartsfield-Jackson Atlanta International Airport,Harry Reid International Airport,10
+Hartsfield-Jackson Atlanta International Airport,Orlando International Airport,11
+Hartsfield-Jackson Atlanta International Airport,Miami International Airport,13
+Hartsfield-Jackson Atlanta International Airport,Charlotte Douglas International Airport,11
+Hartsfield-Jackson Atlanta International Airport,Seattle-Tacoma International Airport,17
+Hartsfield-Jackson Atlanta International Airport,Phoenix Sky Harbor International Airport,20
+Hartsfield-Jackson Atlanta International Airport,Newark Liberty International Airport,28
+Hartsfield-Jackson Atlanta International Airport,San Francisco International Airport,30
+Hartsfield-Jackson Atlanta International Airport,George Bush Intercontinental Airport,30
+Hartsfield-Jackson Atlanta International Airport,Logan International Airport,21
+Hartsfield-Jackson Atlanta International Airport,Fort Lauderdale-Hollywood International Airport,13
+Hartsfield-Jackson Atlanta International Airport,Minneapolis-Saint Paul International Airport,15
+Hartsfield-Jackson Atlanta International Airport,LaGuardia Airport,28
+Hartsfield-Jackson Atlanta International Airport,Detroit Metropolitan Airport,18
+Hartsfield-Jackson Atlanta International Airport,Philadelphia International Airport,26
+Hartsfield-Jackson Atlanta International Airport,Salt Lake City International Airport,5
+Hartsfield-Jackson Atlanta International Airport,Ronald Reagan Washington National Airport,9
+Hartsfield-Jackson Atlanta International Airport,San Diego International Airport,14
+Hartsfield-Jackson Atlanta International Airport,Baltimore/Washington International Airport,9
+Hartsfield-Jackson Atlanta International Airport,Tampa International Airport,13
+Hartsfield-Jackson Atlanta International Airport,Austin-Bergstrom International Airport,10
+Hartsfield-Jackson Atlanta International Airport,Washington Dulles International Airport,9
+Hartsfield-Jackson Atlanta International Airport,Nashville International Airport,9
+Hartsfield-Jackson Atlanta International Airport,Paris Charles de Gaulle Airport,55
+Dallas/Fort Worth International Airport,Hartsfield-Jackson Atlanta International Airport,32
+Dallas/Fort Worth International Airport,Denver International Airport,16
+Dallas/Fort Worth International Airport,O'Hare International Airport,51
+Dallas/Fort Worth International Airport,Los Angeles International Airport,97
+Dallas/Fort Worth International Airport,John F. Kennedy International Airport,35
+Dallas/Fort Worth International Airport,Harry Reid International Airport,12
+Dallas/Fort Worth International Airport,Orlando International Airport,14
+Dallas/Fort Worth International Airport,Miami International Airport,16
+Dallas/Fort Worth International Airport,Charlotte Douglas International Airport,14
+Dallas/Fort Worth International Airport,Seattle-Tacoma International Airport,21
+Dallas/Fort Worth International Airport,Phoenix Sky Harbor International Airport,26
+Dallas/Fort Worth International Airport,Newark Liberty International Airport,35
+Dallas/Fort Worth International Airport,San Francisco International Airport,37
+Dallas/Fort Worth International Airport,George Bush Intercontinental Airport,38
+Dallas/Fort Worth International Airport,Logan International Airport,26
+Dallas/Fort Worth International Airport,Fort Lauderdale-Hollywood International Airport,16
+Dallas/Fort Worth International Airport,Minneapolis-Saint Paul International Airport,19
+Dallas/Fort Worth International Airport,LaGuardia Airport,35
+Dallas/Fort Worth International Airport,Detroit Metropolitan Airport,23
+Dallas/Fort Worth International Airport,Philadelphia International Airport,33
+Dallas/Fort Worth International Airport,Salt Lake City International Airport,7
+Dallas/Fort Worth International Airport,Ronald Reagan Washington National Airport,11
+Dallas/Fort Worth International Airport,San Diego International Airport,17
+Dallas/Fort Worth International Airport,Baltimore/Washington International Airport,11
+Dallas/Fort Worth International Airport,Tampa International Airport,17
+Dallas/Fort Worth International Airport,Austin-Bergstrom International Airport,13
+Dallas/Fort Worth International Airport,Washington Dulles International Airport,11
+Dallas/Fort Worth International Airport,Nashville International Airport,11
+Dallas/Fort Worth International Airport,Paris Charles de Gaulle Airport,69
+Denver International Airport,Hartsfield-Jackson Atlanta International Airport,12
+Denver International Airport,Dallas/Fort Worth International Airport,15
+Denver International Airport,O'Hare International Airport,19
+Denver International Airport,Los Angeles International Airport,36
+Denver International Airport,John F. Kennedy International Airport,13
+Denver International Airport,Harry Reid International Airport,4
+Denver International Airport,Orlando International Airport,5
+Denver International Airport,Miami International Airport,6
+Denver International Airport,Charlotte Douglas International Airport,5
+Denver International Airport,Seattle-Tacoma International Airport,8
+Denver International Airport,Phoenix Sky Harbor International Airport,10
+Denver International Airport,Newark Liberty International Airport,13
+Denver International Airport,San Francisco International Airport,14
+Denver International Airport,George Bush Intercontinental Airport,14
+Denver International Airport,Logan International Airport,10
+Denver International Airport,Fort Lauderdale-Hollywood International Airport,6
+Denver International Airport,Minneapolis-Saint Paul International Airport,7
+Denver International Airport,LaGuardia Airport,13
+Denver International Airport,Detroit Metropolitan Airport,9
+Denver International Airport,Philadelphia International Airport,12
+Denver International Airport,Salt Lake City International Airport,2
+Denver International Airport,Ronald Reagan Washington National Airport,4
+Denver International Airport,San Diego International Airport,6
+Denver International Airport,Baltimore/Washington International Airport,4
+Denver International Airport,Tampa International Airport,6
+Denver International Airport,Austin-Bergstrom International Airport,5
+Denver International Airport,Washington Dulles International Airport,4
+Denver International Airport,Nashville International Airport,4
+Denver International Airport,Paris Charles de Gaulle Airport,26
+O'Hare International Airport,Hartsfield-Jackson Atlanta International Airport,41
+O'Hare International Airport,Dallas/Fort Worth International Airport,51
+O'Hare International Airport,Denver International Airport,20
+O'Hare International Airport,Los Angeles International Airport,124
+O'Hare International Airport,John F. Kennedy International Airport,45
+O'Hare International Airport,Harry Reid International Airport,15
+O'Hare International Airport,Orlando International Airport,18
+O'Hare International Airport,Miami International Airport,21
+O'Hare International Airport,Charlotte Douglas International Airport,18
+O'Hare International Airport,Seattle-Tacoma International Airport,27
+O'Hare International Airport,Phoenix Sky Harbor International Airport,33
+O'Hare International Airport,Newark Liberty International Airport,45
+O'Hare International Airport,San Francisco International Airport,48
+O'Hare International Airport,George Bush Intercontinental Airport,48
+O'Hare International Airport,Logan International Airport,33
+O'Hare International Airport,Fort Lauderdale-Hollywood International Airport,21
+O'Hare International Airport,Minneapolis-Saint Paul International Airport,25
+O'Hare International Airport,LaGuardia Airport,45
+O'Hare International Airport,Detroit Metropolitan Airport,29
+O'Hare International Airport,Philadelphia International Airport,42
+O'Hare International Airport,Salt Lake City International Airport,8
+O'Hare International Airport,Ronald Reagan Washington National Airport,14
+O'Hare International Airport,San Diego International Airport,22
+O'Hare International Airport,Baltimore/Washington International Airport,14
+O'Hare International Airport,Tampa International Airport,21
+O'Hare International Airport,Austin-Bergstrom International Airport,16
+O'Hare International Airport,Washington Dulles International Airport,14
+O'Hare International Airport,Nashville International Airport,14
+O'Hare International Airport,Paris Charles de Gaulle Airport,88
+Los Angeles International Airport,Hartsfield-Jackson Atlanta International Airport,84
+Los Angeles International Airport,Dallas/Fort Worth International Airport,105
+Los Angeles International Airport,Denver International Airport,41
+Los Angeles International Airport,O'Hare International Airport,132
+Los Angeles International Airport,John F. Kennedy International Airport,92
+Los Angeles International Airport,Harry Reid International Airport,31
+Los Angeles International Airport,Orlando International Airport,37
+Los Angeles International Airport,Miami International Airport,42
+Los Angeles International Airport,Charlotte Douglas International Airport,36
+Los Angeles International Airport,Seattle-Tacoma International Airport,55
+Los Angeles International Airport,Phoenix Sky Harbor International Airport,66
+Los Angeles International Airport,Newark Liberty International Airport,92
+Los Angeles International Airport,San Francisco International Airport,97
+Los Angeles International Airport,George Bush Intercontinental Airport,97
+Los Angeles International Airport,Logan International Airport,68
+Los Angeles International Airport,Fort Lauderdale-Hollywood International Airport,42
+Los Angeles International Airport,Minneapolis-Saint Paul International Airport,51
+Los Angeles International Airport,LaGuardia Airport,92
+Los Angeles International Airport,Detroit Metropolitan Airport,60
+Los Angeles International Airport,Philadelphia International Airport,85
+Los Angeles International Airport,Salt Lake City International Airport,17
+Los Angeles International Airport,Ronald Reagan Washington National Airport,29
+Los Angeles International Airport,San Diego International Airport,45
+Los Angeles International Airport,Baltimore/Washington International Airport,29
+Los Angeles International Airport,Tampa International Airport,43
+Los Angeles International Airport,Austin-Bergstrom International Airport,33
+Los Angeles International Airport,Washington Dulles International Airport,29
+Los Angeles International Airport,Nashville International Airport,28
+Los Angeles International Airport,Paris Charles de Gaulle Airport,179
+John F. Kennedy International Airport,Hartsfield-Jackson Atlanta International Airport,28
+John F. Kennedy International Airport,Dallas/Fort Worth International Airport,35
+John F. Kennedy International Airport,Denver International Airport,14
+John F. Kennedy International Airport,O'Hare International Airport,44
+John F. Kennedy International Airport,Los Angeles International Airport,85
+John F. Kennedy International Airport,Harry Reid International Airport,10
+John F. Kennedy International Airport,Orlando International Airport,12
+John F. Kennedy International Airport,Miami International Airport,14
+John F. Kennedy International Airport,Charlotte Douglas International Airport,12
+John F. Kennedy International Airport,Seattle-Tacoma International Airport,18
+John F. Kennedy International Airport,Phoenix Sky Harbor International Airport,22
+John F. Kennedy International Airport,Newark Liberty International Airport,31
+John F. Kennedy International Airport,San Francisco International Airport,33
+John F. Kennedy International Airport,George Bush Intercontinental Airport,33
+John F. Kennedy International Airport,Logan International Airport,23
+John F. Kennedy International Airport,Fort Lauderdale-Hollywood International Airport,14
+John F. Kennedy International Airport,Minneapolis-Saint Paul International Airport,17
+John F. Kennedy International Airport,LaGuardia Airport,31
+John F. Kennedy International Airport,Detroit Metropolitan Airport,20
+John F. Kennedy International Airport,Philadelphia International Airport,29
+John F. Kennedy International Airport,Salt Lake City International Airport,6
+John F. Kennedy International Airport,Ronald Reagan Washington National Airport,10
+John F. Kennedy International Airport,San Diego International Airport,15
+John F. Kennedy International Airport,Baltimore/Washington International Airport,10
+John F. Kennedy International Airport,Tampa International Airport,15
+John F. Kennedy International Airport,Austin-Bergstrom International Airport,11
+John F. Kennedy International Airport,Washington Dulles International Airport,10
+John F. Kennedy International Airport,Nashville International Airport,10
+John F. Kennedy International Airport,Paris Charles de Gaulle Airport,60
+Harry Reid International Airport,Hartsfield-Jackson Atlanta International Airport,9
+Harry Reid International Airport,Dallas/Fort Worth International Airport,12
+Harry Reid International Airport,Denver International Airport,4
+Harry Reid International Airport,O'Hare International Airport,14
+Harry Reid International Airport,Los Angeles International Airport,28
+Harry Reid International Airport,John F. Kennedy International Airport,10
+Harry Reid International Airport,Orlando International Airport,4
+Harry Reid International Airport,Miami International Airport,5
+Harry Reid International Airport,Charlotte Douglas International Airport,4
+Harry Reid International Airport,Seattle-Tacoma International Airport,6
+Harry Reid International Airport,Phoenix Sky Harbor International Airport,7
+Harry Reid International Airport,Newark Liberty International Airport,10
+Harry Reid International Airport,San Francisco International Airport,11
+Harry Reid International Airport,George Bush Intercontinental Airport,11
+Harry Reid International Airport,Logan International Airport,7
+Harry Reid International Airport,Fort Lauderdale-Hollywood International Airport,5
+Harry Reid International Airport,Minneapolis-Saint Paul International Airport,6
+Harry Reid International Airport,LaGuardia Airport,10
+Harry Reid International Airport,Detroit Metropolitan Airport,7
+Harry Reid International Airport,Philadelphia International Airport,9
+Harry Reid International Airport,Salt Lake City International Airport,2
+Harry Reid International Airport,Ronald Reagan Washington National Airport,3
+Harry Reid International Airport,San Diego International Airport,5
+Harry Reid International Airport,Baltimore/Washington International Airport,3
+Harry Reid International Airport,Tampa International Airport,5
+Harry Reid International Airport,Austin-Bergstrom International Airport,4
+Harry Reid International Airport,Washington Dulles International Airport,3
+Harry Reid International Airport,Nashville International Airport,3
+Harry Reid International Airport,Paris Charles de Gaulle Airport,20
+Orlando International Airport,Hartsfield-Jackson Atlanta International Airport,11
+Orlando International Airport,Dallas/Fort Worth International Airport,14
+Orlando International Airport,Denver International Airport,5
+Orlando International Airport,O'Hare International Airport,17
+Orlando International Airport,Los Angeles International Airport,33
+Orlando International Airport,John F. Kennedy International Airport,12
+Orlando International Airport,Harry Reid International Airport,4
+Orlando International Airport,Miami International Airport,6
+Orlando International Airport,Charlotte Douglas International Airport,5
+Orlando International Airport,Seattle-Tacoma International Airport,7
+Orlando International Airport,Phoenix Sky Harbor International Airport,9
+Orlando International Airport,Newark Liberty International Airport,12
+Orlando International Airport,San Francisco International Airport,13
+Orlando International Airport,George Bush Intercontinental Airport,13
+Orlando International Airport,Logan International Airport,9
+Orlando International Airport,Fort Lauderdale-Hollywood International Airport,6
+Orlando International Airport,Minneapolis-Saint Paul International Airport,7
+Orlando International Airport,LaGuardia Airport,12
+Orlando International Airport,Detroit Metropolitan Airport,8
+Orlando International Airport,Philadelphia International Airport,11
+Orlando International Airport,Salt Lake City International Airport,2
+Orlando International Airport,Ronald Reagan Washington National Airport,4
+Orlando International Airport,San Diego International Airport,6
+Orlando International Airport,Baltimore/Washington International Airport,4
+Orlando International Airport,Tampa International Airport,6
+Orlando International Airport,Austin-Bergstrom International Airport,4
+Orlando International Airport,Washington Dulles International Airport,4
+Orlando International Airport,Nashville International Airport,4
+Orlando International Airport,Paris Charles de Gaulle Airport,23
+Miami International Airport,Hartsfield-Jackson Atlanta International Airport,13
+Miami International Airport,Dallas/Fort Worth International Airport,16
+Miami International Airport,Denver International Airport,6
+Miami International Airport,O'Hare International Airport,20
+Miami International Airport,Los Angeles International Airport,38
+Miami International Airport,John F. Kennedy International Airport,14
+Miami International Airport,Harry Reid International Airport,5
+Miami International Airport,Orlando International Airport,6
+Miami International Airport,Charlotte Douglas International Airport,5
+Miami International Airport,Seattle-Tacoma International Airport,8
+Miami International Airport,Phoenix Sky Harbor International Airport,10
+Miami International Airport,Newark Liberty International Airport,14
+Miami International Airport,San Francisco International Airport,15
+Miami International Airport,George Bush Intercontinental Airport,15
+Miami International Airport,Logan International Airport,10
+Miami International Airport,Fort Lauderdale-Hollywood International Airport,6
+Miami International Airport,Minneapolis-Saint Paul International Airport,8
+Miami International Airport,LaGuardia Airport,14
+Miami International Airport,Detroit Metropolitan Airport,9
+Miami International Airport,Philadelphia International Airport,13
+Miami International Airport,Salt Lake City International Airport,3
+Miami International Airport,Ronald Reagan Washington National Airport,4
+Miami International Airport,San Diego International Airport,7
+Miami International Airport,Baltimore/Washington International Airport,4
+Miami International Airport,Tampa International Airport,7
+Miami International Airport,Austin-Bergstrom International Airport,5
+Miami International Airport,Washington Dulles International Airport,4
+Miami International Airport,Nashville International Airport,4
+Miami International Airport,Paris Charles de Gaulle Airport,27
+Charlotte Douglas International Airport,Hartsfield-Jackson Atlanta International Airport,11
+Charlotte Douglas International Airport,Dallas/Fort Worth International Airport,14
+Charlotte Douglas International Airport,Denver International Airport,5
+Charlotte Douglas International Airport,O'Hare International Airport,17
+Charlotte Douglas International Airport,Los Angeles International Airport,33
+Charlotte Douglas International Airport,John F. Kennedy International Airport,12
+Charlotte Douglas International Airport,Harry Reid International Airport,4
+Charlotte Douglas International Airport,Orlando International Airport,5
+Charlotte Douglas International Airport,Miami International Airport,5
+Charlotte Douglas International Airport,Seattle-Tacoma International Airport,7
+Charlotte Douglas International Airport,Phoenix Sky Harbor International Airport,9
+Charlotte Douglas International Airport,Newark Liberty International Airport,12
+Charlotte Douglas International Airport,San Francisco International Airport,13
+Charlotte Douglas International Airport,George Bush Intercontinental Airport,13
+Charlotte Douglas International Airport,Logan International Airport,9
+Charlotte Douglas International Airport,Fort Lauderdale-Hollywood International Airport,5
+Charlotte Douglas International Airport,Minneapolis-Saint Paul International Airport,7
+Charlotte Douglas International Airport,LaGuardia Airport,12
+Charlotte Douglas International Airport,Detroit Metropolitan Airport,8
+Charlotte Douglas International Airport,Philadelphia International Airport,11
+Charlotte Douglas International Airport,Salt Lake City International Airport,2
+Charlotte Douglas International Airport,Ronald Reagan Washington National Airport,4
+Charlotte Douglas International Airport,San Diego International Airport,6
+Charlotte Douglas International Airport,Baltimore/Washington International Airport,4
+Charlotte Douglas International Airport,Tampa International Airport,6
+Charlotte Douglas International Airport,Austin-Bergstrom International Airport,4
+Charlotte Douglas International Airport,Washington Dulles International Airport,4
+Charlotte Douglas International Airport,Nashville International Airport,4
+Charlotte Douglas International Airport,Paris Charles de Gaulle Airport,23
+Seattle-Tacoma International Airport,Hartsfield-Jackson Atlanta International Airport,17
+Seattle-Tacoma International Airport,Dallas/Fort Worth International Airport,21
+Seattle-Tacoma International Airport,Denver International Airport,8
+Seattle-Tacoma International Airport,O'Hare International Airport,26
+Seattle-Tacoma International Airport,Los Angeles International Airport,50
+Seattle-Tacoma International Airport,John F. Kennedy International Airport,18
+Seattle-Tacoma International Airport,Harry Reid International Airport,6
+Seattle-Tacoma International Airport,Orlando International Airport,7
+Seattle-Tacoma International Airport,Miami International Airport,8
+Seattle-Tacoma International Airport,Charlotte Douglas International Airport,7
+Seattle-Tacoma International Airport,Phoenix Sky Harbor International Airport,13
+Seattle-Tacoma International Airport,Newark Liberty International Airport,18
+Seattle-Tacoma International Airport,San Francisco International Airport,19
+Seattle-Tacoma International Airport,George Bush Intercontinental Airport,19
+Seattle-Tacoma International Airport,Logan International Airport,13
+Seattle-Tacoma International Airport,Fort Lauderdale-Hollywood International Airport,8
+Seattle-Tacoma International Airport,Minneapolis-Saint Paul International Airport,10
+Seattle-Tacoma International Airport,LaGuardia Airport,18
+Seattle-Tacoma International Airport,Detroit Metropolitan Airport,12
+Seattle-Tacoma International Airport,Philadelphia International Airport,17
+Seattle-Tacoma International Airport,Salt Lake City International Airport,3
+Seattle-Tacoma International Airport,Ronald Reagan Washington National Airport,6
+Seattle-Tacoma International Airport,San Diego International Airport,9
+Seattle-Tacoma International Airport,Baltimore/Washington International Airport,6
+Seattle-Tacoma International Airport,Tampa International Airport,9
+Seattle-Tacoma International Airport,Austin-Bergstrom International Airport,7
+Seattle-Tacoma International Airport,Washington Dulles International Airport,6
+Seattle-Tacoma International Airport,Nashville International Airport,6
+Seattle-Tacoma International Airport,Paris Charles de Gaulle Airport,35
+Phoenix Sky Harbor International Airport,Hartsfield-Jackson Atlanta International Airport,20
+Phoenix Sky Harbor International Airport,Dallas/Fort Worth International Airport,25
+Phoenix Sky Harbor International Airport,Denver International Airport,10
+Phoenix Sky Harbor International Airport,O'Hare International Airport,32
+Phoenix Sky Harbor International Airport,Los Angeles International Airport,60
+Phoenix Sky Harbor International Airport,John F. Kennedy International Airport,22
+Phoenix Sky Harbor International Airport,Harry Reid International Airport,7
+Phoenix Sky Harbor International Airport,Orlando International Airport,9
+Phoenix Sky Harbor International Airport,Miami International Airport,10
+Phoenix Sky Harbor International Airport,Charlotte Douglas International Airport,9
+Phoenix Sky Harbor International Airport,Seattle-Tacoma International Airport,13
+Phoenix Sky Harbor International Airport,Newark Liberty International Airport,22
+Phoenix Sky Harbor International Airport,San Francisco International Airport,23
+Phoenix Sky Harbor International Airport,George Bush Intercontinental Airport,23
+Phoenix Sky Harbor International Airport,Logan International Airport,16
+Phoenix Sky Harbor International Airport,Fort Lauderdale-Hollywood International Airport,10
+Phoenix Sky Harbor International Airport,Minneapolis-Saint Paul International Airport,12
+Phoenix Sky Harbor International Airport,LaGuardia Airport,22
+Phoenix Sky Harbor International Airport,Detroit Metropolitan Airport,14
+Phoenix Sky Harbor International Airport,Philadelphia International Airport,20
+Phoenix Sky Harbor International Airport,Salt Lake City International Airport,4
+Phoenix Sky Harbor International Airport,Ronald Reagan Washington National Airport,7
+Phoenix Sky Harbor International Airport,San Diego International Airport,11
+Phoenix Sky Harbor International Airport,Baltimore/Washington International Airport,7
+Phoenix Sky Harbor International Airport,Tampa International Airport,10
+Phoenix Sky Harbor International Airport,Austin-Bergstrom International Airport,8
+Phoenix Sky Harbor International Airport,Washington Dulles International Airport,7
+Phoenix Sky Harbor International Airport,Nashville International Airport,7
+Phoenix Sky Harbor International Airport,Paris Charles de Gaulle Airport,43
+Newark Liberty International Airport,Hartsfield-Jackson Atlanta International Airport,28
+Newark Liberty International Airport,Dallas/Fort Worth International Airport,35
+Newark Liberty International Airport,Denver International Airport,14
+Newark Liberty International Airport,O'Hare International Airport,44
+Newark Liberty International Airport,Los Angeles International Airport,85
+Newark Liberty International Airport,John F. Kennedy International Airport,31
+Newark Liberty International Airport,Harry Reid International Airport,10
+Newark Liberty International Airport,Orlando International Airport,12
+Newark Liberty International Airport,Miami International Airport,14
+Newark Liberty International Airport,Charlotte Douglas International Airport,12
+Newark Liberty International Airport,Seattle-Tacoma International Airport,18
+Newark Liberty International Airport,Phoenix Sky Harbor International Airport,22
+Newark Liberty International Airport,San Francisco International Airport,33
+Newark Liberty International Airport,George Bush Intercontinental Airport,33
+Newark Liberty International Airport,Logan International Airport,23
+Newark Liberty International Airport,Fort Lauderdale-Hollywood International Airport,14
+Newark Liberty International Airport,Minneapolis-Saint Paul International Airport,17
+Newark Liberty International Airport,LaGuardia Airport,31
+Newark Liberty International Airport,Detroit Metropolitan Airport,20
+Newark Liberty International Airport,Philadelphia International Airport,29
+Newark Liberty International Airport,Salt Lake City International Airport,6
+Newark Liberty International Airport,Ronald Reagan Washington National Airport,10
+Newark Liberty International Airport,San Diego International Airport,15
+Newark Liberty International Airport,Baltimore/Washington International Airport,10
+Newark Liberty International Airport,Tampa International Airport,15
+Newark Liberty International Airport,Austin-Bergstrom International Airport,11
+Newark Liberty International Airport,Washington Dulles International Airport,10
+Newark Liberty International Airport,Nashville International Airport,10
+Newark Liberty International Airport,Paris Charles de Gaulle Airport,60
+San Francisco International Airport,Hartsfield-Jackson Atlanta International Airport,30
+San Francisco International Airport,Dallas/Fort Worth International Airport,37
+San Francisco International Airport,Denver International Airport,14
+San Francisco International Airport,O'Hare International Airport,47
+San Francisco International Airport,Los Angeles International Airport,89
+San Francisco International Airport,John F. Kennedy International Airport,33
+San Francisco International Airport,Harry Reid International Airport,11
+San Francisco International Airport,Orlando International Airport,13
+San Francisco International Airport,Miami International Airport,15
+San Francisco International Airport,Charlotte Douglas International Airport,13
+San Francisco International Airport,Seattle-Tacoma International Airport,20
+San Francisco International Airport,Phoenix Sky Harbor International Airport,24
+San Francisco International Airport,Newark Liberty International Airport,33
+San Francisco International Airport,George Bush Intercontinental Airport,35
+San Francisco International Airport,Logan International Airport,24
+San Francisco International Airport,Fort Lauderdale-Hollywood International Airport,15
+San Francisco International Airport,Minneapolis-Saint Paul International Airport,18
+San Francisco International Airport,LaGuardia Airport,33
+San Francisco International Airport,Detroit Metropolitan Airport,21
+San Francisco International Airport,Philadelphia International Airport,30
+San Francisco International Airport,Salt Lake City International Airport,6
+San Francisco International Airport,Ronald Reagan Washington National Airport,10
+San Francisco International Airport,San Diego International Airport,16
+San Francisco International Airport,Baltimore/Washington International Airport,10
+San Francisco International Airport,Tampa International Airport,15
+San Francisco International Airport,Austin-Bergstrom International Airport,12
+San Francisco International Airport,Washington Dulles International Airport,10
+San Francisco International Airport,Nashville International Airport,10
+San Francisco International Airport,Paris Charles de Gaulle Airport,64
+George Bush Intercontinental Airport,Hartsfield-Jackson Atlanta International Airport,30
+George Bush Intercontinental Airport,Dallas/Fort Worth International Airport,37
+George Bush Intercontinental Airport,Denver International Airport,15
+George Bush Intercontinental Airport,O'Hare International Airport,47
+George Bush Intercontinental Airport,Los Angeles International Airport,90
+George Bush Intercontinental Airport,John F. Kennedy International Airport,33
+George Bush Intercontinental Airport,Harry Reid International Airport,11
+George Bush Intercontinental Airport,Orlando International Airport,13
+George Bush Intercontinental Airport,Miami International Airport,15
+George Bush Intercontinental Airport,Charlotte Douglas International Airport,13
+George Bush Intercontinental Airport,Seattle-Tacoma International Airport,20
+George Bush Intercontinental Airport,Phoenix Sky Harbor International Airport,24
+George Bush Intercontinental Airport,Newark Liberty International Airport,33
+George Bush Intercontinental Airport,San Francisco International Airport,35
+George Bush Intercontinental Airport,Logan International Airport,24
+George Bush Intercontinental Airport,Fort Lauderdale-Hollywood International Airport,15
+George Bush Intercontinental Airport,Minneapolis-Saint Paul International Airport,18
+George Bush Intercontinental Airport,LaGuardia Airport,33
+George Bush Intercontinental Airport,Detroit Metropolitan Airport,21
+George Bush Intercontinental Airport,Philadelphia International Airport,31
+George Bush Intercontinental Airport,Salt Lake City International Airport,6
+George Bush Intercontinental Airport,Ronald Reagan Washington National Airport,10
+George Bush Intercontinental Airport,San Diego International Airport,16
+George Bush Intercontinental Airport,Baltimore/Washington International Airport,10
+George Bush Intercontinental Airport,Tampa International Airport,16
+George Bush Intercontinental Airport,Austin-Bergstrom International Airport,12
+George Bush Intercontinental Airport,Washington Dulles International Airport,10
+George Bush Intercontinental Airport,Nashville International Airport,10
+George Bush Intercontinental Airport,Paris Charles de Gaulle Airport,64
+Logan International Airport,Hartsfield-Jackson Atlanta International Airport,21
+Logan International Airport,Dallas/Fort Worth International Airport,26
+Logan International Airport,Denver International Airport,10
+Logan International Airport,O'Hare International Airport,32
+Logan International Airport,Los Angeles International Airport,61
+Logan International Airport,John F. Kennedy International Airport,22
+Logan International Airport,Harry Reid International Airport,8
+Logan International Airport,Orlando International Airport,9
+Logan International Airport,Miami International Airport,10
+Logan International Airport,Charlotte Douglas International Airport,9
+Logan International Airport,Seattle-Tacoma International Airport,13
+Logan International Airport,Phoenix Sky Harbor International Airport,16
+Logan International Airport,Newark Liberty International Airport,22
+Logan International Airport,San Francisco International Airport,24
+Logan International Airport,George Bush Intercontinental Airport,24
+Logan International Airport,Fort Lauderdale-Hollywood International Airport,10
+Logan International Airport,Minneapolis-Saint Paul International Airport,12
+Logan International Airport,LaGuardia Airport,22
+Logan International Airport,Detroit Metropolitan Airport,15
+Logan International Airport,Philadelphia International Airport,21
+Logan International Airport,Salt Lake City International Airport,4
+Logan International Airport,Ronald Reagan Washington National Airport,7
+Logan International Airport,San Diego International Airport,11
+Logan International Airport,Baltimore/Washington International Airport,7
+Logan International Airport,Tampa International Airport,11
+Logan International Airport,Austin-Bergstrom International Airport,8
+Logan International Airport,Washington Dulles International Airport,7
+Logan International Airport,Nashville International Airport,7
+Logan International Airport,Paris Charles de Gaulle Airport,44
+Fort Lauderdale-Hollywood International Airport,Hartsfield-Jackson Atlanta International Airport,13
+Fort Lauderdale-Hollywood International Airport,Dallas/Fort Worth International Airport,16
+Fort Lauderdale-Hollywood International Airport,Denver International Airport,6
+Fort Lauderdale-Hollywood International Airport,O'Hare International Airport,20
+Fort Lauderdale-Hollywood International Airport,Los Angeles International Airport,38
+Fort Lauderdale-Hollywood International Airport,John F. Kennedy International Airport,14
+Fort Lauderdale-Hollywood International Airport,Harry Reid International Airport,5
+Fort Lauderdale-Hollywood International Airport,Orlando International Airport,6
+Fort Lauderdale-Hollywood International Airport,Miami International Airport,6
+Fort Lauderdale-Hollywood International Airport,Charlotte Douglas International Airport,5
+Fort Lauderdale-Hollywood International Airport,Seattle-Tacoma International Airport,8
+Fort Lauderdale-Hollywood International Airport,Phoenix Sky Harbor International Airport,10
+Fort Lauderdale-Hollywood International Airport,Newark Liberty International Airport,14
+Fort Lauderdale-Hollywood International Airport,San Francisco International Airport,15
+Fort Lauderdale-Hollywood International Airport,George Bush Intercontinental Airport,15
+Fort Lauderdale-Hollywood International Airport,Logan International Airport,10
+Fort Lauderdale-Hollywood International Airport,Minneapolis-Saint Paul International Airport,8
+Fort Lauderdale-Hollywood International Airport,LaGuardia Airport,14
+Fort Lauderdale-Hollywood International Airport,Detroit Metropolitan Airport,9
+Fort Lauderdale-Hollywood International Airport,Philadelphia International Airport,13
+Fort Lauderdale-Hollywood International Airport,Salt Lake City International Airport,3
+Fort Lauderdale-Hollywood International Airport,Ronald Reagan Washington National Airport,4
+Fort Lauderdale-Hollywood International Airport,San Diego International Airport,7
+Fort Lauderdale-Hollywood International Airport,Baltimore/Washington International Airport,4
+Fort Lauderdale-Hollywood International Airport,Tampa International Airport,7
+Fort Lauderdale-Hollywood International Airport,Austin-Bergstrom International Airport,5
+Fort Lauderdale-Hollywood International Airport,Washington Dulles International Airport,4
+Fort Lauderdale-Hollywood International Airport,Nashville International Airport,4
+Fort Lauderdale-Hollywood International Airport,Paris Charles de Gaulle Airport,27
+Minneapolis-Saint Paul International Airport,Hartsfield-Jackson Atlanta International Airport,15
+Minneapolis-Saint Paul International Airport,Dallas/Fort Worth International Airport,19
+Minneapolis-Saint Paul International Airport,Denver International Airport,7
+Minneapolis-Saint Paul International Airport,O'Hare International Airport,24
+Minneapolis-Saint Paul International Airport,Los Angeles International Airport,46
+Minneapolis-Saint Paul International Airport,John F. Kennedy International Airport,17
+Minneapolis-Saint Paul International Airport,Harry Reid International Airport,6
+Minneapolis-Saint Paul International Airport,Orlando International Airport,7
+Minneapolis-Saint Paul International Airport,Miami International Airport,8
+Minneapolis-Saint Paul International Airport,Charlotte Douglas International Airport,7
+Minneapolis-Saint Paul International Airport,Seattle-Tacoma International Airport,10
+Minneapolis-Saint Paul International Airport,Phoenix Sky Harbor International Airport,12
+Minneapolis-Saint Paul International Airport,Newark Liberty International Airport,17
+Minneapolis-Saint Paul International Airport,San Francisco International Airport,18
+Minneapolis-Saint Paul International Airport,George Bush Intercontinental Airport,18
+Minneapolis-Saint Paul International Airport,Logan International Airport,12
+Minneapolis-Saint Paul International Airport,Fort Lauderdale-Hollywood International Airport,8
+Minneapolis-Saint Paul International Airport,LaGuardia Airport,17
+Minneapolis-Saint Paul International Airport,Detroit Metropolitan Airport,11
+Minneapolis-Saint Paul International Airport,Philadelphia International Airport,15
+Minneapolis-Saint Paul International Airport,Salt Lake City International Airport,3
+Minneapolis-Saint Paul International Airport,Ronald Reagan Washington National Airport,5
+Minneapolis-Saint Paul International Airport,San Diego International Airport,8
+Minneapolis-Saint Paul International Airport,Baltimore/Washington International Airport,5
+Minneapolis-Saint Paul International Airport,Tampa International Airport,8
+Minneapolis-Saint Paul International Airport,Austin-Bergstrom International Airport,6
+Minneapolis-Saint Paul International Airport,Washington Dulles International Airport,5
+Minneapolis-Saint Paul International Airport,Nashville International Airport,5
+Minneapolis-Saint Paul International Airport,Paris Charles de Gaulle Airport,32
+LaGuardia Airport,Hartsfield-Jackson Atlanta International Airport,28
+LaGuardia Airport,Dallas/Fort Worth International Airport,35
+LaGuardia Airport,Denver International Airport,14
+LaGuardia Airport,O'Hare International Airport,44
+LaGuardia Airport,Los Angeles International Airport,85
+LaGuardia Airport,John F. Kennedy International Airport,31
+LaGuardia Airport,Harry Reid International Airport,10
+LaGuardia Airport,Orlando International Airport,12
+LaGuardia Airport,Miami International Airport,14
+LaGuardia Airport,Charlotte Douglas International Airport,12
+LaGuardia Airport,Seattle-Tacoma International Airport,18
+LaGuardia Airport,Phoenix Sky Harbor International Airport,22
+LaGuardia Airport,Newark Liberty International Airport,31
+LaGuardia Airport,San Francisco International Airport,33
+LaGuardia Airport,George Bush Intercontinental Airport,33
+LaGuardia Airport,Logan International Airport,23
+LaGuardia Airport,Fort Lauderdale-Hollywood International Airport,14
+LaGuardia Airport,Minneapolis-Saint Paul International Airport,17
+LaGuardia Airport,Detroit Metropolitan Airport,20
+LaGuardia Airport,Philadelphia International Airport,29
+LaGuardia Airport,Salt Lake City International Airport,6
+LaGuardia Airport,Ronald Reagan Washington National Airport,10
+LaGuardia Airport,San Diego International Airport,15
+LaGuardia Airport,Baltimore/Washington International Airport,10
+LaGuardia Airport,Tampa International Airport,15
+LaGuardia Airport,Austin-Bergstrom International Airport,11
+LaGuardia Airport,Washington Dulles International Airport,10
+LaGuardia Airport,Nashville International Airport,10
+LaGuardia Airport,Paris Charles de Gaulle Airport,60
+Detroit Metropolitan Airport,Hartsfield-Jackson Atlanta International Airport,18
+Detroit Metropolitan Airport,Dallas/Fort Worth International Airport,22
+Detroit Metropolitan Airport,Denver International Airport,9
+Detroit Metropolitan Airport,O'Hare International Airport,28
+Detroit Metropolitan Airport,Los Angeles International Airport,54
+Detroit Metropolitan Airport,John F. Kennedy International Airport,20
+Detroit Metropolitan Airport,Harry Reid International Airport,7
+Detroit Metropolitan Airport,Orlando International Airport,8
+Detroit Metropolitan Airport,Miami International Airport,9
+Detroit Metropolitan Airport,Charlotte Douglas International Airport,8
+Detroit Metropolitan Airport,Seattle-Tacoma International Airport,12
+Detroit Metropolitan Airport,Phoenix Sky Harbor International Airport,14
+Detroit Metropolitan Airport,Newark Liberty International Airport,20
+Detroit Metropolitan Airport,San Francisco International Airport,21
+Detroit Metropolitan Airport,George Bush Intercontinental Airport,21
+Detroit Metropolitan Airport,Logan International Airport,15
+Detroit Metropolitan Airport,Fort Lauderdale-Hollywood International Airport,9
+Detroit Metropolitan Airport,Minneapolis-Saint Paul International Airport,11
+Detroit Metropolitan Airport,LaGuardia Airport,20
+Detroit Metropolitan Airport,Philadelphia International Airport,18
+Detroit Metropolitan Airport,Salt Lake City International Airport,4
+Detroit Metropolitan Airport,Ronald Reagan Washington National Airport,6
+Detroit Metropolitan Airport,San Diego International Airport,10
+Detroit Metropolitan Airport,Baltimore/Washington International Airport,6
+Detroit Metropolitan Airport,Tampa International Airport,9
+Detroit Metropolitan Airport,Austin-Bergstrom International Airport,7
+Detroit Metropolitan Airport,Washington Dulles International Airport,6
+Detroit Metropolitan Airport,Nashville International Airport,6
+Detroit Metropolitan Airport,Paris Charles de Gaulle Airport,38
+Philadelphia International Airport,Hartsfield-Jackson Atlanta International Airport,26
+Philadelphia International Airport,Dallas/Fort Worth International Airport,33
+Philadelphia International Airport,Denver International Airport,13
+Philadelphia International Airport,O'Hare International Airport,41
+Philadelphia International Airport,Los Angeles International Airport,78
+Philadelphia International Airport,John F. Kennedy International Airport,29
+Philadelphia International Airport,Harry Reid International Airport,10
+Philadelphia International Airport,Orlando International Airport,11
+Philadelphia International Airport,Miami International Airport,13
+Philadelphia International Airport,Charlotte Douglas International Airport,11
+Philadelphia International Airport,Seattle-Tacoma International Airport,17
+Philadelphia International Airport,Phoenix Sky Harbor International Airport,21
+Philadelphia International Airport,Newark Liberty International Airport,29
+Philadelphia International Airport,San Francisco International Airport,30
+Philadelphia International Airport,George Bush Intercontinental Airport,30
+Philadelphia International Airport,Logan International Airport,21
+Philadelphia International Airport,Fort Lauderdale-Hollywood International Airport,13
+Philadelphia International Airport,Minneapolis-Saint Paul International Airport,16
+Philadelphia International Airport,LaGuardia Airport,29
+Philadelphia International Airport,Detroit Metropolitan Airport,19
+Philadelphia International Airport,Salt Lake City International Airport,5
+Philadelphia International Airport,Ronald Reagan Washington National Airport,9
+Philadelphia International Airport,San Diego International Airport,14
+Philadelphia International Airport,Baltimore/Washington International Airport,9
+Philadelphia International Airport,Tampa International Airport,14
+Philadelphia International Airport,Austin-Bergstrom International Airport,10
+Philadelphia International Airport,Washington Dulles International Airport,9
+Philadelphia International Airport,Nashville International Airport,9
+Philadelphia International Airport,Paris Charles de Gaulle Airport,56
+Salt Lake City International Airport,Hartsfield-Jackson Atlanta International Airport,5
+Salt Lake City International Airport,Dallas/Fort Worth International Airport,6
+Salt Lake City International Airport,Denver International Airport,2
+Salt Lake City International Airport,O'Hare International Airport,8
+Salt Lake City International Airport,Los Angeles International Airport,15
+Salt Lake City International Airport,John F. Kennedy International Airport,6
+Salt Lake City International Airport,Harry Reid International Airport,2
+Salt Lake City International Airport,Orlando International Airport,2
+Salt Lake City International Airport,Miami International Airport,3
+Salt Lake City International Airport,Charlotte Douglas International Airport,2
+Salt Lake City International Airport,Seattle-Tacoma International Airport,3
+Salt Lake City International Airport,Phoenix Sky Harbor International Airport,4
+Salt Lake City International Airport,Newark Liberty International Airport,6
+Salt Lake City International Airport,San Francisco International Airport,6
+Salt Lake City International Airport,George Bush Intercontinental Airport,6
+Salt Lake City International Airport,Logan International Airport,4
+Salt Lake City International Airport,Fort Lauderdale-Hollywood International Airport,3
+Salt Lake City International Airport,Minneapolis-Saint Paul International Airport,3
+Salt Lake City International Airport,LaGuardia Airport,6
+Salt Lake City International Airport,Detroit Metropolitan Airport,4
+Salt Lake City International Airport,Philadelphia International Airport,5
+Salt Lake City International Airport,Ronald Reagan Washington National Airport,2
+Salt Lake City International Airport,San Diego International Airport,3
+Salt Lake City International Airport,Baltimore/Washington International Airport,2
+Salt Lake City International Airport,Tampa International Airport,3
+Salt Lake City International Airport,Austin-Bergstrom International Airport,2
+Salt Lake City International Airport,Washington Dulles International Airport,2
+Salt Lake City International Airport,Nashville International Airport,2
+Salt Lake City International Airport,Paris Charles de Gaulle Airport,11
+Ronald Reagan Washington National Airport,Hartsfield-Jackson Atlanta International Airport,9
+Ronald Reagan Washington National Airport,Dallas/Fort Worth International Airport,11
+Ronald Reagan Washington National Airport,Denver International Airport,4
+Ronald Reagan Washington National Airport,O'Hare International Airport,14
+Ronald Reagan Washington National Airport,Los Angeles International Airport,26
+Ronald Reagan Washington National Airport,John F. Kennedy International Airport,9
+Ronald Reagan Washington National Airport,Harry Reid International Airport,3
+Ronald Reagan Washington National Airport,Orlando International Airport,4
+Ronald Reagan Washington National Airport,Miami International Airport,4
+Ronald Reagan Washington National Airport,Charlotte Douglas International Airport,4
+Ronald Reagan Washington National Airport,Seattle-Tacoma International Airport,6
+Ronald Reagan Washington National Airport,Phoenix Sky Harbor International Airport,7
+Ronald Reagan Washington National Airport,Newark Liberty International Airport,9
+Ronald Reagan Washington National Airport,San Francisco International Airport,10
+Ronald Reagan Washington National Airport,George Bush Intercontinental Airport,10
+Ronald Reagan Washington National Airport,Logan International Airport,7
+Ronald Reagan Washington National Airport,Fort Lauderdale-Hollywood International Airport,4
+Ronald Reagan Washington National Airport,Minneapolis-Saint Paul International Airport,5
+Ronald Reagan Washington National Airport,LaGuardia Airport,9
+Ronald Reagan Washington National Airport,Detroit Metropolitan Airport,6
+Ronald Reagan Washington National Airport,Philadelphia International Airport,9
+Ronald Reagan Washington National Airport,Salt Lake City International Airport,2
+Ronald Reagan Washington National Airport,San Diego International Airport,5
+Ronald Reagan Washington National Airport,Baltimore/Washington International Airport,3
+Ronald Reagan Washington National Airport,Tampa International Airport,4
+Ronald Reagan Washington National Airport,Austin-Bergstrom International Airport,3
+Ronald Reagan Washington National Airport,Washington Dulles International Airport,3
+Ronald Reagan Washington National Airport,Nashville International Airport,3
+Ronald Reagan Washington National Airport,Paris Charles de Gaulle Airport,18
+San Diego International Airport,Hartsfield-Jackson Atlanta International Airport,13
+San Diego International Airport,Dallas/Fort Worth International Airport,17
+San Diego International Airport,Denver International Airport,7
+San Diego International Airport,O'Hare International Airport,21
+San Diego International Airport,Los Angeles International Airport,40
+San Diego International Airport,John F. Kennedy International Airport,15
+San Diego International Airport,Harry Reid International Airport,5
+San Diego International Airport,Orlando International Airport,6
+San Diego International Airport,Miami International Airport,7
+San Diego International Airport,Charlotte Douglas International Airport,6
+San Diego International Airport,Seattle-Tacoma International Airport,9
+San Diego International Airport,Phoenix Sky Harbor International Airport,11
+San Diego International Airport,Newark Liberty International Airport,15
+San Diego International Airport,San Francisco International Airport,16
+San Diego International Airport,George Bush Intercontinental Airport,16
+San Diego International Airport,Logan International Airport,11
+San Diego International Airport,Fort Lauderdale-Hollywood International Airport,7
+San Diego International Airport,Minneapolis-Saint Paul International Airport,8
+San Diego International Airport,LaGuardia Airport,15
+San Diego International Airport,Detroit Metropolitan Airport,10
+San Diego International Airport,Philadelphia International Airport,14
+San Diego International Airport,Salt Lake City International Airport,3
+San Diego International Airport,Ronald Reagan Washington National Airport,5
+San Diego International Airport,Baltimore/Washington International Airport,5
+San Diego International Airport,Tampa International Airport,7
+San Diego International Airport,Austin-Bergstrom International Airport,5
+San Diego International Airport,Washington Dulles International Airport,5
+San Diego International Airport,Nashville International Airport,5
+San Diego International Airport,Paris Charles de Gaulle Airport,29
+Baltimore/Washington International Airport,Hartsfield-Jackson Atlanta International Airport,9
+Baltimore/Washington International Airport,Dallas/Fort Worth International Airport,11
+Baltimore/Washington International Airport,Denver International Airport,4
+Baltimore/Washington International Airport,O'Hare International Airport,14
+Baltimore/Washington International Airport,Los Angeles International Airport,26
+Baltimore/Washington International Airport,John F. Kennedy International Airport,9
+Baltimore/Washington International Airport,Harry Reid International Airport,3
+Baltimore/Washington International Airport,Orlando International Airport,4
+Baltimore/Washington International Airport,Miami International Airport,4
+Baltimore/Washington International Airport,Charlotte Douglas International Airport,4
+Baltimore/Washington International Airport,Seattle-Tacoma International Airport,6
+Baltimore/Washington International Airport,Phoenix Sky Harbor International Airport,7
+Baltimore/Washington International Airport,Newark Liberty International Airport,9
+Baltimore/Washington International Airport,San Francisco International Airport,10
+Baltimore/Washington International Airport,George Bush Intercontinental Airport,10
+Baltimore/Washington International Airport,Logan International Airport,7
+Baltimore/Washington International Airport,Fort Lauderdale-Hollywood International Airport,4
+Baltimore/Washington International Airport,Minneapolis-Saint Paul International Airport,5
+Baltimore/Washington International Airport,LaGuardia Airport,9
+Baltimore/Washington International Airport,Detroit Metropolitan Airport,6
+Baltimore/Washington International Airport,Philadelphia International Airport,9
+Baltimore/Washington International Airport,Salt Lake City International Airport,2
+Baltimore/Washington International Airport,Ronald Reagan Washington National Airport,3
+Baltimore/Washington International Airport,San Diego International Airport,5
+Baltimore/Washington International Airport,Tampa International Airport,4
+Baltimore/Washington International Airport,Austin-Bergstrom International Airport,3
+Baltimore/Washington International Airport,Washington Dulles International Airport,3
+Baltimore/Washington International Airport,Nashville International Airport,3
+Baltimore/Washington International Airport,Paris Charles de Gaulle Airport,18
+Tampa International Airport,Hartsfield-Jackson Atlanta International Airport,13
+Tampa International Airport,Dallas/Fort Worth International Airport,16
+Tampa International Airport,Denver International Airport,6
+Tampa International Airport,O'Hare International Airport,20
+Tampa International Airport,Los Angeles International Airport,39
+Tampa International Airport,John F. Kennedy International Airport,14
+Tampa International Airport,Harry Reid International Airport,5
+Tampa International Airport,Orlando International Airport,6
+Tampa International Airport,Miami International Airport,7
+Tampa International Airport,Charlotte Douglas International Airport,6
+Tampa International Airport,Seattle-Tacoma International Airport,9
+Tampa International Airport,Phoenix Sky Harbor International Airport,10
+Tampa International Airport,Newark Liberty International Airport,14
+Tampa International Airport,San Francisco International Airport,15
+Tampa International Airport,George Bush Intercontinental Airport,15
+Tampa International Airport,Logan International Airport,11
+Tampa International Airport,Fort Lauderdale-Hollywood International Airport,7
+Tampa International Airport,Minneapolis-Saint Paul International Airport,8
+Tampa International Airport,LaGuardia Airport,14
+Tampa International Airport,Detroit Metropolitan Airport,9
+Tampa International Airport,Philadelphia International Airport,13
+Tampa International Airport,Salt Lake City International Airport,3
+Tampa International Airport,Ronald Reagan Washington National Airport,5
+Tampa International Airport,San Diego International Airport,7
+Tampa International Airport,Baltimore/Washington International Airport,5
+Tampa International Airport,Austin-Bergstrom International Airport,5
+Tampa International Airport,Washington Dulles International Airport,5
+Tampa International Airport,Nashville International Airport,4
+Tampa International Airport,Paris Charles de Gaulle Airport,28
+Austin-Bergstrom International Airport,Hartsfield-Jackson Atlanta International Airport,10
+Austin-Bergstrom International Airport,Dallas/Fort Worth International Airport,12
+Austin-Bergstrom International Airport,Denver International Airport,5
+Austin-Bergstrom International Airport,O'Hare International Airport,16
+Austin-Bergstrom International Airport,Los Angeles International Airport,30
+Austin-Bergstrom International Airport,John F. Kennedy International Airport,11
+Austin-Bergstrom International Airport,Harry Reid International Airport,4
+Austin-Bergstrom International Airport,Orlando International Airport,4
+Austin-Bergstrom International Airport,Miami International Airport,5
+Austin-Bergstrom International Airport,Charlotte Douglas International Airport,4
+Austin-Bergstrom International Airport,Seattle-Tacoma International Airport,6
+Austin-Bergstrom International Airport,Phoenix Sky Harbor International Airport,8
+Austin-Bergstrom International Airport,Newark Liberty International Airport,11
+Austin-Bergstrom International Airport,San Francisco International Airport,11
+Austin-Bergstrom International Airport,George Bush Intercontinental Airport,11
+Austin-Bergstrom International Airport,Logan International Airport,8
+Austin-Bergstrom International Airport,Fort Lauderdale-Hollywood International Airport,5
+Austin-Bergstrom International Airport,Minneapolis-Saint Paul International Airport,6
+Austin-Bergstrom International Airport,LaGuardia Airport,11
+Austin-Bergstrom International Airport,Detroit Metropolitan Airport,7
+Austin-Bergstrom International Airport,Philadelphia International Airport,10
+Austin-Bergstrom International Airport,Salt Lake City International Airport,2
+Austin-Bergstrom International Airport,Ronald Reagan Washington National Airport,3
+Austin-Bergstrom International Airport,San Diego International Airport,5
+Austin-Bergstrom International Airport,Baltimore/Washington International Airport,3
+Austin-Bergstrom International Airport,Tampa International Airport,5
+Austin-Bergstrom International Airport,Washington Dulles International Airport,3
+Austin-Bergstrom International Airport,Nashville International Airport,3
+Austin-Bergstrom International Airport,Paris Charles de Gaulle Airport,21
+Washington Dulles International Airport,Hartsfield-Jackson Atlanta International Airport,9
+Washington Dulles International Airport,Dallas/Fort Worth International Airport,11
+Washington Dulles International Airport,Denver International Airport,4
+Washington Dulles International Airport,O'Hare International Airport,14
+Washington Dulles International Airport,Los Angeles International Airport,26
+Washington Dulles International Airport,John F. Kennedy International Airport,9
+Washington Dulles International Airport,Harry Reid International Airport,3
+Washington Dulles International Airport,Orlando International Airport,4
+Washington Dulles International Airport,Miami International Airport,4
+Washington Dulles International Airport,Charlotte Douglas International Airport,4
+Washington Dulles International Airport,Seattle-Tacoma International Airport,6
+Washington Dulles International Airport,Phoenix Sky Harbor International Airport,7
+Washington Dulles International Airport,Newark Liberty International Airport,9
+Washington Dulles International Airport,San Francisco International Airport,10
+Washington Dulles International Airport,George Bush Intercontinental Airport,10
+Washington Dulles International Airport,Logan International Airport,7
+Washington Dulles International Airport,Fort Lauderdale-Hollywood International Airport,4
+Washington Dulles International Airport,Minneapolis-Saint Paul International Airport,5
+Washington Dulles International Airport,LaGuardia Airport,9
+Washington Dulles International Airport,Detroit Metropolitan Airport,6
+Washington Dulles International Airport,Philadelphia International Airport,9
+Washington Dulles International Airport,Salt Lake City International Airport,2
+Washington Dulles International Airport,Ronald Reagan Washington National Airport,3
+Washington Dulles International Airport,San Diego International Airport,5
+Washington Dulles International Airport,Baltimore/Washington International Airport,3
+Washington Dulles International Airport,Tampa International Airport,4
+Washington Dulles International Airport,Austin-Bergstrom International Airport,3
+Washington Dulles International Airport,Nashville International Airport,3
+Washington Dulles International Airport,Paris Charles de Gaulle Airport,18
+Nashville International Airport,Hartsfield-Jackson Atlanta International Airport,8
+Nashville International Airport,Dallas/Fort Worth International Airport,11
+Nashville International Airport,Denver International Airport,4
+Nashville International Airport,O'Hare International Airport,13
+Nashville International Airport,Los Angeles International Airport,25
+Nashville International Airport,John F. Kennedy International Airport,9
+Nashville International Airport,Harry Reid International Airport,3
+Nashville International Airport,Orlando International Airport,4
+Nashville International Airport,Miami International Airport,4
+Nashville International Airport,Charlotte Douglas International Airport,4
+Nashville International Airport,Seattle-Tacoma International Airport,6
+Nashville International Airport,Phoenix Sky Harbor International Airport,7
+Nashville International Airport,Newark Liberty International Airport,9
+Nashville International Airport,San Francisco International Airport,10
+Nashville International Airport,George Bush Intercontinental Airport,10
+Nashville International Airport,Logan International Airport,7
+Nashville International Airport,Fort Lauderdale-Hollywood International Airport,4
+Nashville International Airport,Minneapolis-Saint Paul International Airport,5
+Nashville International Airport,LaGuardia Airport,9
+Nashville International Airport,Detroit Metropolitan Airport,6
+Nashville International Airport,Philadelphia International Airport,9
+Nashville International Airport,Salt Lake City International Airport,2
+Nashville International Airport,Ronald Reagan Washington National Airport,3
+Nashville International Airport,San Diego International Airport,5
+Nashville International Airport,Baltimore/Washington International Airport,3
+Nashville International Airport,Tampa International Airport,4
+Nashville International Airport,Austin-Bergstrom International Airport,3
+Nashville International Airport,Washington Dulles International Airport,3
+Nashville International Airport,Paris Charles de Gaulle Airport,18
+Paris Charles de Gaulle Airport,Hartsfield-Jackson Atlanta International Airport,58
+Paris Charles de Gaulle Airport,Dallas/Fort Worth International Airport,72
+Paris Charles de Gaulle Airport,Denver International Airport,28
+Paris Charles de Gaulle Airport,O'Hare International Airport,90
+Paris Charles de Gaulle Airport,Los Angeles International Airport,172
+Paris Charles de Gaulle Airport,John F. Kennedy International Airport,63
+Paris Charles de Gaulle Airport,Harry Reid International Airport,21
+Paris Charles de Gaulle Airport,Orlando International Airport,25
+Paris Charles de Gaulle Airport,Miami International Airport,29
+Paris Charles de Gaulle Airport,Charlotte Douglas International Airport,25
+Paris Charles de Gaulle Airport,Seattle-Tacoma International Airport,38
+Paris Charles de Gaulle Airport,Phoenix Sky Harbor International Airport,45
+Paris Charles de Gaulle Airport,Newark Liberty International Airport,63
+Paris Charles de Gaulle Airport,San Francisco International Airport,66
+Paris Charles de Gaulle Airport,George Bush Intercontinental Airport,67
+Paris Charles de Gaulle Airport,Logan International Airport,46
+Paris Charles de Gaulle Airport,Fort Lauderdale-Hollywood International Airport,29
+Paris Charles de Gaulle Airport,Minneapolis-Saint Paul International Airport,35
+Paris Charles de Gaulle Airport,LaGuardia Airport,63
+Paris Charles de Gaulle Airport,Detroit Metropolitan Airport,41
+Paris Charles de Gaulle Airport,Philadelphia International Airport,58
+Paris Charles de Gaulle Airport,Salt Lake City International Airport,12
+Paris Charles de Gaulle Airport,Ronald Reagan Washington National Airport,20
+Paris Charles de Gaulle Airport,San Diego International Airport,31
+Paris Charles de Gaulle Airport,Baltimore/Washington International Airport,20
+Paris Charles de Gaulle Airport,Tampa International Airport,30
+Paris Charles de Gaulle Airport,Austin-Bergstrom International Airport,23
+Paris Charles de Gaulle Airport,Washington Dulles International Airport,20
+Paris Charles de Gaulle Airport,Nashville International Airport,19

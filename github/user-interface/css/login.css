@@ -1,0 +1,67 @@
+.container {
+  background-color: white !important;
+  background: none;
+  height: 20em !important;
+  width: 30em !important;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#logo-login {
+  height: 6em;
+  margin-bottom: 1em;
+  border: white 10px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: -3.75em;
+}
+
+form {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form-group {
+  margin-bottom: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input[type='text'],
+input[type='password'],
+select {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #ccc;
+  border-radius: 1.5em;
+}
+
+button {
+  width: 15em;
+  padding: 0.5em;
+  border: none;
+  border-radius: 1.5em;
+  background-color: #7638ea;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  bottom: 4em;
+}
+
+button:hover {
+  background-color: #612dc0;
+}
+
+#refreshLink {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  cursor: default;
+}

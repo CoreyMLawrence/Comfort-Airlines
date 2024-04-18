@@ -1,0 +1,166 @@
+.container {
+  position: relative;
+  width: 98vw;
+  height: 92%;
+  margin-bottom: 1em;
+}
+
+#side-bar {
+  height: calc(var(--container-height));
+  margin-bottom: -0.5em;
+}
+
+.main-area {
+  padding-top: 2em;
+  height: 12em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+}
+
+.boxes1 {
+  margin-bottom: 2.5em;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.boxes2 {
+  margin-top: -3em;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: -1.5em;
+}
+
+.box {
+  background-color: #ffffff;
+  border-radius: 1.5em;
+  height: 35vh;
+}
+
+#seatNumberBox {
+  height: 19vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  text-align: left;
+  justify-content: space-around;
+  padding: 3em 2em 1em 2em;
+  background: linear-gradient(to top left, #c8a1ff, #8c6cff, #957dff);
+  border-radius: 1.5em;
+  width: 15em;
+}
+#gateNumberBox {
+  height: 19vh;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  text-align: left;
+  justify-content: space-around;
+  padding: 3em 2em 1em 2em;
+  background: linear-gradient(to top left, #c8a1ff, #5598dc, #957dff);
+  border-radius: 1.5em;
+  width: 15em;
+}
+
+#flightTimeBox {
+  height: 19vh;
+
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  text-align: left;
+  justify-content: space-around;
+  padding: 3em 2em 1em 2em;
+  background: linear-gradient(to bottom right, #c8a1ff, #7c63ff, #957dff);
+  border-radius: 1.5em;
+  width: 15em;
+}
+
+#checkinStatusBox {
+  height: 19vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  text-align: left;
+  justify-content: space-around;
+  padding: 3em 2em 1em 2em;
+  background: linear-gradient(to top left, #2ecc71, #27ae60);
+  border-radius: 1.5em;
+  width: 15em;
+}
+
+#arrivalTimeBox {
+  height: 19vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  text-align: left;
+  justify-content: space-around;
+  padding: 3em 2em 1em 2em;
+  background: linear-gradient(to bottom left, #c8a1ff, #7c63ff, #957dff);
+  border-radius: 1.5em;
+  width: 15em;
+}
+
+.boxTitle {
+  font-size: larger;
+  font-weight: 400;
+}
+
+.boxNumber {
+  margin-top: 0em;
+  font-size: 3.5em;
+}
+
+.boxTitleTop {
+  margin-top: 0.2em;
+  margin-left: 0.5em;
+  font-size: larger;
+  font-weight: 400;
+}
+
+#from {
+  height: 10vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  text-align: left;
+  justify-content: space-around;
+  padding: 3em 2em 1em 2em;
+  background: linear-gradient(to bottom left, #ffaf66, #ff8c42, #ff6f31);
+  border-radius: 1.5em;
+  width: 26em;
+}
+
+#to {
+  height: 10vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-content: baseline;
+  text-align: left;
+  justify-content: space-around;
+  padding: 3em 2em 1em 2em;
+  background: linear-gradient(to bottom right, #ffaf66, #ff8c42, #ff6f31);
+  border-radius: 1.5em;
+  width: 26em;
+}
+
+#startingLocation {
+  margin-left: 2em;
+  margin-top: -1em;
+}
+
+#destinationLocation {
+  margin-left: 2em;
+  margin-top: -1em;
+}
