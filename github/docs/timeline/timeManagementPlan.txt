@@ -1,0 +1,662 @@
+Team: Foobar
+Teammates: Anthony Cox, Corey Lawrence, Dylan Hudson,
+           Parker Blue, Will Wadsworth, Zach Christopher
+
+Description: Time Management Plan for team Foobar
+
+----------------------------------------------------------------------------------------------------
+
+Task: Review Project Requirements
+Assigned to: All Members
+Description: All members must look over 'project.pdf' in depth to get an understanding of the
+             project and its requirements
+Assign date: January 10, 2024
+Due date: January 11, 2024
+Completion date: January 11, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Gather Initial Airport Data/ Cross reference data
+Assigned to: Corey Lawrence, Anthony Cox
+Description: Gather initial data for airports (airport, iata code, city, state, metro area,
+             metro population, latitude, longitude) then cross reference both sets of data
+             and adjust data accordinly
+Assign date: January 11, 2024
+Due date: January 15, 2024
+Completion date: January 15, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Gather Additional Project Requirements
+Assigned to: All members
+Description: Look for previously missed/ smaller requirements within 'project.pdf'
+Assign date: January 15, 2024
+Due date: January 18, 2024
+Completion date: January 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Research Shortest Path Algorithms
+Assigned to: Zach Christopher
+Description: Research different shortest path algorithms to try and find layovers that can shorten 
+             flight times/ allow for profitable layovers
+Assign date: January 15, 2024
+Due date: January 19, 2024
+Completion date: January 19, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Eliminate Illegal Flights
+Assigned to: Corey Lawrence
+Description: Eliminate flights that are less than 150 miles
+Assign date: January 15, 2024
+Due date: January 17, 2024
+Completion date: January 17, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Determine Plane Characteristics
+Assigned to: Zach Christopher
+Description: Attributes differ from plane to plane so determine various Characteristics of:
+             - Boeing 737-600
+             - Boeing 737-800
+             - Airbus A200-100
+             - Airbus A220-300
+Assign date: January 17, 2024
+Due date: January 18, 2024
+Completion date: January 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Calculate Break Even Cost Per Flight
+Assigned to: Parker Blue
+Description: Using the passenger flight traffic data and accounting for all expenses, 
+             calculate the net profit for each flight for each type of plane. Then, eliminate flights 
+             that do not meet the profit margin and sort the airports by profit generated.
+Assign date: January 16, 2024
+Due date: January 18, 2024
+Completion date: January 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Plan Docker Configuration
+Assigned to: Anothony Cox
+Description: - Derive the image from the official MariaDB image
+             - Update the OS and upgrade all packages
+             - Install Python 3.10+, Pip
+             - Install all required packages by our source code
+             - Configure MariaDB
+             - Set up persistant storage for MariaDB
+             The purpose of using Docker as a deployment environment is to deploy the necessary 
+             programs, packages, and settings with our program rather than assuming that the execution 
+             environment is correctly configured. Although we were given the official MariaDB Docker 
+             image, we also require Python 3.10 to be installed; so, we will have to create a custom 
+             image. Using the official MariaDB Docker image provided above as a starting point, 
+             create a custom docker image that meets the requirements below.
+Assign Date: January 16, 2024
+Due Date: January 18, 2024
+Completion Date: January 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Calculate Weighted Distances (used to calculate in-air travel time)
+Assigned to: Corey Lawrence
+Description: Calculate the total distance of the flight in order to get a more accurate in air 
+             flight time
+Assign Date: January 25, 2024
+Due Date: January 29, 2024
+Completion Date: January 29, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Calculate Profit/Loss per Flight
+Assigned to: Parker Blue
+Description: Update break even scrips and csv's as well as calculating either the loss or profit 
+             generated by every flight
+Assign Date: January 25, 2024
+Due Date: January 29,2024
+Completion Date: January 29, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Track Fuel Capacity
+Assigned to: Dylan Hudson
+Description: Use the calculated airtime for each plane to derive the fuel capacity consumed 
+             in the air (and by extent, how much gas is left)
+Assign Date: January 25, 2024
+Due Date: February 1, 2024
+Completion Date: February 1, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Determine Flight Demand
+Assigned to: Will Wadsworth
+Description: After ruling out illegal flights, we need to quantify the demand (number of passengers 
+             or "traffic") for each flight so we can calculate the price of the ticket and net profit 
+             for the flight. The traffic is determined by the rules below; for an example, read 
+             page 5 of Project.pdf.
+             - On average day, 0.5% of the metro population of an district travels by air
+             - Market share starts at 2% and is expected to grow to 5% by the end of the year. 
+             Unspecified growth in the following year.
+             - Arrival rate of passengers is constant during the available hours between the source 
+             and destination airports
+             - Demand for travel from airports A to B is proportional to the metro population of 
+             the destination airport to the metro population of all reachable airports
+Assign Date: January 25, 2024
+Due Date: February 1, 2024
+Completion Date: February 1, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Determine Ideal Hubs
+Assigned to: Dylan Hudson
+Description: Our clients intend to designate 3-4 airports as hubs, which have 11 gates instead of 
+             the standard 1-5 gates. The ideal hubs are the ones with the most traffic. 
+             Consider using betweenness and degree centrality.
+Assign Date: January 25, 2024
+Due Date: February 1, 2024
+Completion Date: February 1, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Model MariaDB Database
+Assigned to: Parker Blue, Zach Christopher
+Description: Using draw.io create an ERD diagram of the MariaDB database called database.drawio 
+             that satisfies the requirements in Project.pdf. Put the diagram in the diagrams folder 
+             on the Google Drive. The diagram should should be in 3.5 normal form 
+             (Boyce-Codd normal form), including primary keys for each table, foreign keys for 
+             references to other tables, and no data stored redundantly. You will also need to choose 
+             suitable MariaDB datatypes for all data stored. Remember to use the DECIMAL 
+             datatype for money.
+Assign Date: January 25, 2024
+Due Date: Frebruary 1, 2024
+Completion Date: February 1, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Double Check Flight Demand
+Assigned to: Anthony Cox
+Description: Anthony and Will have disagreeing numbers for flight demand. Find the source of the 
+             difference between the two and synchonize the data.
+Assign Date: January 25, 2024
+Due Date: January 26, 2024
+Completion Date: January 26, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Write Hard Requirements Whitepaper
+Assigned to: Anthony Cox
+Description: Formalize the shared document 00 - Requirements into a formal requirements list, 
+             including full descriptions of the deliverables, to hand to the client.
+Assign Date: January 25, 2024
+Due Date: February 1, 2024
+Completion Date: February 1, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Write Documentation
+Assigned to: Anthony Cox
+Description: Checkpoint 1 is documentation-oriented. Update the docs folder to include robust 
+             descriptions of project, process, files, and standards.
+Assign Date: January 25, 2024
+Due Date: February 1, 2024
+Completion Date: February 1, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Implement Database Model using SQLAlchemy (CANCELLED)
+Assigned to: Dylan Hudson, Will Wadsworth
+Description: Implement the database model created by Parker and Zach using SQLAlchemy. Should be
+             easily automated
+Assign Date: February 1, 2024
+Due Date: February 15, 2024
+Completion Date: February 15, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Incorporate Fuel Capacity/Use to Profit/Loss
+Assigned to: Parker Blue
+Description: May or may not require one more script
+Assign Date: February 1, 2024
+Due Date: February 8, 2024
+Completion Date: February 8, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Convert/Dbould Check all Files are Using Correct Datasets/Scripts
+Assigned to: Parker Blue
+Description: so far edits to flight_demand, flight_fuel_capacity, flight_profit_loss 
+             required to use weighted. Add a percent full for possible number of planes per day
+Assign Date: February 1, 2024
+Due Date: February 8, 2024
+Completion Date: February 8, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Extract Flgiht Hours into Independent Script 
+Assigned to: Parker Blue, Corey Lawrence
+Description: Extract Flight Hours into Independent Script
+Assign Date: February 8, 2024
+Due Date: February 15, 2024
+Completion Date: February 15, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Review Data SCripts
+Assigned to: Corey Lawrence, Zach Christopher
+Description: - Correct Flight times
+             - Check data for missing info (need gate count, add to airports.csv)
+Assign Date: February 8, 2024
+Due Date: February 15, 2024
+Completion Date: February 15, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Re-Calc Profits into Profit/Hour
+Assigned to: Parker Blue
+Description: Could also involve checking if flight can make it in 20 hour day flight cycle
+Assign Date: February 8, 2024
+Due Date: February 15, 2024
+Completion Date: February 15, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Add Fuel to flights.csv
+Assigned to: Dylan Hudson
+Description: Add fuel to flights.csv
+Assign Date: February 8, 2024
+Due Date: February 15, 2024
+Completion Date: February 15, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Unify Greedy Algorithms Models
+Assigned to: Anthony Cox, Parker Blue
+Description: Unify Greedy Algorithms Models
+Assign Date: February 8, 2024
+Due Date: February 15, 2024
+Completion Date: February 15, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Update Github Kanban Board and Timeline
+Assigned to: Dylan Hudson
+Description: Initial updates have been created. Tomorrow we will go over the changes and adjust 
+             the timeline as needed.
+Assign Date: February 15, 2024
+Due Date: February 22, 2024
+Completion Date: February 22, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Write Aircraft Module
+Assigned to: Anthony Cox, Will Wadsworth
+Description: Write the module for airplane to then be used in time table generation algorithm
+Assign Date: February 16, 2024
+Due Date: March 14, 2024
+Completion Date: March 14, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Write Airports Module
+Assigned to: Corey Lawrence, Dylan Hudson
+Description: Write the module for airport to then be used in time table generation algorithm
+Assign Date: February 16, 2024
+Due Date: March 14, 2024
+Completion Date: March 14, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Plan and Outline Perfect Simulation
+Assigned to: Anthony Cox
+Description: Plan and outline the execution of the perfect simulation, be ready to add delays when
+             perfect simulation functions correctly
+Assign Date: March 1, 2024
+Due Date: March 8, 2024
+Completion Date: March 8, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Develop Perfect Simulation
+Assigned to: Anothony Cox
+Description: Develop perfect simluation, begin writing code
+Assign Date: March 8, 2024
+Due Date: March 28, 2024
+Completion Date: March 28, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Write Flight.py module
+Assigned to: Dylan Hudson
+Description: Write the models/flight.py module. The module should contain a Flight class. 
+             Unlike the Route class from the route module, which represents a generic route that 
+             can be flown, the Flight class represents a flight that is flown by an aircraft. 
+             Check for all constraints in the constructor. If a bad type is given, raise a TypeError; 
+             if a bad value is given (e.g. a negative flight number), raise a ValueError. All tests 
+             should test for both legal and illegal values (to verify that the class works as 
+             intended and catches errors). If you find yourself repeating code across unit tests, 
+             consider abstracting the repeated code into a pytest fixture.
+
+             with the following data members:
+
+             - The flight number (as a unique integer greater than 0, provided by the scheduler)
+             - The time the flight was scheduled (as an int greater than 0)
+             - The aircraft flying the route (Aircraft from the models.aircraft module)
+             - The route being flown (Route from the models.route module)
+             - The passengers on the flight (Passenger from the models.passenger module)
+             you should test:
+
+             - the constructor correctly initializes all fields
+             - the constructor raises type errors for invalid types for each field
+             - the constructor raises value errors for invalid value ranges for each field
+Assign Date: March 14, 2024
+Due Date: March 21, 2024
+Completion Date: March 21, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Update Flight.py
+Assigned to: Dylan Hudson
+Description: Add four new data members:
+
+             - expected_departure_time: int
+             - expected_arrival_time: int
+             - actual_departure_time: int
+             - actual_arrival_time: int
+             The expected departure and arrival times should be added to the constructor since they 
+             can be derived from the expected travel time of the route, boarding, and deboarding 
+             times. The actual times must be initialized after the flight has landed, you you 
+             should assign then None
+Assign Date: March 21, 2024
+Due Date: March 21, 2024
+Completion Date: March 21, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Write Route.py
+Assigned to: Corey Lawrence, Zach Christopher
+Description: Write the models/route.py module. The module should contain a Route class that 
+             represents a route that can be flown from a source airport to a destination airport 
+             (a directional flight). Check for all constraints in the constructor. If a bad type 
+             is given, raise a TypeError; if a bad value is given (e.g. a negative demand), raise a 
+             ValueError. All tests should test for both legal and illegal values (to verify that the 
+             class works as intended and catches errors). If you find yourself repeating code across 
+             unit tests, consider abstracting the repeated code into a pytest fixture.       
+             
+             with the following data members:
+
+             - The type of aircraft required (AircraftType from the models.aircraft module)
+             - The source airport (Airport from the models.airport module)
+             - The destination airport (Airport from the models.airport module)
+             - The distance between the airports (as a float greater than 0)
+             - The daily demand for the route (an an int greater than 0)
+             - The estimated time to fly the route (as an integer greater than 0)
+             - The fuel requirement for the route (as a float greater than 0)
+
+             you should test:
+
+             - the constructor correctly initializes all fields
+             - the constructor raises type errors for invalid types for each field
+             - the constructor raises value errors for invalid value ranges for each field
+             - the source airport should not be destination airport
+Assign Date: March 14, 2024
+Due Date: March 21, 2024
+Completion Date: March 21, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Write Passenger.py
+Assigned to: Anthony Cox, Parker Blue
+Description: Write the models/passenger.py module. The module should contain a Passenger class that 
+             represents a passenger trying to make it from a source airport to a destination airport. 
+             Check for all constraints in the constructor. If a bad type is given, raise a TypeError; 
+             if a bad value is given (e.g. a negative flight number), raise a ValueError. All tests 
+             should test for both legal and illegal values (to verify that the class works as 
+             intended and catches errors). If you find yourself repeating code across unit tests, 
+             consider abstracting the repeated code into a pytest fixture.
+
+             with the following data members:
+
+             - The source airport (Airport from the models.airport module)
+             - The location of the passenger (either Airport from the models.airport module or None 
+             if they are in flight. Implement the type annotation as a Union of Airport and None: 
+             Union[Airport, None]
+             - The destination airport (Airport from the models.airport module)
+             - A list of the flights taken (list[Flight] with Flight from the models.flight module)
+             - An identifier (a unique integer, implemented as a static counter)
+
+             you should test:
+
+             - the constructor correctly initializes all fields
+             - the constructor raises type errors for invalid types for each field
+             - the constructor raises value errors for invalid value ranges for each field
+Assign Date: March 14, 2024
+Due Date: March 21, 2024
+Completion Date: March 21, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Write scheduler.py
+Assigned to: Dylan Hudson, Zach Christopher
+Description: Write scheduler module to schedule flights and create time table to then be used in
+             simulation
+Assign Date: March 21, 2024
+Due Date: March 28, 2024
+Completion Date: March 28, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Crete GUI for customer, stats, and demo
+Assigned to: Corey Lawrence
+Description: This is a cherry on top, with no real parameters on what needs to be included, do 
+             what you can before the due date. Develop a GUI for the customer, subtasks listed below. 
+             No parameters for what to make just do what you can and make tasks for them 
+             before due date
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion Date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Create schedule page (GUI subtask)
+Assigned to: Corey Lawrence
+Description: Use the schedule.js file to show the full table on load with all details of all flights
+             Use two dropdowns to filter by source and destination locations
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion Date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Create ledger page (GUI subtask)
+Assigned to: Corey Lawrence
+Description: Create JS file to load in all needed profit and loss info from the ledger.csv file 
+             and display nicely in a table
+             Incorporate a profits over time function to watch profits tick up from simulation 
+             start time to simulation end
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion Date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Create login page to display list of airports and users name (GUI subtask)
+Assigned to: Corey Lawrence
+Description: Create the JS file needed to import airports.csv and display city names
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion Date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Create tickets page (GUI subtask)
+Assigned to: Corey Lawrence
+Description: Create JS file to import all flight information
+             Populate a boarding pass with all needed information
+             Incorporate weather at source and destination locations, which change dynamically
+             based on input
+             Create a mock payment area to display ticket prices and process CC payment
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion Date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Create dashboard (GUI subtask)
+Assigned to: Corey Lawrence
+Description: Show useful information to the customer based on their flight selection
+Assign Date: March 28, 2024 
+Due Date: April 18, 2024
+Completion Date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Create aircraft simulation page (GUI subtask)
+Assigned to: Corey Lawrence
+Description: Create JS file to load in all flights and pull needed information for each
+             given time step
+             Create a box to hold information on each of the 56 aircraft and display their status
+             over the course of the simulation
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion Date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Review hardcoded variables/values
+Assigned to: All memebers
+Description: Review any of the original csv's created such as aircraft.csv and airports.csv for any
+             inaccurate information, while these values are hardcoded they are scanned and double
+             checked when running flight_master_record.py
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Start presentation
+Assigned to: Dylan Hudson
+Description: Make a skeleton of the presentation which will later be finalized by the entire group
+Assign Date: March 28, 2024
+Due Date: April 15, 2024
+Completion date: April 15, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Finalize and flesh out presentation
+Assigned to: All members 
+Description: Finalize the project presentation and flesh out details
+Assign Date: April 15, 2024
+Due Date: April 18, 2024
+Completion date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Standardization of reports
+Assigned to: Anthony Cox
+Description: updating report classes to instance classes instead of static classes so they could have 
+             lifetime-based construction and destruction
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Incorporated Paris via adding new Boeing 747-400
+Assigned to: Anthony Cox
+Description: generating 180 new flight routes, and Paris-specific flight scheduler requirements
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Updated scheduler to account for operating hours
+Assigned to: Anthony Cox
+Description: Update scheduler to account for the operating hours of different airports
+Assign Date: March 28, 2024
+Due Date: April 4, 2024
+Completion date: April 4, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Updated README to include instructions to install project dependencies 
+      and how to run the program
+Assigned to: Anthony Cox
+Description: Update README to keep up with dependendencies and requirements
+Assign Date: March 28, 2024
+Due Date: April 4, 2024
+Completion date: April 4, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Wrote 2 ledger scripts to calculate the gross profit and to calculate the difference in 
+      profits when aggregating and not aggregating flights
+Assigned to: Anthony Cox
+Description: Write ledger scripts to calculate gross profit and difference when aggregating 
+             and not aggregating flights
+Assign Date: April 11, 2024
+Due Date: April 18, 2024
+Completion date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Added active flight aggregation
+Assigned to: Anthony Cox
+Description: Added active aggregation to take flights to hubs to aggregate passengers
+             to then send to other airports, allowing for more customers and more money
+             aggregation can be turned off with constant
+             Constant located in constant.py, set aggregate == true for aggregation,
+             and aggregate == false for not aggregation
+Assign Date: March 28, 2024
+Due Date: April 11, 2024
+Completion date: April 11, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Create delay module and testing for implementation
+Assigned to: Parker Blue
+Description: Attempt to write a delay module to simulate delays due to bad weather/
+             high winds. Does not need to be complete but just as proof of concept
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Edit existing and possibly create new scheduler for handling aggregation
+Assigned to: Parker Blue, Anthony Cox
+Description: Attempt to alter scheduler.py to account for feeder flights and connecting flights
+             we believe we were losing money without feeder flights and connecter flights
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Edit/revise Paris implementation to more accurately reflect reality
+Assigned to: Parker Blue
+Description: Only allow the new 400 plane to fly to and from Paris and New York, as well as an
+             occasional flight to a hub for maintanence
+Assign Date: March 28, 2024
+Due Date: April 18, 2024
+Completion date: April 18, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Bug fix scheduler and prevent non compliant behavior
+Assigned to: All members
+Description: Scheduler is allowing flights to take off and land between 1:00 am and 5:00 which is  
+             not allowed and will result in fines
+Assign Date: April 15, 2024
+Due Date: April 17, 2024
+Completion date: April 17, 2024
+
+----------------------------------------------------------------------------------------------------
+
+Task: Update scripts
+Assigned to: Dylan Hudson
+Description: We currently have some hardcoded variables, adjust scripts to allow for input data
+Assign Date: April 15, 2024
+Due Date: April 17, 2024
+Completion date: April 17, 2024

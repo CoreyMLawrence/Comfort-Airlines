@@ -2,7 +2,16 @@
 Summary of the contents of this project. All content and code is copyrighted by Comfort Airlines, 2024. Note that `archive` files are for internal development purposes only and should not be 
 considered a part of the project.
 
-# Running the Project
+# Automatically Running the Project
+The process of generating the simulation input data with the script pipeline,
+installing project dependencies, running the simulation, and loading the GUI
+are all automated by the script `run.ps1` in the `github` directory.
+1. Change to the `github` directory
+2. As adminstrator, bypass the powershell remote execution policy with `Set-ExecutionPolicy Bypass`
+3. Run the main script `powershell ./run.ps1`
+
+# Manually Running the Project
+If for some reason the automatic Powershell script fails, you can also manually run the program.
 First, change to the `github` subdirectory. Then, install all project dependencies using `pip3 install -r requirements.txt`. Then, run the project with `python3 src/main.py`. 
 If you do not have Python 3.10+ installed, you will need to install it from the [Official Python Downloads](https://www.python.org/downloads/) page.
 After the program finishes, there will be 5 reports generated in the `reports` folder. See the table below for contents
