@@ -559,7 +559,9 @@ function updateBoardingPass() {
   console.log('selectedIndex = ', selectedIndex);
 
   // Retrieve the username from session storage
-  const username = String(sessionStorage.getItem('username')).toUpperCase();
+  const username = String(sessionStorage.getItem('username'))
+    .slice(0, 15)
+    .toUpperCase();
 
   // Function to format the date
   function getFormattedDate(dateString) {
