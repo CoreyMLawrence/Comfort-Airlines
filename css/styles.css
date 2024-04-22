@@ -42,7 +42,7 @@ h5 {
       #eaeaea 100%,
       transparent 80%
     ),
-    linear-gradient(to right, #e7e6e6, #ffffff, #f0f0f0);
+    linear-gradient(to right, #dedede, #ffffff, #adacac);
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -56,7 +56,7 @@ h5 {
   flex-direction: column;
   align-content: center;
   align-items: center;
-  background: linear-gradient(#ffffff 80%, #f5f5f5);
+  background: linear-gradient(#eaeaea 80%, #e6e6e6);
   width: 21em;
   height: calc(96vh - 2em); /* Adjust height to be 96vh minus padding */
   border-top-right-radius: 1.5em;
