@@ -40,10 +40,6 @@ The Airline Simulator project aims to create a comprehensive timetable for fligh
    ![Timetable](./Screenshots/5.png)
 
 
-## Description
-
-The Airline Simulator project aims to create a comprehensive timetable for flight scheduling and simulate two weeks' worth of flight activity. This involves developing a structured timetable with flight schedules, unique
-
 ## Approach
 
 The project utilizes Python for development, with hubs determined based on top airports. Data calculations are performed using scripts, and information is stored in CSV files. Airport modules are created, and a Paris flight module is added. The simulation employs a greedy algorithm, and an intuitive user interface is implemented.
