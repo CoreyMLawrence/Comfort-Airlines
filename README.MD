@@ -60,8 +60,3 @@
 2. Run the provided PowerShell script (`run.ps1`) to generate initial simulation data.
 3. Launch the GUI by pressing Enter on the terminal.
 4. Once the simulation data is generated, the data will not need to be generated again. To run the GUI without generating the data again, run the command `python3 ./webdriver.py`.
-
-## Future Development
-- Incorporate weather and other delay factors into the simulation.
-- Enhance GUI features for a more immersive user experience.
-- Expand the simulation to include more airports and routes.
