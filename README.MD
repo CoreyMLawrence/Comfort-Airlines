@@ -1,26 +1,4 @@
-# Airline Simulator
-
-## Description
-
-The Airline Simulator project aims to create a comprehensive timetable for flight scheduling and simulate two weeks' worth of flight activity. This involves developing a structured timetable with flight schedules, unique identifiers for flights and aircraft, departure and arrival times, airport details, and passenger capacity. The simulation should accurately emulate operational challenges and flight activities over the specified period.
-
-## Implemented Features
-
-- Graphical User Interface
-- Sophisticated Scheduling Algorithms
-- Adaptive, Modular Design
-
-## User Interface
-
-### Features
-
-- **Sleek Modern Design:** Our interface is meticulously crafted with a sleek modern design, offering users an immersive and visually appealing experience.
-- **Dynamic Weather and Customizable Flight Selections:** Experience a fully customized journey with dynamic weather integration and the ability to personalize flight selections to your preferences.
-- **Gorgeous Dashboard:** The dashboard provides a stunning display of all essential flight information, allowing users to access critical data at a glance.
-- **Mock Payment and Checkout:** Our interface features a simulated payment and checkout process, offering users a realistic experience of booking flights.
-- **Comprehensive Timetable:** Explore a comprehensive timetable with filtering options based on starting location and destination, ensuring easy navigation through available flight options.
-- **Profits Report with Playback Capabilities:** Delve into detailed profits reports with full playback capabilities. Users can initiate playback from day one and watch as profits increase throughout the entire simulation.
-- **Aircraft Simulation Page:** Gain insights into the status of each of the 56 aircraft every minute during the entire two-week simulation period.
+# Comfort Airlines Aircraft Simulator
 
 ## Screenshots
 
@@ -39,58 +17,51 @@ The Airline Simulator project aims to create a comprehensive timetable for fligh
 **Timetable**
    ![Timetable](./Screenshots/5.png)
 
+## Background
+- Comfort Airlines is a startup airline venture initiated by a group of wealthy investors aiming to provide excellent service at reasonable prices.
+- The investors have decided to develop a simulation to explore the feasibility of their business plan and understand the logistics involved in running an airline.
+- The goal is to make a profit while providing excellent service to gain a competitive advantage over existing large airlines.
 
-## Approach
+## FAA Authorization
+- The FAA has granted Comfort Airlines authority to fly in and out of the top 30 US airports as defined by [Wikipedia](https://en.wikipedia.org/wiki/List_of_the_busiest_airports_in_the_United_States).
 
-The project utilizes Python for development, with hubs determined based on top airports. Data calculations are performed using scripts, and information is stored in CSV files. Airport modules are created, and a Paris flight module is added. The simulation employs a greedy algorithm, and an intuitive user interface is implemented.
+## Aircraft Fleet
+- Comfort Airlines has secured a fleet of aircraft including:
+  - 15 Boeing 737-600
+  - 15 Boeing 737-800
+  - 12 Airbus A200-100
+  - 13 Airbus A220-300
+- Leasing costs, maintenance details, and other specifications are provided.
 
-## Tools Used Along The Way
+## Simulation Process
+- Python scripts are used to generate input data for the simulation.
+- To run the simulation:
+  1. Clone the repository.
+  2. Run the provided PowerShell script (`run.ps1`) to generate initial simulation data.
+- The simulation runs for a two-week period, servicing passengers and generating reports.
+- The simulation adheres to specified criteria, including flight time calculations and aircraft turnaround times.
 
-- PyTest
-- StructLog
-- PyWebiew
-- SQL Alchemy
+## Graphical User Interface (GUI)
+- The GUI provides an intuitive user experience for interacting with the simulation results and reports.
+- Users input their name, a demo password (no actual password needed), and select their starting location.
+- They can then access various features:
+  - **Ticket Purchasing**: Users can search for available flights, choose one, and view a boarding pass with flight and passenger details.
+  - **Dashboard**: Users can view their flight details in a clear format.
+  - **Timetable**: A filterable timetable allows users to view flight schedules.
+  - **Aircraft Simulation Page**: Users can view what each of the 56 aircraft were doing throughout the entire simulation. They can see source airport, destination airport, passengers on board, and progress through the flight, which is shown through a loading bar for each plane.
+- The GUI also includes playback controls for financial reports and aircraft simulation details, enabling users to see profits increment throughout the simulation.
 
-## Major Decisions
+## Profit
+- In the two-week simulation, the airline was able to service 400,597 passengers over 3,475 flights.
+- This resulted in a net profit of $263,348,045 per simulated month, showcasing the efficacy of the greedy algorithm used in the simulation.
 
-**1. Python:**
-- **Rationale:** Chosen for performance, library support, and ease of use.
+## How to Use
+1. Clone the repository into an active webserver root directory.
+2. Run the provided PowerShell script (`run.ps1`) to generate initial simulation data.
+3. Launch the GUI by pressing Enter on the terminal.
+4. Once the simulation data is generated, the data will not need to be generated again. To run the GUI without generating the data again, run the command `python3 ./webdriver.py`.
 
-**2. Using CSVs Instead of a Database:**
-- **Rationale:** Offered flexibility, performance, and portability.
-
-**3. Divide and Conquer:**
-- **Rationale:** Implemented for efficient time management and modularity.
-
-## Project Structure
-
-- **Static Data:** ./data
-- **Script Pipeline:** ./scripts
-- **Simulation:** ./src
-- **Reports:** ./reports
-
-*Completely modular, automated, and cross-platform.*
-
-## Project Accomplishments
-
-- **Extremely Versatile Software:**
-  - No Docker
-  - Easily Scalable
-  - Aggregation and No Aggregation Models
-  - Dynamic Flags
-
-- **Straightforward and Robust:**
-  - One Line Command to Run
-  - Error Checks When Adding Planes/Airports
-  - 100% Memory Secure
-
-- **Easily Accessed Info:**
-  - Reports, Docs, Required Data in CSVs
-  - GUI Contains Advanced Metrics
-
-- **Ahead of Schedule:**
-  - Surpassed Original Goals
-  - More Time for QA Testing
-
-- **Net Profit Per Month:**
-  - $263,348,045
+## Future Development
+- Incorporate weather and other delay factors into the simulation.
+- Enhance GUI features for a more immersive user experience.
+- Expand the simulation to include more airports and routes.
