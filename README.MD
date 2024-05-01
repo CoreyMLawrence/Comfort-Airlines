@@ -24,19 +24,19 @@ The Airline Simulator project aims to create a comprehensive timetable for fligh
 
 ## Screenshots
 
-1. **Login Page**
+**Login Page**
    ![Login Page](./Screenshots/1.png)
 
-2. **Flight Selection Page with Dynamically Filled Boarding Pass**
+**Flight Selection Page with Dynamically Filled Boarding Pass**
    ![Flight Selection Page](./Screenshots/2.png)
 
-3. **User Dashboard**
+**User Dashboard**
    ![User Dashboard](./Screenshots/3.png)
 
-4. **Aircraft Simulator**
+**Aircraft Simulator**
    ![Aircraft Simulator](./Screenshots/4.png)
 
-5. **Timetable**
+**Timetable**
    ![Timetable](./Screenshots/5.png)
 
 
