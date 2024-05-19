@@ -56,7 +56,6 @@
 - This resulted in a net profit of $263,348,045 per simulated month, showcasing the efficacy of the greedy algorithm used in the simulation.
 
 ## How to Use
-1. Clone the repository into an active webserver root directory.
-2. Run the provided PowerShell script (`run.ps1`) to generate initial simulation data.
-3. Launch the GUI by pressing Enter on the terminal.
-4. Once the simulation data is generated, the data will not need to be generated again. To run the GUI without generating the data again, run the command `python3 ./webdriver.py`.
+1. Clone the repository to the directory of your choosing.
+2. Execute the provided PowerShell script (`run.ps1`) to generate initial simulation data and run the simulation. The user interface will launch automatically upon completion.
+3. Once the simulation data is generated, it does not need to be generated again. To run the GUI without regenerating the data, execute `python3 ./webdriver.py`.
