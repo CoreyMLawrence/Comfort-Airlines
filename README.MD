@@ -57,5 +57,5 @@
 
 ## How to Use
 1. Clone the repository to the directory of your choosing.
-2. Execute the provided PowerShell script (`run.ps1`) to generate initial simulation data and run the simulation. The user interface will launch automatically upon completion.
+2. Execute the provided `run.py` script in the root folder to generate initial simulation data and run the simulation. The user interface will launch automatically upon completion.
 3. Once the simulation data is generated, it does not need to be generated again. To run the GUI without regenerating the data, execute `python3 ./webdriver.py`.
