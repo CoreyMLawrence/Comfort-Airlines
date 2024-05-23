@@ -1,5 +1,7 @@
 # Comfort Airlines Aircraft Simulator
 
+This simulator offers a seamless and user-friendly experience for exploring the intricacies of airline operations. With just Python installed, users can effortlessly navigate the simulation by running a single script (`run.py`). The well-designed graphical interface provides intuitive access to various features, from purchasing tickets to monitoring flight schedules and financial reports. Its simplicity in setup and usage makes it an accessible tool for understanding the complexities of running an airline venture.
+
 ## Screenshots
 
 **Login Page**
