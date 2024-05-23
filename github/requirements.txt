@@ -1,6 +1,6 @@
 haversine == 2.8.0
-mariadb == 1.1.9
+#mariadb == 1.1.9
 pytest == 7.4.4
 structlog == 24.1.0
-SQLAlchemy == 2.0.25
+#SQLAlchemy == 2.0.25
 pywebview == 5.0.5
