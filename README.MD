@@ -39,9 +39,10 @@ This simulator offers a seamless and user-friendly experience for exploring the 
 - Python scripts are used to generate input data for the simulation.
 - To run the simulation:
   1. Clone the repository.
-  2. Run the provided PowerShell script (`run.ps1`) to generate initial simulation data.
+  2. Run the provided python script (`run.py`) to generate initial simulation data.
 - The simulation runs for a two-week period, servicing passengers and generating reports.
 - The simulation adheres to specified criteria, including flight time calculations and aircraft turnaround times.
+- After the simulation has run, the GUI will be launched automatically.
 
 ## Graphical User Interface (GUI)
 - The GUI provides an intuitive user experience for interacting with the simulation results and reports.
