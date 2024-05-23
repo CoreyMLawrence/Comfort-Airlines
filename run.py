@@ -4,7 +4,7 @@ import os
 # Change directory to "./github"
 os.chdir("./github")
 
-PIPELINE = "./scripts/pipeline.ps1"
+PIPELINE_SCRIPT = "./scripts/pipeline.py"
 DEPENDENCIES = "requirements.txt"
 SIMULATION = "./src/main.py"
 GUI = "../webdriver.py"
@@ -12,7 +12,7 @@ STEPS = 4
 
 # Execute script pipeline
 print("[INFO: 1/{0}] Executing script pipeline: generating static data from ./data".format(STEPS))
-subprocess.run(["powershell", PIPELINE], check=True)
+subprocess.run(["python3", PIPELINE_SCRIPT], check=True)
 
 # Install dependencies using pip3
 print("[INFO: 2/{0}] Installing dependencies using pip3".format(STEPS))
